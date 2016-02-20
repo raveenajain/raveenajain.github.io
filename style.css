@@ -1,2 +1,12 @@
-#darkred{color: #cc2900;}
-#lightgrey{color: #bfbfbf;}
+.name {
+  text-align: center;
+  color:#cc2900;
+  font-family: Consolas, inherit;
+  font-size: 80px;
+  font-weight: lighter;
+}
+
+.mailme {
+  position: absolute;
+  right: 515px;
+}
