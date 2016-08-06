@@ -1,12 +1,18 @@
-.name {
+.home-text {
   text-align: center;
-  color:#cc2900;
-  font-family: Consolas, inherit;
-  font-size: 80px;
+  color:#FFFFFF;
+  font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond,
+              'Times New Roman', serif;
+  font-size: 120px;
+  font-style: italic;
   font-weight: lighter;
 }
 
-.mailme {
-  position: absolute;
-  right: 465px;
+.my-navbar {
+  background-color: #B3B5F5;
+  font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond,
+              'Times New Roman', serif;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: lighter;
 }
