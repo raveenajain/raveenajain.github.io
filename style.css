@@ -1,19 +1,25 @@
-.home-text {
+.name {
   text-align: center;
-  color:#FFFFFF;
-  font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond,
-              'Times New Roman', serif;
+  color:#0A1CA3;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;;
   font-size: 120px;
-  font-style: italic;
+  font-weight: lighter;
+}
+
+.welcome {
+  text-align: center;
+  color:#0A1CA3;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;;
+  font-size: 80px;
   font-weight: lighter;
 }
 
 .my-navbar {
   background-color: #E1EEF2;
-  font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond,
-              'Times New Roman', serif;
+  font-family: "Courier New", Courier, monospace;
   font-size: 30px;
-  color: #FFF;
   font-style: italic;
   font-weight: lighter;
 }
