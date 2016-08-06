@@ -9,10 +9,11 @@
 }
 
 .my-navbar {
-  background-color: #B3B5F5;
+  background-color: #E1EEF2;
   font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond,
               'Times New Roman', serif;
   font-size: 30px;
+  color: #3AC255
   font-style: italic;
   font-weight: lighter;
 }
