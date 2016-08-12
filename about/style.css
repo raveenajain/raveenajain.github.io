@@ -6,3 +6,24 @@
   font-style: italic;
   font-weight: lighter;
 }
+
+/*about page header*/
+.about-header {
+  text-align: center;
+  color:#1A71BD;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 46px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+/*about page text*/
+.about-text {
+  text.align: left;
+  margin-left: 100px;
+  color:#1A71BD;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: lighter;
+}
