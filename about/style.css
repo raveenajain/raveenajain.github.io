@@ -21,6 +21,7 @@
 .about-text {
   text.align: left;
   margin-left: 100px;
+  margin-right: 500px;
   color:#115B9C;
   font-family: "Courier New", Courier, monospace;
   font-size: 20px;
