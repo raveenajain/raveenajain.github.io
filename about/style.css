@@ -20,8 +20,7 @@
 /*about page text*/
 .about-text {
   text.align: center;
-  /*margin-left: 100px;
-  margin-right: 500px;*/
+  margin-top: 260px; 
   color:#115B9C;
   font-family: "Courier New", Courier, monospace;
   font-size: 20px;
