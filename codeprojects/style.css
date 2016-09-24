@@ -1,0 +1,28 @@
+/*large name text*/
+.name {
+  text-align: center;
+  color:#1A71BD;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;;
+  font-size: 120px;
+  font-weight: lighter;
+}
+
+/*large welcome text*/
+.welcome {
+  text-align: center;
+  color:#1A71BD;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;;
+  font-size: 60px;
+  font-weight: lighter;
+}
+
+/*navbar text*/
+.my-navbar {
+  background-color: #E1EEF2;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: lighter;
+}
