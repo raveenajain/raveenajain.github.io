@@ -17,11 +17,11 @@
 /*text that is overlayed over maze image*/
 .overTextMaze {
   position: absolute;
+  top: 180px;
   width: 100%;
-  margin-left: 428px;
   color:#FFFFFF;
   font-family: "Courier New", Courier, monospace;
-  font-style: italic;;
+  font-style: italic;
   font-size: 30px;
   font-weight: bolder;
 }
@@ -29,8 +29,8 @@
 /*text that is overlayed over island image*/
 .overTextIsland {
   position: absolute;
+  top: 620px;
   width: 100%;
-  margin-left: 470px;
   color:#FFFFFF;
   font-family: "Courier New", Courier, monospace;
   font-style: italic;
