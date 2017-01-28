@@ -16,11 +16,11 @@
 
 /*text that is overlayed over project image*/
 .overImageText {
+  font-family: "Courier New", Courier, monospace;
   position: absolute;
   top: 180px;
   width: 100%;
   color:#FFFFFF;
-  font-family: "Courier New", Courier, monospace;
   font-style: italic;
   font-size: 30px;
   font-weight: bolder;
