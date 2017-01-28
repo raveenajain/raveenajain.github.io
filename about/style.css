@@ -1,6 +1,6 @@
 /*navbar text*/
 .my-navbar {
-  background-color: #E1EEF2;
+  background-color: #e0e0e0;
   font-family: "Courier New", Courier, monospace;
   font-size: 30px;
   font-style: italic;
@@ -10,7 +10,7 @@
 /*about page header*/
 .about-header {
   text-align: center;
-  color:#1A71BD;
+  color:#991313;
   font-family: "Courier New", Courier, monospace;
   font-size: 46px;
   font-style: italic;
@@ -20,7 +20,7 @@
 /*about page text*/
 .about-text {
   text.align: center;
-  color:#115B9C;
+  color:#991313;
   font-family: "Courier New", Courier, monospace;
   font-size: 20px;
   font-style: italic;

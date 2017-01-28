@@ -1,7 +1,7 @@
 /*large name text*/
 .name {
   text-align: center;
-  color:#1A71BD;
+  color:#991313;
   font-family: "Courier New", Courier, monospace;
   font-style: italic;;
   font-size: 120px;
@@ -11,7 +11,7 @@
 /*large welcome text*/
 .welcome {
   text-align: center;
-  color:#1A71BD;
+  color:#991313;
   font-family: "Courier New", Courier, monospace;
   font-style: italic;;
   font-size: 60px;
@@ -20,7 +20,7 @@
 
 /*navbar text*/
 .my-navbar {
-  background-color: #E1EEF2;
+  background-color: #e0e0e0;
   font-family: "Courier New", Courier, monospace;
   font-size: 30px;
   font-style: italic;

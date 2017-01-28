@@ -1,6 +1,6 @@
 /*navbar text*/
 .my-navbar {
-  background-color: #E1EEF2;
+  background-color: #e0e0e0;
   font-family: "Courier New", Courier, monospace;
   font-size: 30px;
   font-style: italic;
@@ -12,16 +12,4 @@
   position: relative;
   width:100%;
   height: 100%;
-}
-
-/*text that is overlayed over project image*/
-.overImageText {
-  font-family: "Courier New", Courier, monospace;
-  position: absolute;
-  top: 180px;
-  width: 100%;
-  color:#FFFFFF;
-  font-style: italic;
-  font-size: 30px;
-  font-weight: bolder;
 }
