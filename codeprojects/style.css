@@ -14,22 +14,10 @@
   height: 100%;
 }
 
-/*text that is overlayed over maze image*/
-.overTextMaze {
+/*text that is overlayed over project image*/
+.overImageText {
   position: absolute;
   top: 180px;
-  width: 100%;
-  color:#FFFFFF;
-  font-family: "Courier New", Courier, monospace;
-  font-style: italic;
-  font-size: 30px;
-  font-weight: bolder;
-}
-
-/*text that is overlayed over island image*/
-.overTextIsland {
-  position: absolute;
-  top: 620px;
   width: 100%;
   color:#FFFFFF;
   font-family: "Courier New", Courier, monospace;
