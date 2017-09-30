@@ -16,7 +16,7 @@
 
     <! nav bar>
     <head>
-      <title>Animation</title>
+      <title>WORK IN PROGRESS</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet"
@@ -46,18 +46,18 @@
     </body>
 
     <body>
-      <table style="width: 100%">
-        <td>
-          <canvas id="canvas">
+      <table style="width: 110%">
+        <td style="width: 80%">
+          <canvas id="canvas" width="600px" height="600px">
           </canvas>
         </td>
         <td style="padding-left: 20px">
           <div class="button">
             <button type="button" onclick="original()" style="background-color: RGBA(141, 53, 55, .25); color: white">Original</button>
             <br>
-            <button type="button" onclick="invert()" style="background-color: RGBA(141, 53, 55, .75); color: black" >Dark Mode</button>
+            <button type="button" onclick="invert()" style="background-color: RGBA(141, 53, 55, .75); color: black">Dark Mode</button>
             <br>
-            <button type="button" onclick="reset()" style="background-color: white; color: RGB(141, 53, 55)" >Restart</butt
+            <button type="button" onclick="reset()" style="background-color: white; color: RGB(141, 53, 55)">Reset</button>
           </div>
         </td>
       </table>
@@ -69,14 +69,26 @@
   var canvasElement = $('#canvas').get(0);
   var drawOn = canvasElement.getContext("2d");
 
-  drawOn.scale(2, 2);
+  drawOn.lineWidth = .1;
+
+  lineStyle = function(color) {
+    drawOn.strokeStyle = color;
+    drawOn.stroke();
+    drawOn.closePath();
+  };
 
   canvasElement.onclick = function(e) {
-    var x = e.offsetX;
-    var y = e.offsetY;
+    // var rect = canvasElement.getBoundingClientRect();
+    var x = e.clientX;
+    var y = e.clientY;
+    // console.log(x);
+    // console.log(y);
+    // console.log($('.canvas').get(0).scrollLeft);
+    // console.log($('.canvas').get(0).scrollTop);
     drawOn.beginPath();
     drawOn.moveTo(0, 0);
-    drawOn.lineTo(x, y);
+    drawOn.lineTo(x,y);
+    lineStyle('#000000');
     drawOn.stroke();
   };
 
@@ -84,20 +96,26 @@
     canvas.css('background-color', 'white');
     canvas.css('border-color', 'black');
     canvas.css('border-width', 'thin');
+    lineStyle('#000000');
+    drawOn.closePath();
   };
 
   invert = function() {
     canvas.css('background-color', 'black');
     canvas.css('border-color', 'white');
     canvas.css('border-width', 'medium');
+    lineStyle('#ffffff');
+    drawOn.closePath();
   };
 
   reset = function() {
-    drawOn.clearRect(0, 0, canvas.width, canvas.height);
+    drawOn.clearRect(0, 0, canvasElement.width, canvasElement.height);
     original();
   };
 
   </script>
+
+  WORK IN PROGRESS!!
 
 </div>
 </body>
