@@ -16,7 +16,7 @@
 
     <! nav bar>
     <head>
-      <title>Raveena Jain</title>
+      <title>Animation</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet"
@@ -45,45 +45,60 @@
       </nav>
     </body>
 
-    <! main page: name, welcome >
-    <br>
-    <br>
-  </br>
-</br>
-<center>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="name">Raveena Jain</div>
-      <div class="welcome">Welcome</div>
-    </div>
-  </div>
-</center>
-
-<! linked images>
-<head>
-  <div class="logo">
-    <div class="container-fluid">
-      <div class="row">
-        <body>
-          <center>
-            <a href="https://www.linkedin.com/in/raveena-jain">
-              <img src="images/lkdnlogo.png" alt="LinkedIn Logo"
-              style="width:70px;height:70px;"></a>
-              <a href="http://rsj-art.tumblr.com/">
-                <img src="images/tmblrlogo.png" alt="Tumblr Logo"
-                style="width:100px;height:100px;"></a>
-                <a href="skype:raveenaj65?call">
-                  <img src="images/skypelogo.png" alt="Skype Logo"
-                  style="width:100px;height:100px;"></a>
-                  <a href="https://github.com/raveenajain">
-                    <img src="images/ghlogo.png" alt="Github Logo"
-                    style="width:80px;height:60px;PADDING-LEFT:20px"></a>
-                  </center>
-                </body>
-              </div>
-            </div>
+    <body>
+      <table style="width: 100%">
+        <td>
+          <canvas id="canvas">
+          </canvas>
+        </td>
+        <td style="padding-left: 20px">
+          <div class="button">
+            <button type="button" onclick="original()" style="background-color: RGBA(141, 53, 55, .25); color: white">Original</button>
+            <br>
+            <button type="button" onclick="invert()" style="background-color: RGBA(141, 53, 55, .75); color: black" >Dark Mode</button>
+            <br>
+            <button type="button" onclick="reset()" style="background-color: white; color: RGB(141, 53, 55)" >Restart</butt
           </div>
-        </head>
-      </div>
-    </body>
-    </html>
+        </td>
+      </table>
+  </body>
+
+  <script type='text/javascript'>
+
+  var canvas = $('#canvas');
+  var canvasElement = $('#canvas').get(0);
+  var drawOn = canvasElement.getContext("2d");
+
+  drawOn.scale(2, 2);
+
+  canvasElement.onclick = function(e) {
+    var x = e.offsetX;
+    var y = e.offsetY;
+    drawOn.beginPath();
+    drawOn.moveTo(0, 0);
+    drawOn.lineTo(x, y);
+    drawOn.stroke();
+  };
+
+  original = function() {
+    canvas.css('background-color', 'white');
+    canvas.css('border-color', 'black');
+    canvas.css('border-width', 'thin');
+  };
+
+  invert = function() {
+    canvas.css('background-color', 'black');
+    canvas.css('border-color', 'white');
+    canvas.css('border-width', 'medium');
+  };
+
+  reset = function() {
+    drawOn.clearRect(0, 0, canvas.width, canvas.height);
+    original();
+  };
+
+  </script>
+
+</div>
+</body>
+</html>

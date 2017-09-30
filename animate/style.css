@@ -1,0 +1,15 @@
+/*navbar text*/
+.my-navbar {
+  background-color: #e0e0e0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+#canvas {
+  position: relative;
+  background-color: white;
+  height: 400px;
+  width: 400px;
+}
