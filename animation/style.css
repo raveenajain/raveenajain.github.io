@@ -7,20 +7,41 @@
   font-weight: lighter;
 }
 
-.anim {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+/* text describing animations */
+.description {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: lighter;
+  float: right;
+  margin-right: 50px;
+  margin-top: 200px;
+}
+
+/* .anim {
   position: relative;
-  animation-name: tbd;
+  animation-name: tree;
   animation-duration: 4s;
+  /* animation-iteration-count: infinite; */
+/* }
+
+@keyframes tree {
+    0%   {color:red; }
+    100% {color:yellow; }
+}
+
+svg line {
+  fill: none;
+  stroke: #000;
+  stroke-width: 1;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
   animation-iteration-count: infinite;
 }
 
-@keyframes tbd {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
-}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+} */

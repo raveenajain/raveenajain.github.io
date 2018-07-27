@@ -9,15 +9,7 @@
 }
 
 /*large welcome text*/
-/* .welcome {
-  text-align: center;
-  color:#991313;
-  font-family: "Courier New", Courier, monospace;
-  font-style: italic;;
-  font-size: 60px;
-  font-weight: lighter;
-} */
-.welcome{
+.welcome {
   background-color: #e0e0e0;;
   animation-name: welcome;
   font-family: "Courier New", Courier, monospace;
@@ -30,9 +22,9 @@
 }
 
 @keyframes welcome {
-  0%   {left:-500px;}
-  50%  {left:450px;}
-  100% {left:0px;}
+  0% {left:-500px;}
+  40% {left:450px;}
+  80% {left:0px;}
 }
 
 /*navbar text*/

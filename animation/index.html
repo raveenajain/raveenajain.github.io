@@ -45,5 +45,71 @@
       </nav>
     </div>
   </body>
-  <div class="anim"></div>
+  <canvas id="canvas1" width="700" height="550">
+  </canvas>
+  <script>
+  var requestAnimationFrame = window.requestAnimationFrame ||
+                              window.mozRequestAnimationFrame ||
+                              window.webkitRequestAnimationFrame ||
+                              window.msRequestAnimationFrame;
+  var canvasElement = $('#canvas1').get(0);
+  var context = canvasElement.getContext("2d");
+  // x: initial x coordinate, y: inital y coordinate, len: initial length
+  // of tree, tilt: initial angle of branch, thick: initial thickness of branch
+  function drawTree(x, y, len, tilt, thick, rate) {
+    context.beginPath();
+    // thickness of branches
+    context.lineWidth = thick;
+    // stores tree built so far
+    context.save();
+    // moves origin to x, y
+    context.translate(x, y);
+    // angle of branch
+    context.rotate(tilt * Math.PI/180);
+    context.moveTo(0, 0);
+    len = rate * len;
+    // length of branch = len
+    context.lineTo(0, -len);
+    // draws line
+    context.strokeStyle = "#34593a"
+    // purple "#67528c";
+    context.stroke();
+    // returns tree based on length of last branch
+    if (len < 20) {
+      context.restore();
+      return;
+    }
+    //left recursion
+    drawTree(0, -len, len * .85, -10, thick * .6, rate);
+    //right recursion
+    drawTree(0, -len, len * .85, 10, thick * .6, rate);
+    context.restore();
+  }
+
+  function anim(rate) {
+    rate = rate || 0;
+    drawTree(400, 570, 100, 0, 10, rate);
+    if(rate < 1) {
+      requestAnimationFrame(function() {
+        anim(rate + 0.05);
+      });
+    }
+  }
+
+  function reset() {
+    context.clearRect(0, 0, canvas1.width, canvas1.height);
+    anim();
+  }
+
+  anim();
+  </script>
+  <div class="description" style="color: #34593a">
+    An animation of a fractal tree <br>
+    created using HTML and Javascript.
+    <br>
+    <center><button type="button" onclick="reset()">
+      Reset </button></center>
+  </div>
+    <canvas id="canvas2" width="700" height="550">
+    </canvas>
 </html>
