@@ -18,6 +18,17 @@
   margin-top: 200px;
 }
 
+.overlay {
+  position: absolute;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 220px;
+  font-style: italic;
+  font-weight: lighter;
+  color:#991313;
+  background-color: #e0e0e0;
+  opacity: 0.5;
+}
+
 /* .anim {
   position: relative;
   animation-name: tree;
