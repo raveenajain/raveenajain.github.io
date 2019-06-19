@@ -1,0 +1,34 @@
+/*navbar text*/
+.my-navbar {
+  background-color: #e0e0e0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+/*about page header*/
+.about-header {
+  text-align: center;
+  color:#991313;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 46px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+/*about page text*/
+.about-text {
+  text.align: center;
+  color:#991313;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+/*Slytherin image formatting*/
+.my-image {
+  width:10px;
+  height:8px;
+}
