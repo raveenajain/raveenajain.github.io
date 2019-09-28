@@ -1,43 +1,124 @@
-/*large name text*/
-.name {
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-red: #991313;
+  --font-cour: "Courier New", Courier, monospace;
+}
+
+body, html {
+  height: 100%;
+}
+
+.text-padding {
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+/* name at top of page */
+#name {
   text-align: center;
-  color:#991313;
-  font-family: "Courier New", Courier, monospace;
-  font-style: italic;;
-  font-size: 120px;
-  font-weight: lighter;
-}
-
-/*large welcome text*/
-.welcome {
-  background-color: #e0e0e0;;
-  animation-name: welcome;
-  font-family: "Courier New", Courier, monospace;
+  color: var(--color-black);
+  font-family: var(--font-cour);
   font-style: italic;
-  font-size: 90px;
-  color:#991313;
+  font-size: 100px;
   font-weight: lighter;
-  position: relative;
-  animation-duration: 6s;
+  padding-top: 10%;
+  padding-bottom: 15%;
 }
 
-@keyframes welcome {
-  0% {left:-500px;}
-  40% {left:450px;}
-  80% {left:0px;}
-}
-
-/*navbar text*/
-.my-navbar {
-  background-color: #e0e0e0;
-  font-family: "Courier New", Courier, monospace;
+/* remaining navigation bar */
+#my-navbar {
+  overflow: hidden;
+  background-color: var(--color-black);
+  font-family: var(--font-cour);
+  font-style: italic;
   font-size: 30px;
+  font-weight: lighter;
+  z-index: 1; /* ordering of objects */
+}
+.navOffset {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* button formatting */
+.button {
+  border: none;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  cursor: pointer;
+}
+.button:link, .button:visited {
+  color: var(--color-white);
+}
+.button:hover, .button:active {
+  background-color: var(--color-red);
+}
+
+/* links in text */
+.text-link {
+  text-decoration: none;
+  color: var(--color-red);
+}
+
+/* for images of logo links */
+.logos {
+  padding-top: 10%;
+  width: 10%;
+  height: 10%;
+}
+
+/* all header text on page */
+.header-text {
+  text-align: center;
+  font-family: var(--font-cour);
   font-style: italic;
+  font-size: 50px;
   font-weight: lighter;
 }
 
-/*image logos*/
-.logos {
-  width:100%;
-  height:100%;
+/* all other text on page */
+.info-text {
+  text-align: center;
+  font-family: var(--font-cour);
+  font-size: 22px;
+  font-weight: lighter;
+  padding-top: 2%;
+}
+
+.left-text {
+  padding-left: 3%;
+  text-align: justify;
+  width: 50%;
+  display: inline-block;
+}
+
+.center-text {
+  padding-left: 8%;
+  padding-right: 8%;
+  text-align: justify;
+  display: inline-block;
+}
+
+#about-img {
+  height: 30%;
+  width: 30%;
+  display: inline-block;
+  padding-left: 9%;
+  padding-bottom: 4%;
+}
+
+/* to allow for scrolling through sections */
+.parallel-scrolling {
+  height: 100%;
+  opacity: 0.6;
+  /* allow scrolling */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
