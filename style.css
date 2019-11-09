@@ -91,26 +91,11 @@ body, html {
   padding-top: 2%;
 }
 
-.left-text {
-  padding-left: 3%;
-  text-align: justify;
-  width: 50%;
-  display: inline-block;
-}
-
 .center-text {
   padding-left: 8%;
   padding-right: 8%;
   text-align: justify;
   display: inline-block;
-}
-
-#about-img {
-  height: 30%;
-  width: 30%;
-  display: inline-block;
-  padding-left: 9%;
-  padding-bottom: 4%;
 }
 
 /* to allow for scrolling through sections */
