@@ -35,6 +35,7 @@ body, html {
   font-size: 30px;
   font-weight: lighter;
   z-index: 1; /* ordering of objects */
+  width: 100%;
 }
 .navOffset {
   position: fixed;
