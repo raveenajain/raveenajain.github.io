@@ -110,37 +110,35 @@ body, html {
   background-size: cover;
 }
 
-/* PORTFOLIO SPECIFIC ONLY */
+/* PORTFOLIO/PROJECT SPECIFIC ONLY */
 
-.imgs-size {
-  width: 50%;
+.thumbnails {
+  text-align: center;
+  position: relative;
+  padding-bottom: 5%;
+}
+
+.img-darken {
   height: 50%;
-}
-
-/* color images over hover*/
-.project-imgs {
-  filter: grayscale();
+  width: 50%;
   -webkit-transition: all .4s ease-in-out;
-}
-.project-imgs:hover {
   filter: none;
 }
-
+.img-darken:hover {
+  filter: grayscale(100%) brightness(60%);
+}
+.img-darken:hover + .subtext {
+  opacity: 1.0;
+}
 .subtext {
-  color: var(--color-black);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-white);
   font-family: var(--font-cour);
   font-style: italic;
-  font-size: 40px;
-  font-weight: lighter;
+  font-size: 500%;
   text-decoration: none;
-}
-.subtext:hover {
-  color: var(--color-red);
-  text-decoration: none;
-}
-
-.section-projs {
-  padding-bottom: 3%;
-  clear: left;
-  width: 50%;
+  opacity: 0.0;
 }
