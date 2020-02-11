@@ -1,8 +1,15 @@
+@font-face {
+    font-family: Avant Garde Gothic;
+    src: url(avantgardegothic.woff) format('woff'),
+         url(avantgardegothic.woff2) format('woff2'),
+         url(avantgardegothic.eot) format('embedded-opentype'),
+         url(avantgardegothic.otf) format('opentype');
+}
 :root {
   --color-white: #ffffff;
   --color-black: #000000;
   --color-red: #991313;
-  --font-cour: "Courier New", Courier, monospace;
+  --font-cour: "Avant Garde Gothic", "Open Sans", Helvetica, sans-serif;
 }
 
 body, html {
