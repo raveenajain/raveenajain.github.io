@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title> Projects </title>
+  </head>
+
+  <!--navigation bar -->
+  <header id="my-navbar">
+    <a class="active button" href="http://raveenajain.github.io/">RSJ</a>
+    <a class="active button" href="mailto:raveena.s.jain@gmail.com" style="float: right">Contact</a>
+    <a class="active button" href="http://raveenajain.github.io/#links" style="float: right">Links</a>
+    <a class="active button" href="http://raveenajain.github.io/portfolio" style="float: right">Portfolio</a>
+    <a class="active button" href="http://raveenajain.github.io/projects" style="float: right">Projects</a>
+    <a class="active button" href="http://raveenajain.github.io/#about" style="float: right">About</a>
+  </header>
+
+  <body>
+    <!-- title of page -->
+    <div class="title">
+      UI Challenges
+      <div class="subtitle">
+        Sourced from <a class="text-link" href="https://www.dailyui.co/">Daily UI</a>
+      </div>
+    </div>
+
+    <center>
+      <div class="thumbnails">
+        <img class="img-darken" src="images/formUI.png" alt="mobile form figma" onclick="openModal('challenge1')">
+          <div class="subtext">Sign Up Page</div>
+      </div>
+      <div class="thumbnails">
+        <img class="img-darken" src="images/cardUI.png" alt="card figma" onclick="openModal('challenge2')">
+          <div class="subtext">Credit Card Checkout</div>
+      </div>
+      <div id="infoModal" onclick="closeModal()">
+        <div id="challenge1">
+          <div class="modal-text">
+            "Create a sign up page, modal, form, or app screen related to signing
+            up for something. It could be for a volunteer event, contest registration,
+            a giveaway, or anything you can image.”
+            <center>
+              <a class="text-link" style="font-size: 65px;"
+              href="https://www.figma.com/proto/WEXl0HqfY1MfI6FgfzZ513/daily-UI?node-id=1%3A2&scaling=scale-down">
+                ⇨
+              </a>
+            </center>
+          </div>
+        </div>
+        <div id="challenge2">
+          <div class="modal-text">
+            "Design a credit card checkout form or page. Don't forget the important
+            elements such as the numbers, dates, security numbers, etc."
+            <center>
+              <a class="text-link" style="font-size: 65px;"
+              href="https://www.figma.com/proto/WEXl0HqfY1MfI6FgfzZ513/daily-UI?node-id=13%3A4&scaling=scale-down">
+                ⇨
+              </a>
+            </center>
+          </div>
+        </div>
+      </div>
+    </center>
+
+    <script>
+      function openModal(challenge) {
+        document.getElementById("infoModal").style.display = "block";
+        document.getElementById(challenge).style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("infoModal").style.display = "none";
+        document.getElementById("challenge1").style.display = "none";
+        document.getElementById("challenge2").style.display = "none";
+      }
+    </script>
+
+  </body>
+
+</html>
+
+<!-- helpful sources: https://www.w3schools.com/howto/howto_css_overlay.asp -->
