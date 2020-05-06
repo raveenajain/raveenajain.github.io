@@ -170,7 +170,7 @@ body, html {
 }
 
 /* white box with details about challenges*/
-#challenge1, #challenge2 {
+#challenge1, #challenge2, #challenge4 {
   position: fixed;
   display: none;
   width: 70%;
