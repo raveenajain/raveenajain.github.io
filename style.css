@@ -227,7 +227,9 @@ body, html {
   background-color: rgba(0, 0, 0, 0.0);
   opacity: 0.0;
   z-index: 2;
+  -webkit-transition: all .4s ease-in-out;
 }
 .grey-img {
+  -webkit-transition: all .4s ease-in-out;
   filter: grayscale(100%) brightness(60%);
 }
