@@ -15,7 +15,7 @@
     <a class="active button" href="http://raveenajain.github.io/#about" style="float: right">About</a>
   </header>
 
-  <body>
+  <body onload="getDimensions()">
     <!-- title of page -->
     <div class="title">
       UI Challenges
@@ -25,17 +25,35 @@
     </div>
 
     <center>
-      <div class="thumbnails">
-        <img class="img-darken" src="images/formUI.png" alt="mobile form figma" onclick="openModal('challenge1')">
-          <div class="subtext">Sign Up Page</div>
+      <div class="row">
+        <div class="column">
+          <div id="ui-subtext" onclick="openModal('challenge1')">Sign Up Page</div>
+          <img id="ui-img" class="img-darken" style="width:100%" src="images/formUI.png" alt="mobile form figma">
+        </div>
+        <div class="column">
+          <div id="ui-subtext" onclick="openModal('challenge2')">Card Checkout</div>
+          <img id="ui-img" class="img-darken" style="width:100%" src="images/cardUI.png" alt="card figma">
+        </div>
       </div>
-      <div class="thumbnails">
-        <img class="img-darken" src="images/cardUI.png" alt="card figma" onclick="openModal('challenge2')">
-          <div class="subtext">Credit Card Checkout</div>
+      <div class="row">
+        <div class="column">
+          <div id="ui-subtext" onclick="openModal('challenge4')">Calculator</div>
+          <img id="ui-img" class="img-darken" style="width:100%" src="images/calcUI.png" alt="calculator figma">
+        </div>
+        <div class="column">
+          <div id="ui-subtext" onclick="openModal('challenge5')">App Icon</div>
+          <img id="ui-img" class="img-darken" style="width:100%" src="images/appIcon.png" alt="app figma">
+        </div>
       </div>
-      <div class="thumbnails">
-        <img class="img-darken" src="images/calcUI.png" alt="calculator figma" onclick="openModal('challenge4')">
-          <div class="subtext">Calculator</div>
+      <div class="row">
+        <div class="column">
+          <div id="ui-subtext" onclick="openModal('challenge9')">Music Player</div>
+          <img id="ui-img" class="img-darken" style="width:100%" src="images/playerUI.png" alt="mobile form figma">
+        </div>
+        <div class="column">
+          <div id="ui-subtext" onclick="openModal('challenge10')">Share Button</div>
+          <img id="ui-img" class="img-darken" style="width:100%" src="images/shareUI.png" alt="card figma">
+        </div>
       </div>
       <div id="infoModal" onclick="closeModal()">
         <div id="challenge1">
@@ -43,56 +61,109 @@
             "Create a sign up page, modal, form, or app screen related to signing
             up for something. It could be for a volunteer event, contest registration,
             a giveaway, or anything you can image.”
-            <center>
+            <br></br>
               <a class="text-link" style="font-size: 65px;"
               href="https://www.figma.com/proto/WEXl0HqfY1MfI6FgfzZ513/daily-UI?node-id=1%3A2&scaling=scale-down">
                 ⇨
               </a>
-            </center>
           </div>
         </div>
         <div id="challenge2">
           <div class="modal-text">
             "Design a credit card checkout form or page. Don't forget the important
             elements such as the numbers, dates, security numbers, etc."
-            <center>
+            <br></br>
               <a class="text-link" style="font-size: 65px;"
               href="https://www.figma.com/proto/WEXl0HqfY1MfI6FgfzZ513/daily-UI?node-id=13%3A4&scaling=scale-down">
                 ⇨
               </a>
-            </center>
           </div>
         </div>
         <div id="challenge4">
           <div class="modal-text">
             "Design a calculator. Standard, scientific, or specialty calculator
             for something such as a mortgage? Is it for a phone, a tablet, a web app?"
-            <center>
+            <br></br>
               <a class="text-link" style="font-size: 65px;"
               href="https://www.figma.com/proto/WEXl0HqfY1MfI6FgfzZ513/daily-UI?node-id=51%3A21&scaling=scale-down">
                 ⇨
               </a>
-            </center>
+          </div>
+        </div>
+        <div id="challenge5">
+          <div class="modal-text">
+            "Design an app icon. What best represents the brand or product? Or
+            is it incredibly unique? Does it look great at a distance and does
+            it stand out when put on your home screen alongside other apps?"
+            <br></br>
+              <a class="text-link" style="font-size: 65px;"
+              href="https://www.figma.com/proto/WEXl0HqfY1MfI6FgfzZ513/daily-UI?node-id=75%3A3&scaling=scale-down">
+                ⇨
+              </a>
+          </div>
+        </div>
+        <div id="challenge9">
+          <div class="modal-text">
+            "Design a music player. Consider the controls, placements, imagery
+            such as the artist or album cover, etc. Also, consider the device
+            type that's playing the music. A dashboard in a tourbus, a smartwatch,
+            or via a web browser. Each deveice type will have different
+            requirements, features, and restrictions to consider."
+            <br></br>
+              <a class="text-link" style="font-size: 65px;"
+              href="https://www.figma.com/proto/WEXl0HqfY1MfI6FgfzZ513/daily-UI?node-id=92%3A18&scaling=scale-down">
+                ⇨
+              </a>
+          </div>
+        </div>
+        <div id="challenge10">
+          <div class="modal-text">
+            "Design a social share button/icon and be mindful of the size,
+            imagery, placement, and purpose for sharing."
+            <br></br>
+              <a class="text-link" style="font-size: 65px;"
+              href="https://www.figma.com/proto/WEXl0HqfY1MfI6FgfzZ513/daily-UI?node-id=117%3A0&scaling=scale-down">
+                ⇨
+              </a>
           </div>
         </div>
       </div>
     </center>
 
     <script>
-      function openModal(challenge) {
-        document.getElementById("infoModal").style.display = "block";
-        document.getElementById(challenge).style.display = "block";
+    function getDimensions() {
+      var h = document.getElementById("ui-img").height;
+      var w = document.getElementById("ui-img").width;
+      var subs = document.querySelectorAll("#ui-subtext");
+      for (var i = 0; i < subs.length; i++) {
+        subs[i].style.height = h + 'px';
+        subs[i].style.width = w + 'px';
+        subs[i].style.lineHeight = h + 'px';
       }
+    }
 
-      function closeModal() {
-        document.getElementById("infoModal").style.display = "none";
-        document.getElementById("challenge1").style.display = "none";
-        document.getElementById("challenge2").style.display = "none";
-      }
+    function openModal(challenge) {
+      document.getElementById("infoModal").style.display = "block";
+      document.getElementById(challenge).style.display = "block";
+      var h = document.getElementById(challenge).getElementsByClassName("modal-text")[0].clientHeight;
+      document.getElementById(challenge).style.height = h + 'px';
+    }
+
+    function closeModal() {
+      document.getElementById("infoModal").style.display = "none";
+      document.getElementById("challenge1").style.display = "none";
+      document.getElementById("challenge2").style.display = "none";
+      document.getElementById("challenge4").style.display = "none";
+      document.getElementById("challenge5").style.display = "none";
+      document.getElementById("challenge9").style.display = "none";
+      document.getElementById("challenge10").style.display = "none";
+
+    }
     </script>
 
   </body>
 
 </html>
 
-<!-- helpful sources: https://www.w3schools.com/howto/howto_css_overlay.asp -->
+<!-- helpful sources: https://www.w3schools.com/howto/howto_css_overlay.asp,
+https://www.w3schools.com/howto/howto_css_images_side_by_side.asp -->
