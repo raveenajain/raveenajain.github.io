@@ -16,7 +16,7 @@
     <a class="active button" href="http://raveenajain.github.io/#about" style="float: right">About</a>
   </header>
 
-  <body>
+  <body onload="checkMobile()">
     <!-- name at top -->
     <div class="title">
       Raveena Jain
@@ -109,7 +109,6 @@
 
 <!-- javascript functions -->
   <script>
-
     window.onscroll = function() { scrollNavbar() };
     var myNavbar = document.getElementById("my-navbar");
     var navOffset = myNavbar.offsetTop;
@@ -121,6 +120,20 @@
         myNavbar.classList.remove("navOffset");
       }
     }
+
+    function checkMobile() {
+      if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
+        || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)
+        || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i)
+        || navigator.userAgent.match(/Windows Phone/i)) {
+          var scrolls = document.querySelectorAll(".parallel-scrolling");
+          for (var i = 0; i < scrolls.length; i++) {
+            scrolls[i].style.backgroundAttachment = 'unset';
+            scrolls[i].style.backgroundRepeat = 'unset';
+            scrolls[i].style.height = '50%';
+          }
+        }
+    }
   </script>
 
 </html>
@@ -128,4 +141,5 @@
 <!-- any clip art and images used for links not my own -->
 
 <!-- helpful sources: https://www.w3schools.com/howto/howto_css_parallax.asp,
-https://www.w3schools.com/howto/howto_js_navbar_sticky.asp -->
+https://www.w3schools.com/howto/howto_js_navbar_sticky.asp,
+https://redstapler.co/detect-mobile-device-with-javascript/ -->
