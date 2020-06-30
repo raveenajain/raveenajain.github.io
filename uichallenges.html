@@ -190,6 +190,16 @@
 
   </body>
 
+  <script>
+
+    function getMinWidth(item) {
+      var drops = document.getElementsByClassName("dropHover");
+      var w = drops[item].clientWidth;
+      document.querySelectorAll(".dropdown")[item].style.minWidth = w + 'px';
+    }
+
+  </script>
+
 </html>
 
 <!-- helpful sources: https://www.w3schools.com/howto/howto_css_overlay.asp,
