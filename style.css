@@ -9,7 +9,10 @@
   --color-red: #991313;
   --color-yellow: #f2de2c;
   --color-grey: #f1f1f1;
+  --color-dark-grey: #cccccc;
   --font-cour: "Avant Garde Gothic", "Open Sans", Helvetica, sans-serif;
+  --nav-pad-small: 8px;
+  --nav-pad-large: 20px;
 }
 
 body, html {
@@ -52,6 +55,43 @@ body, html {
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.dropHover {
+  float: right;
+  border: none;
+  padding: var(--nav-pad-small) var(--nav-pad-large);
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+.dropHover:hover {
+  background-color: var(--color-red);
+}
+.dropHover:hover .dropdown {
+  display: block;
+}
+.dropdown {
+  display: none;
+  position: fixed;
+  background-color: var(--color-grey);
+  margin-left: calc(var(--nav-pad-large) * -1);
+  margin-top: var(--nav-pad-small);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 100;
+  color: black;
+}
+.dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown a:hover {
+  background-color: var(--color-dark-grey);
 }
 
 /* button formatting */
@@ -121,8 +161,7 @@ body, html {
   background-size: cover;
 }
 
-/* PORTFOLIO/PROJECT SPECIFIC ONLY */
-
+/* ARTWORK/PROJECT SPECIFIC ONLY */
 .thumbnails {
   text-align: center;
   position: relative;

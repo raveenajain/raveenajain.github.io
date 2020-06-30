@@ -8,11 +8,27 @@
   <!--navigation bar -->
   <header id="my-navbar">
     <a class="active button" href="http://raveenajain.github.io/">RSJ</a>
-    <a class="active button" href="mailto:raveena.s.jain@gmail.com" style="float: right">Contact</a>
-    <a class="active button" href="http://raveenajain.github.io/#links" style="float: right">Links</a>
-    <a class="active button" href="http://raveenajain.github.io/portfolio" style="float: right">Portfolio</a>
-    <a class="active button" href="http://raveenajain.github.io/projects" style="float: right">Projects</a>
-    <a class="active button" href="http://raveenajain.github.io/#about" style="float: right">About</a>
+    <div class="dropHover" onmouseover="getMinWidth(0)">
+      <div>Contact ▾</div>
+      <div class="dropdown">
+        <a href="mailto:raveena.s.jain@gmail.com">Email</a>
+        <a href="http://raveenajain.github.io/#links">Links</a>
+      </div>
+    </div>
+    <div class="dropHover" onmouseover="getMinWidth(1)">
+      <div>Portfolio ▾</div>
+      <div class="dropdown">
+        <a href="http://raveenajain.github.io/projects">Projects</a>
+        <a href="http://raveenajain.github.io/artwork">Artwork</a>
+      </div>
+    </div>
+    <div class="dropHover" onmouseover="getMinWidth(2)">
+      <div>Me ▾</div>
+      <div class="dropdown">
+        <a href="http://raveenajain.github.io/#about">About</a>
+        <a href="https://drive.google.com/file/d/0BzqWY3LAq76RbEZjekRoX21YbEE/view">Resume</a>
+      </div>
+    </div>
   </header>
 
   <body>

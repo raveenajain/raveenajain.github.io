@@ -9,11 +9,27 @@
   <!--navigation bar -->
   <header id="my-navbar">
     <a class="active button" href="http://raveenajain.github.io/">RSJ</a>
-    <a class="active button" href="mailto:raveena.s.jain@gmail.com" style="float: right">Contact</a>
-    <a class="active button" href="http://raveenajain.github.io/#links" style="float: right">Links</a>
-    <a class="active button" href="http://raveenajain.github.io/portfolio" style="float: right">Portfolio</a>
-    <a class="active button" href="http://raveenajain.github.io/projects" style="float: right">Projects</a>
-    <a class="active button" href="http://raveenajain.github.io/#about" style="float: right">About</a>
+    <div class="dropHover" onmouseover="getMinWidth(0)">
+      <div>Contact ▾</div>
+      <div class="dropdown">
+        <a href="mailto:raveena.s.jain@gmail.com">Email</a>
+        <a href="http://raveenajain.github.io/#links">Links</a>
+      </div>
+    </div>
+    <div class="dropHover" onmouseover="getMinWidth(1)">
+      <div>Portfolio ▾</div>
+      <div class="dropdown">
+        <a href="http://raveenajain.github.io/projects">Projects</a>
+        <a href="http://raveenajain.github.io/artwork">Artwork</a>
+      </div>
+    </div>
+    <div class="dropHover" onmouseover="getMinWidth(2)">
+      <div>Me ▾</div>
+      <div class="dropdown">
+        <a href="http://raveenajain.github.io/#about">About</a>
+        <a href="https://drive.google.com/file/d/0BzqWY3LAq76RbEZjekRoX21YbEE/view">Resume</a>
+      </div>
+    </div>
   </header>
 
   <body onload="checkMobile()">
@@ -41,7 +57,7 @@
         types of technology such as mobile and VR. My goal is to eventually transition
         to a career that offers a challenge but also allows me to be inventive and creative.
         <br> </br>
-        You can find my resume <a class="text-link" href="https://drive.google.com/file/d/0BzqWY3LAq76RbEZjekRoX21YbEE/view">here</a>,
+        You can find my resume <i><a class="text-link" href="https://drive.google.com/file/d/0BzqWY3LAq76RbEZjekRoX21YbEE/view">here</a></i>,
         but feel free to keep scrolling to find out a little more about me!
       </div>
     </div>
@@ -132,7 +148,13 @@
             scrolls[i].style.backgroundRepeat = 'unset';
             scrolls[i].style.height = '50%';
           }
-        }
+      }
+    }
+
+    function getMinWidth(item) {
+      var drops = document.getElementsByClassName("dropHover");
+      var w = drops[item].clientWidth;
+      document.querySelectorAll(".dropdown")[item].style.minWidth = w + 'px';
     }
   </script>
 
@@ -142,4 +164,5 @@
 
 <!-- helpful sources: https://www.w3schools.com/howto/howto_css_parallax.asp,
 https://www.w3schools.com/howto/howto_js_navbar_sticky.asp,
-https://redstapler.co/detect-mobile-device-with-javascript/ -->
+https://redstapler.co/detect-mobile-device-with-javascript/,
+https://www.w3schools.com/css/css_dropdowns.asp -->
