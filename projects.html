@@ -38,40 +38,53 @@
     </div>
 
     <center>
-      <a href="http://raveenajain.github.io/uichallenges">
         <div class="thumbnails">
-          <img class="img-darken" src="images/UIchallenge.png" alt="UIexample">
-          <div class="subtext">UI Challenges</div>
+          <a href="http://raveenajain.github.io/uichallenges"
+            onmouseover="greyscale(0)" onmouseout="removeGrey(0)">
+            <div class="subtext portfolio-subtext">UI Challenges</div>
+            <img class="portfolio-img" src="images/UIchallenge.png" alt="UIexample">
+          </a>
         </div>
-      </a>
-      <a href="https://github.com/raveenajain/BeeWell">
         <div class="thumbnails">
-          <img class="img-darken" src="images/uwu.png" alt="beewellHome">
-          <div class="subtext">BeeWell</div>
+          <a href="https://github.com/raveenajain/BeeWell"
+            onmouseover="greyscale(1)" onmouseout="removeGrey(1)">
+            <div class="subtext portfolio-subtext">BeeWell</div>
+            <img class="portfolio-img" src="images/uwu.png" alt="beewellHome">
+          </a>
         </div>
-      </a>
-      <a href="https://rsj-art.tumblr.com/post/188656714376/redesigning-my-personal-website-part-1">
         <div class="thumbnails">
-          <img class="img-darken" src="images/oldMain.png" alt="website">
-          <div class="subtext">Personal Website</div>
+          <a href="https://rsj-art.tumblr.com/post/188656714376/redesigning-my-personal-website-part-1"
+            onmouseover="greyscale(2)" onmouseout="removeGrey(2)">
+            <div class="subtext portfolio-subtext">Personal Website</div>
+            <img class="portfolio-img" src="images/oldMain.png" alt="website">
+          </a>
         </div>
-      </a>
-      <a href="https://github.com/raveenajain/Infinite-Terrain">
         <div class="thumbnails">
-          <img class="img-darken" src="images/terrain.png" alt="terrain">
-          <div class="subtext">Infinite Terrain</div>
+          <a href="https://github.com/raveenajain/Infinite-Terrain"
+            onmouseover="greyscale(3)" onmouseout="removeGrey(3)">
+            <div class="subtext portfolio-subtext">Infinite Terrain</div>
+            <img class="portfolio-img" src="images/terrain.png" alt="terrain">
+          </a>
         </div>
-      </a>
     </center>
 
   </body>
 
   <script>
-
     function getMinWidth(item) {
       var drops = document.getElementsByClassName("dropHover");
       var w = drops[item].clientWidth;
       document.querySelectorAll(".dropdown")[item].style.minWidth = w + 'px';
+    }
+
+    function greyscale(index) {
+      document.querySelectorAll(".portfolio-img")[index].classList.add("img-darken");
+      document.querySelectorAll(".portfolio-subtext")[index].style.opacity = "1.0";
+    }
+
+    function removeGrey(index) {
+      document.querySelectorAll(".portfolio-img")[index].classList.remove("img-darken");
+      document.querySelectorAll(".portfolio-subtext")[index].style.opacity = "0.0";
     }
 
   </script>
