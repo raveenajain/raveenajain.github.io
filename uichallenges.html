@@ -84,6 +84,18 @@
           <img id="ui-img" style="width:100%" src="images/ecomUI.png" alt="ecom figma">
         </div>
       </div>
+      <div class="row">
+        <div class="column">
+          <div class="subtext ui-subtext" onclick="openModal('challenge13')"
+            onmouseover="greyscale(8)" onmouseout="removeGrey(8)">Messaging</div>
+          <img id="ui-img" style="width:100%" src="images/chatUI.png" alt="chat figma">
+        </div>
+        <div class="column">
+          <div class="subtext ui-subtext" onclick="openModal('challenge14')"
+            onmouseover="greyscale(9)" onmouseout="removeGrey(9)">Countdown</div>
+          <img id="ui-img" style="width:100%" src="images/countdownUI.png" alt="countdown figma">
+        </div>
+      </div>
       <div id="infoModal" onclick="closeModal()">
         <div id="challenge1">
           <div class="modal-text">
@@ -180,6 +192,29 @@
               </a>
           </div>
         </div>
+        <div id="challenge13">
+          <div class="modal-text">
+            "Design a Direct Messaging app, profile, or chatbox. Consider the
+            parties involved in the messages, images, placement, and context of
+            the messages. Are the messages for social purposes? Customer support?"
+            <br></br>
+              <a class="text-link" style="font-size: 65px;"
+              href="https://www.figma.com/proto/WEXl0HqfY1MfI6FgfzZ513/daily-UI?node-id=234%3A5&scaling=scale-down">
+                ⇨
+              </a>
+          </div>
+        </div>
+        <div id="challenge14">
+          <div class="modal-text">
+            "Design a Countdown Timer. Is it for an app? An interface for an oven?
+            A sport related countdown? A launch countdown for NASA? "
+            <br></br>
+              <a class="text-link" style="font-size: 65px;"
+              href="https://www.figma.com/proto/WEXl0HqfY1MfI6FgfzZ513/daily-UI?node-id=249%3A2&scaling=scale-down">
+                ⇨
+              </a>
+          </div>
+        </div>
       </div>
     </center>
 
@@ -209,7 +244,11 @@
       document.getElementById("challenge4").style.display = "none";
       document.getElementById("challenge5").style.display = "none";
       document.getElementById("challenge9").style.display = "none";
-      document.getElementById("challenge10").style.display = "none"
+      document.getElementById("challenge10").style.display = "none";
+      document.getElementById("challenge11").style.display = "none";
+      document.getElementById("challenge12").style.display = "none";
+      document.getElementById("challenge13").style.display = "none";
+      document.getElementById("challenge14").style.display = "none";
     }
 
     function greyscale(index) {
@@ -221,11 +260,6 @@
       document.querySelectorAll("#ui-img")[index].classList.remove("img-darken");
       document.querySelectorAll(".ui-subtext")[index].style.opacity = "0.0";
     }
-    </script>
-
-  </body>
-
-  <script>
 
     function getMinWidth(item) {
       var drops = document.getElementsByClassName("dropHover");
@@ -233,7 +267,9 @@
       document.querySelectorAll(".dropdown")[item].style.minWidth = w + 'px';
     }
 
-  </script>
+    </script>
+
+  </body>
 
 </html>
 
