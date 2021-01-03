@@ -42,7 +42,6 @@ body, html {
 
 /* remaining navigation bar */
 #my-navbar {
-  overflow: hidden;
   background-color: black;
   font-family: var(--font-cour);
   font-size: 30px;
