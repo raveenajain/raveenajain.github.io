@@ -20,7 +20,7 @@
       <div>Me &#9662;</div>
       <div class="dropdown">
         <a href="http://raveenajain.github.io/#about">About</a>
-        <a href="https://drive.google.com/file/d/1zNv-ryLjnoeG1-fzM5gs1_KkYBBvaLxX/view">Resume</a>
+        <a href="https://drive.google.com/file/d/0BzqWY3LAq76RbEZjekRoX21YbEE/view">Resume</a>
         <a href="http://raveenajain.github.io/#links">Socials</a>
       </div>
     </div>
@@ -104,6 +104,20 @@
             onmouseover="greyscale(9)" onmouseout="removeGrey(9)">Countdown</div>
           <img id="ui-img" style="width:100%" src="images/countdownUI.png"
             alt="figma draft - gradient blue to red cropped countdown timer for the 2020 presidential election (at 92 days)">
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="subtext ui-subtext" onclick="openModal('challenge16')"
+            onmouseover="greyscale(10)" onmouseout="removeGrey(10)">Pop Up</div>
+          <img id="ui-img" style="width:100%" src="images/popupUI.png"
+            alt="figma draft - white backgroud with light grey tattoo designs with text saying Get Notified About Our Next Flash Event with the option to enter an email to sign up">
+        </div>
+        <div class="column">
+          <div class="subtext ui-subtext" onclick="openModal('challenge18')"
+            onmouseover="greyscale(11)" onmouseout="removeGrey(11)">Analytics</div>
+          <img id="ui-img" style="width:100%" src="images/analyticsUI.png"
+            alt="figma draft - on the left is a white backgroud with a dark purple header and two circle charts and on the right is a smaller box that acts as a calender for Jan 2021">
         </div>
       </div>
       <div id="infoModal" onclick="closeModal()">
@@ -217,10 +231,32 @@
         <div id="challenge14">
           <div class="modal-text">
             "Design a Countdown Timer. Is it for an app? An interface for an oven?
-            A sport related countdown? A launch countdown for NASA? "
+            A sport related countdown? A launch countdown for NASA?"
             <br></br>
               <a class="text-link" style="font-size: 65px;"
               href="https://www.figma.com/proto/WEXl0HqfY1MfI6FgfzZ513/daily-UI?node-id=249%3A2&scaling=scale-down">
+                &#8680;
+              </a>
+          </div>
+        </div>
+        <div id="challenge16">
+          <div class="modal-text">
+            "Design a Pop-Up/Overlay. Is it a web sign-up form that pops up? Is it an ad overlay?"
+            <br></br>
+              <a class="text-link" style="font-size: 65px;"
+              href="https://www.figma.com/proto/WEXl0HqfY1MfI6FgfzZ513/daily-UI?node-id=291%3A0&scaling=scale-down">
+                &#8680;
+              </a>
+          </div>
+        </div>
+        <div id="challenge18">
+          <div class="modal-text">
+            "Design an analytics chart. Is it to be used for web or app analytics,
+            a health monitor, e-commerce analytics? Consider filters, chart types,
+            and the core features/statistics the user would need most."
+            <br></br>
+              <a class="text-link" style="font-size: 65px;"
+              href="https://www.figma.com/proto/WEXl0HqfY1MfI6FgfzZ513/daily-UI?node-id=364%3A0&scaling=scale-down">
                 &#8680;
               </a>
           </div>
@@ -259,6 +295,8 @@
       document.getElementById("challenge12").style.display = "none";
       document.getElementById("challenge13").style.display = "none";
       document.getElementById("challenge14").style.display = "none";
+      document.getElementById("challenge16").style.display = "none";
+      document.getElementById("challenge18").style.display = "none";
     }
 
     function greyscale(index) {
