@@ -130,7 +130,7 @@
     }
 
     function checkMobile() {
-      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      if (/Android|webOS|iPadOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
           var scrolls = document.querySelectorAll(".parallel-scrolling");
           for (var i = 0; i < scrolls.length; i++) {
             scrolls[i].style.backgroundAttachment = 'unset';
