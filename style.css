@@ -223,7 +223,7 @@ body, html {
 /* white box with details about challenges*/
 #challenge1, #challenge2, #challenge4, #challenge5, #challenge9, #challenge10,
 #challenge11, #challenge12, #challenge13, #challenge14, #challenge16, #challenge18,
-#challenge20 {
+#challenge20, #challenge22 {
   position: fixed;
   display: none;
   width: 70%;
