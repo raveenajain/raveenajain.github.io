@@ -134,6 +134,14 @@
             alt="figma draft - four mobile screens (light and dark versions) of food search app with pizza results">
         </div>
       </div>
+      <div class="row">
+        <div class="column">
+          <div class="subtext ui-subtext" onclick="openModal('challenge19')"
+            onmouseover="greyscale(14)" onmouseout="removeGrey(14)">Leaderboard</div>
+          <img id="ui-img" style="width:100%" src="images/dailyui/leaderUI.png"
+            alt="figma draft - 4 screens with the same stardew valley backgrounds, 4 themed (brown/wooden) rectangles to house the leaderboard rankings, names, avatar icons, % completions">
+        </div>
+      </div>
       <div id="infoModal" onclick="closeModal()">
         <div id="challenge1">
           <div class="modal-text">
@@ -297,6 +305,18 @@
               </a>
           </div>
         </div>
+        <div id="challenge19">
+          <div class="modal-text">
+            "Design a leaderboard. Is it for gaming, sports, politics, or something
+            else? Consider the important statistics to show, percentages, points,
+            profile pictures, etc."
+            <br></br>
+              <a class="text-link" style="font-size: 65px;"
+              href="https://www.figma.com/proto/WEXl0HqfY1MfI6FgfzZ513/daily-UI?node-id=976%3A118&scaling=scale-down&page-id=435%3A3&starting-point-node-id=976%3A118">
+                &#8680;
+              </a>
+          </div>
+        </div>
       </div>
     </center>
 
@@ -335,6 +355,7 @@
       document.getElementById("challenge18").style.display = "none";
       document.getElementById("challenge20").style.display = "none";
       document.getElementById("challenge22").style.display = "none";
+      document.getElementById("challenge19").style.display = "none";
     }
 
     function greyscale(index) {
