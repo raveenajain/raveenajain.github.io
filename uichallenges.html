@@ -148,6 +148,14 @@
             alt="figma draft - boarding pass with reference images to the left of it">
         </div>
       </div>
+      <div class="row">
+        <div class="column">
+          <div class="subtext ui-subtext" onclick="openModal('challenge26')"
+            onmouseover="greyscale(16)" onmouseout="removeGrey(14)">Subscribe</div>
+          <img id="ui-img" style="width:100%" src="images/dailyui/subscribeUI.png"
+            alt="figma draft - purple and pink 3D themed pop up asking you to subscribe and enter your e-mail address">
+        </div>
+      </div>
       <div id="infoModal" onclick="closeModal()">
         <div id="challenge1">
           <div class="modal-text">
@@ -334,6 +342,18 @@
               </a>
           </div>
         </div>
+        <div id="challenge26">
+          <div class="modal-text">
+            "Design a subscribe form, button, widget, etc. What type of
+            information are you looking to capture from the user? Their name and
+            email? Their zip code? Something else?"
+            <br></br>
+              <a class="text-link" style="font-size: 65px;"
+              href="https://www.figma.com/proto/WEXl0HqfY1MfI6FgfzZ513/daily-UI?node-id=1231%3A10&scaling=min-zoom&page-id=1228%3A4">
+                &#8680;
+              </a>
+          </div>
+        </div>
       </div>
     </center>
 
@@ -374,6 +394,7 @@
       document.getElementById("challenge22").style.display = "none";
       document.getElementById("challenge19").style.display = "none";
       document.getElementById("challenge24").style.display = "none";
+      document.getElementById("challenge26").style.display = "none";
     }
 
     function greyscale(index) {
