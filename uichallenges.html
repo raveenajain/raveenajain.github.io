@@ -155,6 +155,12 @@
           <img id="ui-img" style="width:100%" src="images/dailyui/subscribeUI.png"
             alt="figma draft - purple and pink 3D themed pop up asking you to subscribe and enter your e-mail address">
         </div>
+        <div class="column">
+          <div class="subtext ui-subtext" onclick="openModal('challenge27')"
+            onmouseover="greyscale(17)" onmouseout="removeGrey(17)">Dropdown</div>
+          <img id="ui-img" style="width:100%" src="images/dailyui/dropdownUI.png"
+            alt="figma draft - dark greyish purple color palette and text on left and 4 columns with the different dropdown options on right">
+        </div>
       </div>
       <div id="infoModal" onclick="closeModal()">
         <div id="challenge1">
@@ -354,6 +360,17 @@
               </a>
           </div>
         </div>
+        <div id="challenge27">
+          <div class="modal-text">
+            "Design a dropdown element. Is it a menu dropdown? Or a tip that's
+            dropped down during a tutorial?"
+            <br></br>
+              <a class="text-link" style="font-size: 65px;"
+              href="https://www.figma.com/proto/WEXl0HqfY1MfI6FgfzZ513/daily-UI?node-id=1340%3A6&scaling=min-zoom&page-id=1340%3A3&starting-point-node-id=1340%3A6">
+                &#8680;
+              </a>
+          </div>
+        </div>
       </div>
     </center>
 
@@ -395,6 +412,7 @@
       document.getElementById("challenge19").style.display = "none";
       document.getElementById("challenge24").style.display = "none";
       document.getElementById("challenge26").style.display = "none";
+      document.getElementById("challenge27").style.display = "none";
     }
 
     function greyscale(index) {
