@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Avant+Garde+Gothic" rel="stylesheet">
+    <title> RSJ </title>
+  </head>
+
+  <!--navigation bar -->
+  <header id="my-navbar">
+    <a class="active button" href="http://raveenajain.github.io/">RSJ</a>
+    <a class="active button" style="float: right" href="mailto:raveena.s.jain@gmail.com">Contact</a>
+    <div class="dropHover" onmouseover="getMinWidth(0)">
+      <div>Portfolio &#9662;</div>
+      <div class="dropdown">
+        <a href="http://raveenajain.github.io/projects">Projects</a>
+        <a href="http://raveenajain.github.io/artwork">Artwork</a>
+      </div>
+    </div>
+    <div class="dropHover" onmouseover="getMinWidth(1)">
+      <div>Me &#9662;</div>
+      <div class="dropdown">
+        <a href="http://raveenajain.github.io/#about">About</a>
+        <a href="http://raveenajain.github.io/resume">Resume</a>
+        <a href="http://raveenajain.github.io/#links">Socials</a>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <!-- pdf -->
+    <center>
+      <div>
+        <iframe src="images/RaveenaJainCV.pdf" width="100%"></iframe>
+      </div>
+
+      <div class="altSrc">
+        If you are unable to view this pdf, please click
+        <i><a class="text-link"
+          href="https://drive.google.com/file/d/1WAX29NpWhRy7OL3G32eL5Kv9Q-ALF6Iy/view?usp=sharing">here</a></i>.
+      </div>
+
+    </center>
+  </body>
+
+  <script>
+    function getMinWidth(item) {
+      var drops = document.getElementsByClassName("dropHover");
+      var w = drops[item].clientWidth;
+      document.querySelectorAll(".dropdown")[item].style.minWidth = w + 'px';
+    }
+
+    window.onload = function() {
+      var h = document.body.clientHeight;
+      document.querySelectorAll("iframe")[0].style.height = h + 'px';
+    }
+
+  </script>
+
+</html>
