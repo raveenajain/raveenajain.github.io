@@ -53,6 +53,7 @@ body, html {
   font-weight: lighter;
   z-index: 1; /* ordering of objects */
   width: 100%;
+  position: fixed;
 }
 .navOffset {
   position: fixed;
