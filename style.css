@@ -30,7 +30,7 @@ body, html {
 }
 
 /* title text at top of pages */
-.main-title {
+.title {
   text-align: center;
   color: black;
   font-family: var(--font-cour);
@@ -170,52 +170,39 @@ body, html {
   background-size: cover;
 }
 
-/* ARTWORK/PROJECT SPECIFIC ONLY */
-.img-list {
-  white-space: nowrap;
-  overflow-x: hidden;
-  cursor: pointer;
+/* hovering over images */
+.img-darken {
+  -webkit-transition: all .4s ease-in-out;
+  filter: grayscale(100%) brightness(60%);
 }
 
-#zero {
-  margin-left: -7.75%;
-  filter: grayscale(75%);
-  width: 30%;
-  margin-bottom: 5%;
-}
-#one {
-  width: 45%;
-}
-#two {
-  filter: grayscale(75%);
-  width: 30%;
-  margin-bottom: 5%;
-}
-
-.portfolio-img {
-  margin-right: 5%;
-}
-
-.title {
-  text-align: center;
-  color: black;
-  font-family: var(--font-cour);
-  font-size: 100px;
-  font-weight: lighter;
-  padding-top: 5.5%;
-  padding-bottom: 2.5%;
-  position: relative;
-}
-
-#subtext {
-  color: black;
+.subtext {
+  position: absolute;
+  color: white;
   font-family: var(--font-cour);
   font-style: italic;
   text-decoration: none;
-  font-size: 4vw;
-  margin-top: -2%;
+  opacity: 0.0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* ARTWORK/PROJECT SPECIFIC ONLY */
+.thumbnails {
+  text-align: center;
   position: relative;
-  background-color: white;
+  padding-bottom: 5%;
+}
+
+.portfolio-img {
+  height: 50%;
+  width: 50%;
+}
+.portfolio-subtext {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 500%;
 }
 
 /* UI CHALLENGE SPECIFIC ONLY */
@@ -285,19 +272,6 @@ body, html {
 .ui-subtext {
   text-align: center;
   font-size: 350%;
-  position: absolute;
-  color: white;
-  font-family: var(--font-cour);
-  font-style: italic;
-  text-decoration: none;
-  opacity: 0.0;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.img-darken {
-  -webkit-transition: all .4s ease-in-out;
-  filter: grayscale(100%) brightness(60%);
 }
 
 /* resume */
