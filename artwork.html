@@ -28,46 +28,73 @@
 
   <body>
     <!-- title of page -->
-    <div class="title">
+    <div class="page-titles">
       ARTWORK
     </div>
 
-    <center>
-      <div class="thumbnails">
-        <a href="https://rsj-art.tumblr.com/tagged/photography" target=”_blank”
-          onmouseover="greyscale(0)" onmouseout="removeGrey(0)">
-          <img class="portfolio-img" src="images/photography.png"
-            alt="cropped brick house in london with white windows, some foliage, and a red door">
-          <div class="subtext portfolio-subtext">Photography</div>
-        </a>
-      </div>
-      <div class="thumbnails">
-        <a href="https://rsj-art.tumblr.com/tagged/portrait" target=”_blank”
-          onmouseover="greyscale(1)" onmouseout="removeGrey(1)">
-          <img class="portfolio-img" src="images/vectors.png"
-            alt="vectorized portrait of aziraphale and crowley from good omens">
-          <div class="subtext portfolio-subtext">Portraits</div>
-        </a>
-      </div>
-      <a href="https://rsj-art.tumblr.com/tagged/coursework" target=”_blank”
-        onmouseover="greyscale(2)" onmouseout="removeGrey(2)">
-        <div class="thumbnails">
-          <img class="portfolio-img" src="images/coursework.png"
-            alt="photoshop drawing of a girl in a purple leotard and point shoes leaning foward with long black hair covering her face">
-          <div class="subtext portfolio-subtext">Coursework</div>
-        </a>
+    <div id="desktop">
+      <center>
+        <div class="img-list">
+          <img class="portfolio-rotate" id="zero" onclick="swapImg(0)">
+          <img class="portfolio-rotate" id="one" onclick="swapImg(1)">
+          <img class="portfolio-rotate" id="two" onclick="swapImg(2)">
+        <div id="inner-text"></div>
       </div>
     </center>
+    </div>
+
+    <div id="mobile">
+      <center>
+        <div class="thumbnails">
+          <a href="https://rsj-art.tumblr.com/tagged/photography" target=”_blank”
+            onmouseover="greyscale(0)" onmouseout="removeGrey(0)">
+            <img class="portfolio-img" src="images/photography.png"
+              alt="cropped brick house in london with white windows, some foliage, and a red door">
+            <div class="subtext portfolio-subtext">Photography</div>
+          </a>
+        </div>
+        <div class="thumbnails">
+          <a href="https://rsj-art.tumblr.com/tagged/portrait" target=”_blank”
+            onmouseover="greyscale(1)" onmouseout="removeGrey(1)">
+            <img class="portfolio-img" src="images/vectors.png"
+              alt="vectorized portrait of aziraphale and crowley from good omens">
+            <div class="subtext portfolio-subtext">Portraits</div>
+          </a>
+        </div>
+        <a href="https://rsj-art.tumblr.com/tagged/coursework" target=”_blank”
+          onmouseover="greyscale(2)" onmouseout="removeGrey(2)">
+          <div class="thumbnails">
+            <img class="portfolio-img" src="images/coursework.png"
+              alt="photoshop drawing of a girl in a purple leotard and point shoes leaning foward with long black hair covering her face">
+            <div class="subtext portfolio-subtext">Coursework</div>
+          </a>
+        </div>
+      </center>
+    </div>
 
   </body>
 
   <script>
+    //document.onload = function() {
+
+      // if (/Android|webOS|iPadOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      //   document.getElementById("mobile").display = "block";
+      //   document.getElementById("desktop").display = "none";
+
+      // } else {
+      //   document.getElementById("mobile").display = "none";
+      //   document.getElementById("desktop").display = "block";
+      //   console.log("also");
+      // }
+    //}
+
     function getMinWidth(item) {
       var drops = document.getElementsByClassName("dropHover");
       var w = drops[item].clientWidth;
       document.querySelectorAll(".dropdown")[item].style.minWidth = w + 'px';
     }
 
+    // mobile
     function greyscale(index) {
       document.querySelectorAll(".portfolio-img")[index].classList.add("img-darken");
       document.querySelectorAll(".portfolio-subtext")[index].style.opacity = "1.0";
@@ -76,6 +103,70 @@
     function removeGrey(index) {
       document.querySelectorAll(".portfolio-img")[index].classList.remove("img-darken");
       document.querySelectorAll(".portfolio-subtext")[index].style.opacity = "0.0";
+    }
+
+    // desktop
+    var arryImg = ["images/vectors.png", "images/photography.png", "images/coursework.png"];
+    var arryText = ["PORTRAITS", "PHOTOGRAPHY", "COURSEWORK"];
+    // images in order
+    window.onload = function() {
+      if (/Android|webOS|iPadOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        document.getElementById("mobile").style.display = "block";
+        document.getElementById("desktop").style.display = "none";
+      } else {
+        document.getElementById("mobile").style.display = "none";
+        document.getElementById("desktop").style.display = "block";
+      }
+      document.getElementById("zero").src = arryImg[0];
+      document.getElementById("one").src = arryImg[1];
+      document.getElementById("two").src = arryImg[2];
+      document.getElementById("inner-text").innerHTML = arryText[1];
+
+      // image text background
+      document.getElementById("inner-text").style.width =
+      document.getElementById("inner-text").innerHTML.length * 3.25 + 'vw';
+    }
+
+    function swapImg(index) {
+      var a0 = arryImg[0];
+      var a1 = arryImg[1];
+      var a2 = arryImg[2];
+      var at0 = arryText[0];
+      var at1 = arryText[1];
+      var at2 = arryText[2];
+      var o = document.getElementById("one").src;
+      if (index == 1) {
+        if (o.includes("vectors")) {
+          window.open("https://rsj-art.tumblr.com/tagged/portrait", "_blank");
+        } else if (o.includes("photography")) {
+          window.open("https://rsj-art.tumblr.com/tagged/photography", "_blank");
+        } else if (o.includes("coursework")) {
+          window.open("https://rsj-art.tumblr.com/tagged/coursework", "_blank");
+        }
+      } else if (index == 0) {
+        document.getElementById("two").src = arryImg[1];
+        document.getElementById("zero").src = arryImg[2];
+        document.getElementById("one").src = arryImg[0];
+        arryImg[0] = a2;
+        arryImg[1] = a0;
+        arryImg[2] = a1;
+        arryText[0] = at2;
+        arryText[1] = at0;
+        arryText[2] = at1;
+      } else if (index == 2) {
+        document.getElementById("two").src = arryImg[0];
+        document.getElementById("zero").src = arryImg[1];
+        document.getElementById("one").src = arryImg[2];
+        arryImg[0] = a1;
+        arryImg[1] = a2;
+        arryImg[2] = a0;
+        arryText[0] = at1;
+        arryText[1] = at2;
+        arryText[2] = at0;
+      }
+      document.getElementById("inner-text").innerHTML = arryText[1];
+      document.getElementById("inner-text").style.width =
+      document.getElementById("inner-text").innerHTML.length * 3.25 + 'vw';
     }
 
   </script>

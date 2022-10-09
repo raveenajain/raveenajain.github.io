@@ -188,6 +188,17 @@ body, html {
 }
 
 /* ARTWORK/PROJECT SPECIFIC ONLY */
+.page-titles {
+  text-align: center;
+  color: black;
+  font-family: var(--font-cour);
+  font-size: 100px;
+  font-weight: lighter;
+  padding-top: 7%;
+  padding-bottom: 3%;
+  position: relative;
+}
+
 .thumbnails {
   text-align: center;
   position: relative;
@@ -203,6 +214,42 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 500%;
+}
+
+.img-list {
+  white-space: nowrap;
+  overflow-x: hidden;
+  cursor: pointer;
+}
+
+#zero {
+  margin-left: -7.75%;
+  filter: grayscale(75%);
+  width: 30%;
+  margin-bottom: 5%;
+}
+#one {
+  width: 45%;
+}
+#two {
+  filter: grayscale(75%);
+  width: 30%;
+  margin-bottom: 5%;
+}
+
+.portfolio-rotate {
+  margin-right: 5%;
+}
+
+#inner-text {
+  color: black;
+  font-family: var(--font-cour);
+  font-style: italic;
+  text-decoration: none;
+  font-size: 4vw;
+  margin-top: -2%;
+  position: relative;
+  background-color: white;
 }
 
 /* UI CHALLENGE SPECIFIC ONLY */
