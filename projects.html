@@ -28,11 +28,23 @@
 
   <body>
     <!-- title of page -->
-    <div class="title">
+    <div class="page-titles">
       PROJECTS
     </div>
 
-    <center>
+    <div id="desktop">
+      <center>
+        <div class="img-list">
+          <img class="portfolio-rotate" id="zero" onclick="swapImg(0)">
+          <img class="portfolio-rotate" id="one" onclick="swapImg(1)">
+          <img class="portfolio-rotate" id="two" onclick="swapImg(2)">
+          <div id="inner-text"></div>
+        </div>
+      </center>
+    </div>
+
+    <div id="mobile">
+      <center>
         <div class="thumbnails">
           <a href="http://raveenajain.github.io/uichallenges"
             onmouseover="greyscale(0)" onmouseout="removeGrey(0)">
@@ -66,6 +78,7 @@
           </a>
         </div>
     </center>
+  </div>
 
   </body>
 
@@ -76,6 +89,7 @@
       document.querySelectorAll(".dropdown")[item].style.minWidth = w + 'px';
     }
 
+    // for mobile
     function greyscale(index) {
       document.querySelectorAll(".portfolio-img")[index].classList.add("img-darken");
       document.querySelectorAll(".portfolio-subtext")[index].style.opacity = "1.0";
@@ -84,6 +98,78 @@
     function removeGrey(index) {
       document.querySelectorAll(".portfolio-img")[index].classList.remove("img-darken");
       document.querySelectorAll(".portfolio-subtext")[index].style.opacity = "0.0";
+    }
+
+    // for desktop
+    var arryImg = ["images/oldMain.png", "images/UIchallenge.png", "images/todo.png", "images/uwu.png"];
+    var arryText = ["PERSONAL WEBSITE", "UI CHALLENGES", "REACT TO DO APP", "BEEWELL"];
+    // images in order
+    window.onload = function() {
+      if (/Android|webOS|iPadOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        document.getElementById("mobile").style.display = "block";
+        document.getElementById("desktop").style.display = "none";
+      } else {
+        document.getElementById("mobile").style.display = "none";
+        document.getElementById("desktop").style.display = "block";
+      }
+      document.getElementById("zero").src = arryImg[0];
+      document.getElementById("one").src = arryImg[1];
+      document.getElementById("two").src = arryImg[2];
+      document.getElementById("inner-text").innerHTML = arryText[1];
+
+      // image text background
+      document.getElementById("inner-text").style.width =
+      document.getElementById("inner-text").innerHTML.length * 2.75 + 'vw';
+    }
+
+    function swapImg(index) {
+      var a0 = arryImg[0];
+      var a1 = arryImg[1];
+      var a2 = arryImg[2];
+      var a3 = arryImg[3];
+      var at0 = arryText[0];
+      var at1 = arryText[1];
+      var at2 = arryText[2];
+      var at3 = arryText[3];
+      var o = document.getElementById("one").src;
+      if (index == 1) {
+        if (o.includes("challenge")) {
+          window.open("http://raveenajain.github.io/uichallenges", "_blank");
+        } else if (o.includes("todo")) {
+          window.open("https://github.com/raveenajain/todoapp", "_blank");
+        } else if (o.includes("uwu")) {
+          window.open("https://github.com/raveenajain/BeeWell", "_blank");
+        } else if (o.includes("oldMain")) {
+          window.open("https://rsj-art.tumblr.com/post/188656714376/redesigning-my-personal-website-part-1", "_blank");
+        }
+      } else if (index == 0) {
+        document.getElementById("two").src = arryImg[1];
+        document.getElementById("zero").src = arryImg[3];
+        document.getElementById("one").src = arryImg[0];
+        arryImg[0] = a3;
+        arryImg[1] = a0;
+        arryImg[2] = a1;
+        arryImg[3] = a2;
+        arryText[0] = at3;
+        arryText[1] = at0;
+        arryText[2] = at1;
+        arryText[3] = at2;
+      } else if (index == 2) {
+        document.getElementById("two").src = arryImg[3];
+        document.getElementById("zero").src = arryImg[1];
+        document.getElementById("one").src = arryImg[2];
+        arryImg[0] = a1;
+        arryImg[1] = a2;
+        arryImg[2] = a3;
+        arryImg[3] = a0;
+        arryText[0] = at1;
+        arryText[1] = at2;
+        arryText[2] = at3;
+        arryText[3] = at0;
+      }
+      document.getElementById("inner-text").innerHTML = arryText[1];
+      document.getElementById("inner-text").style.width =
+      document.getElementById("inner-text").innerHTML.length * 2.75 + 'vw';
     }
 
   </script>
