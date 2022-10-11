@@ -43,6 +43,8 @@ body, html {
 .sub-title {
   font-size: 40px;
   font-style: italic;
+  padding-top: 1%;
+  text-decoration: none;
 }
 
 /* remaining navigation bar */
@@ -143,6 +145,17 @@ body, html {
   font-weight: lighter;
 }
 
+.main-title {
+  text-align: center;
+  color: black;
+  font-family: var(--font-cour);
+  font-size: 0px;
+  font-weight: lighter;
+  padding-top: 10%;
+  padding-bottom: 7%;
+  position: relative;
+}
+
 /* all other text on page */
 .info-text {
   text-align: center;
@@ -159,15 +172,112 @@ body, html {
   display: inline-block;
 }
 
+/* animating hovering over name letters changing color */
+.anim-text {
+  font-size: 100px;
+  display: inline-flex;
+}
+@keyframes animate {
+  0% {
+    color: black;
+  }
+  100% {
+    color: var(--color-red);
+  }
+}
+@keyframes unanimate {
+  0% {
+    color: var(--color-red);
+  }
+  100% {
+    color: black;
+  }
+}
+
+/* portfolio section on bottom of main pg */
+.portfolio-text {
+  text-align: center;
+  font-family: var(--font-cour);
+  font-size: 6vw;
+  font-weight: lighter;
+  display: block;
+  text-decoration: none;
+  color: var(--color-red);
+}
+.portfolio-text:hover {
+  cursor: pointer;
+}
+#portfolio-left {
+  width: 48%;
+  float: left;
+}
+#portfolio-right {
+  width: 48%;
+  float: right;
+}
+
+.portfolio-info-text {
+  text-align: center;
+  font-family: var(--font-cour);
+  font-size: 22px;
+  font-weight: lighter;
+  line-height: normal;
+  padding-top: 2%;
+}
+
+#last-scroll {
+  background-color: var(--color-grey);
+}
+
+.line {
+  border-left: 2px solid black;
+  display: inline-block;
+  height: 90%;
+  margin-left: 2.5%;
+}
+
+@keyframes portAnimate {
+  0% {
+    background-color: var(--color-grey);
+    color: var(--color-red);
+    font-style: italic;
+    font-size: 6vw;
+  }
+  100% {
+    background-color: var(--color-red);
+    opacity: 0.9;
+    color: white;
+    font-style: italic;
+    font-size: 9vw;
+  }
+}
+@keyframes portUnAnimate {
+  0% {
+    background-color: var(--color-red);
+    opacity: 0.9;
+    color: white;
+    font-style: italic;
+    font-size: 9vw;
+  }
+  100% {
+    background-color: var(--color-grey);
+    color: var(--color-red);
+    font-size: 6vw;
+  }
+}
+
 /* to allow for scrolling through sections */
 .parallel-scrolling {
-  height: 100%;
-  opacity: 0.6;
+  height: 70%;
   /* allow scrolling */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+#parallel-img {
+  opacity: 0.6;
+  filter: saturate(0.6);
 }
 
 /* hovering over images */
