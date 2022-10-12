@@ -27,7 +27,7 @@
     </div>
   </header>
 
-  <body onload="checkMobile()">
+  <body>
     <!-- name at top -->
     <div class="main-title">
       <div class="anim-text" id="R" onmouseover="anim(R)" onmouseout="unanim(R)">R</div>
@@ -121,14 +121,35 @@
     var pb = 0;
     var height = 0;
     window.onload = function() {
+      // changes for mobile
+      if (/Android|webOS|iPadOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        var scrolls = document.querySelectorAll(".parallel-scrolling");
+        for (var i = 0; i < scrolls.length; i++) {
+          scrolls[i].style.backgroundAttachment = 'unset';
+          scrolls[i].style.backgroundRepeat = 'unset';
+          scrolls[i].style.height = '50%';
+        }
+        var portInfo = document.querySelectorAll(".portfolio-info-text");
+        for (var i = 0; i < portInfo.length; i++) {
+          portInfo[i].style.display = 'block';
+          portInfo[i].style.marginLeft = "3%";
+          document.getElementsByClassName("portfolio-text")[i].removeAttribute('onmouseover');
+          document.getElementsByClassName("portfolio-text")[i].removeAttribute('onmouseout');
+          document.getElementsByClassName("portfolio-text")[i].style.fontStyle = "italic";
+        }
+        portInfo[1].style.marginRight = "7%";
+      }
+      // bottom portfolio badding based on screen
       height = document.getElementById("last-scroll").clientHeight;
       var minH = height * 0.4;
       var textH = document.getElementsByClassName("portfolio-text")[0].clientHeight;
       pb = height - minH - textH;
       document.getElementsByClassName("portfolio-text")[0].style.paddingTop = minH + "px";
       document.getElementsByClassName("portfolio-text")[1].style.paddingTop = minH + "px";
-      document.getElementsByClassName("portfolio-text")[0].style.paddingBottom = pb + "px";
-      document.getElementsByClassName("portfolio-text")[1].style.paddingBottom = pb + "px";
+      document.getElementsByClassName("portfolio-text")[0].style.paddingBottom =
+        pb - document.getElementsByClassName("portfolio-info-text")[0].clientHeight + "px";
+      document.getElementsByClassName("portfolio-text")[1].style.paddingBottom =
+        pb - document.getElementsByClassName("portfolio-info-text")[1].clientHeight + "px";
       document.getElementsByClassName("line")[0].style.marginTop = height * 0.06 + "px";
     }
 
@@ -141,17 +162,6 @@
         myNavbar.classList.add("navOffset")
       } else {
         myNavbar.classList.remove("navOffset");
-      }
-    }
-
-    function checkMobile() {
-      if (/Android|webOS|iPadOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-          var scrolls = document.querySelectorAll(".parallel-scrolling");
-          for (var i = 0; i < scrolls.length; i++) {
-            scrolls[i].style.backgroundAttachment = 'unset';
-            scrolls[i].style.backgroundRepeat = 'unset';
-            scrolls[i].style.height = '50%';
-          }
       }
     }
 
@@ -171,7 +181,7 @@
       index.style.animation_delay = "0.5s";
     }
 
-    // for portfolio when hovering 
+    // for portfolio when hovering
     function expand(index) {
       document.getElementById("last-scroll").style.animation = "portAnimate 1.5s ease-out forwards";
       if (index == 'left') {
