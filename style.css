@@ -340,6 +340,11 @@ body, html {
 }
 #one {
   width: 45%;
+  filter: grayscale(40%);
+}
+#one:hover {
+  width: 45%;
+  filter: grayscale(0%);
 }
 #two {
   filter: grayscale(75%);
