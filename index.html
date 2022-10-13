@@ -89,9 +89,7 @@
         ARTWORK
         <div class="portfolio-info-text" style="display: none">
           These are pieces Raveena has completed either for her Animation classes
-          or as personal projects using the skills she learned in those courses. Also
-          linked are some examples of Raveena's photography, which include the
-          background photos on this page!
+          or as personal projects (or just for fun).
         </div>
       </a>
     </div>
@@ -144,12 +142,15 @@
       var minH = height * 0.4;
       var textH = document.getElementsByClassName("portfolio-text")[0].clientHeight;
       pb = height - minH - textH;
-      document.getElementsByClassName("portfolio-text")[0].style.paddingTop = minH + "px";
-      document.getElementsByClassName("portfolio-text")[1].style.paddingTop = minH + "px";
+      var portInfo = document.getElementsByClassName("portfolio-info-text");
+      document.getElementsByClassName("portfolio-text")[0].style.paddingTop =
+        minH - portInfo[1].clientHeight / 4 + "px"; // 1 to line up projects header for mobile with artwork
+      document.getElementsByClassName("portfolio-text")[1].style.paddingTop =
+        minH - portInfo[1].clientHeight / 4 + "px";
       document.getElementsByClassName("portfolio-text")[0].style.paddingBottom =
-        pb - document.getElementsByClassName("portfolio-info-text")[0].clientHeight + "px";
+        pb - portInfo[0].clientHeight + "px";
       document.getElementsByClassName("portfolio-text")[1].style.paddingBottom =
-        pb - document.getElementsByClassName("portfolio-info-text")[1].clientHeight + "px";
+        pb - portInfo[1].clientHeight + "px";
       document.getElementsByClassName("line")[0].style.marginTop = height * 0.06 + "px";
     }
 
