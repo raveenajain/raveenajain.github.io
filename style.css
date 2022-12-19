@@ -334,37 +334,44 @@ body, html {
 
 #zero {
   margin-left: -7.75%;
-  filter: grayscale(75%);
   width: 30%;
   margin-bottom: 5%;
+  filter: grayscale(60%);
 }
 #one {
   width: 45%;
-  filter: grayscale(40%);
-}
-#one:hover {
-  width: 45%;
-  filter: grayscale(0%);
 }
 #two {
-  filter: grayscale(75%);
   width: 30%;
   margin-bottom: 5%;
+  filter: grayscale(60%);
+}
+
+#rotating-subtext {
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 400%;
+  text-align: center;
+  position: absolute;
+  color: white;
+  font-family: var(--font-cour);
+  font-style: italic;
+  text-decoration: none;
+  opacity: 0.0;
+  cursor: pointer;
+  z-index: 2;
 }
 
 .portfolio-rotate {
   margin-right: 5%;
 }
 
-#inner-text {
-  color: black;
+#counter {
   font-family: var(--font-cour);
-  font-style: italic;
-  text-decoration: none;
-  font-size: 4vw;
-  margin-top: -2%;
-  position: relative;
-  background-color: white;
+  font-size: 100%;
+  font-weight: lighter;
+  padding-top: 1%;
 }
 
 /* UI CHALLENGE SPECIFIC ONLY */

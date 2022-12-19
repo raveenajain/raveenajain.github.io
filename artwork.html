@@ -38,7 +38,8 @@
           <img class="portfolio-rotate" id="zero" onclick="swapImg(0)">
           <img class="portfolio-rotate" id="one" onclick="swapImg(1)">
           <img class="portfolio-rotate" id="two" onclick="swapImg(2)">
-        <div id="inner-text"></div>
+        <div id="rotating-subtext"></div>
+        <div id="counter"></div>
       </div>
     </center>
     </div>
@@ -95,6 +96,8 @@
     // desktop
     var arryImg = ["images/vectors.png", "images/photography.png", "images/coursework.png"];
     var arryText = ["PORTRAITS", "PHOTOGRAPHY", "COURSEWORK"];
+    var counter = 1;
+    var total = 3;
     // images in order
     window.onload = function() {
       if (/Android|webOS|iPadOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -107,11 +110,21 @@
       document.getElementById("zero").src = arryImg[0];
       document.getElementById("one").src = arryImg[1];
       document.getElementById("two").src = arryImg[2];
-      document.getElementById("inner-text").innerHTML = arryText[1];
-
-      // image text background
-      document.getElementById("inner-text").style.width =
-      document.getElementById("inner-text").innerHTML.length * 3.25 + 'vw';
+      document.getElementById("rotating-subtext").innerHTML = arryText[1];
+      document.getElementById("counter").innerHTML = counter + "/" + total;
+      document.getElementById("one").onmouseover = function(e) {
+          document.getElementById("rotating-subtext").style.opacity = "1.0";
+          document.getElementById("one").style.webkitTransition = "all .4s ease-in-out";
+          document.getElementById("one").style.filter = "grayscale(100%) brightness(60%)";
+      }
+      document.getElementById("one").onmouseout = function(e) {
+          document.getElementById("rotating-subtext").style.opacity = "0.0";
+          document.getElementById("one").style.filter = "grayscale(0%) brightness(100%)";
+      }
+      document.getElementById("rotating-subtext").onmouseover = function(e) {
+        document.getElementById("rotating-subtext").style.opacity = "1.0";
+        document.getElementById("one").style.filter = "grayscale(100%) brightness(60%)";
+      }
     }
 
     function swapImg(index) {
@@ -140,6 +153,10 @@
         arryText[0] = at2;
         arryText[1] = at0;
         arryText[2] = at1;
+        counter = (counter - 1);
+        if (counter <= 0) {
+          counter = total;
+        }
       } else if (index == 2) {
         document.getElementById("two").src = arryImg[0];
         document.getElementById("zero").src = arryImg[1];
@@ -150,10 +167,13 @@
         arryText[0] = at1;
         arryText[1] = at2;
         arryText[2] = at0;
+        counter = (counter + 1);
+        if (counter >= (total + 1)) {
+          counter = 1;
+        }
       }
-      document.getElementById("inner-text").innerHTML = arryText[1];
-      document.getElementById("inner-text").style.width =
-      document.getElementById("inner-text").innerHTML.length * 3.25 + 'vw';
+      document.getElementById("rotating-subtext").innerHTML = arryText[1];
+      document.getElementById("counter").innerHTML = counter + "/" + total;
     }
 
   </script>

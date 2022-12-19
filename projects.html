@@ -38,7 +38,8 @@
           <img class="portfolio-rotate" id="zero" onclick="swapImg(0)">
           <img class="portfolio-rotate" id="one" onclick="swapImg(1)">
           <img class="portfolio-rotate" id="two" onclick="swapImg(2)">
-          <div id="inner-text"></div>
+          <div id="rotating-subtext"></div>
+          <div id="counter"></div>
         </div>
       </center>
     </div>
@@ -46,7 +47,7 @@
     <div id="mobile">
       <center>
         <div class="thumbnails">
-          <a href="http://raveenajain.github.io/uichallenges"
+          <a href="http://raveenajain.github.io/uichallenges" target=”_blank”
             onmouseover="greyscale(0)" onmouseout="removeGrey(0)">
             <div class="subtext portfolio-subtext">UI Challenges</div>
             <img class="portfolio-img" src="images/UIchallenge.png"
@@ -103,6 +104,8 @@
     // for desktop
     var arryImg = ["images/oldMain.png", "images/UIchallenge.png", "images/todo.png", "images/uwu.png"];
     var arryText = ["PERSONAL WEBSITE", "UI CHALLENGES", "REACT TO DO APP", "BEEWELL"];
+    var counter = 1;
+    var total = 4;
     // images in order
     window.onload = function() {
       if (/Android|webOS|iPadOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -115,11 +118,21 @@
       document.getElementById("zero").src = arryImg[0];
       document.getElementById("one").src = arryImg[1];
       document.getElementById("two").src = arryImg[2];
-      document.getElementById("inner-text").innerHTML = arryText[1];
-
-      // image text background
-      document.getElementById("inner-text").style.width =
-      document.getElementById("inner-text").innerHTML.length * 2.75 + 'vw';
+      document.getElementById("rotating-subtext").innerHTML = arryText[1];
+      document.getElementById("counter").innerHTML = counter + "/" + total;
+      document.getElementById("one").onmouseover = function(e) {
+          document.getElementById("rotating-subtext").style.opacity = "1.0";
+          document.getElementById("one").style.webkitTransition = "all .4s ease-in-out";
+          document.getElementById("one").style.filter = "grayscale(100%) brightness(60%)";
+      }
+      document.getElementById("one").onmouseout = function(e) {
+          document.getElementById("rotating-subtext").style.opacity = "0.0";
+          document.getElementById("one").style.filter = "grayscale(0%) brightness(100%)";
+      }
+      document.getElementById("rotating-subtext").onmouseover = function(e) {
+        document.getElementById("rotating-subtext").style.opacity = "1.0";
+        document.getElementById("one").style.filter = "grayscale(100%) brightness(60%)";
+      }
     }
 
     function swapImg(index) {
@@ -154,6 +167,10 @@
         arryText[1] = at0;
         arryText[2] = at1;
         arryText[3] = at2;
+        counter = (counter - 1);
+        if (counter <= 0) {
+          counter = total;
+        }
       } else if (index == 2) {
         document.getElementById("two").src = arryImg[3];
         document.getElementById("zero").src = arryImg[1];
@@ -166,14 +183,18 @@
         arryText[1] = at2;
         arryText[2] = at3;
         arryText[3] = at0;
+        counter = (counter + 1);
+        if (counter >= (total + 1)) {
+          counter = 1;
+        }
       }
-      document.getElementById("inner-text").innerHTML = arryText[1];
-      document.getElementById("inner-text").style.width =
-      document.getElementById("inner-text").innerHTML.length * 2.75 + 'vw';
+      document.getElementById("rotating-subtext").innerHTML = arryText[1];
+      document.getElementById("counter").innerHTML = counter + "/" + total;
     }
 
   </script>
 
 </html>
 
-<!-- helpful sources: https://codepen.io/codewithJahid/pen/JRPvBj -->
+<!-- helpful sources: https://codepen.io/codewithJahid/pen/JRPvBj
+https://stackoverflow.com/questions/262740/javascript-onhover-event -->
