@@ -464,6 +464,7 @@ iframe {
   padding-top: 2%;
   float: left;
   margin-left: 5%;
+  display: block;
 }
 
 .page-text {
@@ -475,7 +476,7 @@ iframe {
   margin-left: 5%;
   margin-right: 5%;
   float: left;
-  width: 90%;
+  display: block;
 }
 
 .page-img {
