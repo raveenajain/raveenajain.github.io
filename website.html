@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title> Personal Website Archive </title>
+  </head>
+
+  <!--navigation bar -->
+  <header id="my-navbar">
+    <a class="active button" href="http://raveenajain.github.io/">RSJ</a>
+    <a class="active button" style="float: right" href="mailto:raveena.s.jain@gmail.com">Contact</a>
+    <div class="dropHover" onmouseover="getMinWidth(0)">
+      <div>Portfolio &#9662;</div>
+      <div class="dropdown">
+        <a href="http://raveenajain.github.io/projects">Projects</a>
+        <a href="http://raveenajain.github.io/artwork">Artwork</a>
+      </div>
+    </div>
+    <div class="dropHover" onmouseover="getMinWidth(1)">
+      <div>Me &#9662;</div>
+      <div class="dropdown">
+        <a href="http://raveenajain.github.io/#about">About</a>
+        <a href="http://raveenajain.github.io/resume">Resume</a>
+        <a href="http://raveenajain.github.io/#links">Socials</a>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <!-- title of page -->
+    <div class="page-titles">
+      Personal Website Archive
+    </div>
+
+    <center>
+      <div class="page-sub-header"> The Initial Website </div>
+      <div class="page-text">
+        I initially created this website, from scratch, as a first year student at
+        a hackathon hosted by my university's Women in Technology club. While this was
+        a great intro to HTML and CSS, the site itself (both the code and the design)
+        really wasn't the greatest.
+      </div>
+      <br> </br>
+      <div>
+        <img class="page-img" src="images/webArchive/v1a.png" style="width: 40%; float: none;"
+          alt="grey version of the homepage of this site with red text">
+        <img class="page-img" src="images/webArchive/v1b.png" style="width: 40%; float: none;"
+          alt="grey version of the project page of this site with old projects">
+      </div>
+
+      <div class="page-sub-header"> Discovering UX/UI Design </div>
+      <div class="page-text">
+        When I was interning as a Web Developer, because of my experience with Adobe
+        Suite software (and the nature of start-ups), I was given the opportunity to
+        work with the Product Team to create mock-ups and demos of our web-based
+        product to show to potential clients. And thus I had discovered UI Design!
+        As this work peaked my interest, I figured fixing up my website would be
+        a good opportunity to explore the field further. So I decided to try and
+        add some dimension and more complex elements to my site, expressed via a
+        mock-up (using Adobe Spark):
+      </div>
+      <br> </br>
+      <div>
+        <img class="page-img" src="images/webArchive/v2.png"
+          style="width: 40%; float: none; border-left: solid; border-right: solid; border-bottom: solid; border-width: thin;"
+          alt="homepage of this site with navbar, red icons, and black text on a white background">
+      </div>
+
+      <div class="page-sub-header"> Human Computer Interaction </div>
+      <div class="page-text">
+        While I never really translated my last design to code, I still wanted to
+        improve my website. Eventually, I took a Human Computer Interaction course
+        and was able to learn more about the design and development process, from
+        ideation and sketching to prototypes and coding. I therefore wanted to take
+        advantage of this new knowledge and use that process to make changes to
+        my site. So I made sketches, explored some color schemes, and made
+        <i><a class="text-link" href="https://www.figma.com/proto/43MN4O68AreV2vCPfuLedj/New-Website?node-id=1%3A2&scaling=min-zoom">
+          a high-fidelity prototype using Figma</a></i>.
+      </div>
+      <br> </br>
+      <div>
+        <img class="page-img" src="images/webArchive/sketches2.png" style="width: 29.8%; float:"
+          alt="paper and pencil skecthes of home page of this site">
+        <img class="page-img" src="images/webArchive/sketches1.png" style="width: 29%; float: none;"
+          alt="paper and pencil sketch of the project page of this site">
+        <img class="page-img" src="images/webArchive/colors.png" style="width: 31.5%; float: none;"
+          alt="red, grey, black, and white color scheme and teal, purple, grey, black, and white color scheme">
+      </div>
+
+      <div class="page-sub-header"> Today's Design </div>
+      <div class="page-text">
+        I made some changes when transferring these ideas to code, but working
+        off of an existing design was definitely helpful when coding this website.
+        And while I've made some tweaks since then, for now, this was the process
+        that got me to the website I have today!
+        <br> </br>
+      </div>
+  </body>
+
+  <script>
+    function getMinWidth(item) {
+      var drops = document.getElementsByClassName("dropHover");
+      var w = drops[item].clientWidth;
+      document.querySelectorAll(".dropdown")[item].style.minWidth = w + 'px';
+    }
+  </script>
+
+</html>
+
+<!-- helpful sources: https://codepen.io/codewithJahid/pen/JRPvBj -->
