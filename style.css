@@ -29,6 +29,7 @@ body, html {
   padding-bottom: 4%;
 }
 
+
 /* title text at top of pages */
 .title {
   text-align: center;
@@ -40,12 +41,14 @@ body, html {
   padding-bottom: 10%;
   position: relative;
 }
+
 .sub-title {
   font-size: 40px;
   font-style: italic;
   padding-top: 1%;
   text-decoration: none;
 }
+
 
 /* remaining navigation bar */
 #my-navbar {
@@ -57,6 +60,7 @@ body, html {
   width: 100%;
   position: fixed;
 }
+
 .navOffset {
   position: fixed;
   top: 0;
@@ -73,12 +77,15 @@ body, html {
   cursor: pointer;
   color: white;
 }
+
 .dropHover:hover {
   background-color: var(--color-red);
 }
+
 .dropHover:hover .dropdown {
   display: block;
 }
+
 .dropdown {
   display: none;
   position: fixed;
@@ -89,6 +96,7 @@ body, html {
   z-index: 100;
   color: black;
 }
+
 .dropdown a {
   color: black;
   padding: 12px 16px;
@@ -96,11 +104,13 @@ body, html {
   display: block;
   text-align: left;
 }
+
 .dropdown a:hover {
   background-color: var(--color-dark-grey);
 }
 
-/* button formatting */
+
+/* buttons */
 .button {
   border: none;
   padding: 8px 20px;
@@ -110,18 +120,22 @@ body, html {
   font-size: 25px;
   cursor: pointer;
 }
+
 .button:link, .button:visited {
   color: white;
 }
+
 .button:hover, .button:active {
   background-color: var(--color-red);
 }
+
 
 /* links in text */
 .text-link {
   text-decoration: none;
   color: var(--color-red);
 }
+
 
 /* for images of logo links */
 .logos {
@@ -137,7 +151,8 @@ body, html {
   padding-bottom: 2%;
 }
 
-/* all header text on page */
+
+/* all header text on pages */
 .header-text {
   text-align: center;
   font-family: var(--font-cour);
@@ -156,7 +171,8 @@ body, html {
   position: relative;
 }
 
-/* all other text on page */
+
+/* all other text on pages */
 .info-text {
   text-align: center;
   font-family: var(--font-cour);
@@ -172,7 +188,8 @@ body, html {
   display: inline-block;
 }
 
-/* animating hovering over name letters changing color */
+
+/* animating hovering over name letters changing color on home page */
 .anim-text {
   font-size: 100px;
   display: inline-flex;
@@ -194,7 +211,8 @@ body, html {
   }
 }
 
-/* portfolio section on bottom of main pg */
+
+/* portfolio section on bottom of home page */
 .portfolio-text {
   text-align: center;
   font-family: var(--font-cour);
@@ -204,13 +222,16 @@ body, html {
   text-decoration: none;
   color: var(--color-red);
 }
+
 .portfolio-text:hover {
   cursor: pointer;
 }
+
 #portfolio-left {
   width: 48%;
   float: left;
 }
+
 #portfolio-right {
   width: 48%;
   float: right;
@@ -251,6 +272,7 @@ body, html {
     font-size: 9vw;
   }
 }
+
 @keyframes portUnAnimate {
   0% {
     background-color: var(--color-red);
@@ -266,7 +288,8 @@ body, html {
   }
 }
 
-/* to allow for scrolling through sections */
+
+/* to allow for scrolling through sections on home page */
 .parallel-scrolling {
   height: 70%;
   /* allow scrolling */
@@ -275,12 +298,14 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 #parallel-img {
   opacity: 0.6;
   filter: saturate(0.6);
 }
 
-/* hovering over images */
+
+/* hovering over images portfolio */
 .img-darken {
   -webkit-transition: all .4s ease-in-out;
   filter: grayscale(100%) brightness(60%);
@@ -297,7 +322,8 @@ body, html {
   z-index: 2;
 }
 
-/* ARTWORK/PROJECT SPECIFIC ONLY */
+
+/* artwork/project pages */
 .page-titles {
   text-align: center;
   color: black;
@@ -319,11 +345,38 @@ body, html {
   height: 50%;
   width: 50%;
 }
+
 .portfolio-subtext {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 500%;
+}
+
+.page-sub-header {
+  font-family: var(--font-cour);
+  font-size: 38px;
+  font-weight: 300;
+  padding-top: 2%;
+  float: left;
+  margin-left: 5%;
+  display: block;
+}
+
+.page-text {
+  text-align: justify;
+  font-family: var(--font-cour);
+  font-size: 22px;
+  font-weight: lighter;
+  padding-top: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+  float: left;
+  display: block;
+}
+
+.page-img {
+  padding-top: 1%;
 }
 
 .img-list {
@@ -338,9 +391,11 @@ body, html {
   margin-bottom: 5%;
   filter: grayscale(60%);
 }
+
 #one {
   width: 45%;
 }
+
 #two {
   width: 30%;
   margin-bottom: 5%;
@@ -374,13 +429,13 @@ body, html {
   padding-top: 1%;
 }
 
-/* UI CHALLENGE SPECIFIC ONLY */
+/* ui challenge page */
 .subtitle {
   font-size: 40px;
   font-style: italic;
 }
 
-/*grey out page*/
+/* grey out page */
 #infoModal {
   position: fixed;
   display: none;
@@ -394,7 +449,7 @@ body, html {
   z-index: 2;
 }
 
-/* white box with details about challenges*/
+/* white box with details about challenges */
 #challenge1, #challenge2, #challenge4, #challenge5, #challenge9, #challenge10,
 #challenge11, #challenge12, #challenge13, #challenge14, #challenge16, #challenge18,
 #challenge20, #challenge22, #challenge19, #challenge24, #challenge26, #challenge27 {
@@ -415,6 +470,7 @@ body, html {
   border-width: thick;
   border-color: var(--color-red);
 }
+
 .modal-text {
   width: 75%;
   text-align: center;
@@ -443,9 +499,17 @@ body, html {
   font-size: 350%;
 }
 
+/* ia page */
+.ia-pdf {
+  width: 85%;
+  margin-top: 30px;
+  height: 600px;
+}
+
+
 /* resume */
 iframe {
-  padding-top: 3%;
+  margin-top: 45px;
 }
 
 .altSrc {
@@ -454,31 +518,4 @@ iframe {
   font-weight: lighter;
   padding-top: 1%;
   padding-bottom: 1%;
-}
-
-/* project/artwork pages formatting */
-.page-sub-header {
-  font-family: var(--font-cour);
-  font-size: 38px;
-  font-weight: 300;
-  padding-top: 2%;
-  float: left;
-  margin-left: 5%;
-  display: block;
-}
-
-.page-text {
-  text-align: justify;
-  font-family: var(--font-cour);
-  font-size: 22px;
-  font-weight: lighter;
-  padding-top: 1%;
-  margin-left: 5%;
-  margin-right: 5%;
-  float: left;
-  display: block;
-}
-
-.page-img {
-  padding-top: 1%;
 }

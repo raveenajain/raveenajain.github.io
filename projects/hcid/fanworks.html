@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <title> Fanworks </title>
+  </head>
+
+  <!--navigation bar -->
+  <header id="my-navbar">
+    <a class="active button" href="http://raveenajain.github.io/">RSJ</a>
+    <a class="active button" style="float: right" href="mailto:raveena.s.jain@gmail.com">Contact</a>
+    <div class="dropHover" onmouseover="getMinWidth(0)">
+      <div>Portfolio &#9662;</div>
+      <div class="dropdown">
+        <a href="http://raveenajain.github.io/projects">Projects</a>
+        <a href="http://raveenajain.github.io/artwork">Artwork</a>
+      </div>
+    </div>
+    <div class="dropHover" onmouseover="getMinWidth(1)">
+      <div>Me &#9662;</div>
+      <div class="dropdown">
+        <a href="http://raveenajain.github.io/#about">About</a>
+        <a href="http://raveenajain.github.io/resume">Resume</a>
+        <a href="http://raveenajain.github.io/#links">Socials</a>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <!-- title of page -->
+    <div class="page-titles">
+      Fanworks
+    </div>
+
+    <center>
+      <div class="page-sub-header"> Introduction </div>
+      <div class="page-text">
+        For my Information Architecture (IA) module, we got to pick a topic to design
+        our coursework around; if you know me you know it's not surprising that I
+        ended up with something fandom related. And in this case I chose fanworks
+        as my domain. While there were some restraints on the project (i.e. number
+        of wireframes and word counts), it really was up to us to, as the brief explained,
+        to "design the IA of a web-based information environment." While there are a
+        number of websites, ranging from social to archival, that allow users to
+        find and post fanworks, my goal with this design was to bridge the
+        disconnect that forms within fandoms because of how spread across the internet
+        they are. Aside from having a fun topic, I also enjoyed finding the best
+        way to organize complicated information into something usable. For each
+        of the following sections, I have included the corresponding diagram and
+        condensed versions of the design justification that made up my coursework submission.
+      </div>
+
+      <div class="page-sub-header"> Domain Model and Expert Interviews </div>
+      <iframe src="../../images/dm.pdf" class="ia-pdf"></iframe>
+      <div class="page-text">
+        I began by interviewing three Domain Experts and performing an informal
+        review of the well-known fanfiction website, Archive of Our Own (AO3).
+        Moving forward, AO3 became useful as a database and way of understanding
+        how people customize their fandom experience through user-generated tagging.
+        From my interviews, it became clear that fandoms themself dictate what
+        fanworks hold value. For example, fanfiction is considered one of the most
+        popular kinds of fanworks across a significant number of fandoms. But, as
+        one expert mentioned, game mods cannot extend to non-gaming fandoms. I
+        therefore saw building off of the Hub and Spoke structure that focused on
+        a “central concept” (Brown, 2011, pp. 80) as the best approach to accommodate
+        the diversity that exists across fanworks and fandoms. Overlap between
+        AO3 and expert interviews made it possible to determine which elements
+        are expected across fandoms and fanworks. Another core takeaway from my
+        research was how fans want to both see and actively avoid
+        certain content, as emphasized by the importance experts put on the ability
+        to block/exclude certain filters/tags. Because fans shape their fandom
+        experiences, folksonomies are often prioritized over structured data
+        (Rosenfeld et al, 2015, pp. 128) on online platforms. As one of the experts
+        stated, an unpublished fanwork is still a fanwork, helping me reframe
+        how I thought about many of the entities typically associated with tagging.
+        And considering how fandom elements are interconnected, using Brown’s advice
+        on “reducing triangles” became vital in helping me determine core relationships (2011, pp. 82).
+      </div>
+
+      <div class="page-sub-header"> SiteMap </div>
+      <div class="page-text">
+      </div>
+
+      <div class="page-sub-header"> User Journey </div>
+      <div class="page-text">
+      </div>
+
+      <div class="page-sub-header"> Wireframes </div>
+      <div class="page-text">
+      </div>
+
+    </center>
+
+  </body>
+
+  <script>
+    function getMinWidth(item) {
+      var drops = document.getElementsByClassName("dropHover");
+      var w = drops[item].clientWidth;
+      document.querySelectorAll(".dropdown")[item].style.minWidth = w + 'px';
+    }
+  </script>
+
+</html>
+
+<!-- helpful sources: https://codepen.io/codewithJahid/pen/JRPvBj -->
