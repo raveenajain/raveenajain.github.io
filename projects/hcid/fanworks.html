@@ -35,19 +35,19 @@
     <center>
       <div class="page-sub-header"> Introduction </div>
       <div class="page-text">
-        For my Information Architecture (IA) module, we got to pick a topic to design
-        our coursework around; if you know me you know it's not surprising that I
-        ended up with something fandom related. And in this case I chose fanworks
-        as my domain. While there were some restraints on the project (i.e. number
-        of wireframes and word counts), it really was up to us to, as the brief explained,
-        to "design the IA of a web-based information environment." While there are a
-        number of websites, ranging from social to archival, that allow users to
-        find and post fanworks, my goal with this design was to bridge the
-        disconnect that forms within fandoms because of how spread across the internet
-        they are. Aside from having a fun topic, I also enjoyed finding the best
-        way to organize complicated information into something usable. For each
-        of the following sections, I have included the corresponding diagram
-        (all were made on Figma) and condensed versions of the design justification
+        For my Information Architecture class, we got to pick a topic to design
+        our coursework around. If you know me, then it's not a surprise that I
+        ended up with something fandom related; in this case, I chose fanworks as
+        my domain. While there were some restraints on the project (i.e. the number
+        of wireframes and the word count), it really was up to us to, as the brief
+        explained, "design the [Information Architecture] of a web-based information
+        environment." While there are a number of websites, ranging from social to
+        archival, that allow users to find and post fanworks, my goal was to create
+        something that would bridge the disconnect that forms within fandoms because
+        of how spread across the internet they are. Aside from having a fun topic,
+        I also enjoyed finding ways of organizing complicated information into something
+        usable. For each of the following sections, I have included the corresponding
+        diagram (all were made on Figma) and condensed versions of the design justifications
         that made up my coursework submission.
       </div>
 
@@ -55,85 +55,81 @@
       <iframe src="../../images/domainmodel.pdf" class="ia-pdf"></iframe>
       <div class="page-text">
         I began by interviewing three Domain Experts and performing an informal
-        review of the well-known fanfiction website, Archive of Our Own (AO3).
-        Moving forward, AO3 became useful as a database and way of understanding
-        how people customize their fandom experience through user-generated tagging.
-        From my interviews, it became clear that fandoms themself dictate what
-        fanworks hold value. For example, fanfiction is considered one of the most
-        popular kinds of fanworks across a significant number of fandoms. But, as
-        one expert mentioned, game mods cannot extend to non-gaming fandoms. I
-        therefore saw building off of the Hub and Spoke structure that focused on
-        a “central concept” (Brown, 2011, pp. 80) as the best approach to accommodate
-        the diversity that exists across fanworks and fandoms. Overlap between
-        AO3 and expert interviews made it possible to determine which elements
-        are expected across fandoms and fanworks. Another core takeaway from my
-        research was how fans want to both see and actively avoid
-        certain content, as emphasized by the importance experts put on the ability
-        to block/exclude certain filters/tags. Because fans shape their fandom
-        experiences, folksonomies are often prioritized over structured data
-        (Rosenfeld et al, 2015, pp. 128) on online platforms. As one of the experts
-        stated, an unpublished fanwork is still a fanwork, helping me reframe
-        how I thought about many of the entities typically associated with tagging.
-        And considering how fandom elements are interconnected, using Brown’s advice
-        on “reducing triangles” became vital in helping me determine core relationships (2011, pp. 82).
+        review of the well-known fanfiction website, Archive of Our Own (AO3). AO3
+        was useful as a database and as a way of understanding how people customize
+        their fandom experience through user-generated tagging. From my interviews,
+        it became clear that the fandoms themself dictate what fanworks hold value.
+        For example, fanfiction is considered one of the most popular kinds of fanworks
+        across a significant number of fandoms. But, as one expert mentioned, game
+        mods cannot extend to non-gaming fandoms. I therefore saw building off of
+        the Hub and Spoke structure that focused on a “central concept” (Brown, 2011, pp. 80)
+        as the best approach to accommodate the diversity that exists across fanworks
+        and fandoms. Overlap between AO3 and expert interviews made it possible to
+        determine which elements are expected across fandoms and fanworks. Another
+        core takeaway from my research was the emphasis experts put on the ability
+        to block/exclude certain filters/tags. Because fans shape their fandom experiences,
+        folksonomies are often prioritized over structured data (Rosenfeld et al, 2015, pp. 128)
+        on online platforms. And as one of the experts stated, an unpublished fanwork
+        is still a fanwork, reframing how I thought about many of the entities typically
+        associated with tagging. And considering how fandom elements are interconnected,
+        using Brown’s advice on “reducing triangles” became vital in helping me
+        determine core relationships (2011, pp. 82).
       </div>
 
       <div class="page-sub-header"> Sitemap </div>
       <iframe src="../../images/sitemap.pdf" class="ia-pdf"></iframe>
       <div class="page-text">
-        While a Movie is always a Movie and a Book is always a Book, I used Card
-        Sorting (using Optimal Workshop) to see if potential users would be able to
-        condense the 12 types of fandoms from AO3 alongside others I had added.
+        While a Movie is always a Movie and a Book is always a Book, I still used Card
+        Sorting (on Optimal Workshop) to see if potential users would be able to
+        condense the 12 types of fandoms from AO3 (alongside others I had added).
         Due to the variation in fandom experiences, my hypothesis that this Card
         Sort might not help me refine these groupings was correct. My “ah-ha moment”
         was realizing that the only entities in my Domain Model feeding directly
-        into fanworks were fandoms and creators. Exploring how these entities could
-        progress to the same type of page [H] emphasized purpose (Brown, 2011, pp. 105).
-        This led me to using the hybrid Hierarchical and Database pattern, as the
-        user would constantly come across “larger volumes of information,” and to
-        drawing upon Spencer’s “basic shapes for drawing an IA,” especially her “part of a page”
-        notation (Spencer, 2010, pp. 180-193, 247). As it is not possible to discuss
-        every type of fandom and fanwork with experts, I assumed that the entities
-        that worked as facets for all known types would always be applicable. To
-        confirm I was on the right track, I performed Tree Tests (using Optimal Workshop)
-        that incorporated filtering. Because 50% of tasks were completed using the
-        “Fandoms” navigation, which would link to thousands of results [D1-E], I
-        decided to breakdown that category so users looking to browse could have
-        a more manageable experience. “Blended Results” [B2] exists for a similar
-        reason; each category of result utilizes different facets and showing multiple
-        on the same page could complicate the website for users.
+        into fanworks were fandoms and creators. This led me to using the hybrid
+        Hierarchical and Database pattern, as the user would constantly come across
+        “larger volumes of information,” and to drawing upon Spencer’s “basic shapes
+        for drawing an IA,” especially her “part of a page” notation (Spencer, 2010, pp. 180-193, 247).
+        As it is not possible to discuss every type of fandom and fanwork with experts,
+        I assumed that the entities that worked as facets for all known types would
+        always be applicable. To confirm I was on the right track, I performed Tree
+        Tests (using Optimal Workshop) that incorporated filtering. Because 50%
+        of tasks were completed using the “Fandoms” navigation, which would link
+        to thousands of results [D1-E], I decided to breakdown that category so
+        users looking to browse could have a more manageable experience. “Blended
+        Results” [B2] exists for a similar reason; each category of result utilizes
+        different facets and showing multiple on the same page could complicate
+        the website for users.
       </div>
 
       <div class="page-sub-header"> User Journey </div>
       <iframe src="../../images/userjourney.pdf" class="ia-pdf"></iframe>
       <div class="page-text">
-        To tie into the primary goal of this website, my user’s goal had to relate
-        to finding fanworks, and building a scenario helped clarify the filters the
+        To tie into this website's primary goal, my user’s goal had to relate to
+        finding fanworks, and building a scenario helped clarify the filters the
         user might incorporate. The journey itself was meant to showcase four
-        potential ways a user could find (in this case) fanart. Because every user’s
-        background with fandom is different, I did not want to include only a preferred
-        path, as that would not showcase the range of options. However, I highlighted
-        what could be considered a preferred path based on number of steps and the
-        specific attributes of the user as established by the goal. The User’s
-        Thoughts were added to establish context and help emphasize why this journey
-        might be preferred considering the user’s specific background with the
-        Doctor Who fandom (Brown, 2011 pp. 140). I used Caddick and Cable’s design
-        of diamond shaped decision points and pointed rectangles for steps (i.e.
-        actions) (2011, pp. 83). As they used a rounded rectangle for the starting
-        point (Caddick and Cable, 2011, pp. 83), which in my case was the Home page,
-        I decided to use rounded rectangles to notate any page the user might reach.
-        Making sure not to “cross the streams” (Brown, 2011 pp. 130) helped me organize
-        the elements and structure of the journey itself. When a user is making a
-        more significant step forward in the process, they move from left to right,
-        but actions that don’t offer as much change to what the user sees are typically
-        stacked.
+        potential ways a user could find fanart. Because every user’s background
+        with fandom is different, I did not want to include only a preferred path,
+        as that would not showcase the range of options. However, I highlighted what
+        could be considered a preferred path based on number of steps and the specific
+        attributes of the user as established by the goal. The User’s Thoughts were
+        added to establish context and help emphasize why this journey might be preferred
+        considering the user’s specific background with the Doctor Who fandom (Brown, 2011 pp. 140).
+        I used Caddick and Cable’s design of diamond shaped decision points and pointed
+        rectangles for steps (i.e. actions) (2011, pp. 83). As they used a rounded
+        rectangle for the starting point (Caddick and Cable, 2011, pp. 83), which
+        in my case was the Home page, I decided to use rounded rectangles to notate
+        any page the user might reach. Making sure not to “cross the streams” (Brown, 2011 pp. 130)
+        helped me organize the elements and structure of the journey itself. When
+        a user is making a more significant step forward in the process, they move
+        from left to right, but actions that don’t offer as much change to what the
+        user sees are typically stacked.
       </div>
 
       <div class="page-sub-header"> Wireframes </div>
       <iframe src="../../images/ia_wireframes.pdf" class="ia-pdf"></iframe>
       <div class="page-text">
          Knowing how content heavy pages could become, I opted “to maximise the
-         amount of page width available,” by using horizontal navigation (Spencer, 2010, pp. 257).
+         amount of page width available” by using horizontal navigation (Spencer, 2010, pp. 257).
          I performed remote, Moderated Tests with three target users and created
          and posted a Click Test to Tumblr, targeting online users with a strong
          interest in fandoms and fanworks; 28 users completed this study. I took
@@ -146,7 +142,7 @@
          filters applied on Screen 3 were unchecked. The Click Test and Moderated
          Testing results generally aligned; a low success rate from the Click Tests
          coupled with similar results from the Moderated Tests made a change higher
-         priority. These wireframes have been slightly modified based on results
+         priority. These wireframes have been slightly modified based on the results
          from User Testing.
          <br></br>
          <i>Screen 1 – Home </i>
@@ -183,19 +179,18 @@
          changes that were made to filtering. “Fanworks, Platforms, and Languages”
          use traditional, squared checkboxes as users might want their results to,
          for example, contain fanfiction AND fanart. “Fandoms, Warnings, Characters,
-         Tropes and Genres, and Ships” use a hybrid checkbox and radio button.
-         The circular shape comes from the radio button to imply that an element
-         can be included OR excluded; the check and X come from the checkbox and
-         are used to show that multiple elements within a filter can be selected.
-         Moderated Test participants successfully recognized how these filters would
-         work. Because the list in “Characters” can become long, to limit scrolling,
-         pagination was added and the elements were ordered via popularity
-         (Russel- Rose and Tate, 2013, pp. 150). As previously mentioned, the use
-         of folksonomies and study of tagging on AO3 means the number of “Specific
-         References” could be incredibly large. Considering Russel-Rose and Tate’s
-         explanation, AO3’s “Additional Tags” option, and the importance of inclusion
-         and exclusion, I made use of Search Within (2013, pp. 103- 104). Just like
-         in all other filters, when typing in “Specific References,” suggested
+         Tropes and Genres, and Ships” use a hybrid checkbox and radio button. The
+         circular shape comes from the radio button to imply that an element can
+         be included OR excluded; the check and X come from the checkbox and are
+         used to show that multiple elements within a filter can be selected. Moderated
+         Test participants successfully recognized how these filters would work.
+         Because the list in “Characters” can become long, to limit scrolling,
+         pagination was added and the elements were ordered via popularity (Russel- Rose and Tate, 2013, pp. 150).
+         Since the use of folksonomies and study of tagging on AO3 means the number
+         of “Specific References” could be incredibly large and considering Russel-Rose
+         and Tate’s explanation, AO3’s “Additional Tags” option, and the importance
+         of inclusion and exclusion, I made use of Search Within (2013, pp. 103-104).
+         Just like in all other filters, when typing in “Specific References,” suggested
          keywords would include the number of results in parenthesis to help limit
          the chances of seeing zero results (Russel-Rose and Tate, 2013).
          <br></br>
