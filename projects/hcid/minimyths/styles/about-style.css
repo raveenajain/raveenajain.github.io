@@ -1,0 +1,67 @@
+/* color scheme */
+@import "color-scheme.css";
+
+
+/* main */
+.about-main {
+  flex-direction: column;
+  padding-bottom: 20vh; /* add whitespace to always push footer to bottom of the screen */
+}
+
+/* project description */
+.about-main-description {
+  margin-bottom: 30px;
+}
+
+/* overall table section */
+.about-main-sources {
+  margin-bottom: 15px;
+}
+
+.about-main-sources h2 {
+  border-bottom: 1.5px solid var(--dark-blue);
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+
+/* table */
+table {
+  border: 0px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  padding: 0px 10px 0px 10px;
+  font-size: 24px;
+}
+
+td {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* borders */
+th, td {
+  border: 0.5px solid grey;
+  border-collapse: collapse; /* so border between each cell is a single line */
+}
+
+/* any td elements that needed to be added for alignment but should not be visible as they don't contain content */
+.table-invisible { 
+  border: 0px;
+}
+
+.about-main-sources a:hover {
+  color: var(--mid-blue);
+}
+
+
+/* for smaller screens horizontally scroll table */
+@media (max-width: 800px) { 
+  table {
+    display: block; /* stops resizing */
+    overflow-x: scroll;
+}
+

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../images/logo.png" type="image/x-icon">
+  <title>Titans</title>
+  <!-- styles  -->
+  <link href="../styles/all-style.css" rel="stylesheet" type="text/css" />
+  <link href="../styles/gods-style.css" rel="stylesheet" type="text/css" />
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- scripts -->
+  <script defer src="../scripts/all-script.js"></script>
+  <script defer src="../scripts/anim-buttons-script.js"></script>
+  <script defer src="../scripts/gods-script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+</head>
+
+<body>
+  <!-- nav bar -->
+  <nav class="nav-full">
+    <a href="../index.html"><img class="nav-bar-logo" src="../images/logo.png" alt="logo"></a>
+    <div class="nav-bar-align">
+      <!-- dropdown on hover -->
+      <div class="nav-dropdown">
+        <span class="nav-bar-highlighted">Gods &#9662;</span>
+        <div class="nav-dropdown-content">
+          <a href="primordials.html">Primordials</a>
+          <a href="titans.html">Titans</a>
+          <a href="olympians.html">Olympians</a>
+        </div>
+      </div>
+      <!-- dropdown on hover -->
+      <div class="nav-dropdown">
+        <span>Stories &#9662;</span>
+        <div class="nav-dropdown-content">
+          <a href="../stories/odyssey.html">The Odyssey</a>
+          <a href="../stories/tm.html">Theseus and the Minotaur</a>
+        </div>
+      </div>
+      <a class="nav-bar-link" href="../quiz.html">Quiz</a>
+      <a class="nav-bar-link" href="../about.html">About</a>
+    </div>
+  </nav>
+
+  <!-- hamburger nav for small screens -->
+  <nav class="nav-min">
+    <a href="../index.html"><img class="nav-bar-logo" src="../images/logo.png" alt="logo"></a>
+    <div class="nav-burger">
+      <i class="fa-solid fa-bars"></i>
+      <div class="nav-burger-content">
+        <!-- dropdown -->
+        <span class="nav-bar-link nav-burger-inner-dropdown nav-inner-gods nav-bar-highlighted">Gods &#9662;</span>
+        <div class="nav-burger-inner-dropdown-content">
+          <a class="nav-bar-link" href="primordials.html">Primordials</a>
+          <a class="nav-bar-link" href="titans.html">Titans</a>
+          <a class="nav-bar-link" href="olympians.html">Olympians</a>
+        </div>
+        <!-- dropdown -->
+        <span class="nav-bar-link nav-burger-inner-dropdown nav-inner-stories">Stories &#9662;</span>
+        <div class="nav-burger-inner-dropdown-content">
+          <a class="nav-bar-link nav-burger-inner-dropdown-line" href="../stories/odyssey.html">The Odyssey</a>
+          <a class="nav-bar-link nav-burger-inner-dropdown-line" href="../stories/tm.html">Theseus and the Minotaur</a>
+        </div>
+        <a class="nav-bar-link" href="../quiz.html">Quiz</a>
+        <a class="nav-bar-link" href="../about.html">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- motion button -->
+  <button type="button" class="motion-toggle motion-toggle-on">
+    Motion On
+  </button>
+
+  <!-- pop-up: enlarged version of image on greyed-out background that appears when main image is clicked -->
+  <div class="indiv-pop-up">
+    <!-- initialize with cronus -->
+    <img class="indiv-pop-up-img" src="../images/cronus.png" alt="A statue of Cronus against a stormy sky.">
+  </div>
+
+  <!-- category of gods -->
+  <header>
+    <h1>
+      Titans
+    </h1>
+  </header>
+
+  <!-- main text -->
+  <main class="gods-main gods-main-height">
+
+    <!-- titans summary -->
+    <p class="gods-main-summary">
+      According to the Theogony of Hesiod, they were the twelve children of the <a
+        href="primordials.html">Primordial</a> parents Uranus and Gaia. The Titans were the former gods: the
+      generation of gods preceding the <a href="olympians.html">Olympians</a>. They were overthrown as part of the
+      Greek succession myth, which tells how Cronus seized power from his father Uranus and ruled the cosmos with his
+      fellow Titans before being in turn defeated and replaced as the ruling pantheon of gods by Zeus and the <a
+        href="olympians.html">Olympians</a> in a ten-year war called "the Titanomachy". As the Titans were the
+      banished gods, who were no longer part of the upper world, they dwelt underground in Tartarus, and as such, they
+      may have been thought of as "gods of the underworld".
+      <br></br>
+      Passages in a section of the Iliad called the Deception of Zeus suggest the possibility that Homer knew of a
+      tradition in which Oceanus and Tethys (rather than Uranus and Gaia, as in Hesiod) were the parents of the Titans.
+      Plato, in his Timaeus, provides a genealogy (probably Orphic) which perhaps reflected an attempt to reconcile this
+      apparent divergence between Homer and Hesiod, with Uranus and Gaia as the parents of Oceanus and Tethys, and
+      Oceanus and Tethys as the parents of Cronus and Rhea "and all that go with them", plus Phorcys.
+    </p>
+
+    <!-- location for auto scroll to go to on God button click -->
+    <div class="scroll-point"></div>
+
+    <!-- buttons to individual god sections -->
+    <div class="buttons gods-main-buttons">
+      <button type="button" class="gods-main-button animate-button gods-main-not-bottom-button">
+        Cronus
+      </button>
+      <button type="button" class="gods-main-button animate-button">
+        Rhea
+      </button>
+    </div>
+
+    <!-- cronus section -->
+    <div class="gods-main-indiv-section gods-main-cronus">
+      <!-- header -->
+      <h1 class="gods-main-header">
+        Cronus
+      </h1>
+
+      <div class="indiv-god-main">
+        <div class="indiv-main-details">
+          <!-- image -->
+          <img class="indiv-main-img cronus-main-img" src="../images/cronus.png"
+            alt="A statue of Cronus against a stormy sky.">
+
+          <!-- list of names -->
+          <ul>
+            <li>Other Name(s): Kronos</li>
+            <li>Roman Name: Saturn</li>
+          </ul>
+        </div>
+
+        <!-- summary -->
+        <article>
+          Cronus was the youngest son of Uranus and Gaea, the leader of the first generation of Titans, and, for a brief
+          period, the ruler of all gods and men. He successfully led the rebellion against his father, but soon grew as
+          tyrannical as him, imprisoning both the Cyclops and the Hecatoncheires, and swallowing all of his children,
+          save the last son; eventually, this child – Zeus – would be the one to overthrow him and lock him away in
+          Tartarus. Because his name was often confused with the Greek word for time, Chronos, Cronus was often depicted
+          as Old Father Time, with whom, conveniently, he did share few characteristics: mercilessness, a beard, and a
+          scythe. In fact, in many cases, the two are visually indistinguishable.
+          <br></br>
+          After seizing power, Cronus married his sister Rhea and, for a while, everything seemed all but perfect.
+          However, at some point, Cronus violently and dramatically changed his ways. Fearing rebellion, he imprisoned
+          both the Cyclopes and the Hecatoncheires in Tartarus and set the dragoness Campe to guard them. Alarmed by a
+          prophecy saying that he would be overthrown by one of his children, he started swallowing them all, one by
+          one. Eventually deposed from the throne, Cronus either escaped to Latium (modern Lazio) or was imprisoned in
+          Tartarus with the rest of the Titans. In time, he was promoted to be the ruler of the Islands of the Blessed,
+          a heaven-like abode, where the souls of only the greatest heroes lived after their earthly deaths.
+        </article>
+      </div>
+    </div>
+
+    <!-- rhea section -->
+    <div class="gods-main-indiv-section gods-main-rhea">
+      <!-- header -->
+      <h1 class="gods-main-header">
+        Rhea
+      </h1>
+
+      <div class="indiv-god-main">
+        <div class="indiv-main-details">
+          <!-- image -->
+          <img class="indiv-main-img rhea-main-img" src="../images/rhea.png"
+            alt="A statue of Rhea with a missing nose and hand against a blue wall.">
+
+          <!-- list of names -->
+          <ul>
+            <li>Roman Name: Ops </li>
+          </ul>
+        </div>
+
+        <!-- summary -->
+        <article>
+          Rhea is a mother goddess, the Titaness daughter of the earth goddess Gaia and the sky god Uranus, himself a
+          son of Gaia. She is the older sister of Cronus, who was also her consort, and the mother of the five eldest <a
+            href="olympians.html">Olympian</a> gods Hestia, Demeter, Hera, Poseidon and Zeus; and Hades, king of
+          the Underworld. When Rhea had her sixth and final child, Zeus, she spirited him away and hid him in Crete,
+          giving Cronus a rock to swallow instead, thus saving her youngest son who would go on to challenge his
+          father's rule and rescue the rest of his siblings. Following Zeus' defeat of Cronus and the rise of the <a
+            href="olympians.html">Olympian</a> gods into power, Rhea withdraws her role as the queen of the gods
+          to become a supporting figure on Mount Olympus. Rhea had "no strong local cult or identifiable activity under
+          her control". She was originally worshiped on the island of Crete, identified in mythology as the site of
+          Zeus' infancy and upbringing.
+          <br></br>
+          Rhea raised another one of her grandsons, Dionysus, after the fiery death of his mother, the mortal princess
+          Semele. Later on she went on to heal Dionysus' raging madness, which had been inflicted on him by the jealous
+          Hera, causing him to wander around aimlessly for some time. According to Bacchylides, it was Rhea herself who
+          restored Pelops to life after his father Tantalus cut him down.
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <!-- sitemap -->
+  <footer>
+    <div class="footer-fill">
+      <!-- column 1 -->
+      <div class="footer-column">
+        <ul>
+          <li class="footer-web-name"><a href="index.html">Mini Myths</a></li>
+          <li><a href="mailto: raveena.s.jain@gmail.com">Contact</a></li>
+          <div>
+            <a href="http://raveenajain.github.io/" target="_blank"><i class="footer-socials fa fa-home"></i></a>
+            <a href="https://www.linkedin.com/in/raveena-jain" target="_blank"><i class="footer-socials fab fa-linkedin"></i></a>
+            <a href="https://rsj-art.tumblr.com/" target="_blank"><i class="footer-socials fab fa-tumblr"></i></a>
+            <a href="https://github.com/raveenajain" target="_blank"><i class="footer-socials fab fa-github"></i></a>
+          </div>
+        </ul>
+      </div>
+      <div class="footer-line"></div>
+      <!-- column 2 -->
+      <div class="footer-column">
+        <ul>
+          <li><a href="primordials.html">Primordials</a></li>
+          <li><a href="titans.html">Titans</a></li>
+          <li><a href="olympians.html">Olympians</a></li>
+        </ul>
+      </div>
+      <div class="footer-line"></div>
+      <!-- column 3 -->
+      <div class="footer-column">
+        <ul>
+          <li><a href="../stories/odyssey.html">The Odyssey</a></li>
+          <li><a href="../stories/tm.html">Theseus and the Minotaur</a>
+        </ul>
+      </div>
+      <div class="footer-line"></div>
+      <!-- column 4 -->
+      <div class="footer-column">
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../quiz.html">Quiz</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

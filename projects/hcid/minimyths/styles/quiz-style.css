@@ -1,0 +1,72 @@
+/* color scheme */
+@import "color-scheme.css";
+
+
+.quiz-main {
+  flex-direction: column;
+}
+
+/* user's score */
+.quiz-main-score {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  visibility: hidden;
+}
+
+
+/* questions */
+/* space after multiple choices before next question */
+ol li { 
+  font-size: 24px;
+  margin: 0px 0px 50px 0px; 
+}
+
+/* space between question and answers */
+.options {
+  margin-top: 15px;
+}
+
+.options input {
+  margin-left: 50px;
+}
+
+.options-text {
+  margin-top: 15px;
+  margin-left: 50px;
+}
+
+/* last i.e. free response question */
+.quiz-main-q4 {
+  margin-bottom: 0;
+}
+
+
+/* buttons */
+.quiz-main-button {
+  background-color: white;
+  border: 2px solid var(--orange);
+  color: var(--orange);
+  margin-bottom: 25px;
+}
+
+.quiz-main-button:hover {
+  background-color: var(--orange);
+  color: white;
+  cursor: pointer;
+}
+
+
+/* multiple choice options in column and entire play again text visible for smaller screens */
+@media (max-width: 900px) {
+  .options {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quiz-main-button {
+    white-space: nowrap;
+    text-align: center;
+    padding: 0;
+  }
+}

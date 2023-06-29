@@ -1,0 +1,76 @@
+[
+  [
+    {
+      "question": "What color was Theseus supposed to change his sails to?",
+      "answers": ["black", "white", "red"],
+      "correct": 2
+    }, 
+    {
+      "question": "What did Ariadne give Theseus to help him defeat the Minotaur?",
+      "answers": ["thread", "food", "a sword"],
+      "correct": 1
+    }, 
+    {
+      "question": "What war did Odysseus fight in?",
+      "answers": ["World War 2", "The Titanomachy", "The Trojan War"],
+      "correct": 3
+    }, 
+    {
+      "question": "Which of the following is Athena not associated with?",
+      "answers": ["wisdom", "warfare", "wilderness"],
+      "correct": 3
+    }, 
+    {
+      "question": "How many Olympians are there?",
+      "answers": ["36", "3", "12"],
+      "correct": 3
+    }, 
+    {
+      "question": "Which gods were the first to emerge after the creation of the cosmos?",
+      "answers": ["Olympians", "Titans", "Primordials"],
+      "correct": 3
+    }, 
+    {
+      "question": "What is Gaia the personification of?",
+      "answers": ["Earth", "sky", "mountains"],
+      "correct": 1
+    }, 
+    {
+      "question": "Who did Cronus imprison?",
+      "answers": ["Cyclops", "Zeus", "Titans"],
+      "correct": 1
+    }, 
+    {
+      "question": "On which island was Rhea worshipped?",
+      "answers": ["Ithaca", "Crete", "Mykonos"],
+      "correct": 2
+    }, 
+    {
+      "question": "Zeus receives the sky, Poseidon the sea, and Hades the",
+      "answers": ["underworld", "land", "air"],
+      "correct": 1
+    }
+  ],
+  [
+    {
+      "question": "Who wrote the Odyssey?",
+      "answer": "homer"
+    }, 
+    {
+      "question": "Who was the King of the Titans?",
+      "answer": "zeus"
+    }, 
+    {
+      "question": "Who was destined to be overthrown by one of his children?",
+      "answer": "uranus"
+    }, 
+    {
+      "question": "The Titans were bainshed to the __________",
+      "answer": "underworld"
+    }, 
+    {
+      "question": "Who did Pasiphae care for?",
+      "answer": "the minotaur"
+    }
+  ]
+]

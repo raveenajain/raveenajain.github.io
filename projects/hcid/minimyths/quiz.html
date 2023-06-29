@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+  <title>Quiz</title>
+  <!-- styles -->
+  <link href="styles/all-style.css" rel="stylesheet" type="text/css" />
+  <link href="styles/quiz-style.css" rel="stylesheet" type="text/css" />
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- scripts -->
+  <script defer src="scripts/all-script.js"></script>
+  <script defer src="scripts/quiz-script.js"></script>
+  <script defer src="scripts/anim-buttons-script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+</head>
+
+<body class="quiz-body">
+  <!-- nav bar -->
+  <nav class="nav-full">
+    <a href="/index.html"><img class="nav-bar-logo" src="images/logo.png" alt="logo"></a>
+    <div class="nav-bar-align">
+      <!-- dropdown on hover -->
+      <div class="nav-dropdown">
+        <span>Gods &#9662;</span>
+        <div class="nav-dropdown-content">
+          <a href="gods/primordials.html">Primordials</a>
+          <a href="gods/titans.html">Titans</a>
+          <a href="gods/olympians.html">Olympians</a>
+        </div>
+      </div>
+      <!-- dropdown on hover -->
+      <div class="nav-dropdown">
+        <span>Stories &#9662;</span>
+        <div class="nav-dropdown-content">
+          <a href="stories/odyssey.html">The Odyssey</a>
+          <a href="stories/tm.html">Theseus and the Minotaur</a>
+        </div>
+      </div>
+      <a class="nav-bar-link nav-bar-highlighted" href="quiz.html">Quiz</a>
+      <a class="nav-bar-link" href="about.html">About</a>
+    </div>
+  </nav>
+
+  <!-- hamburger nav for small screens -->
+  <nav class="nav-min">
+    <a href="/index.html"><img class="nav-bar-logo" src="images/logo.png" alt="logo"></a>
+    <div class="nav-burger">
+      <i class="fa-solid fa-bars"></i>
+      <div class="nav-burger-content">
+        <!-- dropdown -->
+        <span class="nav-bar-link nav-burger-inner-dropdown nav-inner-gods">Gods &#9662;</span>
+        <div class="nav-burger-inner-dropdown-content">
+          <a class="nav-bar-link" href="gods/primordials.html">Primordials</a>
+          <a class="nav-bar-link" href="gods/titans.html">Titans</a>
+          <a class="nav-bar-link" href="gods/olympians.html">Olympians</a>
+        </div>
+        <!-- dropdown -->
+        <span class="nav-bar-link nav-burger-inner-dropdown nav-inner-stories">Stories &#9662;</span>
+        <div class="nav-burger-inner-dropdown-content">
+          <a class="nav-bar-link nav-burger-inner-dropdown-line" href="stories/odyssey.html">The Odyssey</a>
+          <a class="nav-bar-link nav-burger-inner-dropdown-line" href="stories/tm.html">Theseus and the Minotaur</a>
+        </div>
+        <a class="nav-bar-link nav-bar-highlighted" href="/quiz.html">Quiz</a>
+        <a class="nav-bar-link" href="/about.html">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- motion button -->
+  <button type="button" class="motion-toggle motion-toggle-on">
+    Motion On
+  </button>
+
+  <!-- title -->
+  <header>
+    <h1>
+      Quiz Yourself
+    </h1>
+  </header>
+
+  <!-- main -->
+  <main class="quiz-main">
+
+    <!-- list of questions -->
+    <!-- questions 1-4 (i.e. questions labeled 0-3) are multiple choice; question 5 (labeled 4) is free response -->
+    <!-- this discrepancy in numbering is because the code uses standard practice of counting from 0 but the comments match the ordered list numbering seen in the browser -->
+    <!-- everything is initialized blank and the questions and answer options are filled in when the script is called -->
+    <form>
+      <ol>
+        <!-- question 1 -->
+        <li class="quiz-main-q0">
+          <strong class="quiz-main-q0-question"></strong>
+          <br>
+          <div class="options">
+            <label>
+              <input type="radio" class="quiz-main-q0-option0" name="q0" value="option-0">
+              <span class="quiz-main-inner-q0-option0"></span>
+            </label>
+            <label>
+              <input type="radio" class="quiz-main-q0-option1" name="q0" value="option-1">
+              <span class="quiz-main-inner-q0-option1"></span>
+            </label>
+            <label>
+              <input type="radio" class="quiz-main-q0-option2" name="q0" value="option-2">
+              <span class="quiz-main-inner-q0-option2"></span>
+            </label>
+          </div>
+        </li>
+        <!-- question 2 -->
+        <li class="quiz-main-q1">
+          <strong class="quiz-main-q1-question"></strong>
+          <br>
+          <div class="options">
+            <label>
+              <input type="radio" class="quiz-main-q1-option0" name="q1" value="option-0">
+              <span class="quiz-main-inner-q1-option0"></span>
+            </label>
+            <label>
+              <input type="radio" class="quiz-main-q1-option1" name="q1" value="option-1">
+              <span class="quiz-main-inner-q1-option1"></span>
+            </label>
+            <label>
+              <input type="radio" class="quiz-main-q1-option2" name="q1" value="option-2">
+              <span class="quiz-main-inner-q1-option2"></span>
+            </label>
+          </div>
+        </li>
+        <!-- question 3 -->
+        <li class="quiz-main-q2">
+          <strong class="quiz-main-q2-question"></strong>
+          <br>
+          <div class="options">
+            <label>
+              <input type="radio" class="quiz-main-q2-option0" name="q2" value="option-0">
+              <span class="quiz-main-inner-q2-option0"></span>
+            </label>
+            <label>
+              <input type="radio" class="quiz-main-q2-option1" name="q2" value="option-1">
+              <span class="quiz-main-inner-q2-option1"></span>
+            </label>
+            <label>
+              <input type="radio" class="quiz-main-q2-option2" name="q2" value="option-2">
+              <span class="quiz-main-inner-q2-option2"></span>
+            </label>
+          </div>
+        </li>
+        <!-- question 4 -->
+        <li class="quiz-main-q3">
+          <strong class="quiz-main-q3-question"></strong>
+          <br>
+          <div class="options">
+            <label>
+              <input type="radio" class="quiz-main-q3-option0" name="q3" value="option-0">
+              <span class="quiz-main-inner-q3-option0"></span>
+            </label>
+            <label>
+              <input type="radio" class="quiz-main-q3-option1" name="q3" value="option-1">
+              <span class="quiz-main-inner-q3-option1"></span>
+            </label>
+            <label>
+              <input type="radio" class="quiz-main-q3-option2" name="q3" value="option-2">
+              <span class="quiz-main-inner-q3-option2"></span>
+            </label>
+          </div>
+        </li>
+        <!-- question 5 -->
+        <li class="quiz-main-q4">
+          <strong class="quiz-main-q4-question"></strong>
+          <br>
+          <div class="options-text">
+            <label class="quiz-main-q4-label">
+              <input type="text" class="quiz-main-q4-input" name="q4" value="">
+            </label>
+          </div>
+        </li>
+      </ol>
+    </form>
+
+    <!-- user's score -->
+    <p class="quiz-main-score">
+      You have scored a 0% :(
+    </p>
+
+    <!-- Sumbit (onLoad) that is changed to Play Again button -->
+    <center>
+      <button type="button" class="quiz-main-button animate-button">
+        Submit
+      </button>
+    </center>
+  </main>
+
+  <!-- sitemap -->
+  <footer>
+    <div class="footer-fill">
+      <!-- column 1 -->
+      <div class="footer-column">
+        <ul>
+          <li class="footer-web-name"><a href="index.html">Mini Myths</a></li>
+          <li><a href="mailto: raveena.s.jain@gmail.com">Contact</a></li>
+          <div>
+            <a href="http://raveenajain.github.io/" target="_blank"><i class="footer-socials fa fa-home"></i></a>
+            <a href="https://www.linkedin.com/in/raveena-jain" target="_blank"><i class="footer-socials fab fa-linkedin"></i></a>
+            <a href="https://rsj-art.tumblr.com/" target="_blank"><i class="footer-socials fab fa-tumblr"></i></a>
+            <a href="https://github.com/raveenajain" target="_blank"><i class="footer-socials fab fa-github"></i></a>
+          </div>
+        </ul>
+      </div>
+      <div class="footer-line"></div>
+      <!-- column 2 -->
+      <div class="footer-column">
+        <ul>
+          <li><a href="gods/primordials.html">Primordials</a></li>
+          <li><a href="gods/titans.html">Titans</a></li>
+          <li><a href="gods/olympians.html">Olympians</a></li>
+        </ul>
+      </div>
+      <div class="footer-line"></div>
+      <!-- column 3 -->
+      <div class="footer-column">
+        <ul>
+          <li><a href="stories/odyssey.html">The Odyssey</a></li>
+          <li><a href="stories/tm.html">Theseus and the Minotaur</a>
+        </ul>
+      </div>
+      <div class="footer-line"></div>
+      <!-- column 4 -->
+      <div class="footer-column">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

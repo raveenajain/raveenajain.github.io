@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../images/logo.png" type="image/x-icon">
+  <title>The Odyssey</title>
+  <!-- styles  -->
+  <link href="../styles/all-style.css" rel="stylesheet" type="text/css" />
+  <link href="../styles/stories-style.css" rel="stylesheet" type="text/css" />
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- scripts -->
+  <script defer src="../scripts/all-script.js"></script>
+  <script defer src="../scripts/anim-buttons-script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+</head>
+
+<body>
+  <!-- nav bar -->
+  <nav class="nav-full">
+    <a href="../index.html"><img class="nav-bar-logo" src="../images/logo.png" alt="logo"></a>
+    <div class="nav-bar-align">
+      <!-- dropdown on hover -->
+      <div class="nav-dropdown">
+        <span>Gods &#9662;</span>
+        <div class="nav-dropdown-content">
+          <a href="../gods/primordials.html">Primordials</a>
+          <a href="../gods/titans.html">Titans</a>
+          <a href="../gods/olympians.html">Olympians</a>
+        </div>
+      </div>
+      <!-- dropdown on hover -->
+      <div class="nav-dropdown">
+        <span class="nav-bar-highlighted">Stories &#9662;</span>
+        <div class="nav-dropdown-content">
+          <a href="odyssey.html">The Odyssey</a>
+          <a href="tm.html">Theseus and the Minotaur</a>
+        </div>
+      </div>
+      <a class="nav-bar-link" href="../quiz.html">Quiz</a>
+      <a class="nav-bar-link" href="../about.html">About</a>
+    </div>
+  </nav>
+
+  <!-- hamburger nav for small screens -->
+  <nav class="nav-min">
+    <a href="../index.html"><img class="nav-bar-logo" src="../images/logo.png" alt="logo"></a>
+    <div class="nav-burger">
+      <i class="fa-solid fa-bars"></i>
+      <div class="nav-burger-content">
+        <!-- dropdown -->
+        <span class="nav-bar-link nav-burger-inner-dropdown nav-inner-gods">Gods &#9662;</span>
+        <div class="nav-burger-inner-dropdown-content">
+          <a class="nav-bar-link" href="../gods/primordials.html">Primordials</a>
+          <a class="nav-bar-link" href="../gods/titans.html">Titans</a>
+          <a class="nav-bar-link" href="../gods/olympians.html">Olympians</a>
+        </div>
+        <!-- dropdown -->
+        <span class="nav-bar-link nav-burger-inner-dropdown nav-inner-stories nav-bar-highlighted">Stories &#9662;</span>
+        <div class="nav-burger-inner-dropdown-content">
+          <a class="nav-bar-link nav-burger-inner-dropdown-line" href="odyssey.html">The Odyssey</a>
+          <a class="nav-bar-link nav-burger-inner-dropdown-line" href="tm.html">Theseus and the Minotaur</a>
+        </div>
+        <a class="nav-bar-link" href="../quiz.html">Quiz</a>
+        <a class="nav-bar-link" href="../about.html">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- motion button -->
+  <button type="button" class="motion-toggle motion-toggle-on">
+    Motion On
+  </button>
+
+  <!-- story -->
+  <header>
+    <h1>
+      The Odyssey
+    </h1>
+  </header>
+
+  <!-- main text -->
+  <main class="stories-main">
+    <!-- video -->
+    <iframe class="stories-main-video" src="https://www.youtube.com/embed/MS4jk5kavy4" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+
+    <!-- odyssey summary -->
+    <p class="stories-main-summary">
+      The Odyssey is one of two major ancient Greek epic poems attributed to Homer. It follows the Greek hero Odysseus,
+      king of Ithaca, and his journey home after the Trojan War. After the war, which lasted ten years, his journey
+      lasted for ten additional years, during which time he encountered many perils and all of his crewmates were
+      killed. In his absence, Odysseus was assumed dead, and his wife Penelope and son Telemachus had to contend with a
+      group of unruly suitors who were competing for Penelope's hand in marriage.
+      <br></br>
+      The events in the main sequence of the Odyssey (excluding Odysseus' embedded narrative of his wanderings) have
+      been said to take place in the Peloponnese and in what are now called the Ionian Islands. The Odyssey was
+      originally composed in Homeric Greek in around the 8th or 7th century BC and, by the mid-6th century BC, had
+      become part of the Greek literary canon. In antiquity, Homer's authorship of the poem was not questioned, but
+      contemporary scholarship predominantly assumes that the Iliad and the Odyssey were composed independently and that
+      the stories formed as part of a long oral tradition.
+      <br></br>
+      The Odyssey is regarded as one of the most significant works of the Western canon. The first English translation
+      of the Odyssey was in the 16th century. Adaptations and re-imaginings continue to be produced across a wide
+      variety of media.
+    </p>
+  </main>
+
+  <!-- sitemap -->
+  <footer>
+    <div class="footer-fill">
+      <!-- column 1 -->
+      <div class="footer-column">
+        <ul>
+          <li class="footer-web-name"><a href="../index.html">Mini Myths</a></li>
+          <li><a href="mailto: raveena.s.jain@gmail.com">Contact</a></li>
+          <div>
+            <a href="http://raveenajain.github.io/" target="_blank"><i class="footer-socials fa fa-home"></i></a>
+            <a href="https://www.linkedin.com/in/raveena-jain" target="_blank"><i class="footer-socials fab fa-linkedin"></i></a>
+            <a href="https://rsj-art.tumblr.com/" target="_blank"><i class="footer-socials fab fa-tumblr"></i></a>
+            <a href="https://github.com/raveenajain" target="_blank"><i class="footer-socials fab fa-github"></i></a>
+          </div>
+        </ul>
+      </div>
+      <div class="footer-line"></div>
+      <!-- column 2 -->
+      <div class="footer-column">
+        <ul>
+          <li><a href="../gods/primordials.html">Primordials</a></li>
+          <li><a href="../gods/titans.html">Titans</a></li>
+          <li><a href="../gods/olympians.html">Olympians</a></li>
+        </ul>
+      </div>
+      <div class="footer-line"></div>
+      <!-- column 3 -->
+      <div class="footer-column">
+        <ul>
+          <li><a href="odyssey.html">The Odyssey</a></li>
+          <li><a href="tm.html">Theseus and the Minotaur</a>
+        </ul>
+      </div>
+      <div class="footer-line"></div>
+      <!-- column 4 -->
+      <div class="footer-column">
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../quiz.html">Quiz</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

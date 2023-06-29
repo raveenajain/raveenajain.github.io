@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../images/logo.png" type="image/x-icon">
+  <title>Primordials</title>
+  <!-- styles  -->
+  <link href="../styles/all-style.css" rel="stylesheet" type="text/css" />
+  <link href="../styles/gods-style.css" rel="stylesheet" type="text/css" />
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- scripts -->
+  <script defer src="../scripts/all-script.js"></script>
+  <script defer src="../scripts/anim-buttons-script.js"></script>
+  <script defer src="../scripts/gods-script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+</head>
+
+<body>
+  <!-- nav bar -->
+  <nav class="nav-full">
+    <a href="../index.html"><img class="nav-bar-logo" src="../images/logo.png" alt="logo"></a>
+    <div class="nav-bar-align">
+      <!-- dropdown on hover -->
+      <div class="nav-dropdown">
+        <span class="nav-bar-highlighted">Gods &#9662;</span>
+        <div class="nav-dropdown-content">
+          <a href="primordials.html">Primordials</a>
+          <a href="titans.html">Titans</a>
+          <a href="olympians.html">Olympians</a>
+        </div>
+      </div>
+      <!-- dropdown on hover -->
+      <div class="nav-dropdown">
+        <span>Stories &#9662;</span>
+        <div class="nav-dropdown-content">
+          <a href="../stories/odyssey.html">The Odyssey</a>
+          <a href="../stories/tm.html">Theseus and the Minotaur</a>
+        </div>
+      </div>
+      <a class="nav-bar-link" href="../quiz.html">Quiz</a>
+      <a class="nav-bar-link" href="../about.html">About</a>
+    </div>
+  </nav>
+
+  <!-- hamburger nav for small screens -->
+  <nav class="nav-min">
+    <a href="../index.html"><img class="nav-bar-logo" src="../images/logo.png" alt="logo"></a>
+    <div class="nav-burger">
+      <i class="fa-solid fa-bars"></i>
+      <div class="nav-burger-content">
+        <!-- dropdown -->
+        <span class="nav-bar-link nav-burger-inner-dropdown nav-inner-gods nav-bar-highlighted">Gods &#9662;</span>
+        <div class="nav-burger-inner-dropdown-content">
+          <a class="nav-bar-link" href="primordials.html">Primordials</a>
+          <a class="nav-bar-link" href="titans.html">Titans</a>
+          <a class="nav-bar-link" href="olympians.html">Olympians</a>
+        </div>
+        <!-- dropdown -->
+        <span class="nav-bar-link nav-burger-inner-dropdown nav-inner-stories">Stories &#9662;</span>
+        <div class="nav-burger-inner-dropdown-content">
+          <a class="nav-bar-link nav-burger-inner-dropdown-line" href="../stories/odyssey.html">The Odyssey</a>
+          <a class="nav-bar-link nav-burger-inner-dropdown-line" href="../stories/tm.html">Theseus and the Minotaur</a>
+        </div>
+        <a class="nav-bar-link" href="../quiz.html">Quiz</a>
+        <a class="nav-bar-link" href="../about.html">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- motion button -->
+  <button type="button" class="motion-toggle motion-toggle-on">
+    Motion On
+  </button>
+
+  <!-- pop-up: enlarged version of image on a greyed-out background that appears when main image is clicked -->
+  <div class="indiv-pop-up">
+    <!-- initialize with gaia -->
+    <img class="indiv-pop-up-img" src="../images/gaia.jpg"
+      alt="A full body white statue of Gaia with green shrubs in the back.">
+  </div>
+
+  <!-- category of gods -->
+  <header>
+    <h1>
+      Primordials
+    </h1>
+  </header>
+
+  <!-- main text -->
+  <main class="gods-main gods-main-height">
+
+    <!-- primordials summary -->
+    <p class="gods-main-summary">
+      The primordial deities were the first generation of gods and goddesses to emerge after the creation of the cosmos.
+      These deities represented the fundamental forces and physical foundations of the world and were generally not
+      actively worshipped, as they, for the most part, were not given human characteristics; they were instead
+      personifications of places or abstract concepts. Hesiod, in his Theogony, which could be considered the "standard"
+      creation myth of Greek mythology, considers the first beings (after Chaos) to be Gaia, Tartarus, Eros and Nyx.
+      Gaia and Uranus in turn gave birth to the <a href="titans.html">Titans</a>, and the Cyclopes. Scholars dispute
+      the meaning of the primordial deities in the poems of Homer and Hesiod. Since the primordials give birth to the <a
+        href="titans.html">Titans</a>, and the <a href="titans.html">Titans</a> give birth to the <a
+        href="olympians.html">Olympians</a>, one way of interpreting the primordial gods is as the deepest and most
+      fundamental nature of the cosmos.
+    </p>
+
+    <!-- location for auto scroll to go to on God button click -->
+    <div class="scroll-point"></div>
+
+    <!-- buttons to individual god sections -->
+    <div class="buttons gods-main-buttons">
+      <button type="button" class="gods-main-button animate-button gods-main-not-bottom-button">
+        Gaia
+      </button>
+      <button type="button" class="gods-main-button animate-button">
+        Uranus
+      </button>
+    </div>
+
+    <!-- gaia section -->
+    <div class="gods-main-indiv-section gods-main-gaia">
+      <!-- header -->
+      <h1 class="gods-main-header">
+        Gaia
+      </h1>
+
+      <div class="indiv-god-main">
+        <div class="indiv-main-details">
+          <!-- image -->
+          <img class="indiv-main-img gaia-main-img" src="../images/gaia.jpg"
+            alt="A full body white statue of Gaia with green shrubs in the back.">
+
+          <!-- list of names -->
+          <ul>
+            <li>Other Name(s): Ge, Gaea</li>
+            <li>Roman Name: Terra</li>
+          </ul>
+        </div>
+
+        <!-- summary -->
+        <article>
+          Gaia is the personification of the Earth and the ancestral mother of all life. She was worshiped under the
+          epithet "Anesidora", which means "giver of gifts". Gaia is the mother of Uranus (the sky), from whose sexual
+          union she bore the <a href="titans.html">Titans</a> (themselves parents of many of the <a
+            href="olympians.html">Olympian</a> gods), the Cyclopes, and the Giants; as well as of Pontus (the sea),
+          from whose union she bore the primordial sea gods.
+          <br></br>
+          Hesiod's Theogony tells how, after Chaos, "wide-bosomed" Gaia (Earth) arose to be the everlasting seat of the
+          immortals who possess Olympus above. And after Gaia came "dim Tartarus in the depth of the wide-pathed Earth",
+          and next Eros the god of love. Hesiod goes on to say that Gaia brought forth her equal Uranus (Heaven, Sky) to
+          "cover her on every side". Gaia also bore the Ourea (Mountains), and Pontus (Sea), "without sweet union of
+          love" (i.e., with no father).
+          <br><br>
+          Gaia took part in the battles known as the Titanomachy. Because Cronus had learned from Gaia and Uranus that
+          he was destined to be overthrown by one of his children, he swallowed each of the children born to him by his
+          <a href="titans.html">Titan</a> older sister, Rhea. But when Rhea was pregnant with her youngest child,
+          Zeus, she sought help from Gaia and Uranus. When Zeus was born, Rhea gave Cronus a stone wrapped in
+          swaddling-clothes in his place, which Cronus swallowed, and Gaia took the child into her care. With the help
+          of Gaia's advice, Zeus defeated the <a href="titans.html">Titans</a> But afterwards, Gaia, in union with
+          Tartarus, bore the youngest of her sons Typhon, who would be the last challenge to the authority of Zeus.
+        </article>
+      </div>
+    </div>
+
+    <!-- uranus section -->
+    <div class="gods-main-indiv-section gods-main-uranus">
+      <!-- header -->
+      <h1 class="gods-main-header">
+        Uranus
+      </h1>
+
+      <div class="indiv-god-main">
+        <div class="indiv-main-details">
+          <!-- image -->
+          <img class="indiv-main-img uranus-main-img" src="../images/uranus.png" alt="A bust of a statue of Uranus.">
+
+          <!-- list of names -->
+          <ul>
+            <li>Other Name(s): Ouranos</li>
+            <li>Roman Name: Caelus</li>
+          </ul>
+        </div>
+
+        <!-- summary -->
+        <article>
+          Uranus is the personification of the sky and one of the Greek primordial deities. According to Hesiod, Uranus
+          was the son and husband of Gaia (Earth), with whom he fathered the first generation of <a
+            href="titans.html">Titans</a>. However, no cult addressed directly to Uranus survived into Classical
+          times, and Uranus does not appear among the usual themes of Greek painted pottery. With Gaia, Uranus produced
+          eighteen children: the twelve <a href="titans.html">Titans</a>, the three Cyclopes, and the three
+          Hecatoncheires (Hundred-Handers), but hating them, he hid them away somewhere inside Gaia. Angry and in
+          distress, Gaia fashioned a sickle made of adamant and urged her children to punish their father.
+          <br></br>
+          Other sources give other genealogies. In the lost epic poem the Titanomachy, Uranus was apparently the son of
+          Aether, while according to others Uranus was the son of one "Acmon". According to Orphic texts, Uranus (along
+          with Gaia) was the offspring of Nyx (Night) and Phanes. The poet Sappho (c. 630 – c. 570 BC), was said to have
+          made Uranus the father of Eros, by either Gaia, according one source, or Aphrodite, according to another.
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <!-- sitemap -->
+  <footer>
+    <div class="footer-fill">
+      <!-- column 1 -->
+      <div class="footer-column">
+        <ul>
+          <li class="footer-web-name"><a href="index.html">Mini Myths</a></li>
+          <li><a href="mailto: raveena.s.jain@gmail.com">Contact</a></li>
+          <div>
+            <a href="http://raveenajain.github.io/" target="_blank"><i class="footer-socials fa fa-home"></i></a>
+            <a href="https://www.linkedin.com/in/raveena-jain" target="_blank"><i class="footer-socials fab fa-linkedin"></i></a>
+            <a href="https://rsj-art.tumblr.com/" target="_blank"><i class="footer-socials fab fa-tumblr"></i></a>
+            <a href="https://github.com/raveenajain" target="_blank"><i class="footer-socials fab fa-github"></i></a>
+          </div>
+        </ul>
+      </div>
+      <div class="footer-line"></div>
+      <!-- column 2 -->
+      <div class="footer-column">
+        <ul>
+          <li><a href="primordials.html">Primordials</a></li>
+          <li><a href="titans.html">Titans</a></li>
+          <li><a href="olympians.html">Olympians</a></li>
+        </ul>
+      </div>
+      <div class="footer-line"></div>
+      <!-- column 3 -->
+      <div class="footer-column">
+        <ul>
+          <li><a href="../stories/odyssey.html">The Odyssey</a></li>
+          <li><a href="../stories/tm.html">Theseus and the Minotaur</a>
+        </ul>
+      </div>
+      <div class="footer-line"></div>
+      <!-- column 4 -->
+      <div class="footer-column">
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../quiz.html">Quiz</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

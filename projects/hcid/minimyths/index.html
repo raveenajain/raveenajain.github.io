@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+  <title>Mini Myths</title>
+  <!-- styles -->
+  <link href="styles/all-style.css" rel="stylesheet" type="text/css" />
+  <link href="styles/index-style.css" rel="stylesheet" type="text/css" />
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
+  <!-- font-awesome recommends wrapping all icons in <i> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- scripts -->
+  <script defer src="scripts/all-script.js"></script>
+  <script defer src="scripts/index-script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+</head>
+
+<body class="home-body">
+
+  <!-- nav bar -->
+  <nav class="nav-full">
+    <a href="index.html"><img class="nav-bar-logo" src="images/logo.png" alt="logo"></a>
+    <div class="nav-bar-align">
+      <!-- dropdown on hover -->
+      <div class="nav-dropdown">
+        <span>Gods &#9662;</span>
+        <div class="nav-dropdown-content">
+          <a href="gods/primordials.html">Primordials</a>
+          <a href="gods/titans.html">Titans</a>
+          <a href="gods/olympians.html">Olympians</a>
+        </div>
+      </div>
+      <!-- dropdown on hover -->
+      <div class="nav-dropdown">
+        <span>Stories &#9662;</span>
+        <div class="nav-dropdown-content">
+          <a href="stories/odyssey.html">The Odyssey</a>
+          <a href="stories/tm.html">Theseus and the Minotaur</a>
+        </div>
+      </div>
+      <a class="nav-bar-link" href="quiz.html">Quiz</a>
+      <a class="nav-bar-link" href="about.html">About</a>
+    </div>
+  </nav>
+
+  <!-- hamburger nav for small screens -->
+  <nav class="nav-min">
+    <a href="/index.html"><img class="nav-bar-logo" src="images/logo.png" alt="logo"></a>
+    <div class="nav-burger">
+      <i class="fa-solid fa-bars"></i>
+      <div class="nav-burger-content">
+        <!-- dropdown -->
+        <span class="nav-bar-link nav-burger-inner-dropdown nav-inner-gods">Gods &#9662;</span>
+        <div class="nav-burger-inner-dropdown-content">
+          <a class="nav-bar-link" href="gods/primordials.html">Primordials</a>
+          <a class="nav-bar-link" href="gods/titans.html">Titans</a>
+          <a class="nav-bar-link" href="gods/olympians.html">Olympians</a>
+        </div>
+        <!-- dropdown -->
+        <span class="nav-bar-link nav-burger-inner-dropdown nav-inner-stories">Stories &#9662;</span>
+        <div class="nav-burger-inner-dropdown-content">
+          <a class="nav-bar-link nav-burger-inner-dropdown-line" href="stories/odyssey.html">The Odyssey</a>
+          <a class="nav-bar-link nav-burger-inner-dropdown-line" href="stories/tm.html">Theseus and the Minotaur</a>
+        </div>
+        <a class="nav-bar-link" href="quiz.html">Quiz</a>
+        <a class="nav-bar-link" href="about.html">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- motion button -->
+  <!-- always remains visible when "scrolling" -->
+  <button type="button" class="motion-toggle motion-toggle-on">
+    Motion On
+  </button>
+
+  <!-- main -->
+  <main class="home-main">
+
+    <!-- section 1 = name of site -->
+    <div class="home-main-section1">
+      <h1>Mini Myths</h1>
+      <h2>A Brief Look into Greek Mythology</h2>
+      <!-- down arrow -->
+      <center><i class="home-main-arrows arrow1 fas fa-angle-double-down"></i></center>
+    </div>
+
+    <!-- section 2 = gods -->
+    <div class="home-main-section2">
+      <!-- up arrow -->
+      <center><i class="home-main-arrows arrow2-up fas fa-angle-double-up"></i></center>
+      <!-- heading -->
+      <div class="home-main-gods-area home-main-areas">
+        <h1>Gods</h1>
+        <!-- buttons -->
+        <div class="buttons home-main-gods-buttons home-main-buttons">
+          <a href="gods/primordials.html"><button type="button"
+              class="home-main-button home-main-button-off animate-button-color">
+              Primordials
+          </button></a>
+          <a href="gods/titans.html"><button type="button"
+              class="home-main-button home-main-button-off animate-button-color">
+              Titans
+          </button></a>
+          <a href="gods/olympians.html"><button type="button"
+              class="home-main-button home-main-button-off animate-button-color">
+              Olympians
+          </button></a>
+        </div>
+      </div>
+      <!-- down arrow -->
+      <center><i class="home-main-arrows arrow2-down fas fa-angle-double-down"></i></center>
+    </div>
+
+    <!-- section 3 = stories  -->
+    <div class="home-main-section3">
+      <!-- up arrow -->
+      <center><i class="home-main-arrows arrow3 fas fa-angle-double-up"></i></center>
+      <!-- heading -->
+      <div class="home-main-stories-area home-main-areas">
+        <h1>Stories</h1>
+        <!-- buttons -->
+        <div class="buttons home-main-stories-buttons home-main-buttons">
+           <!-- <br> for consistent styling -->
+          <a href="stories/odyssey.html"><button type="button"
+              class="home-main-button home-main-button-off animate-button-color">
+              The <br>Odyssey
+            </button></a>
+          <a href="stories/tm.html"><button type="button"
+              class="home-main-button home-main-button-off animate-button-color">
+              Theseus and <br>The Minotaur
+            </button></a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

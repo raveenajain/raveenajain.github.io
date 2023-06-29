@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+  <title>About</title>
+  <!-- styles -->
+  <link href="styles/all-style.css" rel="stylesheet" type="text/css" />
+  <link href="styles/about-style.css" rel="stylesheet" type="text/css" />
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- scripts -->
+  <script defer src="scripts/all-script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+</head>
+
+<body>
+  <!-- nav bar -->
+  <nav class="nav-full">
+    <a href="index.html"><img class="nav-bar-logo" src="images/logo.png" alt="logo"></a>
+    <div class="nav-bar-align">
+      <!-- dropdown on hover -->
+      <div class="nav-dropdown">
+        <span>Gods &#9662;</span>
+        <div class="nav-dropdown-content">
+          <a href="gods/primordials.html">Primordials</a>
+          <a href="gods/titans.html">Titans</a>
+          <a href="gods/olympians.html">Olympians</a>
+        </div>
+      </div>
+      <!-- dropdown on hover -->
+      <div class="nav-dropdown">
+        <span>Stories &#9662;</span>
+        <div class="nav-dropdown-content">
+          <a href="stories/odyssey.html">The Odyssey</a>
+          <a href="stories/tm.html">Theseus and the Minotaur</a>
+        </div>
+      </div>
+      <a class="nav-bar-link" href="quiz.html">Quiz</a>
+      <a class="nav-bar-link nav-bar-highlighted" href="about.html">About</a>
+    </div>
+  </nav>
+
+  <!-- hamburger nav for small screens -->
+  <nav class="nav-min">
+    <a href="index.html"><img class="nav-bar-logo" src="images/logo.png" alt="logo"></a>
+    <div class="nav-burger">
+      <i class="fa-solid fa-bars"></i>
+      <div class="nav-burger-content">
+        <!-- dropdown -->
+        <span class="nav-bar-link nav-burger-inner-dropdown nav-inner-gods">Gods &#9662;</span>
+        <div class="nav-burger-inner-dropdown-content">
+          <a class="nav-bar-link" href="gods/primordials.html">Primordials</a>
+          <a class="nav-bar-link" href="gods/titans.html">Titans</a>
+          <a class="nav-bar-link" href="gods/olympians.html">Olympians</a>
+        </div>
+        <!-- dropdown -->
+        <span class="nav-bar-link nav-burger-inner-dropdown nav-inner-stories">Stories &#9662;</span>
+        <div class="nav-burger-inner-dropdown-content">
+          <a class="nav-bar-link nav-burger-inner-dropdown-line" href="stories/odyssey.html">The Odyssey</a>
+          <a class="nav-bar-link nav-burger-inner-dropdown-line" href="stories/tm.html">Theseus and the Minotaur</a>
+        </div>
+        <a class="nav-bar-link" href="quiz.html">Quiz</a>
+        <a class="nav-bar-link nav-bar-highlighted" href="about.html">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- motion button -->
+  <button type="button" class="motion-toggle motion-toggle-on">
+    Motion On
+  </button>
+
+  <!-- title -->
+  <header>
+    <h1>
+      About Mini Myths
+    </h1>
+  </header>
+
+  <main class="about-main">
+
+    <!-- about the coursework -->
+    <h2>This Project</h2>
+    <p class="about-main-description">
+      Web Design and Development - an elective for the 2022/2023 Human Computer Interaction Design MSc
+      <br>
+      Raveena Jain
+    </p>
+
+    <!-- mythology and coding references organized via table -->
+    <div class="about-main-sources">
+      <table>
+        <thead>
+          <h2>Resources</h2>
+        </thead>
+        <tbody>
+          <!-- headings -->
+          <tr>
+            <th>Home</th>
+            <th>Primordials</th>
+            <th>Titans</th>
+            <th>Olympians</th>
+            <th>Stories</th>
+            <th>Navigation</th>
+          </tr>
+          <!-- row 1 -->
+          <tr>
+            <td><a
+                href="https://www.videvo.net/video/statue-of-greek-god-hermes-with-others-out-of-focus-left-to-right/1391802/">Gods
+                Image</a></td>
+            <td><a href="https://www.pinterest.com/pin/293648838176008764/">Gaia Image</a></td>
+            <td><a href="https://stock.adobe.com/uk/search?k=kronos&asset_id=99986796">Cronus Image</a></td>
+            <td><a href="https://ancient-literature.com/artemis-personality/">Artemis Image</a></td>
+            <td><a href="https://en.wikipedia.org/wiki/Odyssey">Odyssey</a></td>
+            <td><a
+                href="https://www.vectorstock.com/royalty-free-vector/double-m-letter-logo-lettermark-mm-monogram-type-vector-34986933">Logo</a>
+            </td>
+          </tr>
+          <!-- row 2 -->
+          <tr>
+            <td><a
+                href="https://www.newyorker.com/culture/cultural-comment/should-the-parthenon-marbles-be-returned-to-greece">Stories
+                Image</a></td>
+            <td><a href="https://www.greekmythology.com/Other_Gods/Uranus/uranus.html">Uranus Image</a></td>
+            <td><a href="https://www.greekmythology.com/Titans/Rhea/rhea.html">Rhea Image</a></td>
+            <td><a
+                href="https://www.angkingsculpture.com/sculptures-gallery/outdoor-life-size-marble-greek-goddess-athena-statue/">Athena
+                Image</a></td>
+            <td><a href="https://greekreporter.com/2022/10/01/ancient-greek-myth-theseus-minotaur/">Theseus and The
+                Minotaur</a></td>
+            <td><a href="https://fontawesome.com/search?m=free&o=r">Icons</a></td>
+          </tr>
+          <!-- row 3 -->
+          <tr>
+            <td><a href="https://stackoverflow.com/questions/23934749/fill-element-from-center-on-hover">Button Fill</a>
+            </td>
+            <td><a
+                href="https://mythopedia.com/topics/greek-primordial-gods, https://en.wikipedia.org/wiki/Greek_primordial_deities">Summary</a>
+            </td>
+            <td><a href="https://en.wikipedia.org/wiki/Titans">Summary</a></td>
+            <td><a href="https://www.pinterest.com/pin/indigo-dreams--725501821215889403/">Zeus Image</a></td>
+            <td class="table-invisible"></td>
+            <td><a href="https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp">Dropdown</a></td>
+          </tr>
+          <!-- row 4 -->
+          <tr>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/pageshow_event">Reset on Back</a></td>
+            <td><a href="https://en.wikipedia.org/wiki/Gaia">Gaia Summary</a></td>
+            <td><a href="https://www.greekmythology.com/Titans/Cronus/cronus.html">Cronus Summary</a></td>
+            <td><a href="https://mythopedia.com/topics/greek-olympians">Summary</a></td>
+            <td class="table-invisible"></td>
+            <td><a href="https://stackoverflow.com/questions/16133491/detect-what-page-you-are-on-javascript">Check
+                Page</a></td>
+          </tr>
+          <!-- row 5 -->
+          <tr>
+            <td class="table-invisible"></td>
+            <td><a href="https://en.wikipedia.org/wiki/Uranus_(mythology)">Uranus Summary</a></td>
+            <td><a href="https://en.wikipedia.org/wiki/Rhea_(mythology)">Rhea Summary</a></td>
+            <td><a href="https://www.britannica.com/topic/Artemis-Greek-goddess">Artemis Summary</a></td>
+            <td class="table-invisible"></td>
+            <td><a href="https://stackoverflow.com/questions/12597897/how-do-i-make-a-table-scrollable">Scrolling
+                Table</a></td>
+          </tr>
+          <!-- row 6 -->
+          <tr>
+            <td class="table-invisible"></td>
+            <td class="table-invisible"></td>
+            <td class="table-invisible"></td>
+            <td><a href="https://en.wikipedia.org/wiki/Athena">Athena Summary</a></td>
+          </tr>
+          <!-- row 7 -->
+          <tr>
+            <td class="table-invisible"></td>
+            <td class="table-invisible"></td>
+            <td class="table-invisible"></td>
+            <td><a href="https://en.wikipedia.org/wiki/Zeus">Zeus Summary</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+  <!-- sitemap -->
+  <footer>
+    <div class="footer-fill">
+      <!-- column 1 -->
+      <div class="footer-column">
+        <ul>
+          <li class="footer-web-name"><a href="index.html">Mini Myths</a></li>
+          <li><a href="mailto: raveena.s.jain@gmail.com">Contact</a></li>
+          <div>
+            <a href="http://raveenajain.github.io/" target="_blank"><i class="footer-socials fa fa-home"></i></a>
+            <a href="https://www.linkedin.com/in/raveena-jain" target="_blank"><i class="footer-socials fab fa-linkedin"></i></a>
+            <a href="https://rsj-art.tumblr.com/" target="_blank"><i class="footer-socials fab fa-tumblr"></i></a>
+            <a href="https://github.com/raveenajain" target="_blank"><i class="footer-socials fab fa-github"></i></a>
+          </div>
+        </ul>
+      </div>
+      <div class="footer-line"></div>
+      <!-- column 2 -->
+      <div class="footer-column">
+        <ul>
+          <li><a href="gods/primordials.html">Primordials</a></li>
+          <li><a href="gods/titans.html">Titans</a></li>
+          <li><a href="gods/olympians.html">Olympians</a></li>
+        </ul>
+      </div>
+      <div class="footer-line"></div>
+      <!-- column 3 -->
+      <div class="footer-column">
+        <ul>
+          <li><a href="stories/odyssey.html">The Odyssey</a></li>
+          <li><a href="stories/tm.html">Theseus and the Minotaur</a>
+        </ul>
+      </div>
+      <div class="footer-line"></div>
+      <!-- column 4 -->
+      <div class="footer-column">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

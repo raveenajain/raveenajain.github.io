@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../images/logo.png" type="image/x-icon">
+  <title>Olympians</title>
+  <!-- styles  -->
+  <link href="../styles/all-style.css" rel="stylesheet" type="text/css" />
+  <link href="../styles/gods-style.css" rel="stylesheet" type="text/css" />
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- scripts -->
+  <script defer src="../scripts/all-script.js"></script>
+  <script defer src="../scripts/anim-buttons-script.js"></script>
+  <script defer src="../scripts/gods-script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+</head>
+
+<body>
+  <!-- nav bar -->
+  <nav class="nav-full">
+    <a href="../index.html"><img class="nav-bar-logo" src="../images/logo.png" alt="logo"></a>
+    <div class="nav-bar-align">
+      <!-- dropdown on hover -->
+      <div class="nav-dropdown">
+        <span class="nav-bar-highlighted">Gods &#9662;</span>
+        <div class="nav-dropdown-content">
+          <a href="primordials.html">Primordials</a>
+          <a href="titans.html">Titans</a>
+          <a href="olympians.html">Olympians</a>
+        </div>
+      </div>
+      <!-- dropdown on hover -->
+      <div class="nav-dropdown">
+        <span>Stories &#9662;</span>
+        <div class="nav-dropdown-content">
+          <a href="../stories/odyssey.html">The Odyssey</a>
+          <a href="../stories/tm.html">Theseus and the Minotaur</a>
+        </div>
+      </div>
+      <a class="nav-bar-link" href="../quiz.html">Quiz</a>
+      <a class="nav-bar-link" href="../about.html">About</a>
+    </div>
+  </nav>
+
+  <!-- hamburger nav for small screens -->
+  <nav class="nav-min">
+    <a href="../index.html"><img class="nav-bar-logo" src="../images/logo.png" alt="logo"></a>
+    <div class="nav-burger">
+      <i class="fa-solid fa-bars"></i>
+      <div class="nav-burger-content">
+        <!-- dropdown -->
+        <span class="nav-bar-link nav-burger-inner-dropdown nav-inner-gods nav-bar-highlighted">Gods &#9662;</span>
+        <div class="nav-burger-inner-dropdown-content">
+          <a class="nav-bar-link" href="primordials.html">Primordials</a>
+          <a class="nav-bar-link" href="titans.html">Titans</a>
+          <a class="nav-bar-link" href="olympians.html">Olympians</a>
+        </div>
+        <!-- dropdown -->
+        <span class="nav-bar-link nav-burger-inner-dropdown nav-inner-stories">Stories &#9662;</span>
+        <div class="nav-burger-inner-dropdown-content">
+          <a class="nav-bar-link nav-burger-inner-dropdown-line" href="../stories/odyssey.html">The Odyssey</a>
+          <a class="nav-bar-link nav-burger-inner-dropdown-line" href="../stories/tm.html">Theseus and the Minotaur</a>
+        </div>
+        <a class="nav-bar-link" href="../quiz.html">Quiz</a>
+        <a class="nav-bar-link" href="../about.html">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- motion button -->
+  <button type="button" class="motion-toggle motion-toggle-on">
+    Motion On
+  </button>
+
+  <!-- pop-up: enlarged version of image on greyed-out background that appears when main image is clicked -->
+  <div class="indiv-pop-up">
+    <!-- initialize with zeus -->
+    <img class="indiv-pop-up-img" src="../images/zeus.jpg" alt="A bust of Zeus looking to the right.">
+  </div>
+
+  <!-- category of gods -->
+  <header>
+    <h1>
+      Olympians
+    </h1>
+  </header>
+
+  <!-- main text -->
+  <main class="gods-main gods-main-height">
+
+    <!-- olympians summary -->
+    <p class="gods-main-summary">
+      The Twelve Olympians were the principal deities of Greek mythology. Their name derives from the fact that they
+      lived on Mount Olympus, a medium-sized mountain in northern Greece. With Zeus as their king, they were worshiped
+      as the rulers of the cosmos. However, not all sources agreed on the identities of the Twelve Olympians. In some
+      traditions, the domestic goddess Hestia, one of the first generation of Olympians, gave up her seat to Dionysus
+      when he became a god. Because of this, there are actually thirteen gods who were counted.
+      <br></br>
+      The first generation of Olympians were children of the <a href="titans.html">Titans</a> Cronus and Rhea,
+      themselves early rulers of the cosmos. Eventually, Zeus and his siblings overthrew the <a
+        href="titans.html">Titans</a> and made themselves the new gods. They continued to rule undefeated (though
+      not unchallenged) for the remainder of the Greek mythical period. The second generation of Olympians were mostly
+      offspring of Zeus and his siblings. They included Athena, goddess of wisdom, Ares, god of war, and the twins
+      Apollo and Artemis.
+    </p>
+
+    <!-- location for auto scroll to go to on God button click -->
+    <div class="scroll-point"></div>
+
+    <!-- buttons to open individual god sections -->
+    <div class="buttons gods-main-buttons">
+      <button type="button" class="gods-main-button animate-button gods-main-not-bottom-button">
+        Artemis
+      </button>
+      <button type="button" class="gods-main-button animate-button gods-main-not-bottom-button">
+        Athena
+      </button>
+      <button type="button" class="gods-main-button animate-button">
+        Zeus
+      </button>
+    </div>
+
+    <!-- artemis section -->
+    <div class="gods-main-indiv-section gods-main-Artemis">
+      <!-- header -->
+      <h1 class="gods-main-header">
+        Artemis
+      </h1>
+
+      <div class="indiv-god-main">
+        <div class="indiv-main-details">
+          <!-- image -->
+          <img class="indiv-main-img artemis-main-img" src="../images/artemis.png"
+            alt="A statue of Artemis with a small stag beside her in museum.">
+
+          <!-- list of names -->
+          <ul>
+            <li>Roman Name: Diana</li>
+          </ul>
+        </div>
+
+        <!-- summary -->
+        <article>
+          Artemis is the goddess of wild animals, the hunt, and vegetation and of chastity and childbirth. She was the
+          daughter of Zeus and Leto and the twin sister of Apollo. Among the rural populace, Artemis was the favourite
+          goddess. Her character and function varied greatly from place to place, but, apparently, behind all forms lay
+          the goddess of wild nature, who danced, usually accompanied by nymphs, in mountains, forests, and marshes.
+          Artemis embodied the sportsman’s ideal, so besides killing game she also protected it, especially the young.
+          <br></br>
+          The wrath of Artemis was proverbial, for to it myth attributed wild nature’s hostility to humans. Yet Greek
+          sculpture avoided Artemis’s unpitying anger as a motif. In fact, the goddess herself did not become popular as
+          a subject in the great sculptural schools until the relatively gentle 4th-century-bce spirit prevailed.
+        </article>
+      </div>
+    </div>
+
+    <!-- athena section -->
+    <div class="gods-main-indiv-section gods-main-athena">
+      <!-- header -->
+      <h1 class="gods-main-header">
+        Athena
+      </h1>
+
+      <div class="indiv-god-main">
+        <div class="indiv-main-details">
+          <!-- image -->
+          <img class="indiv-main-img athena-main-img" src="../images/athena.png"
+            alt="A full body statue of Athena holding a spear and shield against a blue sky.">
+
+          <!-- list of names -->
+          <ul>
+            <li>Epithet: Pallas</li>
+            <li>Other Name(s): Athene</li>
+            <li>Roman Name: Minerva</li>
+          </ul>
+        </div>
+
+        <!-- summary -->
+        <article>
+          Athena is associated with wisdom, warfare, and handicraft and was regarded as the patron and protectress of
+          various cities across Greece, particularly the city of Athens, from which she most likely received her name.
+          Her major symbols include owls, olive trees, snakes, and the Gorgoneion. In art, she is generally depicted
+          wearing a helmet and holding a spear. She was also a warrior goddess, and was believed to lead soldiers into
+          battle as Athena Promachos. Her main festival in Athens was the Panathenaia, which was celebrated during the
+          month of Hekatombaion in midsummer and was the most important festival on the Athenian calendar.
+          <br></br>
+          Athena was believed to have been born from the forehead of her father Zeus. In some versions of the story,
+          Athena has no mother. Along with Aphrodite and Hera, Athena was one of the three goddesses whose feud resulted
+          in the beginning of the Trojan War. She plays an active role in the Iliad, in which she assists the Achaeans
+          and, in the <a href="../stories/odyssey.html"> Odyssey</a>, she is the divine counselor to Odysseus. In the
+          later writings of the Roman poet Ovid, Athena was said to have competed against the mortal Arachne in a
+          weaving competition, afterward transforming Arachne into the first spider.
+        </article>
+      </div>
+    </div>
+
+    <!-- zeus section -->
+    <div class="gods-main-indiv-section gods-main-zeus">
+      <!-- header -->
+      <h1 class="gods-main-header">
+        Zeus
+      </h1>
+
+      <div class="indiv-god-main">
+        <div class="indiv-main-details">
+          <!-- image -->
+          <img class="indiv-main-img zeus-main-img" src="../images/zeus.jpg" alt="A bust of Zeus looking to the right.">
+
+          <!-- list of names -->
+          <ul>
+            <li>Roman Name: Jupiter</li>
+          </ul>
+        </div>
+
+        <!-- summary -->
+        <article>
+          Zeus is the sky and thunder god who rules as king of the gods on Mount Olympus. Zeus is the child of Cronus
+          and Rhea, the youngest of his siblings to be born, though sometimes reckoned the eldest as the others required
+          disgorging from Cronus's stomach; in most traditions, he is married to Hera. He was respected as an allfather
+          who was chief of the gods and assigned roles to the others: "Even the gods who are not his natural children
+          address him as Father, and all the gods rise in his presence.
+          <br></br>
+          According to the Theogony, after Zeus reaches manhood, Cronus is made to disgorge the five children and the
+          stone "by the stratagems of Gaia, but also by the skills and strength of Zeus", presumably in reverse order,
+          vomiting out the stone first, then each of the five children in the opposite order to swallowing. Zeus then
+          sets up the stone at Delphi, so that it may act as "a sign thenceforth and a marvel to mortal men". Zeus next
+          frees the Cyclopes, who, in return, and out of gratitude, give him his thunderbolt, which had previously been
+          hidden by Gaia. Then begins the Titanomachy, the war between the Olympians, led by Zeus, and the <a
+            href="titans.html">Titans</a>, led by Cronus, for control of the universe. According to the Iliad,
+          after the battle with the <a href="titans.html">Titans</a>, Zeus shares the world with his brothers,
+          Poseidon and Hades, by drawing lots: Zeus receives the sky, Poseidon the sea, and Hades the underworld, with
+          the earth and Olympus remaining common ground.
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <!-- sitemap -->
+  <footer>
+    <div class="footer-fill">
+      <!-- column 1 -->
+      <div class="footer-column">
+        <ul>
+          <li class="footer-web-name"><a href="index.html">Mini Myths</a></li>
+          <li><a href="mailto: raveena.s.jain@gmail.com">Contact</a></li>
+          <div>
+            <a href="http://raveenajain.github.io/" target="_blank"><i class="footer-socials fa fa-home"></i></a>
+            <a href="https://www.linkedin.com/in/raveena-jain" target="_blank"><i class="footer-socials fab fa-linkedin"></i></a>
+            <a href="https://rsj-art.tumblr.com/" target="_blank"><i class="footer-socials fab fa-tumblr"></i></a>
+            <a href="https://github.com/raveenajain" target="_blank"><i class="footer-socials fab fa-github"></i></a>
+          </div>
+        </ul>
+      </div>
+      <div class="footer-line"></div>
+      <!-- column 2 -->
+      <div class="footer-column">
+        <ul>
+          <li><a href="primordials.html">Primordials</a></li>
+          <li><a href="titans.html">Titans</a></li>
+          <li><a href="olympians.html">Olympians</a></li>
+        </ul>
+      </div>
+      <div class="footer-line"></div>
+      <!-- column 3 -->
+      <div class="footer-column">
+        <ul>
+          <li><a href="../stories/odyssey.html">The Odyssey</a></li>
+          <li><a href="../stories/tm.html">Theseus and the Minotaur</a>
+        </ul>
+      </div>
+      <div class="footer-line"></div>
+      <!-- column 4 -->
+      <div class="footer-column">
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../quiz.html">Quiz</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

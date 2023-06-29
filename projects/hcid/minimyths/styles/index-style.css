@@ -1,0 +1,152 @@
+/* color scheme */
+@import "color-scheme.css";
+
+
+.home-body {
+  background-color: var(--dark-blue);
+  display: flex;
+  flex-direction: column;
+  color: var(--light-blue);
+  overflow: hidden; /* to stop all 3 sections from showing at once */
+}
+
+.home-main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  /* different style of page so attributes do not have to match other pages */
+  padding: 0;
+  margin: 0;
+}
+
+/* title, gods, stories */
+.home-main-section1, .home-main-section2, .home-main-section3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* content "between" arrows */
+.home-main-gods-area, .home-main-stories-area {
+  padding: 25px 0px 25px 0px;
+}
+
+.home-main-section2 h1, .home-main-section3 h1 {
+  color: var(--dark-blue);
+  margin-bottom: 10px;
+}
+
+/* background images */
+.home-main-section2 {
+  background-image: url('../images/gods_background_white_statue_busts.jpg');
+}
+
+.home-main-section3 {
+  background-image: url('../images/stories_grey_museum_statues.jpg');
+}
+
+.home-main-section2, .home-main-section3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* arrows */
+.home-main-arrows {
+  font-size: 24px;
+  width: fit-content;
+  margin: 20px 0px 20px 0px;
+  color: var(--dark-blue);
+}
+
+/* only section 1 arrow is a different color */
+.arrow1 {
+  color: var(--light-blue);
+}
+
+.home-main-arrows:hover {
+  transform: scale(1.65);
+  cursor: pointer;
+}
+
+
+/* buttons */
+.home-main-button {
+  background-color: var(--dark-blue);
+  border: 2px solid var(--dark-blue);
+  color: var(--light-blue);
+  width: 350px; /* for consistency despite text length */
+}
+
+.home-main-button:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.home-main-button-on {
+  font-size: 48px;
+  visibility: visible;
+}
+
+.home-main-button-off {
+  font-size: 0px;
+  visibility: hidden;
+}
+
+.home-main-gods-area:hover, .home-main-stories-area:hover {
+    cursor: pointer;
+}
+
+/* no height so there is no extra space under the h1 when buttons are hidden */
+.home-main-buttons {
+  height: 0px;
+}
+
+/* expand height so buttons fit */
+.home-main-areas:hover .home-main-buttons {
+  height: 50px;
+}
+
+/* so motion button stays visible even when moving between sections */
+.home-body .motion-toggle {
+  position: fixed;
+}
+
+
+/* transitions */
+.home-main-arrows-hover {
+  transition: 0.5s;
+}
+
+/* gradient */
+.animate-button-color {
+  background-image: linear-gradient(var(--mid-blue), var(--mid-blue));
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+}
+
+.animate-button-color:hover {
+  background-size: 100% 100%;
+}
+
+
+/* smaller screens where buttons no longer fit in a row */
+@media (max-width: 1025px) {
+  .home-main-gods-buttons, .home-main-stories-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .home-main-button {
+    margin-bottom: 20px;
+    padding: 5px 0px 5px 0px;
+  }
+
+  .home-main-areas:hover .home-main-buttons {
+    height: 300px;
+  }
+}
