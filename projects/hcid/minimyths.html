@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <title> Mini Myths </title>
+  </head>
+
+  <!--navigation bar -->
+  <header id="my-navbar">
+    <a class="active button" href="http://raveenajain.github.io/">RSJ</a>
+    <a class="active button" style="float: right" href="mailto:raveena.s.jain@gmail.com">Contact</a>
+    <div class="dropHover" onmouseover="getMinWidth(0)">
+      <div>Portfolio &#9662;</div>
+      <div class="dropdown">
+        <a href="http://raveenajain.github.io/projects">Projects</a>
+        <a href="http://raveenajain.github.io/artwork">Artwork</a>
+      </div>
+    </div>
+    <div class="dropHover" onmouseover="getMinWidth(1)">
+      <div>Me &#9662;</div>
+      <div class="dropdown">
+        <a href="http://raveenajain.github.io/#about">About</a>
+        <a href="http://raveenajain.github.io/resume">Resume</a>
+        <a href="http://raveenajain.github.io/#links">Socials</a>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <!-- title of page -->
+    <div class="page-titles">
+      Mini Myths
+    </div>
+
+    <center>
+      <div class="page-sub-header"> Prototype </div>
+      <div class="page-text">
+        The project was for my Web Design and Develoment module. The first step
+        was to choose a topic (I picked Greek Mythology) and to make a simple
+        <i><a class="text-link" target="_blank" href="https://www.figma.com/proto/gvnX96rkeQqbRCU2KtDvls/web-dev-myth-mockup?node-id=1-2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=3%3A121">
+          prototype</a></i>.
+      </div>
+      <div>
+        <img class="page-img" src="../../images/minimyths/home1.jpg" style="width: 40%; float: none;">
+        <img class="page-img" src="../../images/minimyths/home2.jpg" style="width: 40%; float: none;">
+        <img class="page-img" src="../../images/minimyths/gods.jpg" style="width: 40%; float: none;">
+        <img class="page-img" src="../../images/minimyths/quiz.jpg" style="width: 40%; float: none;">
+      </div>
+
+      <div class="page-sub-header"> Final Website </div>
+      <div class="page-text">
+        The focus of this project was not on the content of the site, but on the
+        design and implementation. Here is the link to the <i><a class="text-link" target="_blank" href="https://github.com/raveenajain/minimyths">source code</a></i>
+        and to the <i><a class="text-link" target="_blank" href="https://inm316.raveenajain.repl.co/">final website</a></i> itself.
+        <br> </br>
+      </div>
+
+    </center>
+
+  </body>
+
+  <script>
+    function getMinWidth(item) {
+      var drops = document.getElementsByClassName("dropHover");
+      var w = drops[item].clientWidth;
+      document.querySelectorAll(".dropdown")[item].style.minWidth = w + 'px';
+    }
+
+
+  </script>
+
+</html>
+
+<!-- helpful sources: https://codepen.io/codewithJahid/pen/JRPvBj -->
