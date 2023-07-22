@@ -76,21 +76,12 @@
 
     <!-- Portfolio -->
     <div class="parallel-scrolling" id="last-scroll">
-      <a class="portfolio-text" id="portfolio-left" onmouseover="expand('left')" onmouseout="resetExpand('left')"
-        href="http://raveenajain.github.io/projects">
+      <a class="portfolio-text" id="portfolio-left" href="http://raveenajain.github.io/projects">
         Projects
-        <div class="portfolio-info-text" style="display: none">
-          These are projects Raveena has either developed for a class or in her own time.
-        </div>
       </a>
       <div class="line"></div>
-      <a class="portfolio-text" id="portfolio-right" onmouseover="expand('right')" onmouseout="resetExpand('right')"
-        href="http://raveenajain.github.io/artwork">
+      <a class="portfolio-text" id="portfolio-right" href="http://raveenajain.github.io/artwork">
         Artwork
-        <div class="portfolio-info-text" style="display: none">
-          These are pieces Raveena has completed either for her Animation classes
-          or as personal projects (or just for fun).
-        </div>
       </a>
     </div>
 
@@ -107,7 +98,7 @@
       <a href="https://github.com/raveenajain" target=”_blank”>
         <img class="logos" style="width: 3.5%; height: 3.5%; padding-left: 1.25%; padding-bottom: 3.75%"
         src="images/ghlogo.png" title="Github" alt="GitHub Logo"></a>
-        <p> Raveena Jain 2022 </p>
+        <p> Raveena Jain 2023 </p>
     </center>
   </div>
 
@@ -182,51 +173,6 @@
       index.style.animation_delay = "0.5s";
     }
 
-    // for portfolio when hovering
-    function expand(index) {
-      document.getElementById("last-scroll").style.animation = "portAnimate 1.5s ease-out forwards";
-      if (index == 'left') {
-        document.getElementById("portfolio-right").style.display = "none";
-        document.getElementsByClassName("line")[0].style.display = "none";
-        document.getElementById("portfolio-left").style.width = "100%";
-        document.getElementById("portfolio-left").style.animation = "portAnimate 1.5s ease-out forwards";
-        document.getElementsByClassName("portfolio-text")[0].style.paddingTop = height * 0.3 + "px";
-        document.getElementsByClassName("portfolio-info-text")[0].style.display = "block";
-        var infoH = document.getElementsByClassName("portfolio-info-text")[0].clientHeight;
-        document.getElementsByClassName("portfolio-text")[0].style.paddingBottom = pb - infoH + "px";
-      } else if (index == 'right') {
-        document.getElementById("portfolio-left").style.display = "none";
-        document.getElementsByClassName("line")[0].style.display = "none";
-        document.getElementById("portfolio-right").style.width = "100%";
-        document.getElementById("portfolio-right").style.animation = "portAnimate 1.5s ease-out forwards";
-        document.getElementsByClassName("portfolio-text")[1].style.paddingTop = height * 0.3 + "px";
-        document.getElementsByClassName("portfolio-info-text")[1].style.display = "block";
-        var infoH = document.getElementsByClassName("portfolio-info-text")[1].clientHeight;
-        document.getElementsByClassName("portfolio-text")[1].style.paddingBottom = pb - infoH + "px";
-      }
-    }
-
-    function resetExpand(index) {
-      document.getElementById("last-scroll").style.animation = "portUnAnimate 0s ease-out forwards";
-      if (index == 'left') {
-        document.getElementById("portfolio-right").style.display = "block";
-        document.getElementsByClassName("line")[0].style.display = "inline-block";
-        document.getElementById("portfolio-left").style.width = "48%";
-        document.getElementById("portfolio-left").style.animation = "portUnAnimate 0s ease-out forwards";
-        document.getElementsByClassName("portfolio-text")[0].style.paddingBottom = pb + "px";
-        document.getElementsByClassName("portfolio-text")[0].style.paddingTop = height * 0.4 + "px";
-        document.getElementsByClassName("portfolio-info-text")[0].style.display = "none";
-      } else if (index == 'right') {
-        document.getElementById("portfolio-left").style.display = "block";
-        document.getElementsByClassName("line")[0].style.display = "inline-block";
-        document.getElementById("portfolio-right").style.width = "48%";
-        document.getElementById("portfolio-right").style.animation = "portUnAnimate 0s ease-out forwards";
-        document.getElementsByClassName("portfolio-text")[1].style.paddingBottom = pb + "px";
-        document.getElementsByClassName("portfolio-text")[1].style.paddingTop = height * 0.4 + "px";
-        document.getElementsByClassName("portfolio-info-text")[1].style.display = "none";
-      }
-    }
-
   </script>
 
 </html>
@@ -238,4 +184,5 @@ https://www.w3schools.com/howto/howto_js_navbar_sticky.asp,
 https://redstapler.co/detect-mobile-device-with-javascript/,
 https://www.w3schools.com/css/css_dropdowns.asp
 https://dev.to/timhuang/a-simple-way-to-detect-if-browser-is-on-a-mobile-device-with-javascript-44j3,
-https://www.geeksforgeeks.org/create-a-letter-spacing-animation-effect-using-html-and-css/ -->
+https://www.geeksforgeeks.org/create-a-letter-spacing-animation-effect-using-html-and-css/
+https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/ -->
