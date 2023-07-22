@@ -219,7 +219,7 @@ body, html {
   font-size: 6vw;
   font-weight: lighter;
   display: flex;
-  text-decoration: ;
+  text-decoration: none;
   justify-content: center;
   overflow: hidden;
   background: linear-gradient(to right, var(--color-red), var(--color-red) 50%, black 50%);
