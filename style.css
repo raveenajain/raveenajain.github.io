@@ -508,14 +508,23 @@ body, html {
 
 
 /* resume */
-iframe {
-  margin-top: 45px;
+.resume-section-header {
+  width: 90%;
+  border-bottom: 1.5px solid;
+  margin-top: 10px;
 }
 
-.altSrc {
-  font-family: var(--font-cour);
-  font-size: 16px;
-  font-weight: lighter;
-  padding-top: 1%;
-  padding-bottom: 1%;
+.resume-main {
+  display: flex;
+  width: 100%;
+}
+
+.resume-left {
+  flex: 8;
+}
+
+.resume-right {
+  flex: 2;
+  color: grey;
+  margin-left: 0;
 }
