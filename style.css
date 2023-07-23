@@ -521,10 +521,12 @@ body, html {
 
 .resume-left {
   flex: 8;
+  text-align: left;
 }
 
 .resume-right {
   flex: 2;
   color: grey;
   margin-left: 0;
+  text-align: left;
 }
