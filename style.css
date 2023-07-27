@@ -167,7 +167,7 @@ body, html {
   font-size: 0px;
   font-weight: lighter;
   padding-top: 10%;
-  padding-bottom: 7%;
+  padding-bottom: 5%;
   position: relative;
 }
 
@@ -188,6 +188,11 @@ body, html {
   display: inline-block;
 }
 
+
+.main-subtext {
+  width: 70%;
+  text-align: center;
+}
 
 /* animating hovering over name letters changing color on home page */
 .anim-text {
