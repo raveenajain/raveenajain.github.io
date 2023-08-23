@@ -70,12 +70,22 @@
             <div class="subtext portfolio-subtext">Fanworks</div>
           </a>
         </div>
-        <a href="http://raveenajain.github.io/projects/hcid/report"
-          onmouseover="greyscale(3)" onmouseout="removeGrey(3)">
-          <div class="thumbnails">
-            <img class="portfolio-img" src="../images/report.png"
-              alt="screenshot of first 2 pages of pdf report that is text">
-            <div class="subtext portfolio-subtext">Coursework</div>
+        <div class="thumbnails">
+          <a href="http://raveenajain.github.io/projects/hcid/report"
+            onmouseover="greyscale(3)" onmouseout="removeGrey(3)">
+            <div class="thumbnails">
+              <img class="portfolio-img" src="../images/report.png"
+                alt="screenshot of first 2 pages of pdf report that is text">
+              <div class="subtext portfolio-subtext">Coursework</div>
+            </a>
+          </div>
+        </div>
+        <div class="thumbnails">
+          <a href="http://raveenajain.github.io/projects/hcid/charity"
+            onmouseover="greyscale(4)" onmouseout="removeGrey(4)">
+            <img class="portfolio-img" src="../images/charity.png"
+              alt="screenshot of two spreadsheets, mostly text but some color coding">
+            <div class="subtext portfolio-subtext">Fanworks</div>
           </a>
         </div>
       </center>
@@ -102,10 +112,10 @@
     }
 
     // desktop
-    var arryImg = ["../images/report.png", "../images/mm.png", "../images/miro.png", "../images/ia.png"];
-    var arryText = ["Accessibility Report", "Mini Myths", "KitchenMate", "Fanworks"];
+    var arryImg = ["../images/charity.png", "../images/mm.png", "../images/miro.png", "../images/ia.png", "../images/report.png"];
+    var arryText = ["Charity Redesign", "Mini Myths", "KitchenMate", "Fanworks", "Accessibility Report"];
     var counter = 1;
-    var total = 4;
+    var total = 5;
     // images in order
     window.onload = function() {
       if (/Android|webOS|iPadOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -140,10 +150,12 @@
       var a1 = arryImg[1];
       var a2 = arryImg[2];
       var a3 = arryImg[3];
+      var a4 = arryImg[4];
       var at0 = arryText[0];
       var at1 = arryText[1];
       var at2 = arryText[2];
       var at3 = arryText[3];
+      var at4 = arryText[4];
       var o = document.getElementById("one").src;
       if (index == 1) {
         if (o.includes("miro")) {
@@ -154,19 +166,23 @@
           window.location.href = "http://raveenajain.github.io/projects/hcid/report";
         } else if (o.includes("mm")) {
           window.location.href = "http://raveenajain.github.io/projects/hcid/minimyths";
+        } else if (o.includes("charity")) {
+          window.location.href = "http://raveenajain.github.io/projects/hcid/charity";
         }
       } else if (index == 0) {
         document.getElementById("two").src = arryImg[1];
-        document.getElementById("zero").src = arryImg[3];
+        document.getElementById("zero").src = arryImg[4];
         document.getElementById("one").src = arryImg[0];
-        arryImg[0] = a3;
+        arryImg[0] = a4;
         arryImg[1] = a0;
         arryImg[2] = a1;
         arryImg[3] = a2;
-        arryText[0] = at3;
+        arryImg[4] = a3;
+        arryText[0] = at4;
         arryText[1] = at0;
         arryText[2] = at1;
         arryText[3] = at2;
+        arryText[4] = at3;
         counter = (counter - 1);
         if (counter <= 0) {
           counter = total;
@@ -178,11 +194,13 @@
         arryImg[0] = a1;
         arryImg[1] = a2;
         arryImg[2] = a3;
-        arryImg[3] = a0;
+        arryImg[3] = a4;
+        arryImg[4] = a0;
         arryText[0] = at1;
         arryText[1] = at2;
         arryText[2] = at3;
-        arryText[3] = at0;
+        arryText[3] = at4;
+        arryText[4] = at0;
         counter = (counter + 1);
         if (counter >= (total + 1)) {
           counter = 1;
