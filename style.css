@@ -516,17 +516,20 @@ body, html {
 .resume-section-header {
   width: 90%;
   border-bottom: 1.5px solid;
-  margin-top: 10px;
+  padding-top: 0%;
+  margin-top: 2%;
 }
 
 .resume-main {
   display: flex;
   width: 100%;
+  line-height: 200%;
 }
 
 .resume-left {
   flex: 8;
   text-align: left;
+  padding-top: 0%;
 }
 
 .resume-right {
@@ -534,4 +537,9 @@ body, html {
   color: grey;
   margin-left: 0;
   text-align: left;
+  padding-top: 0%;
+}
+
+.resume-top-line {
+  padding-top: 0.85%;
 }
