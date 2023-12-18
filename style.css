@@ -138,17 +138,29 @@ body, html {
 
 
 /* for images of logo links */
-.logos {
-  padding-top: 3%;
-  padding-bottom: 3%;
-}
-
 #links {
   background: black;
   font-family: var(--font-cour);
-  font-size: 8px;
+  text-align: center;
+}
+
+/* social media icons */
+.footer-socials {
+  padding: 5% 3% 5% 3%;
+  font-size: 56px;
   color: white;
-  padding-bottom: 2%;
+}
+
+.footer-socials:hover {
+  cursor: pointer;
+  color: var(--color-red);
+}
+
+#link-name {
+  color: white;
+  padding-bottom: 24px;
+  font-size: 12px;
+  font-weight: lighter;
 }
 
 
