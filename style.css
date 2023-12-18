@@ -179,6 +179,7 @@ body, html {
   font-size: 22px;
   font-weight: lighter;
   padding-top: 2%;
+  line-height: 115%;
 }
 
 .center-text {
@@ -186,12 +187,14 @@ body, html {
   padding-right: 8%;
   text-align: justify;
   display: inline-block;
+  line-height: 115%;
 }
 
 
 .main-subtext {
   width: 70%;
   text-align: center;
+  line-height: 115%;
 }
 
 /* animating hovering over name letters changing color on home page */
@@ -341,6 +344,13 @@ body, html {
   padding-right: 10%;
 }
 
+.page-text-heading {
+  font-weight: bolder;
+  padding-bottom: 8px;
+  padding-top: 24px;
+  line-height: 115%;
+}
+
 .page-text {
   text-align: justify;
   font-family: var(--font-cour);
@@ -351,6 +361,7 @@ body, html {
   margin-right: 5%;
   float: left;
   display: block;
+  line-height: 115%;
 }
 
 .page-img {
