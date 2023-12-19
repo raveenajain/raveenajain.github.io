@@ -113,7 +113,7 @@ body, html {
 /* buttons */
 .button {
   border: none;
-  padding: 8px 20px;
+  padding: 0.75% 1.5%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -146,7 +146,7 @@ body, html {
 
 /* social media icons */
 .footer-socials {
-  padding: 5% 3% 5% 3%;
+  margin: 5% 3% 5% 3%;
   font-size: 56px;
   color: white;
 }
