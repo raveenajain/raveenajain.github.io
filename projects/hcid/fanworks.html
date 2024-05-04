@@ -33,171 +33,194 @@
     </div>
 
     <center>
-      <div class="page-sub-header"> Introduction </div>
+      <div class="page-sub-header"> Goal </div>
       <div class="page-text">
-        For my Information Architecture class, we got to pick a topic to design
-        our coursework around. If you know me, then it's not a surprise that I
-        ended up with something fandom related; in this case, I chose fanworks as
-        my domain. While there were some restraints on the project (i.e. the number
-        of wireframes and the word count), it really was up to us to, as the brief
-        explained, "design the [Information Architecture] of a web-based information
-        environment." While there are a number of websites, ranging from social to
-        archival, that allow users to find and post fanworks, my goal was to create
-        something that would bridge the disconnect that forms within fandoms because
-        of how spread across the internet they are. Aside from having a fun topic,
-        I also enjoyed finding ways of organizing complicated information into something
-        usable. For each of the following sections, I have included the corresponding
-        deliverable (all were made on Figma) and condensed versions of the design justifications
-        that made up my coursework submission.
+        Based on the given brief: to design the Information Architecture of a web-based
+        information environment. I chose the topic of fanworks with the goal of creating
+        a website that could bridge the disconnect that forms within fandoms because
+        of their spread across the internet.
       </div>
 
-      <div class="page-sub-header"> Domain Model and Expert Interviews </div>
+      <div class="page-sub-header"> Tools </div>
+      <div class="page-text" style="width: 75%;">
+        Figma, Optimal Workshop, Remote Interview Moderation (Microsoft Teams) and
+        Recording (QuickTime) Software
+      </div>
+
+      <div class="page-sub-header"> Introduction </div>
+      <div class="page-text">
+        This was one of my favourite projects I completed during my degree; I really
+        enjoyed organizing complicated information into something usable. While
+        there were some restraints on the project (i.e. the number of wireframes
+        and the word count), the approach was up to us to justify. For each of the
+        following sections, I have included the corresponding deliverable (all were
+        made in Figma) and snippets of my design justifications.
+      </div>
+
+      <div class="page-sub-header"> Initial Research</div>
+      <div class="page-text">
+        <div class="page-text-heading" style="padding-top: 0px;"> Interviews </div>
+        Three Domain Experts were interviewed. This established that, while my topic
+        was fanworks, fandoms themselves dictate which fanworks hold value. These
+        experts also emphasized the importance of the ability to block/exclude certain
+        filters/tags.
+        <div class="page-text-heading"> Website Review </div>
+        An informal review of the well-known fanfiction website Archive of Our Own
+        (AO3) was also performed. AO3 was useful as a database and as a way of understanding
+        how people customize their fandom experience through user-generated tagging.
+        <div class="page-text-heading"> Overlap in Data </div>
+        Overlap between AO3 and expert interviews helped make it possible to determine
+        which elements were expected across fandoms and fanworks. And because fans
+        shape their fandom experiences, it was expected to prioritize folksonomies
+        over structured data (Rosenfeld et al, 2015, pp. 128).
+      </div>
+
+      <div class="page-sub-header">Domain Model</div>
       <iframe src="../../images/domainmodel.pdf" class="ia-pdf"></iframe>
       <div class="page-text">
-        I began by interviewing three Domain Experts and performing an informal
-        review of the well-known fanfiction website, Archive of Our Own (AO3). AO3
-        was useful as a database and as a way of understanding how people customize
-        their fandom experience through user-generated tagging. From my interviews,
-        it became clear that the fandoms themself dictate what fanworks hold value.
-        While the overall goal of the Doman Model was to identify core concepts and
-        their relationships between each other, I saw building off of the Hub and
-        Spoke structure that focused on a “central concept” (Brown, 2011, pp. 80)
-        as the best approach to accommodate the diversity that exists across fanworks
-        and fandoms. Overlap between AO3 and expert interviews made it possible
-        to determine which elements were expected across fandoms and fanworks.
-        Another core takeaway from my research was the emphasis experts put on the
-        ability to block/exclude certain filters/tags. Because fans shape their
-        fandom experiences, folksonomies are often prioritized over structured data
-        (Rosenfeld et al, 2015, pp. 128). And considering how fandom elements are
-        interconnected, using Brown’s advice on “reducing triangles” became vital
-        in helping me determine core relationships (2011, pp. 82).
+        The overall goal of the Domain Model was to identify core concepts and their
+        relationships between each other. I saw building off of the Hub and Spoke
+        structure that focused on a “central concept” (Brown, 2011, pp. 80) as the
+        best approach to accommodate the diversity that exists across fandoms. But
+        these diverse elements are still interconnected, making Brown’s advice on
+        “reducing triangles” a vital way in determining core relationships (2011, pp. 82).
       </div>
 
       <div class="page-sub-header"> Sitemap </div>
       <iframe src="../../images/sitemap.pdf" class="ia-pdf"></iframe>
       <div class="page-text">
-        I used Card Sorting (on Optimal Workshop) to see if potential users would
+        Card Sorting (on Optimal Workshop) was used to see if potential users would
         be able to condense the 12 types of fandoms from AO3 (alongside others I
         had added). Due to the variation in fandom experiences, my hypothesis that
-        this Card Sort might not help me refine these groupings was correct. My
-        “ah-ha moment” was realizing that the only entities in my Domain Model
-        feeding directly into fanworks were fandoms and creators. This led me to
-        using the hybrid Hierarchical and Database pattern, as the user would constantly
-        come across “larger volumes of information,” and to drawing upon Spencer’s
-        “basic shapes for drawing an IA,” especially her “part of a page” notation
-        (Spencer, 2010, pp. 180-193, 247). To confirm I was on the right track,
-        I performed Tree Tests (on Optimal Workshop) that incorporated filtering.
+        this Card Sort might not help refine these groupings was correct. Noticing
+        that the only entities in my Domain Model feeding directly into fanworks
+        were fandoms and creators led to the use of the hybrid Hierarchical and
+        Database pattern as the user would constantly come across “larger volumes
+        of information,” and to drawing upon Spencer’s “basic shapes for drawing
+        an IA,” especially her “part of a page” notation (Spencer, 2010, pp. 180-193, 247).
+        <br></br>
+        Before moving forward, Tree Tests (on Optimal Workshop) that incorporated
+        filtering and covered all potential paths were performed.
+      </div>
+      <div>
+        <img class="page-img" src="../../images/TreeTestTask1.png" style="width: 47%; float: none;"
+        alt="Task: Find someone who does BBC Sherlock cosplay (multiple characters).">
+        <img class="page-img" src="../../images/TreeTestTask2.png" style="width: 43%; float: none;"
+        alt="Task: Find a list of BBC Sherlock fanart with the character John Watson.">
+      </div>
+      <div>
+        <img class="page-img" src="../../images/TreeTest1.png" style="width: 65%; float: none;"
+        alt="creators tree">
+        <img class="page-img" src="../../images/TreeTest2.png" style="width: 65%; float: none;"
+        alt="fandoms tree">
+        <img class="page-img" src="../../images/TreeTest3.png" style="width: 45%; float: none;"
+        alt="search tree part 1">
+        <img class="page-img" src="../../images/TreeTest4.png" style="width: 45%; float: none;"
+        alt="search tree part 2">
+      </div>
+      <div class="page-text">
         Because 50% of tasks were completed using the “Fandoms” navigation, which
-        would link to thousands of results, I decided to breakdown that category
-        so users looking to browse could have a more manageable experience. “Blended
-        Results” exists for a similar reason; each category of result utilizes different
+        would link to thousands of results, that category was broken down so users
+        looking to browse could have a more manageable experience. “Blended Results”
+        exists for a similar reason; each category of result utilizes different
         facets and showing multiple on the same page could complicate the website
         for users. Creating this Sitemap allowed me to take the higher level concepts
         from the Domain Model and think about how they could be perceived from a
-        user's perspective, making it much easier to create Wireframes later on.
+        user's perspective.
       </div>
 
       <div class="page-sub-header"> User Journey </div>
       <iframe src="../../images/userjourney.pdf" class="ia-pdf"></iframe>
       <div class="page-text">
-        To tie into this website's primary goal, my user’s goal had to relate to
-        finding fanworks, and building a scenario helped clarify the filters the
-        user might incorporate. The journey itself was meant to showcase four
-        potential ways a user could find fanart. Because every user’s background
-        with fandom is different, I did not want to include only a preferred path,
-        as that would not showcase the range of options. However, I highlighted what
-        could be considered a preferred path based on number of steps and the specific
-        attributes of the user as established by the goal. The User’s Thoughts were
-        added to establish context and help emphasize why this journey might be preferred
-        considering the user’s specific background with the Doctor Who fandom (Brown,
-        2011 pp. 140). I used Caddick and Cable’s design of diamond shaped decision
-        points and pointed rectangles for steps (i.e. actions) (2011, pp. 83). As
-        they used a rounded rectangle for the starting point (Caddick and Cable,
-        2011, pp. 83), which in my case was the Home page, I decided to use rounded
-        rectangles to notate any page the user might reach. Making sure not to “cross
-        the streams” (Brown, 2011 pp. 130) helped me organize the elements and structure
-        of the journey itself. When a user is making a more significant step forward
-        in the process, they move from left to right, but actions that don’t offer
-        as much change to what the user sees are typically stacked.
+        Building a scenario helped clarify how a user might incorporate filters.
+        The journey itself was meant to showcase four potential ways a user could
+        find fanart. Because every user’s background with fandom is different, only
+        including a preferred path would not showcase the range of options. However,
+        what could be considered a preferred path based on number of steps and the
+        specific attributes of the user as established by the goal was highlighted.
+        <br></br>
+        The User’s Thoughts were added to establish context and help emphasize why
+        this journey might be preferred considering their specific background with
+        the Doctor Who fandom (Brown, 2011 pp. 140). Inspiration was take from Caddick
+        and Cable’s design of diamond shaped decision points and pointed rectangles
+        for steps (i.e. actions) (2011, pp. 83). As they used a rounded rectangle
+        for the starting point (Caddick and Cable, 2011, pp. 83), which in this case
+        was the Home page, rounded rectangles were used to notate any page the user
+        might reach. Making sure not to “cross the streams” (Brown, 2011 pp. 130)
+        helped organize the elements and structure of the journey itself. When a
+        user is making a more significant step forward in the process, they move
+        from left to right, but actions that don’t offer as much change to what
+        the user sees are typically stacked.
       </div>
 
-      <div class="page-sub-header"> Wireframes and Testing </div>
+      <div class="page-sub-header"> Testing and Annotated Wireframes </div>
+      <div class="page-text">
+        This section will explain how the results of the testing impacted each wireframe
+        screen.
+        <div class="page-text-heading"> Types of Testing </div>
+        Remote, Moderated Tests with three target users were completed. A Click Test
+        was also created and posted to Tumblr, targeting online users with a strong
+        interest in fandoms and fanworks; 28 users completed this study. Questions
+        were formulated with inspiration from Toub’s approach (2000). To evaluate
+        structure, grouping, and labeling, the goal from the User Journey was used
+        as a prompt. Questions about initial actions a user might take and what users
+        thought clicking on certain elements would do/show were also asked (Toub,
+        2000, pp. 14-23). The Click Test and Moderated Testing results generally
+        aligned; a low success rate from the Click Tests coupled with similar results
+        from the Moderated Tests made a change higher priority.
+        <br></br>
+        To prevent users from being biased towards clicking on “Fandoms,” this dropdown
+        was not initially shown; for similar reasons, filters applied on Screen 3
+        were unchecked.
+      </div>
       <iframe src="../../images/ia_wireframes.pdf" class="ia-pdf"></iframe>
       <div class="page-text">
-         I performed remote, Moderated Tests with three target users and created
-         and posted a Click Test to Tumblr, targeting online users with a strong
-         interest in fandoms and fanworks; 28 users completed this study. I took
-         inspiration from Toub’s approach (2000) to help formulate my questions;
-         to evaluate structure, grouping, and labeling, I used the goal from my
-         User Journey as a prompt, asked about initial actions a user might take,
-         and asked what users thought clicking on certain elements would do/show
-         (Toub, 2000, pp. 14-23). To prevent users from being biased towards clicking
-         on “Fandoms,” this dropdown was not initially shown; for similar reasons,
-         filters applied on Screen 3 were unchecked. The Click Test and Moderated
-         Testing results generally aligned; a low success rate from the Click Tests
-         coupled with similar results from the Moderated Tests made a change higher
-         priority. These wireframes have been slightly modified based on the results
-         from User Testing.
-         <br></br>
-         <i>Screen 1 – Home </i>
-         <br></br>
-         As 2 of 3 Moderated Testing participants wanted to see new work from
-         creators they had favourited, and as this builds a more personalized
-         experience, a “Fandom of the Day” header was removed and “Some...Content”
-         was added. All users during the Moderated Tests were able to vocalize what
-         clicking on “By Fandom Type” would do, confirming this labeling choice.
-         In the future, as users leaned more towards navigational breakdowns, I
-         would like to explore making “Fanworks” a drop-down, using Card Sorting
-         to see if overarching categories related to medium could be established.
-         Additionally, I would do further testing to determine the best options
-         for the “All Categories” drop-down as results from the Moderated Tests
-         were inconclusive.
-         <br></br>
-         <i>Screen 2 – Blended Results </i>
-         <br></br>
-         While users can choose a category “to clarify their intent,” if they do
-         not, because the results would not be “homogeneous,” they will see this
-         Blended Results page (Russel-Rose and Tate, 2013, pp. 144). This approach
-         was appropriate as there is no preferred path I want users to take and
-         my goal is “to encourage [users] to engage in further exploration and discovery”
-         (Russel-Rose and Tate, 2013, pp. 144). Moderated Testing participants
-         indicated that they liked seeing this page as it made the results less
-         overwhelming.
-         <br></br>
-         <i>Screen 3 – All Results </i>
-         <br></br>
-         The default state of each filter would be collapsed due to their size
-         (Russel-Rose and Tate, 2013, pp. 173-174). “Fanworks, Platforms, and Languages”
-         use traditional, squared checkboxes as users might want their results to,
-         for example, contain fanfiction AND fanart. “Fandoms, Warnings, Characters,
-         Tropes and Genres, and Ships” use a hybrid checkbox and radio button. The
-         circular shape comes from the radio button to imply that an element can
-         be included OR excluded; the check and X come from the checkbox and are
-         used to show that multiple elements within a filter can be selected. Moderated
-         Test participants successfully recognized how these filters would work.
-         Because the list in “Characters” can become long, to limit scrolling,
-         pagination was added and the elements were ordered via popularity (Russel-Rose
-         and Tate, 2013, pp. 150). Since the use of folksonomies and study of tagging
-         on AO3 means the number of “Specific References” could be incredibly large,
-         and considering Russel-Rose and Tate’s explanation, AO3’s “Additional Tags”
-         option, and the importance of inclusion and exclusion, I made use of Search
-         Within (2013, pp. 103-104).
-         <br></br>
-         <i>Screen 4 – Fanwork Page </i>
-         <br></br>
-         Intrinsic, administrative, and descriptive metadata (Spencer, 2010, pp. 187)
-         are all used and displayed to offer the user thorough information about
-         any fanwork. However, inspired by the feedback from one of the Moderated
-         Tests (the user felt as though there was not enough focus on the image),
-         I would do a Five Second Test to see what information users are drawn to
-         on this page (Booth, 2022) and then, once they have had more time to look
-         at the page, ask them if that information aligns with what they value most.
-         When asked where to find more information about the creator of this fanwork,
-         82% of Click Test participants clicked on “I_Met_DT” (expected) and 11%
-         went to the Tumblr link. In the Moderated Tests, users went to “I_Met_DT,”
-         Tumblr, or to Tumblr and then back to “I_Met_DT,” if unsatisfied. In the
-         future, I would like to show users a Creator page before this one to see
-         if that information would prompt more of them to remain on this website.
+        <div class="page-text-heading"> Screen 1 - Home </div>
+        All users during the Moderated Tests were able to vocalize what clicking
+        on “By Fandom Type” would do, confirming this labeling choice. As users
+        leaned more towards navigational breakdowns, future iterations could explore
+        making “Fanworks” a drop-down through the use of Card Sorting to see if
+        overarching categories related to medium could be established. Additionally,
+        further testing would help determine the best options for the “All Categories”
+        drop-down as results from the Moderated Tests were inconclusive.
+        <div class="page-text-heading"> Screen 2 - Blended Results </div>
+        While users can choose a category “to clarify their intent,” if they do
+        not, because the results would not be “homogeneous,” they will see this
+        Blended Results page (Russel-Rose and Tate, 2013, pp. 144). This approach
+        was appropriate as there is no preferred path users should take as this
+        site strives “to encourage [users] to engage in further exploration and
+        discovery” (Russel-Rose and Tate, 2013, pp. 144). Moderated Testing participants
+        indicated that they liked seeing this page as it made the results less overwhelming.
+        <div class="page-text-heading"> Screen 3 - All Results </div>
+        The default state of each filter would be collapsed due to their size (Russel-Rose
+        and Tate, 2013, pp. 173-174). “Fanworks, Platforms, and Languages” use traditional,
+        squared checkboxes as users might want their results to, for example, contain
+        fanfiction AND fanart. “Fandoms, Warnings, Characters, Tropes and Genres,
+        and Ships” use a hybrid checkbox and radio button. The circular shape comes
+        from the radio button to imply that an element can be included OR excluded;
+        the check and X come from the checkbox and are used to show that multiple
+        elements within a filter can be selected. Moderated Test participants successfully
+        recognized how these filters would work. Because the list in “Characters”
+        can become long, to limit scrolling, pagination was added and the elements
+        were ordered via popularity (Russel-Rose and Tate, 2013, pp. 150). Since
+        the use of folksonomies and study of tagging on AO3 means the number of
+        “Specific References” could be incredibly large, and considering Russel-Rose
+        and Tate’s explanation, AO3’s “Additional Tags” option, and the importance
+        of inclusion and exclusion, Search Within was used (2013, pp. 103-104).
+        <div class="page-text-heading"> Screen 4 - Fanwork Page </div>
+        Intrinsic, administrative, and descriptive metadata (Spencer, 2010, pp. 187)
+        are all used and displayed to offer the user thorough information about
+        any fanwork. However, inspired by the feedback from one of the Moderated
+        Tests (the user felt there was not enough focus on the image), a Five Second
+        Test could be used to see what information users are drawn to on this page
+        (Booth, 2022) and then, once they have had more time to look at the page,
+        ask them if that information aligns with what they value most. When asked
+        where to find more information about the creator of this fanwork, 82% of
+        Click Test participants clicked on “I_Met_DT” (expected) and 11% went to
+        the Tumblr link. In the Moderated Tests, users went to “I_Met_DT,” Tumblr,
+        or to Tumblr and then back to “I_Met_DT,” if unsatisfied. Future testing,
+        could be used to determine if showing users a Creator page before this one
+        would prompt more of them to remain on this website.
       </div>
 
       <button type="button" id="collapsible" onclick="collapse()">
