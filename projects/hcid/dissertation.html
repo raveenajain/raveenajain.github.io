@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <title> Dissertation </title>
+  </head>
+
+  <!--navigation bar -->
+  <header id="my-navbar">
+    <a class="active button" href="http://raveenajain.github.io/">RSJ</a>
+    <a class="active button" style="float: right" href="mailto:raveena.s.jain@gmail.com">Contact</a>
+    <div class="dropHover" onmouseover="getMinWidth(0)">
+      <div>Portfolio &#9662;</div>
+      <div class="dropdown">
+        <a href="http://raveenajain.github.io/projects">Projects</a>
+        <a href="http://raveenajain.github.io/artwork">Artwork</a>
+      </div>
+    </div>
+    <div class="dropHover" onmouseover="getMinWidth(1)">
+      <div>Me &#9662;</div>
+      <div class="dropdown">
+        <a href="http://raveenajain.github.io/#about">About</a>
+        <a href="http://raveenajain.github.io/resume">Resume</a>
+        <a href="http://raveenajain.github.io/#links">Socials</a>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <!-- title of page -->
+    <div class="page-titles">
+      Master's Dissertation
+    </div>
+
+    <center>
+      <div class="page-sub-header"> Extending Reality Back to the Real: Creating Immersive Physical Environments with Interactive Technology </div>
+      <div class="page-text">
+        This page is currently being updated with my research process and results.
+        If you would like to see the full report, please send me an email at
+        <i><a class="text-link" href="mailto:raveena.s.jain@gmail.com">raveena.s.jain@gmail.com</a></i>
+        and let me know whether you are a potential employer or student looking
+        to read it.
+        <br>
+        </br>
+      </div>
+    </center>
+
+  </body>
+
+  <script>
+    function getMinWidth(item) {
+      var drops = document.getElementsByClassName("dropHover");
+      var w = drops[item].clientWidth;
+      document.querySelectorAll(".dropdown")[item].style.minWidth = w + 'px';
+    }
+
+
+  </script>
+
+</html>
+
+<!-- helpful sources: https://codepen.io/codewithJahid/pen/JRPvBj -->
