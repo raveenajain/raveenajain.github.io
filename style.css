@@ -462,14 +462,14 @@ body, html {
 
 .product-name {
   font-family: var(--font-cour);
-  font-size: 38px;
+  font-size: 3vw;
   font-weight: 300;
   padding: 8px;
 }
 
 .product-description {
   font-family: var(--font-cour);
-  font-size: 22px;
+  font-size: 1.5vw;
   font-weight: lighter;
   line-height: 115%;
   padding: 8px;
@@ -518,7 +518,7 @@ body, html {
 
 /* for smaller screens */
 /* change product page to rows of 1 */
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .product-column {
     width: 100%;
     margin-bottom: 5%;
@@ -526,6 +526,14 @@ body, html {
 
   .product-row {
     flex-wrap: wrap;
+  }
+
+  .product-name {
+    font-size: 38px;
+  }
+
+  .product-description {
+    font-size: 22px;
   }
 }
 
