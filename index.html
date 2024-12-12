@@ -2,108 +2,205 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Avant+Garde+Gothic" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <title> RSJ </title>
   </head>
 
+
   <!--navigation bar -->
   <header id="my-navbar">
-    <a class="active button" href="http://raveenajain.github.io/">RSJ</a>
-    <a class="active button" style="float: right" href="mailto:raveena.s.jain@gmail.com">Contact</a>
-    <a class="active button" style="float: right" href="http://raveenajain.github.io/resume">Resume</a>
-    <div class="dropHover" onmouseover="getMinWidth(0)">
-      <div>Portfolio &#9662;</div>
-      <div class="dropdown">
-        <a href="http://raveenajain.github.io/projects">Projects</a>
-        <a href="http://raveenajain.github.io/artwork">Artwork</a>
+    <a class="nav-link nav-link-red" href="http://raveenajain.github.io/">RSJ</a>
+    <div class="nav-link nav-link-drop-hover nav-link-purple" onmouseover="getMinWidth(0)">
+      <div>Contact <span id="nav-arrow">&#9662;</span></div>
+      <div class="nav-link nav-link-dropdown">
+        <a href="mailto:raveena.s.jain@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/raveena-jain">LinkedIn</a>
       </div>
     </div>
-    <div class="dropHover" onmouseover="getMinWidth(1)">
-      <div>Me &#9662;</div>
-      <div class="dropdown">
-        <a href="http://raveenajain.github.io/#about">About</a>
-        <a href="http://raveenajain.github.io/#links">Socials</a>
-      </div>
-    </div>
+    <a class="nav-link nav-link-blue" style="float: right" href="http://raveenajain.github.io/resume">Resume</a>
+    <a class="nav-link nav-link-green" style="float: right" href="http://raveenajain.github.io/artwork">Artwork</a>
+    <a class="nav-link nav-link-orange" style="float: right" href="http://raveenajain.github.io/projects">Projects</a>
   </header>
 
+
   <body>
-    <!-- name at top -->
-    <div class="main-title">
-      <div class="anim-text" id="R" onmouseover="anim(R)" onmouseout="unanim(R)">R</div>
-      <div class="anim-text" id="A" onmouseover="anim(A)" onmouseout="unanim(A)">A</div>
-      <div class="anim-text" id="V" onmouseover="anim(V)" onmouseout="unanim(V)">V</div>
-      <div class="anim-text" id="E" onmouseover="anim(E)" onmouseout="unanim(E)">E</div>
-      <div class="anim-text" id="E2" onmouseover="anim(E2)" onmouseout="unanim(E2)">E</div>
-      <div class="anim-text" id="N" onmouseover="anim(N)" onmouseout="unanim(N)">N</div>
-      <div class="anim-text" id="A2" onmouseover="anim(A2)" onmouseout="unanim(A2)">A</div>
-      <div class="anim-text">&nbsp</div>
-      <div class="anim-text" id="J" onmouseover="anim(J)" onmouseout="unanim(J)">J</div>
-      <div class="anim-text" id="A3" onmouseover="anim(A3)" onmouseout="unanim(A3)">A</div>
-      <div class="anim-text" id="I" onmouseover="anim(I)" onmouseout="unanim(I)">I</div>
-      <div class="anim-text" id="N2" onmouseover="anim(N2)" onmouseout="unanim(N2)">N</div>
-      <div class="sub-title">
-        DEVELOPER AND DESIGNER
-      </div>
-      <div class="info-text center-text main-subtext">
-        Raveena is a born and raised New Yorker who aspires to specialize in immersive
-        design and development. With a strong foundation in and passion for both
-        art and technology, she aims to find creative solutions to challenging problems
-        through working with and on interactive, engaging, immersive, and user-centered
-        products.
-        <br>
-        <b>Raveena is currently looking for work across the US and UK and welcomes messages from potential employers</b>.
-      </div>
-    </div>
+    <!-- name and details at top -->
+    <!-- name-->
+    <div id="main-section1">
+      <div class="main-title section1-row" id="main-name">
+        <div class="section1-row">
+          <div class="anim-text" id="R" onmouseover="anim(R)" onmouseout="unanim(R)">R</div>
+          <div class="anim-text" id="A" onmouseover="anim(A)" onmouseout="unanim(A)">A</div>
+          <div class="anim-text" id="V" onmouseover="anim(V)" onmouseout="unanim(V)">V</div>
+          <div class="anim-text" id="E" onmouseover="anim(E)" onmouseout="unanim(E)">E</div>
+          <div class="anim-text" id="E2" onmouseover="anim(E2)" onmouseout="unanim(E2)">E</div>
+          <div class="anim-text" id="N" onmouseover="anim(N)" onmouseout="unanim(N)">N</div>
+          <div class="anim-text" id="A2" onmouseover="anim(A2)" onmouseout="unanim(A2)">A</div>
+          <div class="anim-text">&nbsp</div>
+          <div class="anim-text" id="J" onmouseover="anim(J)" onmouseout="unanim(J)">J</div>
+          <div class="anim-text" id="A3" onmouseover="anim(A3)" onmouseout="unanim(A3)">A</div>
+          <div class="anim-text" id="I" onmouseover="anim(I)" onmouseout="unanim(I)">I</div>
+          <div class="anim-text" id="N2" onmouseover="anim(N2)" onmouseout="unanim(N2)">N</div>
+        </div>
 
-    <div class="parallel-scrolling" id="parallel-img" style="background-image: url(images/homeBG/afternoon.jpg);"></div>
-
-    <!-- About -->
-    <div id="about" class="text-padding">
-      <div class="header-text">About</div>
-      <div class="info-text center-text">
-        Raveena (she/her) graduated from Northeastern University with a Bachelor
-        of Science in Computer Science and Mathematics and a Minor in Animation
-        and has just received her Master of Science in Human-Computer Interaction
-        Design from City, University of London.
-        <br> </br>
-        Raveena has held internships as a Computer Graphics Software Developer at
-        a VR-based start-up and as a Software Engineer/UI Designer for a Marketing
-        Web Application. She is currently working to expand her understanding of
-        users and her knowledge of UX/UI Design, Product Development, and Inclusive
-        Design. She hopes to work with new and emerging technology and to use her
-        Animation background to make more dynamic and interactive designs and products.
-        <br> </br>
-        Outside of work, Raveena has taken up <i><a class="text-link" target="_blank" href="https://rsj-art.tumblr.com/tagged/photography">photography</a></i>
-        as a hobby (and took the photographs you see on this page). While she loves
-        travelling and visiting new places to take pictures, she also enjoys just
-        wandering around the city she lives in with just her phone for a camera
-        and an iced coffee. Photography has helped her look at the world around her
-        from different angles and with a new perspective.
-        <br> </br>
-        You can <i><a class="text-link" href="http://raveenajain.github.io/resume">view Raveena's resume here</a></i>,
-        or explore this site to find out a little more about her!
+        <!-- details -->
+        <div class="sub-title section1-row">
+          DEVELOPING & DESIGNING
+        </div>
+        <div class="sub-title-changing section1-row"></div>
+      </div>
+      <div class="section1-img section1-row">
+        <img src="images/index/lilguy.png" alt="stick figure holding open to work sign">
       </div>
     </div>
 
-    <div class="parallel-scrolling" id="parallel-img" style="background-image: url(images/homeBG/sunset.jpg);"></div>
 
-    <!-- Portfolio -->
-    <div class="parallel-scrolling" id="last-scroll">
-      <a class="portfolio-text" id="portfolio-left" href="http://raveenajain.github.io/projects">
-        Projects
-      </a>
-      <div class="line"></div>
-      <a class="portfolio-text" id="portfolio-right" href="http://raveenajain.github.io/artwork">
-        Artwork
-      </a>
+    <!-- first background image -->
+    <div class="parallel-scrolling" id="parallel-img" style="background-image: url(images/index/homeBG/afternoon.jpg);"></div>
+
+
+    <!-- section 2 -->
+    <!-- about -->
+    <div class="bg-rect-about"></div>
+    <div id="main-section2">
+      <!-- row -->
+      <div class="section2-row">
+        <div class="small-heading" style="color: white;">ABOUT ME <span style="font-size: 24px;">&#8628;</span></div>
+      </div>
+      <!-- row -->
+      <div class="section2-row">
+        <div class="section2-column smaller-column">
+          <img class="about-img" src="images/index/avatar.png" alt="avatar drawing version of me made using chicken.nuggts' picrew image customizer">
+        </div>
+        <div class="section2-column larger-column section2-white-bg">
+          <div class="sub-title section2-bg-padding">Hi! I’m Raveena, a developer and designer,</div>
+          <div class="page-text section2-bg-padding">
+            who was born and raised in New York and aspires to specialize in immersive design and development.
+            With a Bachelor's degree in Computer Science and Mathematics (and minor in Animation) and a Master's in Human Computer Interaction Design, I love to seek out interdisciplinary work that combines art and technology and allows me to make more dynamic designs and products.
+            While I strive to make everyday web and mobile designs as unique yet usable as possible, I also hope to work with more emerging technology.
+            I enjoy finding creative solutions to challenging problems through working with and on interactive, engaging, immersive, and user-centered products.
+            <br></br>
+            Outside of work, <a class="text-link color-red" target="_blank" href="https://rsj-art.tumblr.com/tagged/photography">I've taken up photography</a> as a hobby (and took the photographs you see on this page).
+            I enjoy wandering around whatever city I'm in with just my phone for a camera and an iced coffee.
+            Photography has helped me look at the world around me with a new perspective.
+            <br></br>
+            I’m currently looking for work across the US and UK and welcome messages from potential employers.
+            Feel free to take a look at <a class="text-link color-red" href="http://raveenajain.github.io/resume">my resume<a> or <a class="text-link color-red" href="mailto:raveena.s.jain@gmail.com">throw me an email</a>!
+          </div>
+        </div>
+      </div>
+
+      <!-- projects -->
+      <hr></hr>
+      <!-- row -->
+      <div class="section2-row color-orange" style="justify-content: center;">
+        <div class="side-rect equal-3column"></div>
+        <div class="sub-title equal-3column">
+          Highlighted Projects
+        </div>
+        <div class="side-rect equal-3column"></div>
+      </div>
+      <!-- row -->
+      <div class="section2-row" style="justify-content: center; margin-bottom: 1.5%;">
+        <a href="http://raveenajain.github.io/projects"><button class="button orange-button">View All Projects &#8250;</button></a>
+      </div>
+      <!-- row -->
+      <div class="section2-row">
+        <div class="section2-column project-img-column">
+          <a href="http://raveenajain.github.io/projects/hcid/kitchenmate">
+            <img class="section2-project-img" id="echo" onmouseover="animImg(echo)" onmouseout="unanimImg(echo)"
+            src="images/index/echo.png" alt="image of echo show with kitchenmate wireframe screen and 3 small images of process steps to the right">
+          </a>
+        </div>
+        <div class="section2-column project-line-column">
+          <div class="project-vertical-line color-green"></div>
+        </div>
+        <div class="section2-column project-text-column">
+          <div class="sub-title">
+            KitchenMate
+          </div>
+          <div class="small-heading">
+            Design
+          </div>
+          <div class="page-text section2-project-padding">
+            A prototype application to improve users’ diet and sustainability habits.
+            <br>
+            Made for the Echo Show Smart Home device using Miro and Axure.
+            <br>
+            Based on qualitative data from interviews with target users.
+          </div>
+          <a href="http://raveenajain.github.io/projects/hcid/kitchenmate"><button class="button green-button">View Project &#8250;</button></a>
+        </div>
+      </div>
+      <!-- row -->
+      <div class="section2-row">
+        <div class="section2-column project-img-column">
+          <a href="http://raveenajain.github.io/projects/beewell">
+            <img class="section2-project-img" id="beewell" onmouseover="animImg(beewell)" onmouseout="unanimImg(beewell)"
+            src="images/index/beewell.png" alt="two iphones with beewell prototypes on the screen and 3 small images of process steps to the right">
+          </a>
+        </div>
+        <div class="section2-column project-line-column">
+          <div class="project-vertical-line color-blue"></div>
+        </div>
+        <div class="section2-column project-text-column">
+          <div class="sub-title">
+            BeeWell
+          </div>
+          <div class="small-heading">
+            Development & Design
+          </div>
+          <div class="page-text section2-project-padding">
+            A high-fidelity prototype made to help improve young adults’ health habits.
+            <br>
+            Made for mobile using Javascript, HTML, and CSS.
+            <br>
+            Iteratively improved  via feedback from heuristic evaluations and user testing.
+          </div>
+          <a href="http://raveenajain.github.io/projects/beewell"><button class="button blue-button">View Project &#8250;</button></a>
+        </div>
+      </div>
+      <!-- row -->
+      <div class="section2-row">
+        <div class="section2-column project-img-column">
+          <a href="http://raveenajain.github.io/projects/hcid/fanworks">
+            <img class="section2-project-img" id="fanworks" onmouseover="animImg(fanworks)" onmouseout="unanimImg(fanworks)"
+            src="images/index/fanworks.png" alt="laptop with fanwork wireframe on the screen and 3 small images of process steps to the right">
+          </a>
+        </div>
+        <div class="section2-column project-line-column">
+          <div class="project-vertical-line color-purple"></div>
+        </div>
+        <div class="section2-column project-text-column">
+          <div class="sub-title">
+            Fanworks
+          </div>
+          <div class="small-heading">
+            Design
+          </div>
+          <div class="page-text section2-project-padding">
+            A prototype website for finding fanworks from any fandom.
+            <br>
+            Made for desktop using Figma.
+            <br>
+            Data gathered from domain experts to deliver a domain model, site map, future user journey, and wireframes.
+          </div>
+          <a href="http://raveenajain.github.io/projects/hcid/fanworks"><button class="button purple-button">View Project &#8250;</button></a>
+        </div>
+      </div>
     </div>
 
+
+    <!-- second background image -->
+    <div class="parallel-scrolling" id="parallel-img" style="background-image: url(images/index/homeBG/sunset.jpg);"></div>
+
+
+    <!-- footer -->
     <div id="links">
       <a href="https://www.linkedin.com/in/raveena-jain" target="_blank"><i class="footer-socials fab fa-linkedin"></i></a>
       <a href="https://github.com/raveenajain" target="_blank"><i class="footer-socials fab fa-github"></i></a>
-      <a href="https://rsj-art.tumblr.com/" target="_blank"><i class="footer-socials fab fa-tumblr"></i></a>
+      <a href="mailto:raveena.s.jain@gmail.com" target="_blank"><i class="footer-socials fas fa-envelope"></i></a>
+      <a href="http://raveenajain.github.io/projects/current" target="_blank"><i class="footer-socials fab fa-question"></i></a>
       <div id="link-name"> Raveena Jain 2024 </div>
     </div>
   </div>
@@ -124,33 +221,12 @@
           scrolls[i].style.backgroundRepeat = 'unset';
           scrolls[i].style.height = '50%';
         }
-        var portInfo = document.querySelectorAll(".portfolio-info-text");
-        for (var i = 0; i < portInfo.length; i++) {
-          portInfo[i].style.display = 'block';
-          portInfo[i].style.marginLeft = "3%";
-          document.getElementsByClassName("portfolio-text")[i].removeAttribute('onmouseover');
-          document.getElementsByClassName("portfolio-text")[i].removeAttribute('onmouseout');
-          document.getElementsByClassName("portfolio-text")[i].style.fontStyle = "italic";
-        }
-        portInfo[1].style.marginRight = "7%";
+        // to better vertically center items
+        document.getElementById("main-name").style.top = "35%";
       }
-      // bottom portfolio badding based on screen
-      height = document.getElementById("last-scroll").clientHeight;
-      var minH = height * 0.4;
-      var textH = document.getElementsByClassName("portfolio-text")[0].clientHeight;
-      pb = height - minH - textH;
-      var portInfo = document.getElementsByClassName("portfolio-info-text");
-      document.getElementsByClassName("portfolio-text")[0].style.paddingTop =
-        minH - portInfo[1].clientHeight / 4 + "px"; // 1 to line up projects header for mobile with artwork
-      document.getElementsByClassName("portfolio-text")[1].style.paddingTop =
-        minH - portInfo[1].clientHeight / 4 + "px";
-      document.getElementsByClassName("portfolio-text")[0].style.paddingBottom =
-        pb - portInfo[0].clientHeight + "px";
-      document.getElementsByClassName("portfolio-text")[1].style.paddingBottom =
-        pb - portInfo[1].clientHeight + "px";
-      document.getElementsByClassName("line")[0].style.marginTop = height * 0.06 + "px";
     }
 
+    // keep nav at top and padded when scrolling
     window.onscroll = function() { scrollNavbar() };
     var myNavbar = document.getElementById("my-navbar");
     var navOffset = myNavbar.offsetTop;
@@ -169,21 +245,41 @@
       document.querySelectorAll(".dropdown")[item].style.minWidth = w + 'px';
     }
 
+    // on hover animate letters in name different colors
     function anim(index) {
-      index.style.animation = "animate 0.5s ease-out forwards";
-      index.style.animation_delay = "0.5s";
+      var iid = index.id;
+      index.style.animation = "animateRed";
+      if (iid == 'A' || iid == 'A2') {
+        index.style.animation = "animateOrange";
+      } else if (iid == 'V' || iid == 'J') {
+        index.style.animation = "animateGreen";
+      } else if (iid == 'E' || iid == 'A3') {
+        index.style.animation = "animateBlue";
+      } else if (iid == 'E2' || iid == 'I') {
+        index.style.animation = "animatePurple";
+      }
+      index.style.animation = index.style.animation + " 0.25s ease-out forwards";
+      index.style.animation_delay = "0.25s";
     }
 
     function unanim(index) {
-      index.style.animation = "unanimate 0.75s ease-out forwards";
+      index.style.animation = "unanimate";
       index.style.animation_delay = "0.5s";
     }
 
-  </script>
+    // on hover animate image size increase
+    function animImg(index) {
+      index.style.animation = "increaseImgSize 0.75s ease-out forwards";
+    }
 
+    function unanimImg(index) {
+      index.style.animation = "decreaseImgSize 0.75s ease-out forwards";
+    }
+
+  </script>
 </html>
 
-<!-- any clip art and images used for links not my own -->
+<!-- any clip art and images used as links not my own -->
 
 <!-- helpful sources: https://www.w3schools.com/howto/howto_css_parallax.asp,
 https://www.w3schools.com/howto/howto_js_navbar_sticky.asp,
@@ -191,4 +287,6 @@ https://redstapler.co/detect-mobile-device-with-javascript/,
 https://www.w3schools.com/css/css_dropdowns.asp
 https://dev.to/timhuang/a-simple-way-to-detect-if-browser-is-on-a-mobile-device-with-javascript-44j3,
 https://www.geeksforgeeks.org/create-a-letter-spacing-animation-effect-using-html-and-css/
-https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/ -->
+https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/
+https://stackoverflow.com/questions/75679702/how-can-i-change-text-in-a-loop-with-css
+picrew avatar: https://picrew.me/en/image_maker/1554983 -->
