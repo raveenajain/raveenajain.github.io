@@ -2,371 +2,359 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Avant+Garde+Gothic" rel="stylesheet">
-    <title> RSJ </title>
+    <title> Resume </title>
   </head>
+
 
   <!--navigation bar -->
   <header id="my-navbar">
-    <a class="active button" href="http://raveenajain.github.io/">RSJ</a>
-    <a class="active button" style="float: right" href="mailto:raveena.s.jain@gmail.com">Contact</a>
-    <a class="active button" style="float: right" href="http://raveenajain.github.io/resume">Resume</a>
-    <div class="dropHover" onmouseover="getMinWidth(0)">
-      <div>Portfolio &#9662;</div>
-      <div class="dropdown">
-        <a href="http://raveenajain.github.io/projects">Projects</a>
-        <a href="http://raveenajain.github.io/artwork">Artwork</a>
+    <a class="nav-link nav-link-red" href="http://raveenajain.github.io/">RSJ</a>
+    <div class="nav-link nav-link-drop-hover nav-link-purple" onmouseover="getMinWidth(0)">
+      <div>Contact <span id="nav-arrow">&#9662;</span></div>
+      <div class="nav-link nav-link-dropdown">
+        <a href="mailto:raveena.s.jain@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/raveena-jain">LinkedIn</a>
       </div>
     </div>
-    <div class="dropHover" onmouseover="getMinWidth(1)">
-      <div>Me &#9662;</div>
-      <div class="dropdown">
-        <a href="http://raveenajain.github.io/#about">About</a>
-        <a href="http://raveenajain.github.io/#links">Socials</a>
-      </div>
-    </div>
+    <a class="nav-link nav-link-blue" style="float: right" href="http://raveenajain.github.io/resume">Resume</a>
+    <a class="nav-link nav-link-green" style="float: right" href="http://raveenajain.github.io/artwork">Artwork</a>
+    <a class="nav-link nav-link-orange" style="float: right" href="http://raveenajain.github.io/projects">Projects</a>
   </header>
 
-  <body>
-    <!-- title -->
-    <div class="page-titles" style="margin-bottom: 0px"> Resume </div>
 
-    <!-- edu -->
-    <div class="page-text resume-section-header">
-      <b>EDUCATION</b>
+  <body>
+    <!-- heading -->
+    <div>
+      <div class="page-titles">Full Resume</div>
+      <div style="text-align: center; margin-top: 1%;">
+        <a target="_blank" href="https://drive.google.com/file/d/1W9hNJjcoCohl9nF3kFKln4plrzrFOsId/view?usp=drive_link"><button class="small-button black-button">PDF Version &#8250;</button></a>
+      </div>
+      <div class="resume-body">
+        <div class="top-page-links-container">
+          <span><a class="color-red top-page-links" href="http://raveenajain.github.io/resume/#education">Education</a></span>
+          <span><a class="color-orange top-page-links" href="http://raveenajain.github.io/resume/#skills">Skills</a></span>
+          <span><a class="color-green top-page-links" href="http://raveenajain.github.io/resume/#techexp">Technical Work Experience</a></span>
+          <span><a class="color-blue top-page-links" href="http://raveenajain.github.io/resume/#projects">Projects</a></span>
+          <span><a class="color-purple top-page-links" href="http://raveenajain.github.io/resume/#addexp">Additional Work Experience</a></span>
+        </div>
+      </div>
     </div>
-    <br>
-    <!-- city -->
-    <div class="resume-main">
-      <div class="page-text resume-left resume-top-line">
-        <b>Master of Science</b> in <b>Human-Computer Interaction Design [Distinction]</b>
-        <div>
-          City, University of London
+
+    <!-- eduction -->
+    <div class="resume-body" id="education">
+      <div class="resume-row page-text">
+        <div class="resume-section-header">EDUCATION</div>
+      </div>
+      <!-- city uni -->
+      <div class="resume-row page-text">
+        <div class="resume-column-main">
+          Master of Science in Human Computer Interaction Design [Distinction]
+          <br>
+          City University of London / London, UK
           <br>
           Relevant Courses: Web Design and Development, Interaction Design, Understanding User Interactions, Information Architecture, Inclusive Design, Evaluating Interactive Systems, Design Justice, Research Methods and Professional Issues
         </div>
-      </div>
-      <div class="page-text resume-right resume-top-line">
-        Sept. 2022 – Oct. 2023
-        <br>
-        London, UK
-      </div>
-    </div>
-    <!-- neu -->
-    <div class="resume-main">
-      <div class="page-text resume-left resume-top-line">
-        <b>Bachelor of Science</b> in <b>Computer Science/Mathematics, Animation Minor </b>
-        <div>
-          Northeastern University
-          <br>
-          Relevant Courses: Human Computer Interaction, Software Development, Computer Graphics, 2D and 4D Fundamentals, Animation Basics, Algorithms and Data Structures
+        <div class="resume-column-date">
+          09/2022 - 01/2024
         </div>
       </div>
-      <div class="page-text resume-right resume-top-line">
-        Sept. 2015 – Dec. 2019
-        <br>
-        Massachusetts, USA
-      </div>
-    </div>
-    <div class="resume-main">
-      <div class="page-text resume-left">
-        Public Relations Chair for Technology Club
-      </div>
-      <div class="page-text resume-right">
-        Jan. – Dec. 2017
+      <!-- neu -->
+      <div class="resume-row page-text">
+        <div class="resume-column-main">
+          Bachelor of Science in Computer Science and Mathematics with an Animation Minor
+          <br>
+          Northeastern University / Boston, Massachusetts, USA
+          <br>
+          Relevant Courses: Human Computer Interaction, Software Development, Computer Graphics, 2D and 4D Fundamentals, Animation Basics, Algorithms and Data Structures
+          <br>
+          Public Relations Chair for Technology Club
+        </div>
+        <div class="resume-column-date">
+          09/2015 - 12/2019
+        </div>
       </div>
     </div>
 
     <!-- skills -->
-    <div class="page-text resume-section-header">
-      <b>SKILLS</b>
-    </div>
-    <div class="page-text">
-      <b>Technical Languages:</b> JavaScript  |  HTML  |  CSS  |  C++  |  Java  |  ReactJS
-    </div>
-    <div class="page-text">
-      <b>Design Tools:</b> Figma  |  Adobe Suite (Illustrator, Photoshop, InDesign)  |  Miro  |  Axure  |  Sketch  |  InVision  |  iMovie  |  Procreate  |  Maya
-    </div>
-    <div class="page-text">
-      <b>Development Tools:</b> Github  |  Jira  |  Microsoft 365  |  NVivo  |  Optimal Workshop  |  OpenGL  |  Google Analytics
-    </div>
-    <div class="page-text">
-      <b>Professional Strengths:</b> Organization  |  Communication  |  Planning  |  Time Management  |  Problem-Solving  |  Adaptability
+    <div class="resume-body" id="skills">
+      <div class="resume-row page-text">
+        <div class="resume-section-header">SKILLS</div>
+      </div>
+      <div class="resume-row page-text">
+        Technical Languages: JavaScript, HTML, CSS, C++, Java, ReactJS
+        <br>
+        Design Tools: Figma, Adobe Suite (Illustrator, Photoshop, InDesign), Miro, Axure, Sketch, InVision, iMovie, Procreate, Maya
+        <br>
+        Development Tools: Github, Jira, Microsoft 365, NVivo Optimal Workshop, Google Analytics, OpenGL
+        <br>
+        Professional Strengths: Organization, Communication, Planning, Time Management, Problem-Solving, Adaptability
+      </div>
     </div>
 
-    <!-- tech experience -->
-    <div class="page-text resume-section-header">
-      <b>TECHNICAL EXPERIENCE</b>
-    </div>
-    <div class="resume-main">
-      <div class="page-text resume-left resume-top-line">
-        <b>High Fidelity</b>, <i>Software Developer</i>
-        <div>
-          -  Led the expansion of the glTF file importer in C++ by adding support for: blendshapes, skinning and weighing of models, binary and embedded files, animations, and loading models as avatars
+    <!-- experience -->
+    <div class="resume-body" id="techexp">
+      <div class="resume-row page-text">
+        <div class="resume-section-header">TECHNICAL WORK EXPERIENCE</div>
+      </div>
+      <!-- high fidelity -->
+      <div class="resume-row page-text">
+        <div class="resume-column-main">
+          Software Developer
           <br>
-          -  Researched glTF specifications to implement code that aligned with existing features’ structures
+          High Fidelity / San Francisco, California, USA
           <br>
-          -  Collaborated with designers and Project Managers to plan and prioritize bi-weekly Agile feature releases in Jira, ensuring a balance between business needs and target user design requirements
-          <br>
-          -  Employed problem solving and time management to complete both high priority and reach tasks
+          <ul>
+            <li>Led the expansion of the glTF file importer in C++ by adding support for: blendshapes, skinning and weighing of models, binary and embedded files, animations, and loading models as avatars</li>
+            <li>Collaborated with designers and Project Managers to plan and prioritize bi-weekly Agile feature releases in Jira, ensuring a balance between business needs and target user design requirements</li>
+            <li>Researched glTF specifications to implement code that aligned with existing features’ structures</li>
+            <li>Employed problem solving and time management to complete high and low priority as well as reach tasks</li>
+          </ul>
+        </div>
+        <div class="resume-column-date">
+          01/2019 - 06/2019
         </div>
       </div>
-      <div class="page-text resume-right resume-top-line">
-        Jan. – June 2019
-        <br>
-        California, USA
-      </div>
-    </div>
-    <div class="resume-main">
-      <div class="page-text resume-left resume-top-line">
-        <b>KleerMail</b>, <i>Software Engineer</i>
-        <div>
-          -  Collaborated with the CEO and VP of Product to develop interactive prototypes in Sketch, InVision, and InDesign that maintained brand consistency, directly resulting in the acquisition of new clients
+      <!-- kleermail -->
+      <div class="resume-row page-text">
+        <div class="resume-column-main">
+          Software Engineer
           <br>
-          -  Leveraged user testing insights and feedback to iteratively improve overall usability and design
+          KleerMail / Boston, Massachusetts, USA
           <br>
-          -  Delivered the target number of product features, integrated XMPie API functionality, resolved interface design bugs, and updated the existing test suite utilizing JavaScript, HTML, and CSS per release through effective time management, strategic planning, and detailed task breakdowns
+          <ul>
+            <li>Collaborated with the CEO and VP of Product to develop interactive prototypes in Sketch, InVision, and InDesign that maintained brand consistency, directly resulting in the acquisition of new clients</li>
+            <li>Leveraged user testing insights and feedback to iteratively improve overall usability and design</li>
+            <li>Delivered the target number of product features, integrated XMPie API functionality, resolved interface design bugs, and updated the existing test suite utilizing JavaScript, HTML, and CSS per release through effective time management, strategic planning, and detailed task breakdowns</li>
+          </ul>
         </div>
-      </div>
-      <div class="page-text resume-right resume-top-line">
-        July – Dec. 2017
-        <br>
-        Massachusetts, USA
+        <div class="resume-column-date">
+          07/2017 - 12/2017
+        </div>
       </div>
     </div>
 
     <!-- projects -->
-    <div class="page-text resume-section-header">
-      <b>PROJECTS</b>
-    </div>
-    <div class="resume-main">
-      <div class="page-text resume-left resume-top-line">
-        <b>Dissertation: Extending Reality Back to the Real – Creating Immersive Physical Environments with Interactive Technology</b>
-        - <i><a class="text-link" href="http://raveenajain.github.io/projects/hcid/dissertation"> raveenajain.github.io/projects/hcid/dissertation</a></i>
-        <div>
-          -  Conducted a thematic analysis to formulate Design Principles and Guidelines with corresponding use cases for immersive physical environments that integrated interactive technology
+    <div class="resume-body" id="projects">
+      <div class="resume-row page-text">
+        <div class="resume-section-header">PROJECTS</div>
+      </div>
+      <!-- dissertation -->
+      <div class="resume-row page-text">
+        <div class="resume-column-main">
+          Creating Immersive Physical Environments with Interactive Technology
           <br>
-          -  Gathered data on immersion and interactivity via an extensive Literature Analysis of Extended Reality (VR/AR/MR), user sentiment on online forums, and interviews with six Theme Park guests
+          <span><a class="text-link color-red" href="http://raveenajain.github.io/projects/hcid/dissertation">raveenajain.github.io/projects/hcid/dissertation</a> / London, UK</span>
+          <ul>
+            <li>Conducted a thematic analysis to formulate Design Principles and Guidelines with corresponding use cases for immersive physical environments that integrated interactive technology</li>
+            <li>Gathered data on immersion and interactivity via an extensive Literature Analysis of Extended Reality (VR/AR/MR), user sentiment on online forums, and interviews with six Theme Park guests</li>
+          </ul>
+        </div>
+        <div class="resume-column-date">
+          07/2023 - 09/2023
         </div>
       </div>
-      <div class="page-text resume-right resume-top-line">
-        July – Sept. 2023
-        <br>
-        London, UK
-      </div>
-    </div>
-    <div class="resume-main">
-      <div class="page-text resume-left resume-top-line">
-        <b>MiniMyths</b> - <i><a class="text-link" href="http://raveenajain.github.io/projects/hcid/minimyths">raveenajain.github.io/projects/hcid/minimyths</a></i>
-        <div>
-          -  Standardized page layouts using CSS Flexbox to enhance consistency and responsiveness
+      <!-- minimyths -->
+      <div class="resume-row page-text">
+        <div class="resume-column-main">
+          MiniMyths
           <br>
-          -  Developed the Frontend focusing on clean, organized code using JavaScript, HTML, and CSS
-          <br>
-          -  Prioritized usability and interactivity in designing the key pages of the clickable prototype in Figma
+          <span><a class="text-link color-orange" href="http://raveenajain.github.io/projects/hcid/minimyths">raveenajain.github.io/projects/hcid/minimyths</a> / London, UK</span>
+          <ul>
+            <li>Standardized page layouts using CSS Flexbox to enhance consistency and responsiveness</li>
+            <li>Developed the Frontend focusing on clean, organized code using JavaScript, HTML, and CSS</li>
+            <li>Prioritized usability and interactivity in designing the key pages of the clickable prototype in Figma</li>
+          </ul>
+        </div>
+        <div class="resume-column-date">
+          02/2023 - 04/2023
         </div>
       </div>
-      <div class="page-text resume-right resume-top-line">
-        Feb. – April. 2023
-        <br>
-        London, UK
-      </div>
-    </div>
-    <div class="resume-main">
-      <div class="page-text resume-left resume-top-line">
-        <b>Charity Website</b> - <i><a class="text-link" href="http://raveenajain.github.io/projects/hcid/charity">raveenajain.github.io/projects/hcid/charity</a></i>
-        <div>
-          -  Coordinated six remote think-aloud evaluations of a live website, collecting actionable insights from qualitative feedback and quantitative metrics via SEQ and SUPR-Q questionnaires
+      <!-- charity -->
+      <div class="resume-row page-text">
+        <div class="resume-column-main">
+          Charity Website
           <br>
-          -  Created a rainbow spreadsheet, list of prioritized UX issues, and 30 targeted design recommendations
+          <span><a class="text-link color-green" href="http://raveenajain.github.io/projects/hcid/charity">raveenajain.github.io/projects/hcid/charity</a> / London, UK</span>
+          <ul>
+            <li>Coordinated six remote think-aloud evaluations of a live website, collecting actionable insights from qualitative feedback and quantitative metrics via SEQ and SUPR-Q questionnaires</li>
+            <li>Created a rainbow spreadsheet, list of prioritized UX issues, and 30 targeted design recommendations</li>
+          </ul>
+        </div>
+        <div class="resume-column-date">
+          03/2023 - 04/2023
         </div>
       </div>
-      <div class="page-text resume-right resume-top-line">
-        Mar. – April. 2023
-        <br>
-        London, UK
-      </div>
-    </div>
-    <div class="resume-main">
-      <div class="page-text resume-left resume-top-line">
-        <b>Fanworks</b> - <i><a class="text-link" href="http://raveenajain.github.io/projects/hcid/fanworks">raveenajain.github.io/projects/hcid/fanworks</a></i>
-        <div>
-          -  Interviewed three Domain Experts and analyzed a live website to understand the topic of fandoms, fan search behavior, and folksonomies to inform the Information Architecture of a new site
+      <!-- fanworks -->
+      <div class="resume-row page-text">
+        <div class="resume-column-main">
+          Fanworks
           <br>
-          -  Delivered a domain model, sitemap, user journey, and mid-fidelity wireframes, all made in Figma
-          <br>
-          -  Leveraged Optimal Workshop to administer unmoderated click tests and gather quantitative data
+          <span><a class="text-link color-blue" href="http://raveenajain.github.io/projects/hcid/fanworks">raveenajain.github.io/projects/hcid/fanworks</a> / London, UK</span>
+          <ul>
+            <li>Interviewed three Domain Experts and analyzed a live website to understand the topic of fandoms, fan search behavior, and folksonomies to inform the Information Architecture of a new site</li>
+            <li>Delivered a domain model, sitemap, user journey, and mid-fidelity wireframes, all made in Figma</li>
+            <li>Leveraged Optimal Workshop to administer unmoderated click tests and gather quantitative data</li>
+          </ul>
+        </div>
+        <div class="resume-column-date">
+          11/2022 - 01/2023
         </div>
       </div>
-      <div class="page-text resume-right resume-top-line">
-        Nov. 2022 – Jan. 2023
-        <br>
-        London, UK
-      </div>
-    </div>
-    <div class="resume-main">
-      <div class="page-text resume-left resume-top-line">
-        <b>KitchenMate</b> - <i><a class="text-link" href="http://raveenajain.github.io/projects/hcid/kitchenmate">raveenajain.github.io/projects/hcid/kitchenmate</a></i>
-        <div>
-          -  Led the Recipe and Reward feature development within the design of a diet and sustainability app
+      <!-- kitchenmate -->
+      <div class="resume-row page-text">
+        <div class="resume-column-main">
+          KitchenMate
           <br>
-          -  Converted qualitative insights from interviews and observations into personas, user journeys, and interactive mid-fidelity wireframes in Axure while adhering to User Centered Design principles
-          <br>
-          -  Directed remote and in-person moderated tests, employing scenarios to enhance user interactions
+          <span><a class="text-link color-purple" href="http://raveenajain.github.io/projects/hcid/kitchenmate">raveenajain.github.io/projects/hcid/kitchenmate</a> / London, UK</span>
+          <ul>
+            <li>Led the Recipe and Reward feature development within the design of a diet and sustainability app</li>
+            <li>Converted qualitative insights from interviews and observations into personas, user journeys, and interactive mid-fidelity wireframes in Axure while adhering to User Centered Design principles</li>
+            <li>Directed remote and in-person moderated tests, employing scenarios to enhance user interactions</li>
+          </ul>
+        </div>
+        <div class="resume-column-date">
+          10/2022 - 12/2022
         </div>
       </div>
-      <div class="page-text resume-right resume-top-line">
-        Oct. – Dec. 2022
-        <br>
-        London, UK
-      </div>
-    </div>
-    <div class="resume-main">
-      <div class="page-text resume-left resume-top-line">
-        <b>ToDo App</b> - <i><a class="text-link" href="http://raveenajain.github.io/projects/todoapp">raveenajain.github.io/projects/todoapp</a></i>
-        <div>
-          -  Built a responsive ReactJS web app that allows users to add, check-off, and customize the display of items while ensuring accessibility through considering edge cases and managing user errors
-        </div>
-      </div>
-      <div class="page-text resume-right resume-top-line">
-        Aug. – Sept. 2021
-        <br>
-        New York, USA
-      </div>
-    </div>
-    <div class="resume-main">
-      <div class="page-text resume-left resume-top-line">
-        <b>Product Design</b> - <i><a class="text-link" href="http://raveenajain.github.io/projects/product">raveenajain.github.io/projects/product</a></i>
-        <div>
-          -  Conceptualized a range of clothing and sticker styles inspired by popular shows using Procreate
+      <!-- todo -->
+      <div class="resume-row page-text">
+        <div class="resume-column-main">
+          ToDo App
           <br>
-          -  Marketed the designs to the target audience, resulting in the successful sale of over 150 items
+          <span><a class="text-link color-red" href="http://raveenajain.github.io/projects/todoapp">raveenajain.github.io/projects/todoapp</a> / New York, New York, USA</span>
+          <ul>
+            <li>Built a responsive ReactJS web app that allows users to add, check-off, and customize the display of items while ensuring accessibility through considering edge cases and managing user errors</li>
+          </ul>
+        </div>
+        <div class="resume-column-date">
+          08/2021 - 09/2021
         </div>
       </div>
-      <div class="page-text resume-right resume-top-line">
-        Mar. 2020 – Aug. 2022
-        <br>
-        New York, USA
-      </div>
-    </div>
-    <div class="resume-main">
-      <div class="page-text resume-left resume-top-line">
-        <b>BeeWell</b> - <i><a class="text-link" href="http://raveenajain.github.io/projects/beewell">raveenajain.github.io/projects/beewell</a></i>
-        <div>
-          -  Prioritized interactivity by using JavaScript, HTML, and CSS to construct a web-based prototype
+      <!-- merch -->
+      <div class="resume-row page-text">
+        <div class="resume-column-main">
+          Entertainment Inspired Merchandise Design
           <br>
-          -  Worked with a partner to design and refine multiple iterations inclusive of low and high-fidelity prototypes that were optimized based on the results of user tests and heuristic evaluations
+          <span><a class="text-link color-orange" href="http://raveenajain.github.io/projects/product">raveenajain.github.io/projects/product</a> / New York, New York, USA</span>
+          <ul>
+            <li>Conceptualized a range of clothing and sticker styles inspired by popular shows using Procreate</li>
+            <li>Marketed the designs to the target audience, resulting in the successful sale of over 150 items</li>
+          </ul>
+        </div>
+        <div class="resume-column-date">
+          03/2020 - 09/2022
         </div>
       </div>
-      <div class="page-text resume-right resume-top-line">
-        Oct. – Nov. 2019
-        <br>
-        Massachusetts, USA
+      <!-- beewell -->
+      <div class="resume-row page-text">
+        <div class="resume-column-main">
+          BeeWell
+          <br>
+          <span><a class="text-link color-green" href="http://raveenajain.github.io/projects/beewell">raveenajain.github.io/projects/beewell</a> / Boston, Massachusetts, USA</span>
+          <ul>
+            <li>Prioritized interactivity by using JavaScript, HTML, and CSS to construct a web-based prototype</li>
+            <li>Worked with a partner to design and refine multiple iterations inclusive of low and high-fidelity prototypes that were optimized based on the results of user tests and heuristic evaluations</li>
+          </ul>
+        </div>
+        <div class="resume-column-date">
+          10/2019 - 11/2019
+        </div>
       </div>
     </div>
 
-    <!-- work experience -->
-    <div class="page-text resume-section-header">
-      <b>WORK EXPERIENCE</b>
-    </div>
-    <div class="resume-main">
-      <div class="page-text resume-left resume-top-line">
-        <b>Disney Store</b>, <i>Cast Member</i>
-        <div>
-          -  Gained insights into top-selling products and analyzed how they aligned with guests’ needs
+    <!-- additional experience  -->
+    <div class="resume-body" id="addexp">
+      <div class="resume-row page-text">
+        <div class="resume-section-header">ADDITIONAL WORK EXPERIENCE</div>
+      </div>
+      <!-- disney -->
+      <div class="resume-row page-text">
+        <div class="resume-column-main">
+          Cast Member
           <br>
-          -  Facilitated training for new cast members, ensuring adherence to company procedures
+          The Disney Store / London, UK
           <br>
-          -  Provided excellent service to hundreds of guests weekly while efficiently handling additional tasks such as managing till transactions and organizing stock displays
+          <ul>
+            <li>Gained insights into all products and analyzed how they aligned with guests’ needs to offer elevated recommendations</li>
+            <li>Facilitated training for new cast members, ensuring adherence to company procedures</li>
+            <li>Provided excellent service to hundreds of guests weekly while efficiently handling additional tasks such as managing till transactions and organizing stock displays</li>
+          </ul>
+        </div>
+        <div class="resume-column-date">
+          11/2013 - 08/2024
         </div>
       </div>
-      <div class="page-text resume-right resume-top-line">
-        Nov. 2023 – Aug. 2024
-        <br>
-        London, UK
-      </div>
-    </div>
-    <div class="resume-main">
-      <div class="page-text resume-left resume-top-line">
-        <b>City, University of London</b>, <i>Student Voice Ambassador</i>
-        <div>
-          -  Directed and motivated students to actively participate in university surveys
+      <!-- city uni -->
+      <div class="resume-row page-text">
+        <div class="resume-column-main">
+          Student Voice Ambassador
           <br>
-          -  Selected focus groups to participate in to offer constructive feedback and valuable insights
+          City University of London / London, UK
+          <br>
+          <ul>
+            <li>Directed and motivated students to actively participate in university surveys</li>
+            <li>Selected focus groups to participate in to offer constructive feedback and valuable insights</li>
+          </ul>
+        </div>
+        <div class="resume-column-date">
+          11/2022 - 10/2024
         </div>
       </div>
-      <div class="page-text resume-right resume-top-line">
-        Nov. 2022 – Oct. 2023
-        <br>
-        London, UK
-      </div>
-    </div>
-    <div class="resume-main">
-      <div class="page-text resume-left resume-top-line">
-        <b>Auric Real Estate Management</b>, <i>Administrative Assistant</i>
-        <div>
-          -  Managed monthly payments and data for accounts totaling hundreds of thousands of dollars
+      <!-- admin -->
+      <div class="resume-row page-text">
+        <div class="resume-column-main">
+          Administrative Assistant
           <br>
-          -  Leveraged existing skills to learn systems and procedures to handle new responsibilities
+          Auric Real Estate Management / New York, New York, USA
           <br>
-          -  Organized client documents, letters, and invoices with attention to detail ensuring accuracy and ease of access to support the workflow of Senior Managers
-          <br>
-          -  Maintained a positive demeanor while providing in-person and telephone support to residents
+          <ul>
+            <li>Managed monthly payments and data for accounts totaling hundreds of thousands of dollars</li>
+            <li>Leveraged existing skills to learn new systems and procedures to handle additional responsibilities</li>
+            <li>Organized client documents, letters, and invoices with attention to detail ensuring accuracy and ease of access to support the workflow of Senior Managers</li>
+            <li>Maintained a positive demeanor while providing in-person and telephone support to residents</li>
+          </ul>
+        </div>
+        <div class="resume-column-date">
+          02/2020 - 12/2021
         </div>
       </div>
-      <div class="page-text resume-right resume-top-line">
-        Feb. 2020 – Dec. 2021
-        <br>
-        New York, USA
-      </div>
-    </div>
-    <div class="resume-main">
-      <div class="page-text resume-left resume-top-line">
-        <b>Northeastern Global Experience Office</b>, <i>Senior Ambassador</i>
-        <div>
-          -  Promoted due to knowledge of programs and effective collaboration with existing leadership
+      <!-- geo advisor -->
+      <div class="resume-row page-text">
+        <div class="resume-column-main">
+          Senior Ambassador
           <br>
-          -  Coordinated event and presentation schedules for a team of fifteen via email and Google Sheets to streamline communication and ensure task execution
+          Northeastern Global Experience Office / Boston, Massachusetts, USA
           <br>
-          -  Acquired new brand expertise to develop presentations for audiences of up to 200 people
-          <br>
-          -  Conducted in-person and written performance reviews of team presentations to offer feedback
+          <ul>
+            <li>Promoted due to knowledge of programs and effective collaboration with existing leadership</li>
+            <li>Coordinated event and presentation schedules for a team of fifteen via email and Google Sheets to streamline communication and ensure task execution</li>
+            <li>Acquired new brand expertise to develop presentations for audiences of up to 200 people</li>
+            <li>Conducted in-person and written performance reviews of team presentations to offer feedback</li>
+          </ul>
+        </div>
+        <div class="resume-column-date">
+          08/2019 - 12/2019
         </div>
       </div>
-      <div class="page-text resume-right resume-top-line">
-        Aug. – Dec. 2019
-        <br>
-        Massachusetts, USA
-      </div>
-    </div>
-    <div class="resume-main">
-      <div class="page-text resume-left resume-top-line">
-        <b>Northeastern Global Experience Office</b>, <i>Peer Advisor</i>
-        <div>
-          -  Conducted research on design trends to guide the integration of new features into the existing site
+      <!-- geo senior -->
+      <div class="resume-row page-text" style="margin-bottom: 2%;">
+        <div class="resume-column-main">
+          Peer Advisor
           <br>
-          -  Collaborated to redesign the study abroad portion of the site, reformatting and updating data to improve user engagement
+          Northeastern Global Experience Office / Boston, Massachusetts, USA
           <br>
-          -  Advised students on selecting study or work abroad opportunities based on their individual needs
+          <ul>
+            <li>Conducted research on design trends to guide the integration of new features into the existing site</li>
+            <li>Collaborated to redesign the study abroad portion of the site, reformatting and updating data to improve user engagement</li>
+            <li>Advised students on selecting study or work abroad opportunities based on their individual needs</li>
+          </ul>
         </div>
-      </div>
-      <div class="page-text resume-right resume-top-line">
-        July – Aug. 2019
-        <br>
-        Massachusetts, USA
+        <div class="resume-column-date">
+          07/2019 - 08/2019
+        </div>
       </div>
     </div>
 
-    <br>
   </body>
-
-  <script>
-    function getMinWidth(item) {
-      var drops = document.getElementsByClassName("dropHover");
-      var w = drops[item].clientWidth;
-      document.querySelectorAll(".dropdown")[item].style.minWidth = w + 'px';
-    }
-
-  </script>
 
 </html>
