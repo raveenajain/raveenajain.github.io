@@ -728,6 +728,36 @@ ul {
   margin-right: 20px;
 }
 
+/* FANWORKS */
+/* ***************************** formatting/text ***************************** */
+.ia-pdf {
+  width: 100%;
+  height: 800px;
+}
+
+#collapsible {
+  background-color: white;
+  cursor: pointer;
+  width: 100%;
+  border: 0px;
+  border-bottom: 1px solid black;
+  text-align: left;
+  font-family: var(--font-cour);
+  font-size: 24px;
+  font-weight: lighter;
+  margin-top: 30px;
+}
+
+#refs {
+  display: none;
+  width: 85%;
+  text-align: left;
+  font-family: var(--font-cour);
+  font-size: 16px;
+  font-weight: lighter;
+  margin-top: 10px;
+}
+
 
 
 
@@ -1153,36 +1183,6 @@ ul {
 .ui-subtext {
   text-align: center;
   font-size: 350%;
-}
-
-/* ia page */
-.ia-pdf {
-  width: 85%;
-  margin-top: 30px;
-  height: 600px;
-}
-
-#collapsible {
-  background-color: white;
-  cursor: pointer;
-  width: 90%;
-  border: 0px;
-  border-bottom: 1px solid black;
-  text-align: left;
-  font-family: var(--font-cour);
-  font-size: 38px;
-  font-weight: lighter;
-  margin-top: 30px;
-}
-
-#refs {
-  display: none;
-  width: 85%;
-  text-align: left;
-  font-family: var(--font-cour);
-  font-size: 18px;
-  font-weight: lighter;
-  margin-top: 10px;
 }
 
 
