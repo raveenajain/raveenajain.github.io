@@ -136,7 +136,6 @@ body, html {
   font-size: 0px;
   font-weight: lighter;
   padding-top: 10%;
-  /* padding-bottom: 5%; */
   position: relative;
 }
 
@@ -298,34 +297,67 @@ body, html {
   text-align: center;
   color: black;
   font-family: var(--font-cour);
-  font-size: 56px;
+  font-size: 48px;
   font-weight: lighter;
-  padding-top: 5%;
   position: relative;
 }
+.project-titles {
+  height: 96px;
+  padding-top: 96px;
+  background-size: cover;
+}
 
-.top-page-links-container {
-  font-family: var(--font-cour);
-  font-size: 20px;
-  font-weight: lighter;
+ol {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.content-nav-links {
+  padding-top: 1.5%; /* match small-heading */
+  text-align: left;
+  width: 18%; /* slightly less than .content-nav-column */
+}
+
+/* ***************************** formatting ***************************** */
+.content-body {
+  margin: 0% 3% 0% 3%;
+}
+
+.content-row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
-  justify-content: center;
-  padding-top: 2%;
 }
 
-.top-page-links {
-  font-family: var(--font-cour);
-  font-size: 20px;
-  font-weight: lighter;
-  margin-left: 20px;
-  margin-right: 20px;
-  text-decoration: none;
+.content-header-row {
+  flex-basis: 100%;
+  margin-top: 16px;
 }
-.top-page-links:hover {
-  text-decoration: underline;
-  text-underline-offset: 8px;
+
+.content-nav-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20%;
+  height: fit-content;
+}
+.content-large-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 80%;
+}
+
+.content-nav-fixed {
+  position: fixed;
+  width: 100%;
+}
+
+/* ***************************** images ***************************** */
+.img-row {
+  padding-top: 1%;
+  padding-bottom: 0.5%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 
@@ -634,17 +666,6 @@ hr {
 
 /* RESUME */
 /* ***************************** format ***************************** */
-.resume-body {
-  margin: 0% 2% 0% 2%;
-}
-
-.resume-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
 .resume-column-main {
   display: flex;
   flex-direction: column;
@@ -659,6 +680,10 @@ hr {
 }
 
 /* ***************************** text ***************************** */
+.resume-title {
+  padding-top: 5%;
+}
+
 .resume-section-header {
   border-bottom: 1.5px solid;
   font-weight: 500;
@@ -669,6 +694,32 @@ hr {
 ul {
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+.top-page-links-width {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.top-page-links-container {
+  font-family: var(--font-cour);
+  font-size: 20px;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  justify-content: center;
+  padding-top: 2%;
+  text-align: center;
+  flex-wrap: wrap;
+  line-height: 2;
+}
+
+.top-page-links {
+  font-size: 20px;
+  font-weight: lighter;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 
@@ -875,9 +926,6 @@ ul {
   line-height: 115%;
 } */
 
-.page-img {
-  padding-top: 1%;
-}
 
 .img-border {
   border: 1px solid #000;
