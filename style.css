@@ -302,8 +302,8 @@ body, html {
   position: relative;
 }
 .project-titles {
-  height: 96px;
-  padding-top: 96px;
+  padding-top: 112px;
+  padding-bottom: 24px;
   background-size: cover;
 }
 
@@ -313,7 +313,7 @@ ol {
 }
 
 .content-nav-links {
-  padding-top: 1.5%; /* match small-heading */
+  padding-top: 1.5%;
   text-align: left;
   width: 18%; /* slightly less than .content-nav-column */
 }
@@ -340,6 +340,7 @@ ol {
   flex-direction: column;
   flex-basis: 20%;
   height: fit-content;
+  padding-top: 56px;
 }
 .content-large-column {
   display: flex;
