@@ -302,8 +302,7 @@ body, html {
   position: relative;
 }
 .project-titles {
-  padding-top: 112px;
-  padding-bottom: 24px;
+  padding-top: 1%; /* same as .content-nav-links */
   background-size: cover;
 }
 
@@ -313,7 +312,7 @@ ol {
 }
 
 .content-nav-links {
-  padding-top: 1.5%;
+  padding-top: 1%; /* same as .project-titles */
   text-align: left;
   width: 18%; /* slightly less than .content-nav-column */
 }
@@ -340,17 +339,23 @@ ol {
   flex-direction: column;
   flex-basis: 20%;
   height: fit-content;
-  padding-top: 56px;
+  padding-top: 64px; /* in both nav-column and large-column */
 }
 .content-large-column {
   display: flex;
   flex-direction: column;
   flex-basis: 80%;
+  padding-top: 64px; /* in both nav-column and large-column */
+  z-index: 5; /* placed ahead of the nav column so, for ex., text can be more easily copied */
 }
 
 .content-nav-fixed {
   position: fixed;
   width: 100%;
+}
+
+.bottom-margin {
+  padding-bottom: 3%;
 }
 
 /* ***************************** images ***************************** */
