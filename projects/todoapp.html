@@ -5,87 +5,126 @@
     <title> To Do App </title>
   </head>
 
+
   <!--navigation bar -->
   <header id="my-navbar">
-    <a class="active button" href="http://raveenajain.github.io/">RSJ</a>
-    <a class="active button" style="float: right" href="mailto:raveena.s.jain@gmail.com">Contact</a>
-    <a class="active button" style="float: right" href="http://raveenajain.github.io/resume">Resume</a>
-    <div class="dropHover" onmouseover="getMinWidth(0)">
-      <div>Portfolio &#9662;</div>
-      <div class="dropdown">
-        <a href="http://raveenajain.github.io/projects">Projects</a>
-        <a href="http://raveenajain.github.io/artwork">Artwork</a>
+    <a class="nav-link nav-link-red" href="http://raveenajain.github.io/">RSJ</a>
+    <div class="nav-link nav-link-drop-hover nav-link-purple" onmouseover="getMinWidth(0)">
+      <div>Contact <span id="nav-arrow">&#9662;</span></div>
+      <div class="nav-link nav-link-dropdown">
+        <a href="mailto:raveena.s.jain@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/raveena-jain">LinkedIn</a>
       </div>
     </div>
-    <div class="dropHover" onmouseover="getMinWidth(1)">
-      <div>Me &#9662;</div>
-      <div class="dropdown">
-        <a href="http://raveenajain.github.io/#about">About</a>
-        <a href="http://raveenajain.github.io/#links">Socials</a>
-      </div>
-    </div>
+    <a class="nav-link nav-link-blue" style="float: right" href="http://raveenajain.github.io/resume">Resume</a>
+    <a class="nav-link nav-link-green" style="float: right" href="http://raveenajain.github.io/artwork">Artwork</a>
+    <a class="nav-link nav-link-orange" style="float: right" href="http://raveenajain.github.io/projects">Projects</a>
   </header>
 
+
   <body>
-    <!-- title of page -->
-    <div class="page-titles">
-      To Do App
+    <!-- page title -->
+    <div class="page-titles project-titles" style="background-color: rgb(224, 128, 50)">
+      To Do Application
     </div>
 
-    <center>
-      <div class="page-sub-header"> Goal </div>
-      <div class="page-text">
-        To create a simple To Do Application that allows users to add items to a list,
-        check and uncheck those items, and change the color scheme.
-      </div>
 
-      <div class="page-sub-header"> Tools </div>
-      <div class="page-text" style="width: 70%;">
-        React, JavaScript, HTML, CSS, Figma
-      </div>
+    <div class="content-body">
+      <div class="content-row">
+        <!-- section navigation -->
+        <div class="content-nav-column page-text">
+          <div class="content-nav-fixed">
+            <div class="content-nav-links">
+              <a class="color-red text-link" href="http://raveenajain.github.io/projects/todoapp/#goal">Goal</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-orange text-link" href="http://raveenajain.github.io/projects/todoapp/#tools">Tools</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-green text-link" href="http://raveenajain.github.io/projects/todoapp/#features">Features</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-blue text-link" href="http://raveenajain.github.io/projects/todoapp/#process">Process & Prototype</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-purple text-link" href="http://raveenajain.github.io/projects/todoapp/#final">Final Product & Demo</a>
+            </div>
+          </div>
+        </div>
 
-      <div class="page-sub-header"> The App </div>
-      <div class="page-text">
-        <div class="page-text-heading" style="padding-top: 0px;"> Features </div>
-        To start learning React, I decided to go the classic route and make a To
-        Do Application. As this app is meant to be minimal, the main functionality
-        centers around adding new tasks that can be checked and unchecked. However,
-        I decided that being able to color code and change themes would be a nice addition,
-        especially considering similar functionalities are common in organizational
-        apps. When deciding on color schemes, I used my browser's developer tools
-        to make sure that colors (within each theme) were distinct enough for users
-        who might need/prefer more contrast or be colorblind. I also added the lines
-        theme for accessibility in case the contrasting colors were not enough. And
-        finally, I considered error handling by highlighting the textbox in red if
-        a user tries to add an empty task.
-        <br>
-        <div class="page-text-heading"> Process </div>
-        The first step, after setting up the React App, was to create the basic
-        functionality i.e. adding items to the list and then checking and unchecking
-        any items. After making sure the styling of the list and pop-up modal was
-        expected, the ability to modify the color schemes was added. I then tested
-        the application, thinking of edge cases and potential ways of breaking the
-        app; this is when I added the feature that alerts users if they try and
-        add an empty task.
-        <br>
-        <div class="page-text-heading"> Deliverables </div>
-        I began this project after taking a Human Computer Interaction
-        course during my last undergraduate semester and so, with a budding interest
-        in Product Design, I figured it would be a good idea to create
-        <i><a class="text-link" target="_blank" href="https://www.figma.com/proto/O2vfZ9c17rfELeFYW0cdz2/todoapp?node-id=2%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A2">
-          a clickable prototype on Figma</a></i> before moving on to building
-        the web app. Below is a demo video, however
-        <i><a class="text-link" target="_blank" href="https://github.com/raveenajain/todoapp">
-          the code as well as instructions on how to download and use the app can be found on Github</a></i>.
+        <div class="content-large-column">
+          <!-- goal -->
+          <div class="content-row" id="goal">
+            <div class="small-heading content-header-row">Goal</div>
+            <br></br>
+            <div class="page-text">
+              To create a simple To Do Application that allows users to add items to a list, check and uncheck those items, and change the color scheme.
+            </div>
+          </div>
+
+          <!-- tools -->
+          <div class="content-row" id="tools">
+            <div class="small-heading content-header-row">Tools</div>
+            <div class="page-text">
+              React, JavaScript, HTML, CSS, Figma
+            </div>
+          </div>
+
+          <!-- features -->
+          <div class="content-row" id="features">
+            <div class="small-heading content-header-row">Features</div>
+            <div class="page-text">
+              To start learning React, I decided to go the classic route and make a To Do Application.
+              As this app is meant to be minimal, the main functionality centers around adding new tasks that can be checked and unchecked.
+              I decided that being able to color code and change themes would be a nice addition, especially considering similar functionalities are common in organizational apps.
+              <br></br>
+              When deciding on color schemes, I used my browser's developer tools to make sure that colors (within each theme) were distinct enough for users who might need/prefer more contrast or be colorblind.
+              I also added the line theme for accessibility in case the contrasting colors were not enough.
+              And finally, I considered error handling by highlighting the textbox in red if a user tries to add an empty task.
+            </div>
+          </div>
+
+          <!-- process -->
+          <div class="content-row" id="process">
+            <div class="small-heading content-header-row">Process</div>
+            <div class="page-text">
+              <ol>
+                <li>Create a clickable, <a class="text-link color-red" target="_blank" href="https://www.figma.com/proto/O2vfZ9c17rfELeFYW0cdz2/todoapp?node-id=2%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A2">high-fidelity prototype</a> using Figma.</li>
+                <li>Set up the React Application.</li>
+                <li>Add the basic functionality i.e. allowing users to add items to their list and then check and uncheck them.</li>
+                <li>Testing the core features worked and the styling was as expected.</li>
+                <li>Add the ability to modify the color scheme.</li>
+                <li>Additional testing considering edge cases and ways the app could be broken.</li>
+                <li>Add error handling feature that alerts users if they try to enter an empty task (result of testing).</li>
+              </ol>
+              <br>
+              The following are some example screens from the prototype:
+              <div class=img-row>
+                <img src="../images/todo/prototype.png" style="width: 48%;" alt="list of items on todo app with nothign checked">
+                <img src="../images/todo/prototypewithpopup.png" style="width: 48%;" alt="to do app with pop up and user adding task">
+              </div>
+            </div>
+          </div>
+
+          <!-- final product -->
+          <div class="content-row" id="final">
+            <div class="small-heading content-header-row">Final Product</div>
+            <div class="page-text">
+              <a class="text-link color-orange" target="_blank" href="https://github.com/raveenajain/todoapp">The code as well as instructions on how to download and use the app</a> can be found on Github.
+              You can also view the demo video below.
+              <div class=img-row>
+                <video style="width: 85%;" controls>
+                  <source src="../images/todo/ToDoDemoVideo.mp4" type="video/mp4" alt="screen recording of someone moving through the different color options of the to do desktop app">
+                  Please visit my To Do App Github to view this video.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <br></br>
-      <video class="page-img" style="width: 80%; padding-bottom: 12px;" controls>
-        <source src="../images/ToDoDemoVideo.mp4" type="video/mp4"
-        alt="screen recording of someone moving through the different color options of the to do desktop app">
-        Please visit my To Do App Github to view this video.
-      </video>
-    </center>
+    </div>
   </body>
+
 
   <script>
     function getMinWidth(item) {
@@ -94,7 +133,6 @@
       document.querySelectorAll(".dropdown")[item].style.minWidth = w + 'px';
     }
   </script>
-
 </html>
 
 <!-- helpful sources: https://codepen.io/codewithJahid/pen/JRPvBj -->
