@@ -5,203 +5,204 @@
     <title> BeeWell </title>
   </head>
 
+
   <!--navigation bar -->
   <header id="my-navbar">
-    <a class="active button" href="http://raveenajain.github.io/">RSJ</a>
-    <a class="active button" style="float: right" href="mailto:raveena.s.jain@gmail.com">Contact</a>
-    <a class="active button" style="float: right" href="http://raveenajain.github.io/resume">Resume</a>
-    <div class="dropHover" onmouseover="getMinWidth(0)">
-      <div>Portfolio &#9662;</div>
-      <div class="dropdown">
-        <a href="http://raveenajain.github.io/projects">Projects</a>
-        <a href="http://raveenajain.github.io/artwork">Artwork</a>
+    <a class="nav-link nav-link-red" href="http://raveenajain.github.io/">RSJ</a>
+    <div class="nav-link nav-link-drop-hover nav-link-purple" onmouseover="getMinWidth(0)">
+      <div>Contact <span id="nav-arrow">&#9662;</span></div>
+      <div class="nav-link nav-link-dropdown">
+        <a href="mailto:raveena.s.jain@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/raveena-jain">LinkedIn</a>
       </div>
     </div>
-    <div class="dropHover" onmouseover="getMinWidth(1)">
-      <div>Me &#9662;</div>
-      <div class="dropdown">
-        <a href="http://raveenajain.github.io/#about">About</a>
-        <a href="http://raveenajain.github.io/#links">Socials</a>
-      </div>
-    </div>
+    <a class="nav-link nav-link-blue" style="float: right" href="http://raveenajain.github.io/resume">Resume</a>
+    <a class="nav-link nav-link-green" style="float: right" href="http://raveenajain.github.io/artwork">Artwork</a>
+    <a class="nav-link nav-link-orange" style="float: right" href="http://raveenajain.github.io/projects">Projects</a>
   </header>
 
+
   <body>
-    <!-- title of page -->
-    <div class="page-titles">
+    <!-- page title -->
+    <div class="page-titles project-titles" style="background-color: rgb(242, 228, 166)">
       BeeWell
     </div>
 
-    <center>
-      <div class="page-sub-header"> Goal </div>
-      <div class="page-text">
-        Based on the given brief: To design and build an application that can run
-        on a desktop browser.
-        <br>
-        My team's idea: To create a mobile app that would help our target audience
-        (young adults) maintain a healthier lifestyle.
-      </div>
 
-      <div class="page-sub-header"> Tools </div>
-      <div class="page-text" style="width: 70%;">
-        JavaScript, HTML, CSS, PowerPoint, Pen and Paper (Prototypes)
-      </div>
+    <div class="content-body">
+      <div class="content-row">
+        <!-- section navigation -->
+        <div class="content-nav-column page-text">
+          <div class="content-nav-fixed">
+            <div class="content-nav-links">
+              <a class="color-red text-link" href="http://raveenajain.github.io/projects/beewell/#goal">Goal</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-orange text-link" href="http://raveenajain.github.io/projects/beewell/#tools">Tools</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-green text-link" href="http://raveenajain.github.io/projects/beewell/#proposal">Project Proposal</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-blue text-link" href="http://raveenajain.github.io/projects/beewell/#conceptual">Conceptual Design</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-purple text-link" href="http://raveenajain.github.io/projects/beewell/#sketches">Sketches & Storyboarding</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-red text-link" href="http://raveenajain.github.io/projects/beewell/#paper">Paper Prototyping & Low-Fi Testing</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-orange text-link" href="http://raveenajain.github.io/projects/beewell/#hifi">High-Fi Prototype</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-green text-link" href="http://raveenajain.github.io/projects/beewell/#testing">Heuristic Evaluations & User Testing</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-blue text-link" href="http://raveenajain.github.io/projects/beewell/#final">Final Product</a>
+            </div>
+          </div>
+        </div>
 
-      <div class="page-sub-header"> Project Proposal </div>
-      <div class="page-text">
-        For the final project of my undergraduate Human Computer Interaction class,
-        a partner and I had to develop an application of our choice. After some
-        brainstorming, we, as young adults who rarely slept, skipped meals, and drank
-        coffee instead of water, decided to create an app that would help young
-        adults just like us take better care of themselves. However, we wanted to
-        create something that went beyond just offering basic reminders to eat,
-        sleep, and drink water. We proposed a more engaging and motivational experience
-        that would have users take care of an avatar, who acted as an extension of
-        the user, to remind them to also care for themselves. Our process is detailed
-        below, but <i><a class="text-link" href="https://github.com/raveenajain/BeeWell">
-        the final prototype can be found here on Github</a></i>. The following are
-        some quick sketches I made to help us get the basics of our idea across
-        for our proposal.
-      </div>
-      <div>
-        <img class="page-img" src="../images/beewell/proposalSketch1.png" style="width: 30%; float: none;">
-        <img class="page-img" src="../images/beewell/proposalSketch2.png" style="width: 30%; float: none;">
-        <img class="page-img" src="../images/beewell/proposalSketch3.png" style="width: 30%; float: none;">
-      </div>
+        <div class="content-large-column">
+          <!-- goal -->
+          <div class="content-row" id="goal">
+            <div class="small-heading content-header-row">Goal</div>
+            <br></br>
+            <div class="page-text">
+              Based on the given brief: To design and build an application that can run on a desktop browser.
+              <br>
+              My team's idea: To create a mobile app that would help our target audience (young adults) maintain a healthier lifestyle.
+            </div>
+          </div>
 
-      <div class="page-sub-header"> Conceptual Design </div>
-      <div class="page-text">
-        After submitting our project proposal, we created Metaphors and
-        Scenarios for the User and for our main tasks of Sleeping, Eating, and
-        Drinking Water. We then separately found our visual inspiration and had
-        a meeting to discuss where we saw this design going, focusing on where our
-        ideas overlapped as well as any points we each felt were important. This
-        allowed us to move forward on the same page.
-      </div>
-      <br></br>
-      <div>
-        <img class="page-img" src="../images/beewell/rInspo.png" style="width: 36%; float: none;"
-          alt="colorful graphics of an aprtment with a kitchen and couch, iphone calculator,
-          and colorful images of Tamagotchi land and a Webkinz room.">
-        <img class="page-img" src="../images/beewell/nInspo.png" style="width: 54%; float: none;"
-          alt="colorful images of a Tamagotchi, a bee, the sims, Animal Crossing,
-          and Stardew Valley.">
-      </div>
+          <!-- tools -->
+          <div class="content-row" id="tools">
+            <div class="small-heading content-header-row">Tools</div>
+            <div class="page-text">
+              JavaScript, HTML, CSS, PowerPoint, Pen and Paper (Prototypes)
+            </div>
+          </div>
 
-      <div class="page-sub-header"> Sketches and Storyboarding </div>
-      <div class="page-text">
-        Because of the smaller scope of this project as well as our more specific
-        target audience, we created only a Primary Persona. We then developed our
-        Scenarios, empathizing with that persona, and used those deliverables as
-        inspiration as we explored potential ideas by each sketching a proposed
-        layout for our most important screen (i.e. where the user gives their avatar
-        food, water, and tells it to sleep).
-      </div>
-      <div>
-        <br></br>
-        <img class="page-img" src="../images/beewell/rSketch.png" style="width: 35%;"
-          alt="5 rough sketches formatted to a phone of a stick figure in a studio apartment">
-        <img class="page-img" src="../images/beewell/nSketch.png" style="width: 32%;"
-          alt="5 rough sketches formatted to a phone of a stick figure in a studio apartment">
-      </div>
+          <!-- project proposal -->
+          <div class="content-row" id="proposal">
+            <div class="small-heading content-header-row">Project Proposal</div>
+            <div class="page-text">
+              For the final project of my undergraduate Human Computer Interaction class, a partner and I had to develop an application of our choice.
+              After some brainstorming, we decided to create an app that would help young adults just like us take better care of themselves.
+              However, we wanted to create something that went beyond just offering basic reminders.
+              <br></br>
+              We proposed a more engaging and motivational experience that would have users take care of an avatar, who acted as an extension of the user, to remind them to also care for themselves.
+              The following are some quick sketches I made to help us get the basics of our idea across for our proposal to our professor.
+            </div>
+            <div class=img-row>
+              <img src="../images/beewell/proposalSketch1.png" style="width: 30%;" alt="stick figure sketch">
+              <img src="../images/beewell/proposalSketch2.png" style="width: 30%;" alt="sketch of room and pop up">
+              <img src="../images/beewell/proposalSketch3.png" style="width: 30%;" alt="sketch of stick figure and task options">
+            </div>
+          </div>
 
-      <div class="page-text">
-        We then worked together to combine our ideas into one to create screens for
-        The Studio Apartment, showing a confirmation pop-up and displaying a generic
-        dialogue box as we knew those would evolve into core features. We also developed
-        a rough storyboard showcasing how our app could successfully remind someone
-        to care for an avatar and themselves as a way of "selling" our idea and its
-        effectiveness to our professor.
-      </div>
-      <div>
-        <br></br>
-        <img class="page-img" src="../images/beewell/comboSketch.png" style="width: 40%; float: none;"
-          alt="rough sketch of a studio apartment, confimation pop-up, and dialogue box mobile screen">
-        <img class="page-img" src="../images/beewell/storyboard.png" style="width: 35%; float: none;"
-          alt="10 sketches of a stick figure using the BeeWell app on their phone
-          to take care of an avatar and being reminded to drink water, eat, and sleep.">
-      </div>
+          <!-- conceptual design -->
+          <div class="content-row" id="conceptual">
+            <div class="small-heading content-header-row">Conceptual Design</div>
+            <div class="page-text">
+              After submitting our project proposal, we created Metaphors and Scenarios for the User and for our main tasks of Sleeping, Eating, and Drinking Water.
+              We then separately found our visual inspiration and had a meeting to discuss where we saw our design going.
+              By focusing on where our ideas overlapped as well as any points we each felt were important, we were able to move forward on the same page.
+              <div class=img-row style="padding-top: 0%;">
+                <img src="../images/beewell/rInspo.png" style="width: 36%;" alt="colorful graphics of an aprtment with a kitchen and couch, iphone calculator, and colorful images of Tamagotchi land and a Webkinz room.">
+                <img src="../images/beewell/nInspo.png" style="width: 54%;" alt="colorful images of a Tamagotchi, a bee, the sims, Animal Crossing, and Stardew Valley.">
+              </div>
+            </div>
+          </div>
 
-      <div class="page-sub-header"> Paper Prototyping and Low-Fidelity Testing </div>
-      <div class="page-text">
-        With a clearer idea of our screens and core features, we created paper prototypes
-        and split up to perform in-person, moderated, Think Aloud tests with potential
-        users. Because of our tight timeline, and considering the minimalist functionality
-        associated with this app, using low-fidelity prototypes were an effective
-        and efficient way of testing out our initial ideas.
-      </div>
-      <div>
-        <br></br>
-        <img class="page-img" src="../images/beewell/paperPrototype1.png" style="width: 45%; float: none;"
-          alt="rough sketch of a studio apartment, confimation pop-up, and dialogue box mobile screen">
-        <img class="page-img" src="../images/beewell/paperPrototype2.png" style="width: 35%; float: none;"
-          alt="10 sketches of a stick figure using the BeeWell app on their phone
-          to take care of an avatar and being reminded to drink water, eat, and sleep.">
-      </div>
-      <div class="page-text">
-        Before performing these tests, we created tasks to cover our key functionalities: <br>
-        1. Move through the welcome form screens, enter values for how much sleep
-        you want to get and how much food and water you want to eat and drink. <br>
-        2. Give your avatar water. <br>
-        3. Change the number of hours of sleep you want to get to 9 hours. <br>
-        4. Feed your avatar. <br>
-        We each took notes during testing and reconvened to, together, establish
-        the following key takeaways:
-      </div>
-      <div>
-        <br></br>
-        <img class="page-img" src="../images/beewell/prototypingResults.png" style="width: 60%; float: none;"
-          alt="screen from report slide explaining prototype testing takeaways">
-      </div>
+          <!-- sketches and storyboarding -->
+          <div class="content-row" id="sketches">
+            <div class="small-heading content-header-row">Sketches and Storyboarding</div>
+            <div class="page-text">
+              Because of the smaller scope of this project as well as our more specific target audience, we only created a Primary Persona.
+              We then developed Scenarios, empathizing with that persona, and used those deliverables as inspiration as we explored potential ideas by each sketching a proposed layout for our key screen (where the user gives their avatar food, water, and tells it to sleep).
+              <div class=img-row style="padding-top: 0%;">
+                <img src="../images/beewell/rSketch.png" style="width: 35%;" alt="5 rough sketches formatted to a phone of a stick figure in a studio apartment">
+                <img src="../images/beewell/nSketch.png" style="width: 32%;" alt="5 rough sketches formatted to a phone of a stick figure in a studio apartment">
+              </div>
+            </div>
+          </div>
 
-      <div class="page-sub-header"> High-Fidelity, Clickable Prototype </div>
-      <div class="page-text">
-        As we were approaching our final round of testing, we felt it would be beneficial
-        to have users be able to interact with a more finished product on an actual phone.
-        As our focus was on users' needs, we took the feedback from our initial testing
-        to make changes as we created a high-fidelity prototype. As required by the
-        course, we had to make this prototype accessible via a web browser (and not
-        using prototyping software such as Figma), so we coded it in JavaScript,
-        HTML, and CSS.
-      </div>
+          <!-- paper prototyping and low-fidelity testing -->
+          <div class="content-row" id="paper">
+            <div class="small-heading content-header-row">Paper Prototyping and Low-Fidelity Testing</div>
+            <div class="page-text">
+              With a clearer idea of our screens and core features, we created paper prototypes and split up to perform in-person, moderated, Think Aloud tests with potential users.
+              Because of our tight timeline, and considering the minimalist functionality associated with this app, using low-fidelity prototypes were an effective and efficient way of testing out our initial ideas.
+              <div class=img-row>
+                <img src="../images/beewell/paperPrototype1.png" style="width: 45%;" alt="rough sketch of a studio apartment, confimation pop-up, and dialogue box mobile screen">
+                <img src="../images/beewell/paperPrototype2.png" style="width: 35%;" alt="10 sketches of a stick figure using the BeeWell app on their phone to take care of an avatar and being reminded to drink water, eat, and sleep.">
+              </div>
+              <br>
+              Before performing these tests, we created tasks to cover our key functionalities:
+              <ol>
+                <li>Move through the welcome form screens, enter values for how much sleep you want to get and how much food and water you want to eat and drink.</li>
+                <li>Give your avatar water.</li>
+                <li>Change the number of hours of sleep you want to get to 9 hours.</li>
+                <li>Feed your avatar.</li>
+              </ol>
+              <br>
+              We each took notes during testing and reconvened to, together, establish the following key takeaways:
+              <div class=img-row>
+                <img src="../images/beewell/prototypingResults.png" style="width: 50%;" alt="screen from report slide explaining prototype testing takeaways">
+              </div>
+            </div>
+          </div>
 
-      <div class="page-sub-header"> Heuristic Evaluations and User Testing </div>
-      <div class="page-text">
-        In order to iteratively improve our product, we performed more user tests as
-        well as heuristic evaluations (the "experts" were our peers from the course
-        which meant we were also able to act as "experts" and perform heuristic evaluations
-        for other apps). From these tests and evaluations, we prioritized our results
-        and made changes to our high-fidelity prototype. The severity of our issues
-        was mainly determined by frequency, criticality, and ease of use. However,
-        when actually making changes, we did have to consider our deadline and weigh
-        how long it would take to make a change with that change's overall impact.
-        We also took note of positives to make sure that any adjustments we did make
-        did not impact what users liked about our app.
-      </div>
-      <div>
-        <br></br>
-        <img class="page-img" src="../images/beewell/evalResults.png" style="width: 45%; float: none;"
-          alt="screen from report slide explaining prioritized heuristic evaluation takeaways">
-        <img class="page-img" src="../images/beewell/userResults.png" style="width: 45%; float: none;"
-          alt="screen from report slide explaining user testing takeaways">
-      </div>
+          <!-- high-fidelity clickable prototype -->
+          <div class="content-row" id="hifi">
+            <div class="small-heading content-header-row">High-Fidelity, Clickable Prototype</div>
+            <div class="page-text">
+              As we were approaching our final round of testing, we felt it would be beneficial to have users interact with a more finished product on an actual phone.
+              We took the feedback from our initial testing to make changes as we created a high-fidelity prototype.
+              As required by the course, we had to make this prototype accessible via a web browser (and not using prototyping software such as Figma), so we coded it in JavaScript, HTML, and CSS.
+            </div>
+          </div>
 
-      <div class="page-sub-header"> Final Product </div>
-      <div class="page-text">
-        After iteratively improving our application, we ended with
-        <i><a class="text-link" href="https://github.com/raveenajain/BeeWell">
-        our final prototype which can be explored in your browser</a></i>
-        or can be viewed below via the demo video we created.
-      </div>
-      <br></br>
-      <video class="page-img" style="width: 20%;" controls>
-        <source src="../images/beewell/demo.mp4" type="video/mp4"
-        alt="screen recording of an iphone of someone moving through each BeeWell page">
-        Please visit my BeeWell Github to view this video.
-      </video>
-    </center>
+          <!-- heuristic evaluations and user testing -->
+          <div class="content-row" id="testing">
+            <div class="small-heading content-header-row">Heuristic Evaluations and User Testing</div>
+            <div class="page-text">
+              In order to iteratively improve our product, we performed more user tests as well as heuristic evaluations
+              (the "experts" were our peers from the course which meant we were also able to act as "experts" and perform heuristic evaluations for other apps).
+              <br></br>
+              We prioritized our results and made changes to our high-fidelity prototype.
+              The severity of our issues was mainly determined by frequency, criticality, and ease of use.
+              <br></br>
+              When making changes, we also considered our deadline and weighed how long it would take to make a change with that change's overall impact.
+              We also took note of positive feedback to make sure any adjustments we did make did not impact what users liked about our app.
+              <div class=img-row>
+                <img src="../images/beewell/evalResults.png" style="width: 45%;" alt="screen from report slide explaining prioritized heuristic evaluation takeaways">
+                <img src="../images/beewell/userResults.png" style="width: 45%;" alt="screen from report slide explaining user testing takeaways">
+              </div>
+            </div>
+          </div>
 
+          <!-- final product -->
+          <div class="content-row" id="final">
+            <div class="small-heading content-header-row">Final Product</div>
+            <div class="page-text">
+              After iteratively improving our application, we ended with <a class="text-link color-red" target="_blank" href="https://github.com/raveenajain/BeeWell">our final prototype</a>
+              which can be explored in your browser or can be viewed via the demo video below.
+              <div class=img-row>
+                <video style="width: 30%;" controls>
+                  <source src="../images/beewell/demo.mp4" type="video/mp4" alt="screen recording of an iphone of someone moving through each BeeWell page">
+                  Please visit my BeeWell Github to view this video.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
+
 
   <script>
     function getMinWidth(item) {
@@ -210,7 +211,6 @@
       document.querySelectorAll(".dropdown")[item].style.minWidth = w + 'px';
     }
   </script>
-
 </html>
 
 <!-- helpful sources: https://codepen.io/codewithJahid/pen/JRPvBj -->
