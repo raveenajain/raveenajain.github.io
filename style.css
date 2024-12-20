@@ -366,6 +366,10 @@ ol {
   justify-content: space-evenly;
 }
 
+.img-border {
+  border: 1px solid black;
+}
+
 
 /* HOME PAGE */
 /* ***************************** images ***************************** */
@@ -963,9 +967,7 @@ ul {
 } */
 
 
-.img-border {
-  border: 1px solid #000;
-}
+
 
 .img-list {
   white-space: nowrap;

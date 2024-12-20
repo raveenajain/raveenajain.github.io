@@ -5,226 +5,240 @@
     <title> KitchenMate </title>
   </head>
 
+
   <!--navigation bar -->
   <header id="my-navbar">
-    <a class="active button" href="http://raveenajain.github.io/">RSJ</a>
-    <a class="active button" style="float: right" href="mailto:raveena.s.jain@gmail.com">Contact</a>\
-    <a class="active button" style="float: right" href="http://raveenajain.github.io/resume">Resume</a>
-    <div class="dropHover" onmouseover="getMinWidth(0)">
-      <div>Portfolio &#9662;</div>
-      <div class="dropdown">
-        <a href="http://raveenajain.github.io/projects">Projects</a>
-        <a href="http://raveenajain.github.io/artwork">Artwork</a>
+    <a class="nav-link nav-link-red" href="http://raveenajain.github.io/">RSJ</a>
+    <div class="nav-link nav-link-drop-hover nav-link-purple" onmouseover="getMinWidth(0)">
+      <div>Contact <span id="nav-arrow">&#9662;</span></div>
+      <div class="nav-link nav-link-dropdown">
+        <a href="mailto:raveena.s.jain@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/raveena-jain">LinkedIn</a>
       </div>
     </div>
-    <div class="dropHover" onmouseover="getMinWidth(1)">
-      <div>Me &#9662;</div>
-      <div class="dropdown">
-        <a href="http://raveenajain.github.io/#about">About</a>
-        <a href="http://raveenajain.github.io/#links">Socials</a>
-      </div>
-    </div>
+    <a class="nav-link nav-link-blue" style="float: right" href="http://raveenajain.github.io/resume">Resume</a>
+    <a class="nav-link nav-link-green" style="float: right" href="http://raveenajain.github.io/artwork">Artwork</a>
+    <a class="nav-link nav-link-orange" style="float: right" href="http://raveenajain.github.io/projects">Projects</a>
   </header>
 
+
   <body>
-    <!-- title of page -->
-    <div class="page-titles">
-      KitchenMate
+    <div class="content-body">
+      <div class="content-row">
+        <!-- section navigation -->
+        <div class="content-nav-column page-text">
+          <div class="content-nav-fixed">
+            <div class="content-nav-links">
+              <a class="color-red text-link" href="http://raveenajain.github.io/projects/hcid/kitchenmate/#goal">Goal</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-orange text-link" href="http://raveenajain.github.io/projects/hcid/kitchenmate/#tools">Tools</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-green text-link" href="http://raveenajain.github.io/projects/hcid/kitchenmate/#meetings">Initial Meetings</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-blue text-link" href="http://raveenajain.github.io/projects/hcid/kitchenmate/#research">Research (Interviews & Observations)</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-purple text-link" href="http://raveenajain.github.io/projects/hcid/kitchenmate/#deliverablesp1">Key Insights, Personas, & Future User Journeys</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-red text-link" href="http://raveenajain.github.io/projects/hcid/kitchenmate/#deliverablesp2">POV Statements, HMW Questions, & Requirements</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-orange text-link" href="http://raveenajain.github.io/projects/hcid/kitchenmate/#sketches">Sketches</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-green text-link" href="http://raveenajain.github.io/projects/hcid/kitchenmate/#wireframes">Wireframes</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-blue text-link" href="http://raveenajain.github.io/projects/hcid/kitchenmate/#prototype">Clickable Prototype</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-purple text-link" href="http://raveenajain.github.io/projects/hcid/kitchenmate/#evaluation">Evaluation</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-large-column">
+          <!-- page title -->
+          <div class="page-titles project-titles">
+            KitchenMate
+          </div>
+
+          <!-- goal -->
+          <div class="content-row" id="goal">
+            <div class="small-heading content-header-row">Goal</div>
+            <div class="page-text">
+              Based on the given brief: to develop an application for the 10-inch Amazon Echo Show that encourages users to improve their "diets and [be] more mindful of the environmental impact of their food."
+              A focus should be placed on following the User Design Principles.
+            </div>
+          </div>
+
+          <!-- tools -->
+          <div class="content-row" id="tools">
+            <div class="small-heading content-header-row">Tools</div>
+            <div class="page-text">
+              Miro, Axure, Pen and Paper (Sketches), Remote Interview Moderation (Microsoft Teams) and Recording (QuickTime) Software
+            </div>
+          </div>
+
+          <!-- meetings -->
+          <div class="content-row" id="meetings">
+            <div class="small-heading content-header-row">Initial Meetings</div>
+            <div class="page-text">
+              A small group was formed to develop this application, titled KitchenMate.
+              The first steps we took as a team were to do some background research on the topics of diet and sustainability and then to meet to discuss that research.
+              One of my primary focuses in that initial meeting was making sure we agreed on a timeline.
+              As the team was working remotely, most of the screenshots included below are from our Miro Board.
+            </div>
+          </div>
+
+          <!-- research (interviews and naturalistic observations) -->
+          <div class="content-row" id="research">
+            <div class="small-heading content-header-row">Research (Interviews and Naturalistic Observations)</div>
+            <div class="page-text">
+              To create a truly user centered product, interviews with potential users were conducted to inform our future design decisions.
+              In order to allow the interviews to flow naturally, but to guarantee the range of points relevant to the brief was hit, we used semi-structured interviews.
+              Before said interviews, the team met to confirm which specific topics were of highest priority to cover and to write and refine a handful of questions.
+              After the interviews, and naturalistic observations in grocery stores, were finished, each team member wrote down key points:
+              <div class=img-row>
+                <img src="../../images/km/results.png" alt="screenshot of different colored sticky notes on miro next to a table" style="width: 90%;">
+              </div>
+            </div>
+          </div>
+
+          <!-- key insights, personas, and future user journeys -->
+          <div class="content-row" id="deliverablesp1">
+            <div class="small-heading content-header-row">Key Insights, Personas, and Future User Journeys</div>
+            <div class="page-text">
+              By looking for common trends and overlapping ideas in the data, our information was translated and scaled down to a more cohesive List of Key Insights.
+              The following are some examples of user insights - looking at nutrition labels in relation to diet, struggling with plastic packaging when making purchases from grocery stores, and wanting to have a more tangible, positive result in order to stay motivated when forming new habits.
+              <br></br>
+              The Key Insights were incredibly useful in helping create Personas (for both primary and secondary target users) and Future User Journeys for each of those Personas.
+              These User Journeys and Personas were not only important down the line when it came to developing features, but allowed our team to continually empathize with the varying needs and challenges we thought our users could face.
+              <div class=img-row>
+                <img src="../../images/km/insights.png" alt="lists of text on white background" style="width: 90%;">
+              </div>
+              <div class=img-row>
+                <img class=img-border src="../../images/km/persona1.jpg" alt="persona of a user named tanya williams" style="width: 80%;">
+                </div>
+              <div class=img-row>
+                <img class=img-border src="../../images/km/persona2.jpg" alt="persona of a user named frankie kaspen" style="width: 80%;">
+              </div>
+              <div class=img-row>
+                <img src="../../images/km/future1.png" alt="user journey for tanya williams" style="width: 85%;">
+                </div>
+              <div class=img-row>
+                <img src="../../images/km/future2.png" alt="user journey for frankie kaspen" style="width: 85%;">
+                </div>
+            </div>
+          </div>
+
+          <!-- POV statements, HMW questions, and requirements -->
+          <div class="content-row" id="deliverablesp2">
+            <div class="small-heading content-header-row">POV Statements, HMW Questions, and Requirements</div>
+            <div class="page-text">
+              Creating Point of View Statements and, from those, How Might We Questions really helped the team move forward from brainstorming to refining ideas into actual features.
+              Our team worked closely to figure out both what would be core to include based on what users had said as well as what was realistic and important to implement based on the brief.
+              <br></br>
+              For example, multiple users mentioned wanting to buy healthier and more sustainable products, but struggled with the associated cost and the time it took to compare items in a grocery store.
+              This turned into thinking about developing a tool so users could, at a glance, compare different items and make an informed "cost/benefit" decision;
+              the hope was ease-of-use would help encourage users to buy healthier products, as required by the brief.
+              <br></br>
+              To help figure out how our potential features could be implementated, Functional, Non-Functional, and Data Requirements were tied back to the POV Statements.
+              And, throughout the entire process, we made sure to empathize with our users' wants and needs and to refer back to our initial user research.
+              <div class=img-row>
+                <img src="../../images/km/povhmw.png" alt="different colored sticky notes and lists of text on miro" style="width: 90%;">
+              </div>
+            </div>
+          </div>
+
+          <!-- sketches -->
+          <div class="content-row" id="sketches">
+            <div class="small-heading content-header-row">Sketches</div>
+            <div class="page-text">
+              The list of features to be implemented were divided into overarching, key categories;
+              each team member then took the lead on a couple of areas (I focused on the features related to presenting recipes and developing a rewards system to motivate users).
+              Low-fidelity sketching was used as a way of both brainstorming designs and efficiently and effectively communicating ideas between team members.
+              (Only my sketches are included below.)
+              <div class=img-row>
+                <img src="../../images/km/sketch1.jpeg" alt="sketch of recipe screen results with filters" style="width: 47%;">
+                <img src="../../images/km/sketch2.jpeg" alt="another version sketch of recipe screen results with filters" style="width: 50%;">
+              </div>
+              <div class=img-row>
+                <img class="img-border" src="../../images/km/sketch3.png" alt="sketch of recipe screen results" style="width: 47%;">
+                <img class="img-border" src="../../images/km/sketch4.png" alt="another version sketch of recipe screen results" style="width: 50%;">
+              </div>
+              <div class=img-row>
+                <img class="img-border" src="../../images/km/sketch5.png" alt="sketch of one set-up sceens" style="width: 32%;">
+                <img class="img-border" src="../../images/km/sketch6.png" alt="sketch of recycling results screen" style="width: 32%;">
+                <img class="img-border" src="../../images/km/sketch7.png" alt="sketch of rewards screen" style="width: 32%;">
+              </div>
+            </div>
+          </div>
+
+          <!-- wireframes -->
+          <div class="content-row" id="wireframes">
+            <div class="small-heading content-header-row">Wireframes</div>
+            <div class="page-text">
+              Mid-fidelity, annotated wireframes were built based on the sketches.
+              As none of the team had experience with Axure, we decided to learn something new "on the job" and use this software.
+              When designing, referring to the User Journeys as well as considering other edge cases was crucial;
+              this helped the team understand how KitchenMate could be used to create something that would be accessible via both voice and touch while still aligning with the more typical, minimalist Smart Home interfaces.
+              When developing this touchscreen functionality, both tapping and swiping were used considering built-in Echo Show actions as well as existing expectations a Smart Home user might have.
+              <br></br>
+              The work was divided amongst team members and the designs of key features were prioritized before any additional screens were developed.
+              I also created a grid system and template page (for assets like buttons, text, etc.) for the sake of consistency.
+              Below are a few of the wireframe screens I focused on:
+              <div class=img-row>
+                <img class=img-border src="../../images/km/wireframe1.png" alt="health and sustainability goals loading screen" style="width: 48%;">
+                <img class=img-border src="../../images/km/wireframe2.png" alt="home screen" style="width: 48%;">
+              </div>
+              <div class=img-row>
+                <img class=img-border src="../../images/km/wireframe3.png" alt="recipe results screen with filter" style="width: 48%;">
+                <img class=img-border src="../../images/km/wireframe4.png" alt="recipe with filter and health and sustainability details shown" style="width: 48%;">
+              </div>
+              <div class=img-row>
+                <img class=img-border src="../../images/km/wireframe5.png" alt="glass bottle recycling screen" style="width: 48%;">
+                <img class=img-border src="../../images/km/wireframe6.png" alt="rvoucher rewards screen" style="width: 48%;">
+              </div>
+            </div>
+          </div>
+
+          <!-- clickable prototype -->
+          <div class="content-row" id="prototype">
+            <div class="small-heading content-header-row">Clickable Prototype</div>
+            <div class="page-text">
+              Our wireframes were then made into a clickable prototype.
+              When making the clickable prototype, the List of Key Insights was used as a reference to know what features to prioritize making clickable in anticipation of testing the core elements of our application.
+              These core features formed a story where the user would look for a recipe (filtered by their personal health and sustainability goals), compare the sustainability and nutritional information of items that the recipe required, and, later on, scan empty food waste (like jars) to learn if and when they could be recycled.
+              <br></br>
+              You can <a class="text-link color-red" target="_blank" href="https://6y0xma.axshare.com/?id=tmck23&p=postcode&fn=0&hi=1&dp=0">view the final clickable prototype here.</a>
+            </div>
+          </div>
+
+          <!-- evaluation -->
+          <div class="content-row bottom-margin" id="evaluation">
+            <div class="small-heading content-header-row">Evaluation</div>
+            <div class="page-text">
+              Considering Smart Home devices are typically more minimalist, the team decided it was worth the extra effort to create a mid-fidelity prototype (over a paper prototype) for testing.
+              Because we only had time to do one round of testing, this allowed for a product evaluation on a touch screen device and resulted in more detailed and nuanced feedback.
+              <br></br>
+              To work with the resources available, the team used both in-person and remote moderated testing with target users (with a classic think-aloud protocol for both).
+              A set of tasks framed by a Scenario that was inspired by our Future User Journeys was developed to help the user understand why they might be moving through the motions of each task, especially considering the testing was not taking place in a kitchen environment.
+              <br></br>
+              For each participant, the results were added to Miro sticky notes, using colour to differentiate between positive and negative feedback so the team knew which elements would need to be changed as well as what should stay the same.
+              Literal connections were drawn between the responses and frequency, effect on the product, and success rate were considered when prioritizing the results.
+              <div class="img-row">
+                <img src="../../images/km/eval.png" alt="color coded sticky notes on miro drawing connections between user feedback" style="width: 85%;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <center>
-      <div class="page-sub-header"> Goal </div>
-      <div class="page-text">
-        Based on the given brief: to develop an application for the 10-inch Amazon
-        Echo Show that encourages users to improve their "diets and [be] more mindful
-        of the environmental impact of their food." A focus should be placed on
-        following the User Design Principles.
-      </div>
-
-      <div class="page-sub-header"> Tools </div>
-      <div class="page-text">
-        Miro, Axure, Pen and Paper (Sketches), Remote Interview Moderation (Microsoft
-        Teams) and Recording (QuickTime) Software
-      </div>
-
-      <div class="page-sub-header"> Initial Meetings </div>
-      <div class="page-text">
-        A small group was formed to develop this application, titled KitchenMate.
-        The first steps taken were to do some background research on the topic and
-        then meet to discuss that research. One of my primary focuses in that initial
-        meeting was to plan out a timeline. As the team was working remotely, most
-        of the screenshots included below are from our Miro Board.
-      </div>
-
-      <div class="page-sub-header"> Research (Interviews and Naturalistic Observations) </div>
-      <div class="page-text">
-        To create a truly user centered product, interviews with potential users
-        were conducted to inform our future design decisions. In order to allow
-        the interviews to flow naturally, but to guarantee the range of points relevant
-        to the brief was hit, semi-structured interviews were used. Before said
-        interviews, the team met to confirm which specific topics would be important
-        to cover and to write and refine a handful of questions. After the interviews,
-        and naturalistic observations in grocery stores, were finished, each team
-        member wrote down key points:
-      </div>
-      <div>
-        <img class="page-img" src="../../images/km/results.png" alt="screenshot of different colored sticky notes on miro next to a table"
-          style="width: 60%; float: none;">
-      </div>
-
-      <div class="page-sub-header"> Deliverables (made via Miro) </div>
-      <div class="page-text">
-        <div class="page-text-heading" style="padding-top: 0px;"> Key Insights, Personas, and Future User Journeys </div>
-        By looking for common trends and overlapping ideas in the data, our information
-        was translated and scaled down to a more cohesive List of Key Insights. The
-        following are some examples of user insights - looking at nutrition labels
-        in relation to diet, struggling with plastic packaging when making purchases
-        from grocery stores, and wanting to have a more tangible, positive result
-        in order to stay motivated when forming new habits.
-        <br></br>
-        The Key Insights were incredibly useful in helping create Personas, for
-        both primary and secondary target users, and Future User Journeys for each
-        of those Personas. These User Journeys and Personas were not only important
-        down the line when it came to developing features, but allowed our team
-        to continually empathize with the varying needs and challenges we thought
-        our users could face.
-      </div>
-      <div>
-      <img class="page-img" src="../../images/km/insights.png" alt="lists of text on white background"
-        style="width: 60%; float: none;">
-      <br>
-      <img class="page-img" src="../../images/km/persona1.jpg" alt="persona of a user named tanya williams"
-        style="width: 43%; float: none;">
-      <img class="page-img" src="../../images/km/persona2.jpg" alt="persona of a user named frankie kaspen"
-        style="width: 43%; float: none;">
-      <img class="page-img" src="../../images/km/future1.png" alt="user journey for tanya williams"
-        style="width: 45%; float: none;">
-      <img class="page-img" src="../../images/km/future2.png" alt="user journey for frankie kaspen"
-        style="width: 45%; float: none;">
-      </div>
-      <div class="page-text">
-        <div class="page-text-heading" style="padding-top: 0px;"> POV Statements, HMW Questions, and Requirements </div>
-        Creating Point of View Statements and, from those, How Might We Questions
-        really helped the team move forward from brainstorming to refining ideas
-        into actual features. Our team worked closely to figure out both what would
-        be core to include based on what users had said as well as what was realistic
-        and important to implement based on the brief. For example, multiple users
-        mentioned wanting to buy healthier and more sustainable products, but struggled
-        with the associated cost and the time it took to compare items in a grocery
-        store. This turned into thinking about developing a tool so users could,
-        at a glance, compare different items and make an informed "cost/benefit"
-        decision; the hope was ease-of-use would help encourage users to buy healthier
-        products, as required by the brief.
-        <br></br>
-        To help figure out how our potential features could be implementated, Functional,
-        Non-Functional, and Data Requirements were tied back to the POV Statements.
-        And, throughout the entire process, we made sure to empathize with our users'
-        wants and needs and to refer back to our initial user research.
-      </div>
-      <div>
-        <img class="page-img" src="../../images/km/povhmw.png" alt="different colored sticky notes and lists of text on miro"
-          style="width: 80%; float: none;">
-      </div>
-
-      <div class="page-sub-header"> Sketches </div>
-      <div class="page-text">
-        The list of features to be implemented were divided into overarching, key
-        categories; each team member then took the lead on a couple of areas (I
-        focused on the features related to presenting recipes and developing a rewards
-        system to motivate users). Low-fidelity sketching was used as a way of both
-        brainstorming designs and efficiently and effectively communicating ideas
-        between team members. (Only my sketches are included below.)
-      </div>
-      <div>
-        <img class="page-img " src="../../images/km/sketch1.jpeg" alt="sketch of recipe screen results with filters"
-          style="width: 43%; float: none;">
-        <img class="page-img" src="../../images/km/sketch2.jpeg" alt="another version sketch of recipe screen results with filters"
-          style="width: 46%; float: none;">
-        <img class="page-img img-border" src="../../images/km/sketch3.png" alt="sketch of recipe screen results"
-          style="width: 45%; float: none;">
-        <img class="page-img img-border" src="../../images/km/sketch4.png" alt="another version sketch of recipe screen results"
-          style="width: 45%; float: none;">
-        <img class="page-img img-border" src="../../images/km/sketch5.png" alt="sketch of one set-up sceens"
-          style="width: 30%; float: none;">
-        <img class="page-img img-border" src="../../images/km/sketch6.png" alt="sketch of recycling results screen"
-          style="width: 30%; float: none;">
-        <img class="page-img img-border" src="../../images/km/sketch7.png" alt="sketch of rewards screen"
-          style="width: 30%; float: none;">
-      </div>
-
-      <div class="page-sub-header"> Wireframes </div>
-      <div class="page-text">
-        Mid-fidelity, annotated wireframes were built based on the sketches. As
-        none of the team had experience with Axure, we decided to learn something
-        new "on the job" and use this software. When designing, referring to the
-        User Journeys as well as considering other edge cases was crucial; this
-        helped the team understand how KitchenMate could be used to create something
-        that would be accessible via both voice and touch while still aligning with
-        the more typical, minimalist Smart Home interfaces. And when developing the
-        touchscreen functionality, both tapping and swiping were used considering
-        built-in Echo Show actions as well as existing expectations a Smart Home
-        user might have. The work was divided amongst team members and the designs
-        of key features were prioritized before any additional screens were developed.
-        I also created a grid system and template page (for assets like buttons,
-        text, etc.) for the sake of consistency. Below are a few of the wireframe
-        screens I focused on:
-      </div>
-      <div>
-        <img class="page-img img-border" src="../../images/km/wireframe1.png" alt="health and sustainability goals loading screen"
-          style="width: 45%; float: none;">
-        <img class="page-img img-border" src="../../images/km/wireframe2.png" alt="home screen"
-          style="width: 45%; float: none;">
-        <img class="page-img img-border" src="../../images/km/wireframe3.png" alt="recipe results screen with filter"
-          style="width: 45%; float: none;">
-        <img class="page-img img-border" src="../../images/km/wireframe4.png" alt="recipe with filter and health and sustainability details shown"
-          style="width: 45%; float: none;">
-        <img class="page-img img-border" src="../../images/km/wireframe5.png" alt="glass bottle recycling screen"
-          style="width: 45%; float: none;">
-        <img class="page-img img-border" src="../../images/km/wireframe6.png" alt="voucher rewards screen"
-          style="width: 45%; float: none;">
-      </div>
-
-      <div class="page-sub-header"> Clickable Prototype </div>
-      <div class="page-text">
-        The wireframes were then made into a clickable prototype. When making the
-        clickable prototype, the List of Key Insights was used as a reference to
-        know what features to make clickable in anticipation of testing the core
-        elements of our application. These core features formed a story where the
-        user would look for a recipe (filtered by their personal health and sustainability
-        goals), compare the sustainability and nutritional information of items
-        that the recipe required, and, later on, scan empty food waste (like jars)
-        to learn if and when they could be recycled. You can <i><a class="text-link" target="_blank" href="https://6y0xma.axshare.com/?id=tmck23&p=postcode&fn=0&hi=1&dp=0">
-        view the final clickable prototype here.</a></i>
-      </div>
-
-      <div class="page-sub-header"> Evaluation </div>
-      <div class="page-text">
-        Considering Smart Home devices are typically more minimalist, the team decided
-        it was worth the extra effort to create a mid-fidelity prototype (over a
-        paper prototype) for testing. Because we only had time to do one round of
-        testing, this allowed for a product evaluation on a touch screen device
-        and resulted in more detailed and nuanced feedback. To work with the resources
-        available, the team used both in-person and remote moderated testing with
-        target users (with a classic think-aloud protocol for both). A set of tasks
-        framed by a Scenario that was inspired by our Future User Journeys was developed
-        to help the user understand why they might be moving through the motions
-        of each task, especially considering the testing was not taking place in
-        a kitchen environment. For each participant, the results were added to Miro
-        sticky notes, using colour to differentiate between positive and negative
-        feedback so the team knew which elements would need to be changed as well
-        as what should stay the same. Literal connections were drawn between the
-        responses and frequency, effect on the product, and success rate were considered
-        when prioritizing the results.
-      </div>
-      <div>
-        <img class="page-img" src="../../images/km/eval.png" alt=""
-          style="width: 60%; float: none;">
-      </div>
-
-      <br></br>
-
-    </center>
-
   </body>
 
   <script>
@@ -235,7 +249,6 @@
     }
 
   </script>
-
 </html>
 
 <!-- helpful sources: https://codepen.io/codewithJahid/pen/JRPvBj -->
