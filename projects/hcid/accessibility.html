@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <title> Accessibility Report </title>
+  </head>
+
+
+  <!--navigation bar -->
+  <header id="my-navbar">
+    <a class="nav-link nav-link-red" href="http://raveenajain.github.io/">RSJ</a>
+    <div class="nav-link nav-link-drop-hover nav-link-purple" onmouseover="getMinWidth(0)">
+      <div>Contact <span id="nav-arrow">&#9662;</span></div>
+      <div class="nav-link nav-link-dropdown">
+        <a href="mailto:raveena.s.jain@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/raveena-jain">LinkedIn</a>
+      </div>
+    </div>
+    <a class="nav-link nav-link-blue" style="float: right" href="http://raveenajain.github.io/resume">Resume</a>
+    <a class="nav-link nav-link-green" style="float: right" href="http://raveenajain.github.io/artwork">Artwork</a>
+    <a class="nav-link nav-link-orange" style="float: right" href="http://raveenajain.github.io/projects">Projects</a>
+  </header>
+
+
+  <body>
+    <div class="content-body">
+      <div class="content-row">
+        <!-- section navigation -->
+        <div class="content-nav-column page-text">
+          <div class="content-nav-fixed">
+            <div class="content-nav-links">
+              <a class="color-red text-link" href="http://raveenajain.github.io/projects/hcid/accessibility/#goal">Goal</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-orange text-link" href="http://raveenajain.github.io/projects/hcid/accessibility/#tools">Tools</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-green text-link" href="http://raveenajain.github.io/projects/hcid/accessibility/#process">Process</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-blue text-link" href="http://raveenajain.github.io/projects/hcid/accessibility/#report">Final Report</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-large-column">
+          <!-- page title -->
+          <div class="page-titles project-titles">
+            Accessibility Report
+          </div>
+
+          <!-- goal -->
+          <div class="content-row" id="goal">
+            <div class="small-heading content-header-row">Goal</div>
+            <div class="page-text">
+              To create an Accessibility Report for 4 pages of a given website (inclusive of the journey between those pages) against
+              <a class="text-link color-red" href="https://www.w3.org/TR/WCAG21/">the WCAG 2.1 guidelines</a>, levels A and AA.
+            </div>
+          </div>
+
+          <!-- tools -->
+          <div class="content-row" id="tools">
+            <div class="small-heading content-header-row">Tools</div>
+            <div class="page-text">
+              Microsoft Word, Firefox (version 107), Chrome (version 106) Developer Tools, <a class="text-link color-orange" target="_blank" href="https://wave.webaim.org/">WAVE</a>, VoiceOver (MacOS Screen Reader)
+            </div>
+          </div>
+
+          <!-- process -->
+          <div class="content-row" id="process">
+            <div class="small-heading content-header-row">Process</div>
+            <div class="page-text">
+              <ol>
+                <li>Easy Checks</li>
+                <ul>
+                  <li>
+                    I began by checking each page against the <a class="text-link color-green" target="_blank" href="https://www.w3.org/WAI/test-evaluate/preliminary/">Easy Checks</a>
+                    guidelines to get an initial understanding of the website and the company's mission, as well as an overview of the more glaring accessibility issues the site was facing.
+                  </li>
+                </ul>
+                <li>WAVE</li>
+                <ul>
+                  <li>
+                    Following a similar procedure as Step 1, I then navigated through each page using WAVE.
+                    While some accessibility issues were immediately noted in the primary section of my report, others were placed on a separate list in order to be further evaluated with additional tools.
+                  </li>
+                </ul>
+                <li>Screen Reader and Manual Checks</li>
+                <ul>
+                  <li>
+                    While checks were still done page by page, the Screen Reader was especially useful in discovering if navigation between pages was simple or even possible.
+                    The manual checks involved using Developer Tools to inspect a page's HTML and confirm the cause of a number of the violations.
+                  </li>
+                </ul>
+                <li>Writing the Report</li>
+                <ul>
+                  <li>
+                    In total, 34 violations were discovered; up to 5.9% of the violations could affect users with auditory impairments, 52.9% with mobility issues, 85.3% with visual impairments, and up to 94.1% with cognitive disabilities.
+                    The range of methods used was meant to help form a comprehensive list that was inclusive of Cognitive, Motor, Visual, and Auditory disabilities.
+                    The findings were organized by page and then severity.
+                    Inspired by other existing rankings, I developed the following severity scale considering usability and difficulty:
+                    <div class="img-row">
+                      <img src="../../images/reportSeverity.png" style="width: 90%;" alt="a description of the severity rankings using where 1 is least severe and 5 is most">
+                    </div>
+                  </li>
+                  <li>
+                    Personas from <a class="text-link color-blue" target="_blank" href="https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles">GOV.UK</a>
+                    and <a class="text-link color-blue" target="_blank" href="https://www.w3.org/WAI/people-use-web/user-stories/">W3C</a>
+                    were used to help me better understand and express how the violations could affect real users with a range of disabilities.
+                    In the report itself, each finding was color coded by severity and included its location, the method used to find it, a detailed description, an overview of the violation, an exact list of the WCAG guidelines violated, potential fixes, why it mattered, and an optional screenshot from the webpage.
+                    Below is a template example of a violation:
+                    <div class="img-row">
+                      <img src="../../images/reportFinding.png" style="width: 85%;" alt="an example of a finding, mainly including the sections used to describe the finding">
+                    </div>
+                  </li>
+                </ul>
+              </ol>
+            </div>
+          </div>
+
+          <!-- final report -->
+          <div class="content-row bottom-margin" id="report">
+            <div class="small-heading content-header-row">Report</div>
+            <div class="page-text">
+              If you would like to see the full report, please send me an email at <a class="text-link color-purple" href="mailto:raveena.s.jain@gmail.com">raveena.s.jain@gmail.com</a>
+              and let me know whether you are a potential employer or student looking to read it.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+
+  <script>
+    function getMinWidth(item) {
+      var drops = document.getElementsByClassName("dropHover");
+      var w = drops[item].clientWidth;
+      document.querySelectorAll(".dropdown")[item].style.minWidth = w + 'px';
+    }
+  </script>
+</html>
+
+<!-- helpful sources: https://codepen.io/codewithJahid/pen/JRPvBj -->
