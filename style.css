@@ -378,17 +378,13 @@ ol {
   filter: saturate(0);
 }
 
-.section1-img {
-  bottom: 0;
-  line-height: 0;
-  text-align: center;
-  position: relative;
-  margin-top: auto;
-}
-
 .about-img {
   width: 80%;
   border-radius: 30px;
+}
+
+#main-name {
+  top: 15%;
 }
 
 .section2-project-img {
@@ -427,10 +423,6 @@ ol {
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-#main-name {
-  top: 15%;
 }
 
 .anim-text {
@@ -516,6 +508,54 @@ ol {
   80%, 100% {
     content: "ACCESSIBLE PROJECTS";
     color: var(--color-purple);
+  }
+}
+
+.arrow-icon-pos {
+  position: relative;
+  bottom: 0;
+  margin-top: auto;
+}
+
+.arrow-icon {
+  font-size: 40px;
+  animation: animArrow 5s infinite;
+  color: black;
+  text-decoration: none;
+}
+@keyframes animArrow {
+  0% {
+    transform: rotate(25deg);
+  }
+  2% {
+    transform: rotate(-25deg);
+  }
+  4% {
+    transform: rotate(20deg);
+  }
+  6% {
+    transform: rotate(-20deg);
+  }
+  8% {
+    transform: rotate(15deg);
+  }
+  10% {
+    transform: rotate(-15deg);
+  }
+  12% {
+    transform: rotate(10deg);
+  }
+  14% {
+    transform: rotate(-10deg);
+  }
+  16% {
+    transform: rotate(5deg);
+  }
+  18% {
+    transform: rotate(-5deg);
+  }
+  20% {
+    transform: rotate(0deg);
   }
 }
 
