@@ -5,86 +5,129 @@
     <title> Mini Myths </title>
   </head>
 
+
   <!--navigation bar -->
   <header id="my-navbar">
-    <a class="active button" href="http://raveenajain.github.io/">RSJ</a>
-    <a class="active button" style="float: right" href="mailto:raveena.s.jain@gmail.com">Contact</a>
-    <a class="active button" style="float: right" href="http://raveenajain.github.io/resume">Resume</a>
-    <div class="dropHover" onmouseover="getMinWidth(0)">
-      <div>Portfolio &#9662;</div>
-      <div class="dropdown">
-        <a href="http://raveenajain.github.io/projects">Projects</a>
-        <a href="http://raveenajain.github.io/artwork">Artwork</a>
+    <a class="nav-link nav-link-red" href="http://raveenajain.github.io/">RSJ</a>
+    <div class="nav-link nav-link-drop-hover nav-link-purple" onmouseover="getMinWidth(0)">
+      <div>Contact <span id="nav-arrow">&#9662;</span></div>
+      <div class="nav-link nav-link-dropdown">
+        <a href="mailto:raveena.s.jain@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/raveena-jain">LinkedIn</a>
       </div>
     </div>
-    <div class="dropHover" onmouseover="getMinWidth(1)">
-      <div>Me &#9662;</div>
-      <div class="dropdown">
-        <a href="http://raveenajain.github.io/#about">About</a>
-        <a href="http://raveenajain.github.io/#links">Socials</a>
-      </div>
-    </div>
+    <a class="nav-link nav-link-blue" style="float: right" href="http://raveenajain.github.io/resume">Resume</a>
+    <a class="nav-link nav-link-green" style="float: right" href="http://raveenajain.github.io/artwork">Artwork</a>
+    <a class="nav-link nav-link-orange" style="float: right" href="http://raveenajain.github.io/projects">Projects</a>
   </header>
 
+
   <body>
-    <!-- title of page -->
-    <div class="page-titles">
-      Mini Myths
+    <div class="content-body">
+      <div class="content-row">
+        <!-- section navigation -->
+        <div class="content-nav-column page-text">
+          <div class="content-nav-fixed">
+            <div class="content-nav-links">
+              <a class="color-red text-link" href="http://raveenajain.github.io/projects/hcid/minimyths/#goal">Goal</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-orange text-link" href="http://raveenajain.github.io/projects/hcid/minimyths/#tools">Tools</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-green text-link" href="http://raveenajain.github.io/projects/hcid/minimyths/#prototype">Prototype</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-blue text-link" href="http://raveenajain.github.io/projects/hcid/minimyths/#accessibility">Accessibility</a>
+            </div>
+            <div class="content-nav-links">
+              <a class="color-purple text-link" href="http://raveenajain.github.io/projects/hcid/minimyths/#final">The Final Site</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-large-column">
+          <!-- page title -->
+          <div class="page-titles project-titles">
+            Mini Myths
+          </div>
+
+          <!-- goal -->
+          <div class="content-row" id="goal">
+            <div class="small-heading content-header-row">Goal</div>
+            <div class="page-text">
+              Based on the given brief: To build a website using JavaScript, HTML, and CSS.
+              <br>
+              My idea: To create a website about Greek/Roman Mythology that incorporates interactive elements while still considering accessibility.
+            </div>
+          </div>
+
+          <!-- tools -->
+          <div class="content-row" id="tools">
+            <div class="small-heading content-header-row">Tools</div>
+            <div class="page-text">
+              Figma, JavaScript, HTML, CSS, Replit
+            </div>
+          </div>
+
+          <!-- prototype -->
+          <div class="content-row" id="prototype">
+            <div class="small-heading content-header-row">Prototype</div>
+            <div class="page-text">
+              This project was for my Web Design and Development module.
+              The first step was to choose a topic and make a simple
+              <a class="text-link color-red" target="_blank" href="https://www.figma.com/proto/gvnX96rkeQqbRCU2KtDvls/web-dev-myth-mockup?node-id=1-2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=3%3A121">prototype</a> of some key screens.
+              I chose to use Figma for this step.
+              As this site is mostly informational, I went with a simple blue color scheme and kept the design minimal to make all information easy to find, read, and navigate between.
+              Below are some example screens from my prototype.
+              <br></br>
+              <div class="img-row">
+                <img src="../../images/minimyths/home1.jpg" style="width: 48%;" alt="version of blue home screen with gods section on the left and stories on the right">
+                <img src="../../images/minimyths/home2.jpg" style="width: 48%;" alt="version of blue home screen with gods section on the top and stories on the bottom">
+              </div>
+              <div class="img-row">
+                <img src="../../images/minimyths/gods.jpg" style="width: 48%;" alt="olympians page with a filler paragraph of text then 5 buttons with names">
+                <img src="../../images/minimyths/quiz.jpg" style="width: 48%;" alt="the quiz page with example questions and the users final score below">
+              </div>
+            </div>
+          </div>
+
+          <!-- accessibility -->
+          <div class="content-row" id="accessibility">
+            <div class="small-heading content-header-row">Accessibility</div>
+            <div class="page-text">
+              While I wanted to make this website more dynamic, I also wanted to make sure it met accessibility standards.
+              I used the <a class="text-link color-orange" target="_blank" href="https://webaim.org/resources/contrastchecker/">WebAIM contrast checker</a> to make sure my colors contrasted enough
+              and made sure all content on the site was responsive to different screen sizes (this was done using Flexbox).
+              A footer was added to every content page that plainly displayed links to all pages to assist with navigation, especially via screen reader, and to act as an overview of the content.
+              My large focus was on making sure the user could toggle any motion on and off; this was done using JavaScript cookies so the user's selection could extend across pages.
+            </div>
+          </div>
+
+          <!-- the final site -->
+          <div class="content-row" id="final">
+            <div class="small-heading content-header-row">The Final Site</div>
+            <div class="page-text">
+              The focus of this project was not on the content of the site itself, but on the design and implementation (interactive elements, clean code with comments, etc.).
+              For example, to make the Quiz feature even more interactive, a JSON file with a list of quiz questions and answers was included.
+              By randomly selecting questions from that list, users could play the quiz multiple times before it would start to feel repetitive.
+              This also makes it easier to add new questions in the future if I wanted to expand this website.
+              <br></br>
+              While we were not allowed to use any libraries such as React.js, I was able to explore building a website with Flexbox as its base.
+              (Because of this, I reformatted my entire personal website to be more responsive using this tool.)
+              <br></br>
+              <a class="text-link color-green" target="_blank" href="https://github.com/raveenajain/minimyths">The source code</a> has been moved from Replit to Github.
+              You can also view a demo video of the entire website below.
+              <div class=img-row>
+                <video style="width: 95%;" controls>
+                  <source src="../../images/minimyths/mmdemo.mp4" type="video/mp4" alt="screen recording of a desktop browser showcasing each page and feature of mini myths">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <center>
-      <div class="page-sub-header"> Goal </div>
-      <div class="page-text" style="width: 70%;">
-        To create a website that incorporates interactive elements while still considering
-        accessibility.
-      </div>
-
-      <div class="page-sub-header"> Tools </div>
-      <div class="page-text" style="width: 70%;">
-        Figma, JavaScript, HTML, CSS, Replit
-      </div>
-
-      <div class="page-sub-header"> Prototype </div>
-      <div class="page-text">
-        This project was for my Web Design and Development module. The first step
-        was to choose a topic (I picked Greek Mythology) and to make a simple
-        <i><a class="text-link" target="_blank" href="https://www.figma.com/proto/gvnX96rkeQqbRCU2KtDvls/web-dev-myth-mockup?node-id=1-2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=3%3A121">
-          prototype</a></i> (I elected to use Figma). As this site is mostly informational,
-        I decided to go with a simple blue color scheme and to keep the design minimal
-        in order to make all information easy to find, read, and navigate between.
-      </div>
-      <div>
-        <img class="page-img" src="../../images/minimyths/home1.jpg" style="width: 40%; float: none;">
-        <img class="page-img" src="../../images/minimyths/home2.jpg" style="width: 40%; float: none;">
-        <img class="page-img" src="../../images/minimyths/gods.jpg" style="width: 40%; float: none;">
-        <img class="page-img" src="../../images/minimyths/quiz.jpg" style="width: 40%; float: none;">
-      </div>
-
-      <div class="page-sub-header"> Final Website </div>
-      <div class="page-text">
-        The focus of this project was not on the content of the site itself, but
-        on the design and implementation (interactive elements, clean code with
-        comments, etc.). For example, to make the Quiz feature even more interactive,
-        a JSON file with a list of quiz questions and answers was included. By randomly
-        selecting questions from that list, users could play the quiz multiple times before
-        it would start to feel repetitive. This also makes it easier to add new questions
-        in the future if I wanted to expand this website.
-        <br>
-        </br>
-        Beyond just building the Frontend, my main focus was on
-        making the site accessible by allowing the user to toggle motion on and
-        off (this was done using JavaScript cookies so the user's selection would
-        extend across pages) and on making sure all content on the site was responsive
-        to different screen sizes (this was done using Flexbox).
-        <br>
-        </br>
-        Here is the link to <i><a class="text-link" target="_blank" href="https://github.com/raveenajain/minimyths">the source code</a></i>
-        and to <i><a class="text-link" target="_blank" href="https://inm316.raveenajain.repl.co/">view the final website</a></i> itself.
-        <br> </br>
-      </div>
-
-    </center>
-
   </body>
 
   <script>
@@ -93,8 +136,6 @@
       var w = drops[item].clientWidth;
       document.querySelectorAll(".dropdown")[item].style.minWidth = w + 'px';
     }
-
-
   </script>
 
 </html>
