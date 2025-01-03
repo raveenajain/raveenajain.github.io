@@ -5,179 +5,95 @@
     <title> Artwork </title>
   </head>
 
+
   <!--navigation bar -->
   <header id="my-navbar">
-    <a class="active button" href="http://raveenajain.github.io/">RSJ</a>
-    <a class="active button" style="float: right" href="mailto:raveena.s.jain@gmail.com">Contact</a>
-    <a class="active button" style="float: right" href="http://raveenajain.github.io/resume">Resume</a>
-    <div class="dropHover" onmouseover="getMinWidth(0)">
-      <div>Portfolio &#9662;</div>
-      <div class="dropdown">
-        <a href="http://raveenajain.github.io/projects">Projects</a>
-        <a href="http://raveenajain.github.io/artwork">Artwork</a>
+    <a class="nav-link nav-link-red" href="http://raveenajain.github.io/">RSJ</a>
+    <div class="nav-link nav-link-drop-hover nav-link-purple" onmouseover="getMinWidth(0)">
+      <div>Contact <span id="nav-arrow">&#9662;</span></div>
+      <div class="nav-link nav-link-dropdown">
+        <a href="mailto:raveena.s.jain@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/raveena-jain">LinkedIn</a>
       </div>
     </div>
-    <div class="dropHover" onmouseover="getMinWidth(1)">
-      <div>Me &#9662;</div>
-      <div class="dropdown">
-        <a href="http://raveenajain.github.io/#about">About</a>
-        <a href="http://raveenajain.github.io/#links">Socials</a>
-      </div>
-    </div>
+    <a class="nav-link nav-link-blue" style="float: right" href="http://raveenajain.github.io/resume">Resume</a>
+    <a class="nav-link nav-link-green" style="float: right" href="http://raveenajain.github.io/artwork">Artwork</a>
+    <a class="nav-link nav-link-orange" style="float: right" href="http://raveenajain.github.io/projects">Projects</a>
   </header>
 
-  <body>
-    <!-- title of page -->
-    <div class="page-titles">
-      Artwork
-    </div>
 
-    <div id="desktop">
-      <center>
-        <div class="img-list">
-          <img class="portfolio-rotate" id="zero" onclick="swapImg(0)">
-          <img class="portfolio-rotate" id="one" onclick="swapImg(1)">
-          <img class="portfolio-rotate" id="two" onclick="swapImg(2)">
-        <div id="rotating-subtext"></div>
-        <div id="counter"></div>
+    <body>
+      <!-- title of page -->
+      <div class="page-titles title-offset">Artwork</div>
+      <div class="port-body">
+        <!-- row -->
+        <div class="port-row">
+          <!-- dissertation -->
+          <div class="art-equal-2-column">
+            <div class="preview-img-container">
+              <img class="preview-img art-img" src="images/portfolio/photography.png">
+            </div>
+          <div class="outline-container color-red bg-l-red">
+            <div class="small-heading port-info">
+              <div>Photography</div>
+              <div class="page-text">iPhone, Lightroom</div>
+            </div>
+          </div>
+          <div class="port-buttons artwork-buttons">
+            <a href="https://rsj-art.tumblr.com/tagged/photography" target="_blank"><button class="button red-button">View Artwork &#8250;</button></a>
+          </div>
+        </div>
+        <!-- merch -->
+        <div class="art-equal-2-column">
+          <div class="preview-img-container">
+            <img class="preview-img art-img" src="images/portfolio/merch.png">
+          </div>
+          <div class="outline-container color-orange bg-l-orange">
+            <div class="small-heading port-info">
+              <div>Merchandise Design</div>
+              <div class="page-text">Procreate</div>
+            </div>
+          </div>
+          <div class="port-buttons artwork-buttons">
+            <a href="http://raveenajain.github.io/projects/product"><button class="button orange-button">View Artwork &#8250;</button></a>
+          </div>
+        </div>
       </div>
-    </center>
-    </div>
 
-    <div id="mobile">
-      <center>
-        <div class="thumbnails">
-          <a href="https://rsj-art.tumblr.com/tagged/photography"
-            onmouseover="greyscale(0)" onmouseout="removeGrey(0)">
-            <img class="portfolio-img" src="images/photography.png"
-              alt="cropped brick house in london with white windows, some foliage, and a red door">
-            <div class="subtext portfolio-subtext">Photography</div>
-          </a>
+      <!-- row -->
+      <div class="port-row">
+        <!-- portraits -->
+        <div class="art-equal-2-column">
+          <div class="preview-img-container">
+            <img class="preview-img art-img" src="images/portfolio/portraits.png">
+          </div>
+          <div class="outline-container color-blue bg-l-blue">
+            <div class="small-heading port-info">
+              <div>Portraits</div>
+              <div class="page-text">Adobe Illustrator</div>
+            </div>
+          </div>
+          <div class="port-buttons artwork-buttons">
+            <a href="https://rsj-art.tumblr.com/tagged/portrait" target="_blank"><button class="button blue-button">View Artwork &#8250;</button></a>
+          </div>
         </div>
-        <div class="thumbnails">
-          <a href="https://rsj-art.tumblr.com/tagged/portrait"
-            onmouseover="greyscale(1)" onmouseout="removeGrey(1)">
-            <img class="portfolio-img" src="images/vectors.png"
-              alt="vectorized portrait of aziraphale and crowley from good omens">
-            <div class="subtext portfolio-subtext">Portraits</div>
-          </a>
+        <!-- portraits -->
+        <div class="art-equal-2-column">
+          <div class="preview-img-container">
+            <img class="preview-img art-img" src="images/portfolio/coursework.png">
+          </div>
+          <div class="outline-container color-purple bg-l-purple">
+            <div class="small-heading port-info">
+              <div>Animation Coursework</div>
+              <div class="page-text">Maya, Adobe Suite</div>
+            </div>
+          </div>
+          <div class="port-buttons artwork-buttons">
+            <a href="https://rsj-art.tumblr.com/tagged/coursework" target="_blank"><button class="button purple-button">View Artwork &#8250;</button></a>
+          </div>
         </div>
-        <a href="https://rsj-art.tumblr.com/tagged/coursework"
-          onmouseover="greyscale(2)" onmouseout="removeGrey(2)">
-          <div class="thumbnails">
-            <img class="portfolio-img" src="images/coursework.png"
-              alt="photoshop drawing of a girl in a purple leotard and point shoes leaning foward with long black hair covering her face">
-            <div class="subtext portfolio-subtext">Coursework</div>
-          </a>
-        </div>
-      </center>
+      </div>
     </div>
-
   </body>
 
-  <script>
-    function getMinWidth(item) {
-      var drops = document.getElementsByClassName("dropHover");
-      var w = drops[item].clientWidth;
-      document.querySelectorAll(".dropdown")[item].style.minWidth = w + 'px';
-    }
-
-    // mobile
-    function greyscale(index) {
-      document.querySelectorAll(".portfolio-img")[index].classList.add("img-darken");
-      document.querySelectorAll(".portfolio-subtext")[index].style.opacity = "1.0";
-    }
-
-    function removeGrey(index) {
-      document.querySelectorAll(".portfolio-img")[index].classList.remove("img-darken");
-      document.querySelectorAll(".portfolio-subtext")[index].style.opacity = "0.0";
-    }
-
-    // desktop
-    var arryImg = ["images/vectors.png", "images/photography.png", "images/coursework.png"];
-    var arryText = ["Portraits", "Photography", "Coursework"];
-    var counter = 1;
-    var total = 3;
-    // images in order
-    window.onload = function() {
-      if (/Android|webOS|iPadOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        document.getElementById("mobile").style.display = "block";
-        document.getElementById("desktop").style.display = "none";
-      } else {
-        document.getElementById("mobile").style.display = "none";
-        document.getElementById("desktop").style.display = "block";
-      }
-      document.getElementById("zero").src = arryImg[0];
-      document.getElementById("one").src = arryImg[1];
-      document.getElementById("two").src = arryImg[2];
-      document.getElementById("rotating-subtext").innerHTML = arryText[1];
-      document.getElementById("counter").innerHTML = counter + "/" + total;
-      document.getElementById("one").onmouseover = function(e) {
-          document.getElementById("rotating-subtext").style.opacity = "1.0";
-          document.getElementById("one").style.webkitTransition = "all .4s ease-in-out";
-          document.getElementById("one").style.filter = "grayscale(100%) brightness(60%)";
-      }
-      document.getElementById("one").onmouseout = function(e) {
-          document.getElementById("rotating-subtext").style.opacity = "0.0";
-          document.getElementById("one").style.filter = "grayscale(0%) brightness(100%)";
-      }
-      document.getElementById("rotating-subtext").onmouseover = function(e) {
-        document.getElementById("rotating-subtext").style.opacity = "1.0";
-        document.getElementById("one").style.filter = "grayscale(100%) brightness(60%)";
-      }
-    }
-
-    function swapImg(index) {
-      var a0 = arryImg[0];
-      var a1 = arryImg[1];
-      var a2 = arryImg[2];
-      var at0 = arryText[0];
-      var at1 = arryText[1];
-      var at2 = arryText[2];
-      var o = document.getElementById("one").src;
-      if (index == 1) {
-        if (o.includes("vectors")) {
-          window.open("https://rsj-art.tumblr.com/tagged/portrait", "_blank");
-        } else if (o.includes("photography")) {
-          window.open("https://rsj-art.tumblr.com/tagged/photography", "_blank");
-        } else if (o.includes("coursework")) {
-          window.open("https://rsj-art.tumblr.com/tagged/coursework", "_blank");
-        }
-      } else if (index == 0) {
-        document.getElementById("two").src = arryImg[1];
-        document.getElementById("zero").src = arryImg[2];
-        document.getElementById("one").src = arryImg[0];
-        arryImg[0] = a2;
-        arryImg[1] = a0;
-        arryImg[2] = a1;
-        arryText[0] = at2;
-        arryText[1] = at0;
-        arryText[2] = at1;
-        counter = (counter - 1);
-        if (counter <= 0) {
-          counter = total;
-        }
-      } else if (index == 2) {
-        document.getElementById("two").src = arryImg[0];
-        document.getElementById("zero").src = arryImg[1];
-        document.getElementById("one").src = arryImg[2];
-        arryImg[0] = a1;
-        arryImg[1] = a2;
-        arryImg[2] = a0;
-        arryText[0] = at1;
-        arryText[1] = at2;
-        arryText[2] = at0;
-        counter = (counter + 1);
-        if (counter >= (total + 1)) {
-          counter = 1;
-        }
-      }
-      document.getElementById("rotating-subtext").innerHTML = arryText[1];
-      document.getElementById("counter").innerHTML = counter + "/" + total;
-    }
-
-  </script>
-
 </html>
-
-<!-- helpful sources: https://codepen.io/codewithJahid/pen/JRPvBj -->

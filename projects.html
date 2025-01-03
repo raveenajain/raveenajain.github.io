@@ -5,212 +5,173 @@
     <title> Projects </title>
   </head>
 
+
   <!--navigation bar -->
   <header id="my-navbar">
-    <a class="active button" href="http://raveenajain.github.io/">RSJ</a>
-    <a class="active button" style="float: right" href="mailto:raveena.s.jain@gmail.com">Contact</a>
-    <a class="active button" style="float: right" href="http://raveenajain.github.io/resume">Resume</a>
-    <div class="dropHover" onmouseover="getMinWidth(0)">
-      <div>Portfolio &#9662;</div>
-      <div class="dropdown">
-        <a href="http://raveenajain.github.io/projects">Projects</a>
-        <a href="http://raveenajain.github.io/artwork">Artwork</a>
+    <a class="nav-link nav-link-red" href="http://raveenajain.github.io/">RSJ</a>
+    <div class="nav-link nav-link-drop-hover nav-link-purple" onmouseover="getMinWidth(0)">
+      <div>Contact <span id="nav-arrow">&#9662;</span></div>
+      <div class="nav-link nav-link-dropdown">
+        <a href="mailto:raveena.s.jain@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/raveena-jain">LinkedIn</a>
       </div>
     </div>
-    <div class="dropHover" onmouseover="getMinWidth(1)">
-      <div>Me &#9662;</div>
-      <div class="dropdown">
-        <a href="http://raveenajain.github.io/#about">About</a>
-        <a href="http://raveenajain.github.io/#links">Socials</a>
-      </div>
-    </div>
+    <a class="nav-link nav-link-blue" style="float: right" href="http://raveenajain.github.io/resume">Resume</a>
+    <a class="nav-link nav-link-green" style="float: right" href="http://raveenajain.github.io/artwork">Artwork</a>
+    <a class="nav-link nav-link-orange" style="float: right" href="http://raveenajain.github.io/projects">Projects</a>
   </header>
+
 
   <body>
     <!-- title of page -->
-    <div class="page-titles">
-      Projects
+    <div class="page-titles title-offset">Projects</div>
+    <div class="port-body">
+      <!-- row -->
+      <div class="port-row">
+        <!-- dissertation -->
+        <div class="project-equal-4-column">
+          <div class="preview-img-container" onmouseover="increaseProjectImg(this)" onmouseout="decreaseProjectImg(this)">
+            <img class="preview-img project-img" src="images/portfolio/dissertation.png">
+          </div>
+          <div class="outline-container color-red bg-l-red">
+            <div class="small-heading port-info">
+              <div>Dissertation</div>
+              <div class="page-text">Design</div>
+            </div>
+          </div>
+          <div class="port-buttons project-buttons">
+            <a href="http://raveenajain.github.io/projects/hcid/dissertation"><button class="button red-button">View Project &#8250;</button></a>
+          </div>
+        </div>
+        <!-- charity -->
+        <div class="project-equal-4-column">
+          <div class="preview-img-container" onmouseover="increaseProjectImg(this)" onmouseout="decreaseProjectImg(this)">
+            <img class="preview-img project-img" src="images/portfolio/charity.png">
+          </div>
+          <div class="outline-container color-orange bg-l-orange">
+            <div class="small-heading port-info">
+              <div>Evaluation of Website</div>
+              <div class="page-text">Design</div>
+            </div>
+          </div>
+          <div class="port-buttons project-buttons">
+            <a href="http://raveenajain.github.io/projects/hcid/charity"><button class="button orange-button">View Project &#8250;</button></a>
+          </div>
+        </div>
+        <!-- fanworks -->
+        <div class="project-equal-4-column">
+          <div class="preview-img-container" onmouseover="increaseProjectImg(this)" onmouseout="decreaseProjectImg(this)">
+            <img class="preview-img project-img" src="images/portfolio/fanworks.png">
+          </div>
+          <div class="outline-container color-green bg-l-green">
+            <div class="small-heading port-info">
+              <div>Fanworks</div>
+              <div class="page-text">Design</div>
+            </div>
+          </div>
+          <div class="port-buttons project-buttons">
+            <a href="http://raveenajain.github.io/projects/hcid/fanworks"><button class="button green-button">View Project &#8250;</button></a>
+          </div>
+        </div>
+        <!-- minimyths -->
+        <div class="project-equal-4-column">
+          <div class="preview-img-container" onmouseover="increaseProjectImg(this)" onmouseout="decreaseProjectImg(this)">
+            <img class="preview-img project-img" src="images/portfolio/minimyths.png">
+          </div>
+          <div class="outline-container color-blue bg-l-blue">
+            <div class="small-heading port-info">
+              <div>MiniMyths</div>
+              <div class="page-text">Development & Design</div>
+            </div>
+          </div>
+          <div class="port-buttons project-buttons">
+            <a href="http://raveenajain.github.io/projects/hcid/minimyths"><button class="button blue-button">View Project &#8250;</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- row -->
+      <div class="port-row">
+        <!-- to do app -->
+        <div class="project-equal-4-column">
+          <div class="preview-img-container" onmouseover="increaseProjectImg(this)" onmouseout="decreaseProjectImg(this)">
+            <img class="preview-img project-img" src="images/portfolio/todo.png">
+          </div>
+          <div class="outline-container color-purple bg-l-purple">
+            <div class="small-heading port-info">
+              <div>To Do App</div>
+              <div class="page-text">Development & Design</div>
+            </div>
+          </div>
+          <div class="port-buttons project-buttons">
+            <a href="http://raveenajain.github.io/projects/todoapp"><button class="button purple-button">View Project &#8250;</button></a>
+          </div>
+        </div>
+        <!-- accessibility -->
+        <div class="project-equal-4-column">
+          <div class="preview-img-container" onmouseover="increaseProjectImg(this)" onmouseout="decreaseProjectImg(this)">
+            <img class="preview-img project-img" src="images/portfolio/accessibility.png">
+          </div>
+          <div class="outline-container color-red bg-l-red">
+            <div class="small-heading port-info">
+              <div>Accessibility Report</div>
+              <div class="page-text">Design</div>
+            </div>
+          </div>
+          <div class="port-buttons project-buttons">
+            <a href="http://raveenajain.github.io/projects/hcid/accessibility"><button class="button red-button">View Project &#8250;</button></a>
+          </div>
+        </div>
+        <!-- beewell -->
+        <div class="project-equal-4-column">
+          <div class="preview-img-container" onmouseover="increaseProjectImg(this)" onmouseout="decreaseProjectImg(this)">
+            <img class="preview-img project-img" src="images/portfolio/beewell.png">
+          </div>
+          <div class="outline-container color-orange bg-l-orange">
+            <div class="small-heading port-info">
+              <div>BeeWell</div>
+              <div class="page-text">Development & Design</div>
+            </div>
+          </div>
+          <div class="port-buttons project-buttons">
+            <a href="http://raveenajain.github.io/projects/beewell"><button class="button orange-button">View Project &#8250;</button></a>
+          </div>
+        </div>
+        <!-- kitchenmate -->
+        <div class="project-equal-4-column">
+          <div class="preview-img-container" onmouseover="increaseProjectImg(this)" onmouseout="decreaseProjectImg(this)">
+            <img class="preview-img project-img" src="images/portfolio/kitchenmate.png" onmouseout="decreaseProjectImg()">
+          </div>
+          <div class="outline-container color-green bg-l-green">
+            <div class="small-heading port-info">
+              <div>KitchenMate</div>
+              <div class="page-text">Design</div>
+            </div>
+          </div>
+          <div class="port-buttons project-buttons">
+            <a href="http://raveenajain.github.io/projects/hcid/kitchenmate"><button class="button green-button">View Project &#8250;</button></a>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div id="desktop">
-      <center>
-        <div class="img-list">
-          <img class="portfolio-rotate" id="zero" onclick="swapImg(0)">
-          <img class="portfolio-rotate" id="one" onclick="swapImg(1)">
-          <img class="portfolio-rotate" id="two" onclick="swapImg(2)">
-          <div id="rotating-subtext"></div>
-          <div id="counter"></div>
-        </div>
-      </center>
-    </div>
-
-    <div id="mobile">
-      <center>
-        <div class="thumbnails">
-          <a href="http://raveenajain.github.io/projects/hcid"
-            onmouseover="greyscale(0)" onmouseout="removeGrey(0)">
-            <div class="subtext portfolio-subtext">HCID Coursework</div>
-            <img class="portfolio-img" src="images/masters.jpg"
-              alt="city university of london logo">
-          </a>
-        </div>
-        <div class="thumbnails">
-          <a href="http://raveenajain.github.io/projects/uichallenges"
-            onmouseover="greyscale(1)" onmouseout="removeGrey(1)">
-            <div class="subtext portfolio-subtext">UI Challenges</div>
-            <img class="portfolio-img" src="images/UIchallenge.png"
-              alt="example UI - gradient rainbow circle with the top half of a basic black pen underneath">
-          </a>
-        </div>
-        <div class="thumbnails">
-          <a href="http://raveenajain.github.io/projects/todoapp"
-            onmouseover="greyscale(2)" onmouseout="removeGrey(2)">
-            <div class="subtext portfolio-subtext">React To Do App</div>
-            <img class="portfolio-img" src="images/todo.png"
-              alt="gradient rainbow header that says To Do with 2 tasks listed and the first crossed off">
-          </a>
-        </div>
-        <div class="thumbnails">
-          <a href="http://raveenajain.github.io/projects/beewell"
-            onmouseover="greyscale(3)" onmouseout="removeGrey(3)">
-            <div class="subtext portfolio-subtext">BeeWell</div>
-            <img class="portfolio-img" src="images/uwu.png"
-              alt="BeeWell at home - small white avatar in a yellow room standing between a fridge, window, and table with a water bottle">
-          </a>
-        </div>
-        <div class="thumbnails">
-          <a href="http://raveenajain.github.io/projects/website"
-            onmouseover="greyscale(4)" onmouseout="removeGrey(4)">
-            <div class="subtext portfolio-subtext">Personal Website</div>
-            <img class="portfolio-img" src="images/oldMain.png"
-              alt="grey background with red text that says Raveena Jain (next line) Welcome">
-          </a>
-        </div>
-    </center>
-  </div>
-
   </body>
 
   <script>
-    function getMinWidth(item) {
-      var drops = document.getElementsByClassName("dropHover");
-      var w = drops[item].clientWidth;
-      document.querySelectorAll(".dropdown")[item].style.minWidth = w + 'px';
+    // add keyframe increase size for images
+    function increaseProjectImg(obj) {
+      var img = obj.getElementsByClassName("project-img")[0];
+      img.style.animation = "increaseProjectImage 0.75s forwards";
     }
 
-    // for mobile
-    function greyscale(index) {
-      document.querySelectorAll(".portfolio-img")[index].classList.add("img-darken");
-      document.querySelectorAll(".portfolio-subtext")[index].style.opacity = "1.0";
+    // add keyframe decrease size for images
+    function decreaseProjectImg(obj) {
+      var img = obj.getElementsByClassName("project-img")[0];
+      img.style.animation = "decreaseProjectImage 0.75s forwards";
     }
-
-    function removeGrey(index) {
-      document.querySelectorAll(".portfolio-img")[index].classList.remove("img-darken");
-      document.querySelectorAll(".portfolio-subtext")[index].style.opacity = "0.0";
-    }
-
-    // for desktop
-    var arryImg = ["images/oldMain.png", "images/masters.jpg", "images/UIchallenge.png", "images/todo.png", "images/uwu.png"];
-    var arryText = ["Personal Website", "HCID Coursework", "UI Challenges", "React To Do App", "BeeWell"];
-    var counter = 1;
-    var total = 5;
-    // images in order
-    window.onload = function() {
-      if (/Android|webOS|iPadOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        document.getElementById("mobile").style.display = "block";
-        document.getElementById("desktop").style.display = "none";
-      } else {
-        document.getElementById("mobile").style.display = "none";
-        document.getElementById("desktop").style.display = "block";
-      }
-      document.getElementById("zero").src = arryImg[0];
-      document.getElementById("one").src = arryImg[1];
-      document.getElementById("two").src = arryImg[2];
-      document.getElementById("rotating-subtext").innerHTML = arryText[1];
-      document.getElementById("counter").innerHTML = counter + "/" + total;
-      document.getElementById("one").onmouseover = function(e) {
-          document.getElementById("rotating-subtext").style.opacity = "1.0";
-          document.getElementById("one").style.webkitTransition = "all .4s ease-in-out";
-          document.getElementById("one").style.filter = "grayscale(100%) brightness(60%)";
-      }
-      document.getElementById("one").onmouseout = function(e) {
-          document.getElementById("rotating-subtext").style.opacity = "0.0";
-          document.getElementById("one").style.filter = "grayscale(0%) brightness(100%)";
-      }
-      document.getElementById("rotating-subtext").onmouseover = function(e) {
-        document.getElementById("rotating-subtext").style.opacity = "1.0";
-        document.getElementById("one").style.filter = "grayscale(100%) brightness(60%)";
-      }
-    }
-
-    function swapImg(index) {
-      var a0 = arryImg[0];
-      var a1 = arryImg[1];
-      var a2 = arryImg[2];
-      var a3 = arryImg[3];
-      var a4 = arryImg[4];
-      var at0 = arryText[0];
-      var at1 = arryText[1];
-      var at2 = arryText[2];
-      var at3 = arryText[3];
-      var at4 = arryText[4];
-      var o = document.getElementById("one").src;
-      if (index == 1) {
-        if (o.includes("challenge")) {
-          window.location.href = "http://raveenajain.github.io/projects/uichallenges";
-        } else if (o.includes("todo")) {
-          window.location.href = "http://raveenajain.github.io/projects/todoapp";
-        } else if (o.includes("uwu")) {
-          window.location.href = "http://raveenajain.github.io/projects/beewell";
-        } else if (o.includes("oldMain")) {
-          window.location.href = "http://raveenajain.github.io/projects/website";
-        } else if (o.includes("masters")) {
-          window.location.href = "http://raveenajain.github.io/projects/hcid";
-        }
-      } else if (index == 0) {
-        document.getElementById("two").src = arryImg[1];
-        document.getElementById("zero").src = arryImg[4];
-        document.getElementById("one").src = arryImg[0];
-        arryImg[0] = a4;
-        arryImg[1] = a0;
-        arryImg[2] = a1;
-        arryImg[3] = a2;
-        arryImg[4] = a3;
-        arryText[0] = at4;
-        arryText[1] = at0;
-        arryText[2] = at1;
-        arryText[3] = at2;
-        arryText[4] = at3;
-        counter = (counter - 1);
-        if (counter <= 0) {
-          counter = total;
-        }
-      } else if (index == 2) {
-        document.getElementById("two").src = arryImg[3];
-        document.getElementById("zero").src = arryImg[1];
-        document.getElementById("one").src = arryImg[2];
-        arryImg[0] = a1;
-        arryImg[1] = a2;
-        arryImg[2] = a3;
-        arryImg[3] = a4;
-        arryImg[4] = a0;
-        arryText[0] = at1;
-        arryText[1] = at2;
-        arryText[2] = at3;
-        arryText[3] = at4;
-        arryText[4] = at0;
-        counter = (counter + 1);
-        if (counter >= (total + 1)) {
-          counter = 1;
-        }
-      }
-      document.getElementById("rotating-subtext").innerHTML = arryText[1];
-      document.getElementById("counter").innerHTML = counter + "/" + total;
-    }
-
   </script>
 
 </html>
 
-<!-- helpful sources: https://codepen.io/codewithJahid/pen/JRPvBj
-https://stackoverflow.com/questions/262740/javascript-onhover-event -->
+<!-- helpful sources:
+https://stackoverflow.com/questions/22559756/changing-hover-to-touch-click-for-mobile-devices,
+https://stackoverflow.com/questions/68690796/i-want-to-create-several-moving-circles-in-canvas-in-javascript -->

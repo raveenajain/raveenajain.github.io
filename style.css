@@ -4,6 +4,12 @@
   --color-green: #1D6E0D;
   --color-blue: #0D176E;
   --color-purple: #4d0f80;
+  /* opaque versions of above colors  */
+  --color-l-red: rgba(145, 18, 18, 0.25);
+  --color-l-orange: rgba(219, 142, 26, 0.25);
+  --color-l-green: rgba(29, 110, 13, 0.25);
+  --color-l-blue: rgba(13, 23, 110, 0.25);
+  --color-l-purple: rgba(77, 15, 128, 0.25);
   --font-cour: Helvetica, sans-serif;
 }
 
@@ -147,6 +153,10 @@ body, html {
   font-weight: lighter;
 }
 
+.title-offset {
+  padding-top: 5%;
+}
+
 /* ***************************** other text ***************************** */
 .page-text {
   text-align: justify;
@@ -188,6 +198,10 @@ body, html {
   background: white;
 }
 
+.red-button {
+  color: var(--color-red);
+  border-color: var(--color-red);
+}
 .orange-button {
   color: var(--color-orange);
   border-color: var(--color-orange);
@@ -214,6 +228,19 @@ body, html {
 }
 
 /* fill on hover */
+.red-button:hover, .red-button:active {
+  animation: redButtonFill 0.5s forwards;
+}
+@keyframes redButtonFill {
+  0% {
+    background-color: white;
+    color: var(--color-red);
+  }
+  100% {
+    background-color: var(--color-red);
+    color: white;
+  }
+}
 .orange-button:hover, .orange-button:active {
   animation: orangeButtonFill 0.5s forwards;
 }
@@ -222,7 +249,7 @@ body, html {
     background-color: white;
     color: var(--color-orange);
   }
-  100.0% {
+  100% {
     background-color: var(--color-orange);
     color: white;
   }
@@ -235,7 +262,7 @@ body, html {
     background-color: white;
     color: var(--color-green);
   }
-  100.0% {
+  100% {
     background-color: var(--color-green);
     color: white;
   }
@@ -248,7 +275,7 @@ body, html {
     background-color: white;
     color: var(--color-blue);
   }
-  100.0% {
+  100% {
     background-color: var(--color-blue);
     color: white;
   }
@@ -261,7 +288,7 @@ body, html {
     background-color: white;
     color: var(--color-purple);
   }
-  100.0% {
+  100% {
     background-color: var(--color-purple);
     color: white;
   }
@@ -274,7 +301,7 @@ body, html {
     background-color: white;
     color: black;
   }
-  100.0% {
+  100% {
     background-color: black;
     color: white;
   }
@@ -719,10 +746,6 @@ ol {
 }
 
 /* ***************************** text ***************************** */
-.resume-title {
-  padding-top: 5%;
-}
-
 .resume-section-header {
   border-bottom: 1.5px solid;
   font-weight: 500;
@@ -760,6 +783,247 @@ ul {
   margin-left: 20px;
   margin-right: 20px;
 }
+
+
+/* PORTFOLIO */
+/* ***************************** format ***************************** */
+.port-body {
+  margin: 3% 1% 0% 1%;
+}
+
+.port-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  height: fit-content;
+  padding-bottom: 3%;
+}
+
+.project-equal-4-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+  min-height: 312px; /* .port-info padding-top + small-heading + page-text + outline-container padding-bottom + 16 extra */
+  min-width: 328px; /* slightly larger than image width */
+}
+.art-equal-2-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  min-height: 312px; /* .port-info padding-top + small-heading + page-text + outline-container padding-bottom + 16 extra */
+  min-width: 328px; /* slightly larger than image width */
+}
+
+.outline-container {
+  border-bottom: 2px solid;
+  margin-top: 48px;
+  height: 100%;
+  padding-bottom: 4px;
+}
+
+/* ***************************** images ***************************** */
+.preview-img {
+  z-index: 5;
+  vertical-align: top;
+  position: absolute;
+}
+
+.art-img {
+  height: 260px;
+}
+.project-img {
+  height: 260px;
+}
+
+@keyframes increaseProjectImage {
+  0% {
+    height: 260px;
+  }
+  100% {
+    height: 275px;
+  }
+}
+@keyframes decreaseProjectImage {
+  0% {
+    height: 275px;
+  }
+  100% {
+    height: 260px;
+  }
+}
+
+@keyframes increaseArtImage {
+  0% {
+    height: 260px;
+  }
+  100% {
+    height: 275px;
+  }
+}
+@keyframes decreaseArtImage {
+  0% {
+    height: 275px;
+  }
+  100% {
+    height: 260px;
+  }
+}
+
+.preview-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* ***************************** text ***************************** */
+.port-info {
+  color: black;
+  padding-top: 240px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.port-buttons {
+  position: absolute;
+  text-align: right;
+}
+
+.project-buttons {
+  padding-top: 328px; /* adding onto .project-equal-4-column min-height */
+  width: 24%; /* width of column - 1 */
+}
+.artwork-buttons {
+  padding-top: 328px;
+  width: 48%;
+}
+
+/* ***************************** colors ***************************** */
+.bg-l-red {
+  background: var(--color-l-red);
+}
+.bg-l-orange {
+  background: var(--color-l-orange);
+}
+.bg-l-green {
+  background: var(--color-l-green);
+}
+.bg-l-blue {
+  background: var(--color-l-blue);
+}
+.bg-l-purple {
+  background: var(--color-l-purple);
+}
+
+/* ***************************** for smaller screens ***************************** */
+@media (max-width: 1350px) {
+  /* resize 2 columns in a row not 4 */
+  .project-equal-4-column {
+    flex-basis: 50%;
+  }
+  .project-buttons {
+    width: 48%;
+  }
+  .port-row {
+    padding-bottom: 0%;
+  }
+  /* same as port-row padding-bottom */
+  .project-equal-4-column {
+    padding-bottom: 3%;
+  }
+  .art-equal-2-column {
+    padding-bottom: 3%;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 800px) {
+  .art-img {
+    max-width: 40%;
+  }
+  @keyframes increaseArtImage {
+    0% {
+      height: 260px;
+      max-width: 40%;
+    }
+    100% {
+      height: 275px;
+      max-width: 45%;
+    }
+  }
+  @keyframes decreaseArtImage {
+    0% {
+      height: 275px;
+      max-width: 45%;
+    }
+    100% {
+      height: 260px;
+      max-width: 40%;
+    }
+  }
+}
+
+@media (max-width: 800px) and (min-width: 675px) {
+  .art-img {
+    height: 245px;
+    max-width: 40%;
+  }
+  @keyframes increaseArtImage {
+    0% {
+      height: 245px;
+      max-width: 40%;
+    }
+    100% {
+      height: 255px;
+      max-width: 45%;
+    }
+  }
+  @keyframes decreaseArtImage {
+    0% {
+      height: 255px;
+      max-width: 45%;
+    }
+    100% {
+      height: 245px;
+      max-width: 40%;
+    }
+  }
+}
+
+@media (max-width: 675px) {
+  /* make each item entire width on small screens */
+  .project-equal-4-column, .art-equal-2-column {
+    flex-basis: 100%;
+    padding-bottom: 40px;
+  }
+  .project-buttons, .artwork-buttons {
+    width: 96%;
+  }
+  .art-img {
+    height: 260px;
+    max-width: 85%;
+  }
+  @keyframes increaseArtImage {
+    0% {
+      height: 260px;
+      max-width: 85%;
+    }
+    100% {
+      height: 275px;
+      max-width: 90%;
+    }
+  }
+  @keyframes decreaseArtImage {
+    0% {
+      height: 275px;
+      max-width: 90%;
+    }
+    100% {
+      height: 260px;
+      max-width: 85%;
+    }
+  }
+}
+
 
 /* FANWORKS */
 /* ***************************** formatting/text ***************************** */
