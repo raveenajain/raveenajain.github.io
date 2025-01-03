@@ -30,7 +30,7 @@
         <div class="port-row">
           <!-- dissertation -->
           <div class="art-equal-2-column">
-            <div class="preview-img-container">
+            <div class="preview-img-container" onmouseover="increaseArtImg(this)" onmouseout="decreaseArtImg(this)">
               <img class="preview-img art-img" src="images/portfolio/photography.png">
             </div>
           <div class="outline-container color-red bg-l-red">
@@ -45,7 +45,7 @@
         </div>
         <!-- merch -->
         <div class="art-equal-2-column">
-          <div class="preview-img-container">
+          <div class="preview-img-container" onmouseover="increaseArtImg(this)" onmouseout="decreaseArtImg(this)">
             <img class="preview-img art-img" src="images/portfolio/merch.png">
           </div>
           <div class="outline-container color-orange bg-l-orange">
@@ -64,7 +64,7 @@
       <div class="port-row">
         <!-- portraits -->
         <div class="art-equal-2-column">
-          <div class="preview-img-container">
+          <div class="preview-img-container" onmouseover="increaseArtImg(this)" onmouseout="decreaseArtImg(this)">
             <img class="preview-img art-img" src="images/portfolio/portraits.png">
           </div>
           <div class="outline-container color-blue bg-l-blue">
@@ -79,7 +79,7 @@
         </div>
         <!-- portraits -->
         <div class="art-equal-2-column">
-          <div class="preview-img-container">
+          <div class="preview-img-container" onmouseover="increaseArtImg(this)" onmouseout="decreaseArtImg(this)">
             <img class="preview-img art-img" src="images/portfolio/coursework.png">
           </div>
           <div class="outline-container color-purple bg-l-purple">
@@ -95,5 +95,19 @@
       </div>
     </div>
   </body>
+
+  <script>
+    // add keyframe increase size for images
+    function increaseArtImg(obj) {
+      var img = obj.getElementsByClassName("art-img")[0];
+      img.style.animation = "increaseArtImage 0.75s forwards";
+    }
+
+    // add keyframe decrease size for images
+    function decreaseArtImg(obj) {
+      var img = obj.getElementsByClassName("art-img")[0];
+      img.style.animation = "decreaseArtImage 0.75s forwards";
+    }
+  </script>
 
 </html>
