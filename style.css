@@ -752,8 +752,9 @@ ol {
   display: flex;
   flex-direction: column;
   flex-basis: 20%;
-  color: grey;
+  color: grey !important;
   text-align: right;
+  text-decoration: none;
 }
 
 /* ***************************** text ***************************** */
