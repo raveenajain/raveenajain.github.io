@@ -9,11 +9,11 @@
   <!--navigation bar -->
   <header id="my-navbar">
     <a class="nav-link nav-link-red" href="http://raveenajain.github.io/">RSJ</a>
-    <div class="nav-link nav-link-drop-hover nav-link-purple" onmouseover="getMinWidth(0)">
+    <div class="nav-link nav-link-drop-hover nav-link-purple">
       <div>Contact <span id="nav-arrow">&#9662;</span></div>
       <div class="nav-link nav-link-dropdown">
         <a href="mailto:raveena.s.jain@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/raveena-jain">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/raveena-jain" target="_blank">LinkedIn</a>
       </div>
     </div>
     <a class="nav-link nav-link-blue" style="float: right" href="http://raveenajain.github.io/resume">Resume</a>
@@ -29,40 +29,40 @@
         <div class="content-nav-column page-text">
           <div class="content-nav-fixed">
             <div class="content-nav-links">
-              <a class="color-red text-link" href="http://raveenajain.github.io/projects/hcid/fanworks/#goal">Goal</a>
+              <a class="color-red text-link" href="http://raveenajain.github.io/projects/hcid/fanworks#goal">Goal</a>
             </div>
             <div class="content-nav-links">
-              <a class="color-orange text-link" href="http://raveenajain.github.io/projects/hcid/fanworks/#tools">Tools</a>
+              <a class="color-orange text-link" href="http://raveenajain.github.io/projects/hcid/fanworks#tools">Tools</a>
             </div>
             <div class="content-nav-links">
-              <a class="color-green text-link" href="http://raveenajain.github.io/projects/hcid/fanworks/#introduction">Introduction</a>
+              <a class="color-green text-link" href="http://raveenajain.github.io/projects/hcid/fanworks#introduction">Introduction</a>
             </div>
             <div class="content-nav-links">
-              <a class="color-blue text-link" href="http://raveenajain.github.io/projects/hcid/fanworks/#interviews">Interviews</a>
+              <a class="color-blue text-link" href="http://raveenajain.github.io/projects/hcid/fanworks#interviews">Interviews</a>
             </div>
             <div class="content-nav-links">
-              <a class="color-purple text-link" href="http://raveenajain.github.io/projects/hcid/fanworks/#review">Website Review</a>
+              <a class="color-purple text-link" href="http://raveenajain.github.io/projects/hcid/fanworks#review">Website Review</a>
             </div>
             <div class="content-nav-links">
-              <a class="color-red text-link" href="http://raveenajain.github.io/projects/hcid/fanworks/#overlap">Overlap in Data</a>
+              <a class="color-red text-link" href="http://raveenajain.github.io/projects/hcid/fanworks#overlap">Overlap in Data</a>
             </div>
             <div class="content-nav-links">
-              <a class="color-orange text-link" href="http://raveenajain.github.io/projects/hcid/fanworks/#domain">Domain Model</a>
+              <a class="color-orange text-link" href="http://raveenajain.github.io/projects/hcid/fanworks#domain">Domain Model</a>
             </div>
             <div class="content-nav-links">
-              <a class="color-green text-link" href="http://raveenajain.github.io/projects/hcid/fanworks/#sitemap">Sitemap</a>
+              <a class="color-green text-link" href="http://raveenajain.github.io/projects/hcid/fanworks#sitemap">Sitemap</a>
             </div>
             <div class="content-nav-links">
-              <a class="color-blue text-link" href="http://raveenajain.github.io/projects/hcid/fanworks/#journey">User Journey</a>
+              <a class="color-blue text-link" href="http://raveenajain.github.io/projects/hcid/fanworks#journey">User Journey</a>
             </div>
             <div class="content-nav-links">
-              <a class="color-purple text-link" href="http://raveenajain.github.io/projects/hcid/fanworks/#testing">Types of Testing</a>
+              <a class="color-purple text-link" href="http://raveenajain.github.io/projects/hcid/fanworks#testing">Types of Testing</a>
             </div>
             <div class="content-nav-links">
-              <a class="color-red text-link" href="http://raveenajain.github.io/projects/hcid/fanworks/#wireframes">Annotated Wireframes</a>
+              <a class="color-red text-link" href="http://raveenajain.github.io/projects/hcid/fanworks#wireframes">Annotated Wireframes</a>
             </div>
             <div class="content-nav-links">
-              <a class="color-orange text-link" href="http://raveenajain.github.io/projects/hcid/fanworks/#collapsible">References</a>
+              <a class="color-orange text-link" href="http://raveenajain.github.io/projects/hcid/fanworks#collapsible">References</a>
             </div>
           </div>
         </div>
@@ -307,12 +307,6 @@
   </body>
 
   <script>
-    function getMinWidth(item) {
-      var drops = document.getElementsByClassName("dropHover");
-      var w = drops[item].clientWidth;
-      document.querySelectorAll(".dropdown")[item].style.minWidth = w + 'px';
-    }
-
     function collapse() {
       var item = document.getElementById('refs');
       if (item.style.display === "block") {
