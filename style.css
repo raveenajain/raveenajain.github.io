@@ -756,6 +756,14 @@ ol {
   text-align: right;
   text-decoration: none;
 }
+@media (max-width: 675px) {
+  .resume-column-main {
+    flex-basis: 85%;
+  }
+  .resume-column-date {
+    flex-basis: 15%;
+  }
+}
 
 /* ***************************** text ***************************** */
 .resume-section-header {
