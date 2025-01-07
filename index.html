@@ -10,11 +10,11 @@
   <!--navigation bar -->
   <header id="my-navbar">
     <a class="nav-link nav-link-red" href="http://raveenajain.github.io/">RSJ</a>
-    <div class="nav-link nav-link-drop-hover nav-link-purple" onmouseover="getMinWidth(0)">
+    <div class="nav-link nav-link-drop-hover nav-link-purple">
       <div>Contact <span id="nav-arrow">&#9662;</span></div>
       <div class="nav-link nav-link-dropdown">
         <a href="mailto:raveena.s.jain@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/raveena-jain">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/raveena-jain" target="_blank">LinkedIn</a>
       </div>
     </div>
     <a class="nav-link nav-link-blue" style="float: right" href="http://raveenajain.github.io/resume">Resume</a>
@@ -50,7 +50,7 @@
         <div class="sub-title-changing section1-row"></div>
       </div>
       <div class="section1-row arrow-icon-pos">
-        <a class="arrow-icon" href="http://raveenajain.github.io/#main-section2"><i class="fa-solid fa-chevron-down"></i></a>
+        <a class="arrow-icon" href="http://raveenajain.github.io/#about"><i class="fa-solid fa-chevron-down"></i></a>
       </div>
     </div>
 
@@ -61,7 +61,7 @@
 
     <!-- section 2 -->
     <!-- about -->
-    <div class="bg-rect-about"></div>
+    <div class="bg-rect-about" id="about"></div>
     <div id="main-section2">
       <!-- row -->
       <div class="section2-row">
@@ -201,8 +201,8 @@
       <a href="https://www.linkedin.com/in/raveena-jain" target="_blank"><i class="footer-socials fab fa-linkedin"></i></a>
       <a href="https://github.com/raveenajain" target="_blank"><i class="footer-socials fab fa-github"></i></a>
       <a href="mailto:raveena.s.jain@gmail.com" target="_blank"><i class="footer-socials fas fa-envelope"></i></a>
-      <a href="http://raveenajain.github.io/projects/current" target="_blank"><i class="footer-socials fab fa-question"></i></a>
-      <div id="link-name"> Raveena Jain 2024 </div>
+      <a href="http://raveenajain.github.io/projects/current"><i class="footer-socials fab fa-question"></i></a>
+      <div id="link-name"> Raveena Jain 2025 </div>
     </div>
   </div>
 
@@ -238,12 +238,6 @@
       } else {
         myNavbar.classList.remove("navOffset");
       }
-    }
-
-    function getMinWidth(item) {
-      var drops = document.getElementsByClassName("dropHover");
-      var w = drops[item].clientWidth;
-      document.querySelectorAll(".dropdown")[item].style.minWidth = w + 'px';
     }
 
     // on hover animate letters in name different colors
