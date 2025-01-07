@@ -6,36 +6,31 @@
     <title> Product Design </title>
   </head>
 
+
   <!--navigation bar -->
   <header id="my-navbar">
-    <a class="active button" href="http://raveenajain.github.io/">RSJ</a>
-    <a class="active button" style="float: right" href="mailto:raveena.s.jain@gmail.com">Contact</a>
-    <a class="active button" style="float: right" href="http://raveenajain.github.io/resume">Resume</a>
-    <div class="dropHover" onmouseover="getMinWidth(0)">
-      <div>Portfolio &#9662;</div>
-      <div class="dropdown">
-        <a href="http://raveenajain.github.io/projects">Projects</a>
-        <a href="http://raveenajain.github.io/artwork">Artwork</a>
+    <a class="nav-link nav-link-red" href="http://raveenajain.github.io/">RSJ</a>
+    <div class="nav-link nav-link-drop-hover nav-link-purple">
+      <div>Contact <span id="nav-arrow">&#9662;</span></div>
+      <div class="nav-link nav-link-dropdown">
+        <a href="mailto:raveena.s.jain@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/raveena-jain">LinkedIn</a>
       </div>
     </div>
-    <div class="dropHover" onmouseover="getMinWidth(1)">
-      <div>Me &#9662;</div>
-      <div class="dropdown">
-        <a href="http://raveenajain.github.io/#about">About</a>
-        <a href="http://raveenajain.github.io/#links">Socials</a>
-      </div>
-    </div>
+    <a class="nav-link nav-link-blue" style="float: right" href="http://raveenajain.github.io/resume">Resume</a>
+    <a class="nav-link nav-link-green" style="float: right" href="http://raveenajain.github.io/artwork">Artwork</a>
+    <a class="nav-link nav-link-orange" style="float: right" href="http://raveenajain.github.io/projects">Projects</a>
   </header>
 
-  <body>
-    <!-- title of page -->
-    <div class="page-titles">
-      Product Design
-    </div>
 
-    <div class="all-products">
+  <body>
+    <div class="content-body">
+      <!-- page title -->
+      <div class="page-titles title-offset">Product Design</div>
+
       <div class="product-row">
-        <div class="product-column">
+        <!-- the crows have eyes -->
+        <div class="product-column color-red">
           <div class="product-img-carousel">
             <div class="each-product-img">
               <img style="width: 100%" src="../images/products/crowEyesHoodie.png"
@@ -52,30 +47,28 @@
             <a class="img-back" onclick="changeImg(-1, 0)">&#10094;</a>
             <a class="img-next" onclick="changeImg(1, 0)">&#10095;</a>
             <center>
-              <div class="product-img-indicator" onclick="indicateImg(1, 0)"></div>
-              <div class="product-img-indicator" onclick="indicateImg(2, 0)"></div>
-              <div class="product-img-indicator" onclick="indicateImg(3, 0)"></div>
+              <div class="product-img-indicator indicator-red" onclick="indicateImg(1, 0)"></div>
+              <div class="product-img-indicator indicator-red" onclick="indicateImg(2, 0)"></div>
+              <div class="product-img-indicator indicator-red" onclick="indicateImg(3, 0)"></div>
             </center>
           </div>
-          <div class="product-name">
-            The Crows Have Eyes
-          </div>
-          <div class="product-description">
-            <b>Style: </b>T-Shirt, Hoodie
-            <br>
-            <b>Inspiration: </b> <i><a class="text-link" href="https://en.wikipedia.org/wiki/Schitt%27s_Creek">Schitt's Creek</a></i> (TV Show)
-            <br>
-            <b>Sales: </b>50 Globally (Redbubble)
-            <br>
-            <b>Likes: </b>110 Globally (Redbubble)
-            <br>
-            <b>Made With: </b>Procreate
-            <br>
-            <b>Designed: </b>March 2020
+          <div class="product-indent">
+            <div class="small-heading">The Crows Have Eyes</div>
+            <div class="product-description">
+              <b>Style: </b>T-Shirt, Hoodie
+              <br>
+              <b>Inspiration: </b><a class="text-link color-red" href="https://en.wikipedia.org/wiki/Schitt%27s_Creek">Schitt's Creek</a> (TV Show)
+              <br>
+              <b>Sales: </b>50 Globally (Redbubble)
+              <br>
+              <b>Likes: </b>110 Globally (Redbubble)
+              <br>
+              <b>Made With: </b>Procreate
+            </div>
           </div>
         </div>
-
-        <div class="product-column">
+        <!-- skeleton dance -->
+        <div class="product-column color-orange">
           <div class="product-img-carousel">
             <div class="each-product-img">
               <img style="width: 100%" src="../images/products/skeletonsBlack.png"
@@ -92,32 +85,31 @@
             <a class="img-back" onclick="changeImg(-1, 1)">&#10094;</a>
             <a class="img-next" onclick="changeImg(1, 1)">&#10095;</a>
             <center>
-              <div class="product-img-indicator" onclick="indicateImg(1, 1)"></div>
-              <div class="product-img-indicator" onclick="indicateImg(2, 1)"></div>
-              <div class="product-img-indicator" onclick="indicateImg(3, 1)"></div>
+              <div class="product-img-indicator indicator-orange" onclick="indicateImg(1, 1)"></div>
+              <div class="product-img-indicator indicator-orange" onclick="indicateImg(2, 1)"></div>
+              <div class="product-img-indicator indicator-orange" onclick="indicateImg(3, 1)"></div>
             </center>
           </div>
-          <div class="product-name">
-            Skeletons
-          </div>
-          <div class="product-description">
-            <b>Style: </b>Sticker
-            <br>
-            <b>Inspiration: </b> <i><a class="text-link" href="https://www.youtube.com/watch?v=vOGhAV-84iI">The Skeleton Dance</a></i> (Short Film)
-            <br>
-            <b>Sales: </b>Not For Sale
-            <br>
-            <b>Likes: </b>Not For Sale
-            <br>
-            <b>Made With: </b>Procreate
-            <br>
-            <b>Designed: </b>September 2021
+          <div class="product-indent">
+            <div class="small-heading">Skeletons</div>
+            <div class="product-description">
+              <b>Style: </b>Sticker
+              <br>
+              <b>Inspiration: </b><a class="text-link color-orange" href="https://www.youtube.com/watch?v=vOGhAV-84iI">The Skeleton Dance</a> (Short Film)
+              <br>
+              <b>Sales: </b>Not For Sale
+              <br>
+              <b>Likes: </b>Not For Sale
+              <br>
+              <b>Made With: </b>Procreate
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="product-row">
-        <div class="product-column">
+      <div class="product-row bottom-margin">
+        <!-- crows pack -->
+        <div class="product-column color-blue">
           <div class="product-img-carousel">
             <div class="each-product-img">
               <img style="width: 100%" src="../images/products/crow1.png"
@@ -142,56 +134,52 @@
             <a class="img-back" onclick="changeImg(-1, 2)">&#10094;</a>
             <a class="img-next" onclick="changeImg(1, 2)">&#10095;</a>
             <center>
-              <div class="product-img-indicator" onclick="indicateImg(1, 2)"></div>
-              <div class="product-img-indicator" onclick="indicateImg(2, 2)"></div>
-              <div class="product-img-indicator" onclick="indicateImg(3, 2)"></div>
-              <div class="product-img-indicator" onclick="indicateImg(4, 2)"></div>
-              <div class="product-img-indicator" onclick="indicateImg(5, 2)"></div>
+              <div class="product-img-indicator indicator-blue" onclick="indicateImg(1, 2)"></div>
+              <div class="product-img-indicator indicator-blue" onclick="indicateImg(2, 2)"></div>
+              <div class="product-img-indicator indicator-blue" onclick="indicateImg(3, 2)"></div>
+              <div class="product-img-indicator indicator-blue" onclick="indicateImg(4, 2)"></div>
+              <div class="product-img-indicator indicator-blue" onclick="indicateImg(5, 2)"></div>
             </center>
           </div>
-          <div class="product-name">
-            The Crows Have Eyes Pack
-          </div>
-          <div class="product-description">
-            <b>Style: </b>Sticker Pack
-            <br>
-            <b>Inspiration: </b> <i><a class="text-link" href="https://en.wikipedia.org/wiki/Schitt%27s_Creek">Schitt's Creek</a></i> (TV Show)
-            <br>
-            <b>Sales: </b>4 Globally (Redbubble)
-            <br>
-            <b>Likes: </b>4 Globally (Redbubble)
-            <br>
-            <b>Made With: </b>Procreate
-            <br>
-            <b>Designed: </b>March - December 2020
+          <div class="product-indent">
+            <div class="small-heading">The Crows Have Eyes Pack</div>
+            <div class="product-description">
+              <b>Style: </b>Sticker Pack
+              <br>
+              <b>Inspiration: </b><a class="text-link color-blue" href="https://en.wikipedia.org/wiki/Schitt%27s_Creek">Schitt's Creek</a> (TV Show)
+              <br>
+              <b>Sales: </b>4 Globally (Redbubble)
+              <br>
+              <b>Likes: </b>4 Globally (Redbubble)
+              <br>
+              <b>Made With: </b>Procreate
+            </div>
           </div>
         </div>
-
-        <div class="product-column">
+        <!-- news -->
+        <div class="product-column color-purple">
           <div class="product-img-carousel">
             <div class="each-product-img">
               <img style="width: 100%" src="../images/products/news.png"
                 alt="text the bad news is that there's no good news with retro colorful flowers">
               </div>
               <center>
-                <div class="product-img-indicator" onclick="indicateImg(1, 3)"></div>
+                <div class="product-img-indicator indicator-purple" onclick="indicateImg(1, 3)"></div>
               </center>
             </div>
-          <div class="product-name">
-            Bad News/Good News
-          </div>
-          <div class="product-description">
-            <b>Style: </b>Sticker
-            <br>
-            <b>Inspiration: </b> <i><a class="text-link" href="https://en.wikipedia.org/wiki/Schitt%27s_Creek">Schitt's Creek</a></i> (TV Show)
-            <br>
-            <b>Sales: </b>Not For Sale
-            <br>
-            <b>Likes: </b>Not For Sale
-            <br>
-            <b>Made With: </b>Procreate
-            <br>
-            <b>Designed: </b>March 2022
+            <div class="product-indent">
+            <div class="small-heading">Bad News/Good News</div>
+            <div class="product-description">
+              <b>Style: </b>Sticker
+              <br>
+              <b>Inspiration: </b><a class="text-link color-purple" href="https://en.wikipedia.org/wiki/Schitt%27s_Creek">Schitt's Creek</a> (TV Show)
+              <br>
+              <b>Sales: </b>Not For Sale
+              <br>
+              <b>Likes: </b>Not For Sale
+              <br>
+              <b>Made With: </b>Procreate
+            </div>
           </div>
         </div>
       </div>
@@ -199,12 +187,6 @@
   </body>
 
   <script>
-    function getMinWidth(item) {
-      var drops = document.getElementsByClassName("dropHover");
-      var w = drops[item].clientWidth;
-      document.querySelectorAll(".dropdown")[item].style.minWidth = w + 'px';
-    }
-
     // changing carousel of images for each product
     // initially make first img of each carousel visible
     var carousels = document.getElementsByClassName("product-img-carousel");
@@ -215,13 +197,11 @@
       firstIndicator[0].className += " active";
     }
 
-    // for each product so users can switch back and forth between viewing each
-    // products' images
+    // for each product so users can switch back and forth between viewing each products' images
     var curImg0 = 1;
     var curImg1 = 1;
     var curImg2 = 1;
     var curImg3 = 1;
-
     // move the image of the product (prod) x (i.e. forward or back 1)
     function changeImg(x, prod) {
       if (prod == 0) {
@@ -248,8 +228,7 @@
       }
     }
 
-    // move forward or back an image for the carousel that is clicked (as indicated
-    // by the variable prod)
+    // move forward or back an image for the carousel that is clicked (as indicated by the variable prod)
     function showNextImg(img, prod) {
       var product = document.getElementsByClassName("product-img-carousel");
       var images = product[prod].getElementsByClassName("each-product-img");
