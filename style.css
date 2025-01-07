@@ -105,10 +105,11 @@ body, html {
   display: block;
   background-color: white;
 }
-
-.nav-link-drop-hover:active {
-  display: block;
-  background-color: white;
+@media (hover: hover) {
+  .nav-link-drop-hover:hover {
+    display: block;
+    background-color: white;
+  }
 }
 
 .nav-link-dropdown a {
@@ -1173,3 +1174,5 @@ ul {
   line-height: 120%;
   padding-top: 2%;
 }
+
+/* helpful links: https://arturocreates.medium.com/handle-hover-css-on-mobile-touch-screen-69142ea79fe7 */
