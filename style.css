@@ -163,6 +163,11 @@ body, html {
 .title-offset {
   padding-top: 5%;
 }
+@media (max-width: 1025px) {
+  .title-offset {
+    padding-top: 8.5%;
+  }
+}
 
 /* ***************************** other text ***************************** */
 .page-text {
