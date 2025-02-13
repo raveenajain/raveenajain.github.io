@@ -468,6 +468,11 @@ ol {
   font-size: 100px;
   display: inline-flex;
 }
+@media (max-width: 475px) {
+  .anim-text {
+    font-size: 95px;
+  }
+}
 
 .sub-title-changing {
   font-size: 32px;
