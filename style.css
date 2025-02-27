@@ -877,7 +877,7 @@ ul {
 }
 
 /* 1 column for mobile */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .port-course-4-column {
     flex-basis: 95%;
     padding-bottom: 5%;
