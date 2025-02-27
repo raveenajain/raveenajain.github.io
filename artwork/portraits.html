@@ -69,14 +69,18 @@
   <script>
   var bg = document.getElementById('portrait-overlay');
   var fullImg = document.getElementById('portrait-img-overlay');
-  var wHeight = window.innerHeight;
 
   // open full sized of clicked image keeping within size of window
   function openImg(name) {
-    bg.style.display = "block";
-    fullImg.style.maxHeight = wHeight - 50 + 'px';
     fullImg.src = "../images/portraits/" + name + ".jpg";
-    fullImg.style.paddingTop = (wHeight - fullImg.height) / 2 + 'px';
+
+    var wHeight = window.innerHeight;
+    bg.style.height = document.documentElement.scrollHeight + 'px';
+    bg.style.display = "block";
+    fullImg.style.maxHeight = wHeight - 50 + 'px'; // make sure image is not larger than window
+    fullImg.style.paddingTop = (wHeight - fullImg.height) / 2 + 'px'; // even padding top and bottom
+    console.log(window.pageYOffset);
+    fullImg.style.top = window.pageYOffset + 'px'; // put image to where user has scrolled
   }
 
   // close full sized of clicked image
