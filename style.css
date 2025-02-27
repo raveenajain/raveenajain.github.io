@@ -859,6 +859,24 @@ ul {
   padding-bottom: 4px;
 }
 
+.port-course-4-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 23%;
+}
+
+.close-overlay {
+  font-family: var(--font-cour);
+  font-size: 32px;
+  font-weight: lighter;
+  cursor: pointer;
+  color: white;
+  float: right;
+  padding-top: 1%;
+  padding-right: 1%;
+}
+
+
 /* ***************************** images ***************************** */
 .preview-img {
   z-index: 5;
@@ -871,6 +889,31 @@ ul {
 }
 .project-img {
   height: 260px;
+}
+
+.port-course-img {
+  width: 100%;
+  min-height: 500px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+#portrait-overlay {
+  display: none;
+  vertical-align: middle;
+  z-index: 1000; /* over all objects including nav bar */
+  background: rgba(31, 31, 31, 0.75);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+
+#portrait-img-overlay {
+  z-index: 1001;
+  cursor: auto;
+  width: 90%;
+  object-fit: contain;
 }
 
 @keyframes increaseProjectImage {
