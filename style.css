@@ -876,6 +876,11 @@ ul {
   padding-right: 1%;
 }
 
+.coursework-description {
+  margin-right: 3%;
+  text-align: justify;
+}
+
 /* 1 column for mobile and small screens */
 @media only screen and (max-width: 1000px) and (min-height: 1000px) {
   .port-course-4-column {
@@ -1269,6 +1274,9 @@ ul {
 }
 .indicator-orange.active {
   background-color: var(--color-orange);
+}
+.indicator-green.active {
+  background-color: var(--color-green);
 }
 .indicator-blue.active {
   background-color: var(--color-blue);
